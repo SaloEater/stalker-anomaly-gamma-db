@@ -1477,7 +1477,8 @@
     "app_heal_first_aid": "First-Aid",
     "app_heal_heals": "Heals",
     "app_link_discord": "Discord for",
-    "app_link_website": "Website for"
+    "app_link_website": "Website for",
+    "app_link_github": "GitHub for"
   },
   "ru": {
     "ammo-vog-25": "Граната ВОГ-25",
@@ -2953,6 +2954,7 @@
     "app_heal_first_aid": "Первая помощь",
     "app_heal_heals": "Лечение",
     "app_link_discord": "Discord для",
-    "app_link_website": "Сайт"
+    "app_link_website": "Сайт",
+    "app_link_github": "GitHub для"
   }
 }

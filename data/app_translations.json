@@ -131,7 +131,8 @@
     "app_heal_first_aid": "First-Aid",
     "app_heal_heals": "Heals",
     "app_link_discord": "Discord for",
-    "app_link_website": "Website for"
+    "app_link_website": "Website for",
+    "app_link_github": "GitHub for"
   },
   "ru": {
     "app_group_saved": "Сохранённые",
@@ -265,6 +266,7 @@
     "app_heal_first_aid": "Первая помощь",
     "app_heal_heals": "Лечение",
     "app_link_discord": "Discord для",
-    "app_link_website": "Сайт"
+    "app_link_website": "Сайт",
+    "app_link_github": "GitHub для"
   }
 }
