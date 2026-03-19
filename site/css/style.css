@@ -72,17 +72,20 @@ a:hover {
     top: 0;
     left: 0;
     z-index: 300;
+    max-width: 220px;
     padding: 0.25rem 0.5rem;
     background: #252525;
     color: var(--text);
     font-size: 0.6rem;
+    line-height: 1.4;
     border-radius: 6px;
     border: 1px solid var(--border);
     pointer-events: none;
     opacity: 0;
     transform: scale(0.95);
     transition: opacity 0.12s, transform 0.12s;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
 }
 .tooltip.visible {
     opacity: 1;
@@ -1546,6 +1549,17 @@ input.range-input {
 .stat-grid .stat-label {
     color: var(--text-secondary);
     font-size: 0.8rem;
+}
+.info-hint {
+    width: 1.1em;
+    height: 1.1em;
+    margin-left: 0.3em;
+    vertical-align: middle;
+    margin-top: -0.2em;
+    margin-bottom: -0.2em;
+    opacity: 0.55;
+    cursor: help;
+    color: #5b9bd5;
 }
 .stat-grid .stat-value {
     font-family: var(--mono);

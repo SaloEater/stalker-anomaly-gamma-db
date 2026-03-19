@@ -6,6 +6,11 @@ const EFFECT_FIELDS = new Set([
 ]);
 
 
+function malfunctionChance(reliabilityPct) {
+    const condShotDec = 0.01 - (reliabilityPct / 10000);
+    return (2 * condShotDec * 2000) / 10;
+}
+
 function isNonZero(val) {
     if (val == null || val === "" || val === 0 || val === "0" || val === "0%") return false;
     if (typeof val === "string") {
@@ -39,7 +44,7 @@ const MODAL_BADGE_KEYS = new Set(["st_data_export_has_perk", "st_data_export_is_
 const SKIP_KEYS = new Set(["id", "pda_encyclopedia_name", "hasNpcWeaponDrop", "hasStashDrop", "hasDisassemble"]);
 const MAX_PINS = 5;
 const LOWER_IS_BETTER = new Set(["st_data_export_weapon_degradation"]);
-const HIGHER_IS_WORSE = new Set(["st_prop_weight", "st_upgr_cost"]);
+const HIGHER_IS_WORSE = new Set(["st_prop_weight", "st_upgr_cost", "_malfunction_chance"]);
 const NO_HIGHLIGHT = new Set(["ui_ammo_types", "st_data_export_ammo_types_alt", "ui_mm_repair"]);
 const BIPOLAR = new Set([
     "ui_inv_outfit_fire_wound_protection", "ui_inv_outfit_wound_protection", "ui_inv_outfit_burn_protection", "ui_inv_outfit_shock_protection",
@@ -364,7 +369,16 @@ const app = createApp({
 
         modalStatRows() {
             const isWeapon = WEAPON_CATEGORIES.includes(this.modalCategory);
-            return buildStatRows(this.modalItem, this.modalHeaders).filter(r => !HEAL_FIELDS.has(r.key) && !MODAL_BADGE_KEYS.has(r.key) && !(isWeapon && r.key === "st_upgr_cost"));
+            const rows = buildStatRows(this.modalItem, this.modalHeaders).filter(r => !HEAL_FIELDS.has(r.key) && !MODAL_BADGE_KEYS.has(r.key) && !(isWeapon && r.key === "st_upgr_cost"));
+            const reliIdx = rows.findIndex(r => r.key === "ui_inv_reli");
+            if (reliIdx >= 0) {
+                const reliVal = parseFloat(String(rows[reliIdx].value).replace("%", ""));
+                if (!isNaN(reliVal)) {
+                    const malf = malfunctionChance(reliVal);
+                    rows.splice(reliIdx + 1, 0, { key: "_malfunction_chance", value: malf, isSection: false });
+                }
+            }
+            return rows;
         },
 
         modalHealGroups() {
@@ -572,6 +586,12 @@ const app = createApp({
             if (facIdx >= 0 && nameIdx >= 0 && facIdx < nameIdx) {
                 filtered.splice(facIdx, 1);
                 filtered.splice(nameIdx, 0, "ui_st_community");
+            }
+
+            // Inject malfunction chance after reliability
+            const reliIdx = filtered.indexOf("ui_inv_reli");
+            if (reliIdx >= 0) {
+                filtered.splice(reliIdx + 1, 0, "_malfunction_chance");
             }
 
             return filtered;
@@ -783,8 +803,8 @@ const app = createApp({
                     return (sum(a) - sum(b)) * dir;
                 }
                 const isName = col === "pda_encyclopedia_name" || col === "name";
-                const av = isName ? (this.tName(a) || "") : (a[col] ?? "");
-                const bv = isName ? (this.tName(b) || "") : (b[col] ?? "");
+                const av = isName ? (this.tName(a) || "") : (this.cellValue(a, col) ?? "");
+                const bv = isName ? (this.tName(b) || "") : (this.cellValue(b, col) ?? "");
                 const an = parseFloat(av.toString().replace("%", ""));
                 const bn = parseFloat(bv.toString().replace("%", ""));
                 if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
@@ -798,12 +818,17 @@ const app = createApp({
             const items = this.filteredItems;
             const headers = this.categoryHeaders[slug] || [];
             const ranges = {};
-            for (const h of headers) {
+            const allHeaders = [...headers];
+            if (headers.includes("ui_inv_reli") && !allHeaders.includes("_malfunction_chance")) {
+                allHeaders.push("_malfunction_chance");
+            }
+            for (const h of allHeaders) {
                 if (RANGE_EXCLUDE.has(h) || NO_HIGHLIGHT.has(h)) continue;
                 if (h.includes("/")) continue;
                 let min = Infinity, max = -Infinity;
                 for (const item of items) {
-                    const s = String(item[h] ?? "");
+                    const v = this.cellValue(item, h);
+                    const s = String(v ?? "");
                     const n = parseFloat(s.replace(/%$/, ""));
                     if (isNaN(n)) continue;
                     if (n > max) max = n;
@@ -1741,7 +1766,7 @@ const app = createApp({
                 if (col.key === 'pda_encyclopedia_name' || col.key === 'name') {
                     return this.tName(item);
                 }
-                const v = item[col.key];
+                const v = this.cellValue(item, col.key);
                 return v == null ? '' : v;
             };
 
@@ -2005,6 +2030,7 @@ const app = createApp({
         headerLabel(h) {
             if (!h) return "";
             if (h === "_heal") return this.t("app_heal_heals");
+            if (h === "_malfunction_chance") return this.t("_malfunction_chance");
             if (h === "ui_inv_damage" && this.activeCategory === "Ammo") return this.t("st_data_export_damage_mult");
             const translated = this.t(h);
             if (translated !== h) return translated;
@@ -2055,13 +2081,18 @@ const app = createApp({
             const slug = categorySlug(category);
             const items = this.categoryItems[slug] || [];
             const headers = this.categoryHeaders[slug] || [];
+            const allHeaders = [...headers];
+            if (headers.includes("ui_inv_reli") && !allHeaders.includes("_malfunction_chance")) {
+                allHeaders.push("_malfunction_chance");
+            }
             const ranges = {};
-            for (const h of headers) {
+            for (const h of allHeaders) {
                 if (RANGE_EXCLUDE.has(h) || NO_HIGHLIGHT.has(h)) continue;
                 if (h.includes("/")) continue;
                 let min = Infinity, max = -Infinity;
                 for (const item of items) {
-                    const s = String(item[h] ?? "");
+                    const v = this.cellValue(item, h);
+                    const s = String(v ?? "");
                     const n = parseFloat(s.replace(/%$/, ""));
                     if (isNaN(n)) continue;
                     if (n > max) max = n;
@@ -2242,8 +2273,17 @@ const app = createApp({
             return max;
         },
 
+        cellValue(item, field) {
+            if (field === "_malfunction_chance") {
+                const reliVal = parseFloat(String(item["ui_inv_reli"] || "").replace("%", ""));
+                return isNaN(reliVal) ? undefined : malfunctionChance(reliVal);
+            }
+            return item[field];
+        },
+
         formatValue(h, val, tableMode) {
             if (val === undefined || val === null || val === "" || val === "--") return "--";
+            if (h === "_malfunction_chance") return val.toFixed(2) + "%";
             if (h === "ui_ammo_types" || h === "st_data_export_ammo_types_alt") return this.caliberName(val);
             if (h === "ui_st_community") return this.t(val);
 
@@ -2660,6 +2700,7 @@ app.directive("tooltip", {
         let cleanup = null;
 
         el._tooltipShow = () => {
+            if (!tip.firstChild.textContent) return;
             tip.classList.add("visible");
             cleanup = FloatingUIDOM.autoUpdate(el, tip, update);
         };
