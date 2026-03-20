@@ -2261,7 +2261,7 @@ const app = createApp({
         },
 
         factionIcon(name) {
-            return FACTION_ICONS[name] || FACTION_ICONS[name?.toLowerCase()] || null;
+            return FACTION_ICONS[name] || FACTION_ICONS[name?.toLowerCase()] || FACTION_ICONS["stalker"];
         },
 
         factionColor(name) {
@@ -2992,9 +2992,6 @@ const app = createApp({
             return value;
         },
 
-        factionIcon(id) {
-            return FACTION_ICONS[id] || FACTION_ICONS["stalker"];
-        },
         factionLabel(id) {
             return this.t(id) || id;
         },
