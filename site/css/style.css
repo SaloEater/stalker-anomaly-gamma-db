@@ -3631,6 +3631,28 @@ input.range-input {
     padding: 0.35rem 0.5rem;
     border-bottom: 1px solid var(--border);
 }
+.build-inventory-sort-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: none;
+    border: 1px solid transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.55rem;
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.build-inventory-sort-btn:hover {
+    color: var(--text);
+    border-color: var(--border);
+}
+.build-inventory-sort-btn.active {
+    color: var(--accent);
+    border-color: var(--border);
+}
 .build-inventory-body {
     padding: 0.35rem 0.5rem 0.5rem;
     min-height: 2rem;

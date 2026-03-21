@@ -365,6 +365,7 @@ const app = createApp({
             // Inventory staging area
             buildInventory: [],              // Array of { item, slotType } objects
             buildInventoryCollapsed: false,
+            buildInventorySort: "none",      // "none" | "name" | "category"
             buildDragState: null,            // { source, slotType, itemId, ... } for visual feedback
         };
     },
@@ -1140,6 +1141,27 @@ const app = createApp({
             }
 
             return { stats, ammoOnly };
+        },
+
+        buildInventorySorted() {
+            const entries = this.buildInventory.map((e, i) => ({ ...e, originalIndex: i }));
+            if (this.buildInventorySort === "name") {
+                entries.sort((a, b) => (this.tName(a.item) || "").localeCompare(this.tName(b.item) || ""));
+            } else if (this.buildInventorySort === "category") {
+                const order = ["outfit", "helmet", "backpack", "belt", "artifact", "weapon", "ammo"];
+                entries.sort((a, b) => {
+                    const ai = order.indexOf(a.slotType), bi = order.indexOf(b.slotType);
+                    if (ai !== bi) return ai - bi;
+                    return (this.tName(a.item) || "").localeCompare(this.tName(b.item) || "");
+                });
+            }
+            return entries;
+        },
+
+        buildInventorySortLabel() {
+            if (this.buildInventorySort === "name") return this.t("app_build_sort_name") || "Name";
+            if (this.buildInventorySort === "category") return this.t("app_build_sort_category") || "Type";
+            return "";
         },
 
         buildPickerSlotLabel() {
@@ -3437,6 +3459,11 @@ const app = createApp({
                 }
             }
             if (added) this.saveInventoryToStorage();
+        },
+
+        cycleInventorySort() {
+            const order = ["none", "name", "category"];
+            this.buildInventorySort = order[(order.indexOf(this.buildInventorySort) + 1) % order.length];
         },
 
         openInventoryPicker() {

@@ -753,6 +753,10 @@
                     <div class="build-inventory">
                         <div class="build-inventory-header">
                             <h3 class="build-stats-title" style="margin-bottom:0">{{ t('app_build_inventory') }} <span v-if="buildInventory.length" class="build-slot-counter">({{ buildInventory.length }})</span></h3>
+                            <button v-if="buildInventory.length > 1" class="build-inventory-sort-btn" :class="{ active: buildInventorySort !== 'none' }" @click="cycleInventorySort()" v-tooltip="t('app_label_sort')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 16 4 4 4-4"/><path d="M7 20V4"/><path d="m21 8-4-4-4 4"/><path d="M17 4v16"/></svg>
+                                <span v-if="buildInventorySort !== 'none'">{{ buildInventorySortLabel }}</span>
+                            </button>
                         </div>
                         <div class="build-inventory-body" :class="{ 'drag-over': buildDragState && buildDragState.targetSlot === 'inventory' }" @dragover.prevent="onInventoryDragOver($event)" @drop.prevent="onInventoryDrop($event)">
                             <div class="build-inventory-buttons">
@@ -766,19 +770,19 @@
                                 </button>
                             </div>
                             <div v-if="buildInventory.length > 0" class="build-inventory-items">
-                                <div v-for="(entry, idx) in buildInventory" :key="idx"
+                                <div v-for="entry in buildInventorySorted" :key="entry.originalIndex"
                                      class="build-inventory-item"
                                      :class="'build-inv-' + entry.slotType"
                                      draggable="true"
-                                     @dragstart="onInventoryDragStart($event, idx)"
+                                     @dragstart="onInventoryDragStart($event, entry.originalIndex)"
                                      @dragend="onDragEnd()"
-                                     @click="equipFromInventory(idx)"
+                                     @click="equipFromInventory(entry.originalIndex)"
                                      @mouseenter="showBuildHover(entry.item, $event)"
                                      @mousemove="moveBuildHover($event)"
                                      @mouseleave="hideBuildHover()">
                                     <span class="build-inventory-item-name">{{ tName(entry.item) }}</span>
                                     <span class="build-inventory-item-type">{{ inventorySlotTypeLabel(entry.slotType) }}</span>
-                                    <button class="build-inventory-item-remove" @click.stop="removeFromInventory(idx)">&times;</button>
+                                    <button class="build-inventory-item-remove" @click.stop="removeFromInventory(entry.originalIndex)">&times;</button>
                                 </div>
                             </div>
                             <div v-else class="build-inventory-empty">
