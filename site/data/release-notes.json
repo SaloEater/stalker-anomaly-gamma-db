@@ -2,8 +2,10 @@
   {
     "date": "2026-03-21",
     "entries": [
+      { "type": "added", "text": "Weapon slots in the build planner: primary, secondary, sidearm (pistol/knife), and grenade with ammo selection and combined weapon stats." },
+      { "type": "added", "text": "Weapon comparison selector to choose which equipped weapon to compare against when browsing inventory." },
       { "type": "added", "text": "Sort inventory items by name or type in the build planner." },
-      { "type": "added", "text": "Primary and secondary weapon slots in the build planner with ammo selection and combined weapon stats." },
+      { "type": "added", "text": "Toggle visibility of gear and weapon stats independently in the statistics panel." },
       { "type": "added", "text": "Build planner now shows your total carry capacity, combining base carry weight with equipment bonuses." },
       { "type": "added", "text": "Release notes page with a notification badge when new updates are available." },
       { "type": "changed", "text": "Improved language picker with a cleaner dropdown design." }
