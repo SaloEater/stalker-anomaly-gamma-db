@@ -26,6 +26,7 @@
     <script src="https://unpkg.com/lucide@0.577.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.9"></script>
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.13"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <div id="app-preloader">
@@ -637,12 +638,21 @@
                             <div class="build-stats-header-actions">
                                 <button class="build-expand-all-btn" @click="buildHideGearStats = !buildHideGearStats">{{ buildHideGearStats ? t('app_build_show_gear') : t('app_build_hide_gear') }}</button>
                                 <button class="build-expand-all-btn" @click="buildHideWeaponStats = !buildHideWeaponStats" v-if="buildWeaponPrimary || buildWeaponSecondary || buildWeaponSidearm || buildWeaponGrenade">{{ buildHideWeaponStats ? t('app_build_show_weapons') : t('app_build_hide_weapons') }}</button>
-                                <button class="build-expand-all-btn" @click="toggleBuildExpandAll()" v-if="buildAllItems.length > 0">{{ buildAllExpanded ? t('app_build_collapse_all') : t('app_build_expand_all') }}</button>
+                                <button class="build-expand-all-btn" @click="buildRadarVisible = !buildRadarVisible" v-if="buildAllItems.length > 0">{{ buildRadarVisible ? 'Stats' : 'Weapon Chart' }}</button>
+                                <button class="build-expand-all-btn" @click="toggleBuildExpandAll()" v-if="buildAllItems.length > 0 && !buildRadarVisible">{{ buildAllExpanded ? t('app_build_collapse_all') : t('app_build_expand_all') }}</button>
                             </div>
                         </div>
                         <div class="build-stats-body">
+                        <!-- Radar Charts -->
+                        <template v-if="buildRadarVisible">
+                            <div class="build-radar-section" v-if="!buildHideWeaponStats && (buildWeaponPrimary || buildWeaponSecondary || buildWeaponSidearm)">
+                                <div class="build-radar-wrap">
+                                    <canvas ref="buildWeaponRadarCanvas"></canvas>
+                                </div>
+                            </div>
+                        </template>
                         <!-- Gear Stats -->
-                        <template v-if="!buildHideGearStats">
+                        <template v-if="!buildHideGearStats && !buildRadarVisible">
 
                         <div class="build-tile-wrap">
                             <div class="build-tile-stat build-prot-expandable" :class="{ 'build-prot-low': buildCombinedStats.totalWeight === 0 }" @click="toggleBuildStatExpand('weight')">
@@ -738,7 +748,7 @@
                         </template>
                         </template>
                         <!-- Weapon Stats -->
-                        <template v-if="!buildHideWeaponStats && (buildWeaponPrimary || buildWeaponSecondary || buildWeaponSidearm || buildWeaponGrenade)">
+                        <template v-if="!buildHideWeaponStats && !buildRadarVisible && (buildWeaponPrimary || buildWeaponSecondary || buildWeaponSidearm || buildWeaponGrenade)">
                         <div class="build-stats-divider"></div>
                         <div class="build-weapon-toggle">
                             <button class="build-weapon-toggle-btn" :class="{ active: buildActiveWeaponTab === 'primary' }" @click="buildActiveWeaponTab = 'primary'" v-if="buildWeaponPrimary">
@@ -1028,8 +1038,8 @@
     <i data-lucide="scale" class="compare-bar-icon"></i>
     <div class="compare-bar-chips">
         <span v-for="p in pinnedItems" :key="p.id" class="compare-chip">
-          <span class="compare-chip-name">{{ tName(p) }}</span>
-          <span class="compare-chip-cat">{{ tCat(p.category) }}</span>
+          <span class="compare-chip-name">{{ p.displayName }}</span>
+          <span class="compare-chip-cat">{{ tCatSingular(p.category) }}</span>
           <button class="compare-chip-remove" @click="togglePin(p.id)">&times;</button>
         </span>
     </div>
@@ -1046,13 +1056,22 @@
     <Transition name="modal" appear>
     <div class="modal compare-modal" v-if="compareOpen">
         <button class="modal-close" @click="closeCompare()">&times;</button>
-        <div class="modal-body">
+        <div class="compare-header">
             <h2 class="compare-title">{{ t('app_label_compare_items') }}</h2>
+            <div class="compare-view-toggle" v-if="compareData.length > 0">
+                <button :class="{ active: compareViewMode === 'table' }" @click="compareViewMode = 'table'">Table</button>
+                <button :class="{ active: compareViewMode === 'chart' }" @click="compareViewMode = 'chart'">Chart</button>
+            </div>
+        </div>
+        <div class="compare-content">
             <template v-if="compareData.length === 0">
                 <p class="loading">{{ t('app_label_loading_compare') }}</p>
             </template>
             <template v-else>
-                <div class="compare-table-wrap">
+                <div v-show="compareViewMode === 'chart'" class="compare-chart-wrap">
+                    <canvas ref="compareChartCanvas"></canvas>
+                </div>
+                <div class="compare-table-wrap" v-show="compareViewMode === 'table'">
                     <table class="compare-table">
                         <thead>
                         <tr>

@@ -131,6 +131,8 @@ const SIDEARM_SLUGS = ["pistols", "melee"];
 const GRENADE_SLUG = "explosives";
 const SLOT_COLORS = { outfit: "#5b8abd", helmet: "#5ba8a0", backpack: "#6bab5b", belt: "#c89050", artifact: "#9b6fb0", weapon: "#b85c5c", sidearm: "#b85c5c", grenade: "#7a6e50", ammo: "#8b8b5e" };
 
+const CHART_COLORS = ["#c8a84e", "#5b8abd", "#b85c5c", "#5ba8a0", "#9b6fb0"];
+
 const SINGULAR_TYPE = { [CAT.PISTOLS]: "app_type_pistol", [CAT.SMGS]: "app_type_smg", [CAT.SHOTGUNS]: "app_type_shotgun", [CAT.RIFLES]: "app_type_rifle", [CAT.SNIPERS]: "app_type_sniper", [CAT.LAUNCHERS]: "app_type_launcher", [CAT.MELEE]: "app_cat_melee" };
 const SINGULAR_CATEGORY = { ...SINGULAR_TYPE, [CAT.OUTFITS]: "app_type_outfit", [CAT.HELMETS]: "app_type_helmet", [CAT.BELT_ATTACHMENTS]: "app_type_belt_attachment", [CAT.EXPLOSIVES]: "app_type_explosive", [CAT.ARTEFACTS]: "app_type_artefact", [CAT.MATERIALS]: "app_type_material", [CAT.MUTANT_PARTS]: "app_type_mutant_part" };
 
@@ -274,6 +276,7 @@ const app = createApp({
             pinnedIds: [],
             compareOpen: false,
             compareData: [],
+            compareViewMode: "table",
 
             // Favorites state
             favoriteIds: [],
@@ -359,6 +362,7 @@ const app = createApp({
             buildExpandedStats: {},
             buildHideGearStats: false,
             buildHideWeaponStats: false,
+            buildRadarVisible: false,
             buildSavedBuilds: [],
             buildSaveName: "",
             buildSaveModalOpen: false,
@@ -439,6 +443,22 @@ const app = createApp({
                 rows.push(this.buildCompareRow(h, values));
             }
             return rows;
+        },
+
+        compareRadarFields() {
+            if (this.compareData.length === 0) return [];
+            const categories = this.compareData.map(e => e.category);
+            if (categories.every(c => WEAPON_CATEGORIES.includes(c))) return WEAPON_STAT_FIELDS;
+            if (categories.every(c => c === CAT.OUTFITS || c === CAT.HELMETS)) return PROTECTION_FIELDS;
+            if (categories.every(c => c === CAT.AMMO)) return [...AMMO_MULTIPLIER_FIELDS, ...AMMO_ONLY_FIELDS];
+            // Mixed: find common numeric fields
+            return this.compareHeaders.filter(h => {
+                if (SKIP_KEYS.has(h) || BADGE_COLS.has(h) || NO_HIGHLIGHT.has(h)) return false;
+                return this.compareData.some(e => {
+                    const v = e.item[h];
+                    return v != null && !isNaN(parseFloat(String(v).replace("%", "")));
+                });
+            }).slice(0, 12);
         },
 
         tileFields() {
@@ -1302,6 +1322,10 @@ const app = createApp({
             return this.t(CATEGORY_KEYS[name] || name);
         },
 
+        tCatSingular(name) {
+            return this.t(SINGULAR_CATEGORY[name] || CATEGORY_KEYS[name] || name);
+        },
+
         tUnit(key) {
             if (!key) return "";
             const unitKey = UNITS[key];
@@ -1978,7 +2002,232 @@ const app = createApp({
 
         closeCompare() {
             this.compareOpen = false;
+            this.compareViewMode = "table";
+            if (this._compareChart) { this._compareChart.destroy(); this._compareChart = null; }
             document.body.style.overflow = this.modalOpen ? "hidden" : "";
+        },
+
+        renderCompareChart() {
+            const canvas = this.$refs.compareChartCanvas;
+            if (!canvas || this.compareData.length === 0) return;
+            if (this._compareChart) { this._compareChart.destroy(); this._compareChart = null; }
+
+            const fields = this.compareRadarFields;
+            if (fields.length === 0) return;
+
+            // Use full category ranges so items are positioned relative to all items in the category
+            const catRanges = {};
+            const seenCategories = new Set(this.compareData.map(e => e.category));
+            for (const cat of seenCategories) {
+                const cr = this.getColumnRanges(cat);
+                for (const [k, v] of Object.entries(cr)) {
+                    if (!catRanges[k]) catRanges[k] = { min: v.min, max: v.max };
+                    else {
+                        if (v.min < catRanges[k].min) catRanges[k].min = v.min;
+                        if (v.max > catRanges[k].max) catRanges[k].max = v.max;
+                    }
+                }
+            }
+            // Fallback: compute from compared items for fields missing from category ranges
+            for (const f of fields) {
+                if (catRanges[f]) continue;
+                let min = Infinity, max = -Infinity;
+                for (const entry of this.compareData) {
+                    const n = parseFloat(String(entry.item[f] ?? "").replace("%", ""));
+                    if (isNaN(n)) continue;
+                    if (n < min) min = n;
+                    if (n > max) max = n;
+                }
+                if (min !== Infinity) catRanges[f] = { min, max };
+            }
+
+            const normalize = (field, rawVal) => {
+                const n = parseFloat(String(rawVal ?? "").replace("%", ""));
+                if (isNaN(n)) return 0;
+                const r = catRanges[field];
+                if (!r || r.max === r.min) return 50;
+                let norm = ((n - r.min) / (r.max - r.min)) * 100;
+                if (LOWER_IS_BETTER.has(field) || HIGHER_IS_WORSE.has(field)) norm = 100 - norm;
+                return Math.max(0, Math.min(100, norm));
+            };
+
+            const hexToRgba = (hex, alpha) => {
+                const r = parseInt(hex.slice(1, 3), 16);
+                const g = parseInt(hex.slice(3, 5), 16);
+                const b = parseInt(hex.slice(5, 7), 16);
+                return `rgba(${r},${g},${b},${alpha})`;
+            };
+            const labels = fields.map(f => this.headerLabel(f));
+            const datasets = this.compareData.map((entry, i) => {
+                const color = CHART_COLORS[i % CHART_COLORS.length];
+                return {
+                    label: this.tName(entry.item),
+                    data: fields.map(f => normalize(f, entry.item[f])),
+                    borderColor: color,
+                    backgroundColor: hexToRgba(color, 0.15),
+                    pointBackgroundColor: color,
+                    pointRadius: 3,
+                    borderWidth: 2,
+                    fill: true,
+                };
+            });
+
+            const self = this;
+            this._compareChart = new Chart(canvas, {
+                type: "radar",
+                data: { labels, datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        r: {
+                            min: 0, max: 100,
+                            ticks: { display: false, stepSize: 20 },
+                            grid: { color: "#2a2a2a" },
+                            angleLines: { color: "#2a2a2a" },
+                            pointLabels: { color: "#d4d4d4", font: { size: 11 } },
+                        }
+                    },
+                    plugins: {
+                        legend: { labels: { color: "#d4d4d4", font: { size: 12 }, usePointStyle: true, pointStyle: "circle" } },
+                        tooltip: {
+                            backgroundColor: "#1a1a1a",
+                            titleColor: "#d4d4d4",
+                            bodyColor: "#d4d4d4",
+                            borderColor: "#2a2a2a",
+                            borderWidth: 1,
+                            callbacks: {
+                                label(ctx) {
+                                    const field = fields[ctx.dataIndex];
+                                    const entry = self.compareData[ctx.datasetIndex];
+                                    const rawVal = entry.item[field];
+                                    const name = self.tName(entry.item);
+                                    return `${name}: ${self.formatValue(field, rawVal ?? "--")}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        },
+
+        renderBuildWeaponRadar() {
+            const canvas = this.$refs.buildWeaponRadarCanvas;
+            if (!canvas) return;
+            if (this._buildWeaponRadarChart) { this._buildWeaponRadarChart.destroy(); this._buildWeaponRadarChart = null; }
+
+            const fields = WEAPON_STAT_FIELDS;
+            const parseNum = (v) => {
+                if (v == null || v === "") return null;
+                return parseFloat(String(v).replace(/%$/, "")) || 0;
+            };
+
+            // Collect all equipped weapons (excluding grenades)
+            const grenadeItems = this.categoryItems[GRENADE_SLUG] || [];
+            const slots = [
+                { key: "primary", weapon: this.buildWeaponPrimary, ammo: this.buildAmmoPrimary, color: "#b85c5c", label: this.t("app_build_weapon_primary") || "Primary" },
+                { key: "secondary", weapon: this.buildWeaponSecondary, ammo: this.buildAmmoSecondary, color: "#c8a84e", label: this.t("app_build_weapon_secondary") || "Secondary" },
+                { key: "sidearm", weapon: this.buildWeaponSidearm, ammo: this.buildAmmoSidearm, color: "#5ba8a0", label: this.t("app_build_sidearm") || "Sidearm" },
+            ].filter(s => s.weapon && !grenadeItems.some(i => i.id === s.weapon.id));
+
+            if (slots.length === 0) return;
+
+            // Merge ranges across all weapon categories for consistent normalization
+            const allRanges = {};
+            for (const s of slots) {
+                const cat = WEAPON_CATEGORIES.find(c => {
+                    const slug = categorySlug(c);
+                    return (this.categoryItems[slug] || []).some(i => i.id === s.weapon.id);
+                });
+                if (cat) {
+                    const cr = this.getColumnRanges(cat);
+                    for (const [k, v] of Object.entries(cr)) {
+                        if (!allRanges[k]) allRanges[k] = { min: v.min, max: v.max };
+                        else {
+                            if (v.min < allRanges[k].min) allRanges[k].min = v.min;
+                            if (v.max > allRanges[k].max) allRanges[k].max = v.max;
+                        }
+                    }
+                }
+            }
+
+            const normalize = (field, val) => {
+                if (val == null) return 0;
+                const r = allRanges[field];
+                if (!r || r.max === r.min) return 50;
+                let norm = ((val - r.min) / (r.max - r.min)) * 100;
+                if (LOWER_IS_BETTER.has(field) || HIGHER_IS_WORSE.has(field)) norm = 100 - norm;
+                return Math.max(0, Math.min(100, norm));
+            };
+
+            // Compute effective stats per weapon
+            const computeEffective = (weapon, ammo) => {
+                return fields.map(f => {
+                    const base = parseNum(weapon[f]);
+                    if (base == null) return null;
+                    if (!ammo || !AMMO_MULTIPLIER_FIELDS.has(f)) return base;
+                    const ammoVal = parseNum(ammo[f]);
+                    if (ammoVal == null) return base;
+                    if (f === "ui_inv_damage") return Math.round(base * ammoVal * 100) / 100;
+                    return Math.round(base * (ammoVal / 100) * 100) / 100;
+                });
+            };
+
+            const datasets = [];
+            const rawValues = [];
+            for (const s of slots) {
+                const effective = computeEffective(s.weapon, s.ammo);
+                rawValues.push(effective);
+                const label = slots.length === 1 ? this.tName(s.weapon) : s.label;
+                datasets.push({
+                    label,
+                    data: fields.map((f, i) => normalize(f, effective[i])),
+                    borderColor: s.color,
+                    backgroundColor: s.color + "26",
+                    pointBackgroundColor: s.color,
+                    pointRadius: 3,
+                    borderWidth: 2,
+                    fill: true,
+                });
+            }
+
+            const labels = fields.map(f => this.headerLabel(f));
+            const self = this;
+
+            this._buildWeaponRadarChart = new Chart(canvas, {
+                type: "radar",
+                data: { labels, datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        r: {
+                            min: 0, max: 100,
+                            ticks: { display: false, stepSize: 20 },
+                            grid: { color: "#2a2a2a" },
+                            angleLines: { color: "#2a2a2a" },
+                            pointLabels: { color: "#d4d4d4", font: { size: 10 } },
+                        }
+                    },
+                    plugins: {
+                        legend: { display: true, labels: { color: "#d4d4d4", font: { size: 11 }, usePointStyle: true, pointStyle: "circle" } },
+                        tooltip: {
+                            backgroundColor: "#1a1a1a",
+                            titleColor: "#d4d4d4",
+                            bodyColor: "#d4d4d4",
+                            borderColor: "#2a2a2a",
+                            borderWidth: 1,
+                            callbacks: {
+                                label(ctx) {
+                                    const field = fields[ctx.dataIndex];
+                                    const val = rawValues[ctx.datasetIndex][ctx.dataIndex];
+                                    return `${slots[ctx.datasetIndex].label}: ${self.formatValue(field, val ?? "--")}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
         },
 
         buildCompareRow(label, values) {
@@ -4135,6 +4384,16 @@ const app = createApp({
     },
 
     watch: {
+        compareViewMode(mode) {
+            if (mode === "chart" && this.compareData.length > 0) {
+                this.$nextTick(() => this.renderCompareChart());
+            }
+        },
+        compareData() {
+            if (this.compareViewMode === "chart") {
+                this.$nextTick(() => this.renderCompareChart());
+            }
+        },
         filterInput() {
             this.debouncedFilterInput();
         },
@@ -4143,6 +4402,19 @@ const app = createApp({
         },
         exchangeFactionFilter() {
             if (!this._restoringUrl) this.pushUrlState();
+        },
+        buildRadarVisible(visible) {
+            if (visible) {
+                this.$nextTick(() => this.renderBuildWeaponRadar());
+            } else {
+                if (this._buildWeaponRadarChart) { this._buildWeaponRadarChart.destroy(); this._buildWeaponRadarChart = null; }
+            }
+        },
+        buildAllItems: {
+            deep: true,
+            handler() {
+                if (this.buildRadarVisible) this.$nextTick(() => this.renderBuildWeaponRadar());
+            }
         },
         buildPlayerName() {
             if (this.buildPlannerActive && !this._restoringUrl) this.debouncedPushUrl();
