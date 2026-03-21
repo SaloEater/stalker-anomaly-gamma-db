@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Notes — Stalker GAMMA Database</title>
+    <meta name="description" content="Release notes and changelog for the GAMMA Database project.">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="canonical" href="https://stalker-gamma-db.pages.dev/release-notes/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Stalker GAMMA Database">
+    <meta property="og:url" content="https://stalker-gamma-db.pages.dev/release-notes/">
+    <meta property="og:title" content="Release Notes — Stalker GAMMA Database">
+    <meta property="og:description" content="Release notes and changelog for the GAMMA Database project.">
+    <meta property="og:image" content="https://stalker-gamma-db.pages.dev/img/og_logo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="S.T.A.L.K.E.R. GAMMA Database logo">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            overflow: auto;
+        }
+        .rn-page {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .rn-page h1 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .rn-back {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+        .rn-back:hover {
+            color: var(--accent);
+        }
+        .rn-date {
+            color: var(--accent);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .rn-date:first-of-type {
+            margin-top: 0;
+        }
+        .rn-entry {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            padding: 0.6rem 1rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .rn-badge {
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+        .rn-badge-added {
+            color: #4ade80;
+            background: rgba(74, 222, 128, 0.1);
+        }
+        .rn-badge-changed {
+            color: var(--accent);
+            background: rgba(200, 168, 78, 0.1);
+        }
+        .rn-badge-fixed {
+            color: #60a5fa;
+            background: rgba(96, 165, 250, 0.1);
+        }
+        .rn-empty {
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+<div class="rn-page">
+    <a href="../" class="rn-back">&larr; Back to database</a>
+    <h1>Release Notes</h1>
+    <div id="rn-content"><p class="rn-empty">Loading...</p></div>
+</div>
+<script>
+(async () => {
+    const container = document.getElementById("rn-content");
+    try {
+        const res = await fetch("../data/release-notes.json");
+        const releases = await res.json();
+
+        if (!releases.length) {
+            container.innerHTML = '<p class="rn-empty">No release notes yet.</p>';
+            return;
+        }
+
+        // Mark as seen
+        localStorage.setItem("lastSeenReleaseDate", releases[0].date);
+
+        let html = "";
+        for (const release of releases) {
+            const d = new Date(release.date + "T00:00:00");
+            const formatted = d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+            html += `<h2 class="rn-date">${formatted}</h2>`;
+            for (const entry of release.entries) {
+                const badgeClass = "rn-badge-" + entry.type;
+                const label = entry.type.charAt(0).toUpperCase() + entry.type.slice(1);
+                html += `<div class="rn-entry"><span class="rn-badge ${badgeClass}">${label}</span><span>${entry.text}</span></div>`;
+            }
+        }
+        container.innerHTML = html;
+    } catch (e) {
+        container.innerHTML = '<p class="rn-empty">Failed to load release notes.</p>';
+        console.error("Failed to load release notes:", e);
+    }
+})();
+</script>
+</body>
+</html>

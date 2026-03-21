@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-03-21",
+    "entries": [
+      { "type": "added", "text": "Build planner now shows your total carry capacity, combining base carry weight with equipment bonuses." },
+      { "type": "added", "text": "Release notes page with a notification badge when new updates are available." }
+    ]
+  },
+  {
+    "date": "2026-03-20",
+    "entries": [
+      { "type": "added", "text": "Compare equipped items against inventory items in the build planner to see which is better." },
+      { "type": "added", "text": "Build planner for planning and comparing loadouts with combined stats, weight, and protection breakdowns." }
+    ]
+  },
+  {
+    "date": "2026-03-19",
+    "entries": [
+      { "type": "added", "text": "Initial release of Stalker Gamma Database." }
+    ]
+  }
+]

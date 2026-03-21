@@ -790,6 +790,19 @@ a.tile-card-name:hover {
     border-color: var(--accent);
     color: var(--text);
 }
+.release-notes-btn {
+    position: relative;
+    text-decoration: none;
+}
+.release-notes-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+}
 .settings-menu {
     position: absolute;
     top: calc(100% + 0.35rem);

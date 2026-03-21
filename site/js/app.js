@@ -322,6 +322,7 @@ const app = createApp({
             buildPlayerFaction: "stalker",
             buildFactionPickerOpen: false,
             buildPlannerActive: false,
+            hasUnseenReleaseNotes: false,
             buildOutfit: null,
             buildHelmet: null,
             buildBackpack: null,
@@ -3736,6 +3737,17 @@ const app = createApp({
         });
 
         this.$nextTick(() => lucide.createIcons());
+
+        // 8. Check for unseen release notes
+        try {
+            const rnRes = await fetch("data/release-notes.json");
+            const rnData = await rnRes.json();
+            if (rnData.length) {
+                const latest = rnData[0].date;
+                const seen = localStorage.getItem("lastSeenReleaseDate");
+                if (!seen || seen < latest) this.hasUnseenReleaseNotes = true;
+            }
+        } catch (e) { /* ignore */ }
     },
 });
 
