@@ -565,10 +565,13 @@
                             <div class="build-tile-stat build-prot-expandable" :class="{ 'build-prot-low': buildCombinedStats.carryWeight === 0 }" @click="toggleBuildStatExpand('carry')">
                                 <span class="build-prot-chevron" :class="{ 'build-prot-chevron-open': buildExpandedStats.carry }"></span>
                                 <span class="build-tile-label">{{ t('ui_inv_outfit_additional_weight') }}</span>
-                                <span class="build-tile-value">{{ buildStatFormatted('ui_inv_outfit_additional_weight', buildCombinedStats.carryWeight) }}</span>
+                                <span class="build-tile-value">{{ buildStatFormatted('ui_inv_outfit_additional_weight', buildCombinedStats.totalCarryCapacity) }}</span>
                             </div>
                             <div v-if="buildExpandedStats.carry" class="build-stat-breakdown">
-                                <div v-if="buildCombinedStats.carryBreakdown.length === 0" class="build-breakdown-row build-breakdown-none">No items</div>
+                                <div v-if="buildCombinedStats.baseCarryWeight" class="build-breakdown-row">
+                                    <span>{{ t('app_build_base') }}</span><span>{{ buildCombinedStats.baseCarryWeight }} {{ tUnit('ui_inv_outfit_additional_weight') }}</span>
+                                </div>
+                                <div v-if="buildCombinedStats.carryBreakdown.length === 0 && !buildCombinedStats.baseCarryWeight" class="build-breakdown-row build-breakdown-none">No items</div>
                                 <div v-for="b in buildCombinedStats.carryBreakdown" :key="b.name" class="build-breakdown-row">
                                     <span><span class="build-breakdown-dot" :style="{ background: buildSlotColor(b.slot) }"></span>{{ t(b.name) }}</span><span>+{{ b.value }} <span class="build-breakdown-arrow" :class="b.value > 0 ? 'arrow-up' : 'arrow-down'">{{ b.value > 0 ? '\u25B2' : '\u25BC' }}</span></span>
                                 </div>

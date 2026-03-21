@@ -1016,6 +1016,8 @@ const app = createApp({
 
             const { total: totalWeight, breakdown: weightBreakdown, segments: weightSegments } = sumField("st_prop_weight");
             const { total: carryWeight, breakdown: carryBreakdown, segments: carrySegments } = sumField("ui_inv_outfit_additional_weight");
+            const baseCarryWeight = (this.activePack && this.activePack.baseCarryWeight) || 0;
+            const totalCarryCapacity = baseCarryWeight + carryWeight;
             const { total: armorPoints, breakdown: armorBreakdown, segments: armorSegments } = sumField("ui_inv_ap_res", s => s === "outfit" || s === "helmet");
 
             // Speed (outfit-only)
@@ -1029,7 +1031,7 @@ const app = createApp({
             for (const f of PROTECTION_FIELDS) sortDesc(protections[f].breakdown);
             for (const f of RESTORATION_FIELDS) sortDesc(restorations[f].breakdown);
 
-            return { protections, restorations, totalWeight, weightBreakdown, weightSegments, carryWeight, carryBreakdown, carrySegments, armorPoints, armorBreakdown, armorSegments, speed };
+            return { protections, restorations, totalWeight, weightBreakdown, weightSegments, carryWeight, carryBreakdown, carrySegments, baseCarryWeight, totalCarryCapacity, armorPoints, armorBreakdown, armorSegments, speed };
         },
 
         factionList() { return FACTION_LIST.map(id => ({ id, label: this.t(id) || id })); },
