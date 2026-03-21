@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-03-22",
+    "entries": [
+      { "type": "added", "text": "Radar chart view in the Compare modal — visually compare pinned items across all stats." },
+      { "type": "added", "text": "Weapon Chart in the build planner — overlay all your equipped weapons on a radar chart to compare stats at a glance." },
+      { "type": "added", "text": "Collapsible loadout section — hide your equipped gear to focus on stats, with a one-line summary of your build." },
+      { "type": "added", "text": "Bonus belt slots for tracking outfit upgrades, saved with your build." }
+    ]
+  },
+  {
     "date": "2026-03-21",
     "entries": [
       { "type": "added", "text": "Weapon slots in the build planner: primary, secondary, sidearm (pistol/knife), and grenade with ammo selection and combined weapon stats." },
