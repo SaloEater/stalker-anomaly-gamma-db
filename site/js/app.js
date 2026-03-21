@@ -2871,6 +2871,7 @@ const app = createApp({
         },
 
         closeBuildPicker() {
+            this.hideBuildHover();
             this.buildPickerOpen = false;
             this.buildPickerSlot = null;
             this.buildPickerQuery = "";

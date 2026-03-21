@@ -1136,7 +1136,7 @@
                 <input type="text" v-model="buildPickerQuery" :placeholder="t('app_label_filter_placeholder')" class="build-picker-input" ref="buildPickerInput">
             </div>
             <div class="build-picker-list">
-                <div v-for="item in buildPickerItems" :key="item.id" class="build-picker-item" @click="selectBuildItem(item)">
+                <div v-for="item in buildPickerItems" :key="item.id" class="build-picker-item" @click="selectBuildItem(item)" @mouseenter="showBuildHover(item, $event)" @mousemove="moveBuildHover($event)" @mouseleave="hideBuildHover()">
                     <span class="build-picker-item-name">{{ tName(item) }}</span>
                     <span v-if="buildPickerSlot && (buildPickerSlot.type === 'inventory' || buildPickerSlot.type === 'belt')" class="build-picker-item-type" :class="'build-picker-type-' + getItemSlotType(item)">{{ inventorySlotTypeLabel(getItemSlotType(item)) }}</span>
                     <span class="build-picker-item-weight">{{ formatValue('st_prop_weight', item['st_prop_weight']) }}</span>
