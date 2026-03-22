@@ -219,8 +219,8 @@ a:hover {
     padding: 0.1rem 0.35rem;
     margin-left: 0.4rem;
     border-radius: 3px;
-    background: rgba(234, 179, 8, 0.15);
-    color: #eab308;
+    background: rgba(255, 255, 255, 0.1);
+    color: #999;
     vertical-align: middle;
     line-height: 1;
 }
@@ -519,18 +519,6 @@ button.header-link {
     flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.sidebar-preview-badge {
-    font-size: 0.45rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    padding: 0.05rem 0.3rem;
-    border-radius: 2px;
-    background: rgba(220, 80, 70, 0.2);
-    color: #dc5046;
-    flex-shrink: 0;
-    margin-left: 0.3rem;
 }
 .cat-count {
     flex-shrink: 0;

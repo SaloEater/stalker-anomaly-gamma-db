@@ -13,7 +13,8 @@
     {
       "id": "anomaly-1.5.3",
       "name": "Anomaly 1.5.3",
-      "status": "preview",
+      "status": "experimental",
+      "statusColor": "#3b82f6",
       "baseCarryWeight": 33,
       "links": [
         { "url": "https://discord.com/invite/c4RuJNs", "icon": "discord", "label": "Discord" },
