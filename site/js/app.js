@@ -284,6 +284,7 @@ const app = createApp({
             categoryHeaders: {},
             categoryFuse: {},
             globalQuery: "",
+            lastGlobalQuery: "",
             searchFocused: false,
             globalResults: [],
             filterQuery: "",
@@ -3393,6 +3394,7 @@ const app = createApp({
         },
 
         clearGlobalQuery() {
+            if (this.globalQuery.trim()) this.lastGlobalQuery = this.globalQuery;
             this.globalQuery = "";
         },
 
@@ -4693,7 +4695,14 @@ const app = createApp({
             if ((e.ctrlKey || e.metaKey) && e.key === KEYS.SEARCH_MOD) {
                 e.preventDefault();
                 const input = document.querySelector('.global-search input');
-                if (input) input.focus();
+                if (input) {
+                    if (!this.globalQuery && this.lastGlobalQuery) {
+                        this.globalQuery = this.lastGlobalQuery;
+                        this.globalSearch();
+                    }
+                    input.focus();
+                    this.$nextTick(() => input.select());
+                }
                 return;
             }
 
@@ -4736,7 +4745,14 @@ const app = createApp({
             if (e.key === KEYS.SEARCH) {
                 e.preventDefault();
                 const input = document.querySelector('.global-search input');
-                if (input) input.focus();
+                if (input) {
+                    if (!this.globalQuery && this.lastGlobalQuery) {
+                        this.globalQuery = this.lastGlobalQuery;
+                        this.globalSearch();
+                    }
+                    input.focus();
+                    this.$nextTick(() => input.select());
+                }
                 return;
             }
             if (e.key === KEYS.TOGGLE_VIEW && !this.buildPlannerActive) {

@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Anomaly 1.5.3 mod pack support with 798 items across 16 categories
 - Pack selector popup menu for switching between mod packs
 - Pack status badges for marking packs as preview, beta, etc.
+- Global search recalls your last query when reopened with `/` or Ctrl+K
 
 ### Changed
 

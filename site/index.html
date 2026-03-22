@@ -95,12 +95,12 @@
             type="text"
             v-model="globalQuery"
             @input="debouncedGlobalSearch()"
-            @keydown.escape.stop="globalQuery = ''"
+            @keydown.escape.stop="if (globalQuery.trim()) lastGlobalQuery = globalQuery; globalQuery = ''"
             @focus="searchFocused = true"
             @blur="searchFocused = false"
         >
         <div class="search-dropdown" v-show="globalQuery.trim()">
-            <a v-for="item in globalResults" :key="item.id" href="#" @click.prevent="globalQuery = ''; navigateToItem(item.id)">
+            <a v-for="item in globalResults" :key="item.id" href="#" @click.prevent="lastGlobalQuery = globalQuery; globalQuery = ''; navigateToItem(item.id)">
                 <span>{{ tName(item) }}<template v-if="!tName(item).includes('[')"> <small class="search-id-hint">[{{ item.id }}]</small></template></span>
                 <span class="search-cat-badge">{{ tCat(item.category) }}</span>
             </a>
