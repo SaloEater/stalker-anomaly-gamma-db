@@ -498,7 +498,7 @@
                         <h3 class="build-stats-title" style="margin-bottom:0">{{ t('app_build_loadout') || 'Loadout' }}</h3>
                         <div class="build-loadout-header-actions">
                             <button v-if="buildOutfit && buildBeltSlotBonus > 0" class="build-expand-all-btn" @click="buildBeltSlotBonus = Math.max(0, buildBeltSlotBonus - 1)"><i data-lucide="minus" width="10" height="10"></i> {{ t('app_build_remove_slot') }}</button>
-                            <button v-if="buildOutfit && buildBeltSlotMax < 12" class="build-expand-all-btn" @click="buildBeltSlotBonus++"><i data-lucide="plus" width="10" height="10"></i> {{ t('app_build_add_slot') }}</button>
+                            <button v-if="buildOutfit && buildBeltSlotMax < 6" class="build-expand-all-btn" @click="buildBeltSlotBonus++"><i data-lucide="plus" width="10" height="10"></i> {{ t('app_build_add_slot') }}</button>
                             <button class="build-expand-all-btn" @click="buildLoadoutCollapsed = !buildLoadoutCollapsed">{{ buildLoadoutCollapsed ? t('app_build_show_loadout') : t('app_build_hide_loadout') }}</button>
                         </div>
                     </div>

@@ -989,7 +989,7 @@ const app = createApp({
         buildBeltSlotMax() {
             if (!this.buildOutfit) return 0;
             const base = parseInt(this.buildOutfit["st_data_export_outfit_artefact_count_max"]) || 0;
-            return Math.min(base + this.buildBeltSlotBonus, 12);
+            return Math.min(base + this.buildBeltSlotBonus, 6);
         },
 
         buildBeltSlotUsed() {
