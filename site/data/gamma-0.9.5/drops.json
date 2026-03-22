@@ -1,0 +1,7711 @@
+{
+  "wpn_sks_b": {
+    "Military": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Veteran"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_toz106_m1": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_vz61": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_toz106": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ]
+  },
+  "wpn_desert_eagle": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ]
+  },
+  "wpn_spas12": {
+    "Clear Sky": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sr25": {
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "RG6 squad",
+      "Sniper squad"
+    ]
+  },
+  "wpn_sr1m": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_m249": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_vintorez_isg": {
+    "Sin": [
+      "Legend"
+    ],
+    "UNISG": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_ak105": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_usp_tac_45": {
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ithacam37_mag": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_p90gamma": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_m98b": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_g36v_rwap": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_adar2_15": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_korth_custom": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ]
+  },
+  "wpn_dvl10": {
+    "Military": [
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_aek": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_k98_mod": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ks23_kaban": {
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_spas12_custom": {
+    "UNISG": [
+      "Blackops squad"
+    ]
+  },
+  "wpn_xm4": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_svu": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_walther_p99": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_l96a1m": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fn2000_nimble": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_ak74u_tac": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "grenade_f1": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Sin": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_scar_siber": {
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_bizon": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_k98": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_brn180": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_p90": {
+    "UNISG": [
+      "Blackops squad"
+    ]
+  },
+  "wpn_ksg23": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_beretta_camo": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ]
+  },
+  "wpn_rpk74_16_drum": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_pl15_tan": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_ak74": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_p90_gs": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_rpk": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sv98": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fnx45_custom": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ]
+  },
+  "wpn_pm_custom": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_groza_nimble": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sr2_veresk": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_winchester1873": {
+    "Clear Sky": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sr2_m1": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_glock_modern": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_toz34": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_toz34_mark4_23": {
+    "Military": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_mp5sd": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_raptr": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Legend"
+    ],
+    "UNISG": [
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_vintorez_n1": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_svds": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_colt1911_camo": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_benelli_m1014": {
+    "Clear Sky": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ks23": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Veteran",
+      "Expert",
+      "Master"
+    ],
+    "Free Stalkers": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sig550": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_mp412": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sig220_n_upg220": {
+    "UNISG": [
+      "Blackops squad"
+    ]
+  },
+  "wpn_mk47": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_aug_freedom": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_g36ka4_rwap": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_remington700": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_rpk74_16": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_pb": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_eft_rsh12": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_gauss": {
+    "UNISG": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_sks_molot": {
+    "Military": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_saiga12s_m1": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_howa20": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_dvl10_m1": {
+    "Military": [
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_9a91": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_mp5": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_mp7": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Blackops squad"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sig220_n": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Blackops squad"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_akm_alfa": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_aug": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "bolt": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak74_pmc": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ithacam37_stakeout_20x70": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_ak74u_m1_isg": {
+    "Sin": [
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ump45_custom": {
+    "Clear Sky": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Blackops squad"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_rpg7": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak74m_beard": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_akms_alt": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_remington700_magpul_pro": {
+    "Clear Sky": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad",
+      "Gauss squad",
+      "RG6 squad"
+    ]
+  },
+  "wpn_tt33_modern": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_vityaz": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "SSU"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_akm_isg": {
+    "Sin": [
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_l85_m2": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_wincheaster1300": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_kriss_vector": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_ak74_isg": {
+    "Sin": [
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_colt1911_anarchy": {
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_svd_m1": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_toz34_obrez": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_saiga12s_isg": {
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Legend"
+    ],
+    "UNISG": [
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_ak74m": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_remington700_lapua700": {
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend",
+      "Sniper squad",
+      "Gauss squad",
+      "RG6 squad"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_pkm_siber": {
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_m45a1": {
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fort": {
+    "Duty": [
+      "Experienced",
+      "Professional"
+    ]
+  },
+  "wpn_pkp_siber": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak12_m1": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sig226": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "grenade_rgd5": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Sin": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_m4a1_siber": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_protecta": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_mp5_nimble": {
+    "Clear Sky": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_glock17_m1": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fnp45": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fn57": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Blackops squad"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_saiga12s_m2": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_m4_tac": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Blackops squad"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_thompson_1921": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_colt1911_n": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ]
+  },
+  "wpn_colt1911_custom": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ]
+  },
+  "wpn_ash12": {
+    "Military": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Duty": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak74u": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_pp2000": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "SSU"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_remington870": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fal_aus": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak5c_bas": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_glock": {
+    "Clear Sky": [
+      "Rookie"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_aug_merc": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak104_alfa": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_val": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_udp9": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional"
+    ]
+  },
+  "wpn_ace52": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_vssk": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_bm16_full": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_mp155": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak105_swamp": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_mosin": {
+    "Military": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_rpd": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "grenade_gd-05": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Sin": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_svds_pmc": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_aps": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_bm16": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_vihr": {
+    "Military": [
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_mp9": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_groza": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fort17": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  },
+  "wpn_mossberg590_rail": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_mp443": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_dtmdr_black": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_oc33": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "SSU",
+      "Sniper squad"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Clear Sky": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend",
+      "Gauss squad",
+      "Sniper squad",
+      "RG6 squad"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee"
+    ]
+  },
+  "wpn_ak103": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_kiparis": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_fal_sa58_osw": {
+    "Clear Sky": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ak101": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Bandit": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Renegade": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_sig550_custom": {
+    "Clear Sky": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ithacam37_trench": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_abakan_n": {
+    "Military": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Bandit": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Renegade": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_thompson_m1a1": {
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional"
+    ],
+    "Freedom": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Mercenary": [
+      "Rookie",
+      "Trainee"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_m4_ru556": {
+    "Clear Sky": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Master",
+      "Legend"
+    ],
+    "UNISG": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ]
+  },
+  "wpn_steyr_scout_big": {
+    "Clear Sky": [
+      "Rookie",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Freedom": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Mercenary": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Zombified": [
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_amb17": {
+    "Military": [
+      "Master",
+      "Legend"
+    ],
+    "Duty": [
+      "Master",
+      "Legend"
+    ],
+    "Ecologist": [
+      "Master",
+      "Legend"
+    ],
+    "Sin": [
+      "Legend"
+    ],
+    "UNISG": [
+      "Veteran",
+      "Expert",
+      "Master",
+      "Legend"
+    ],
+    "Monolith": [
+      "Legend"
+    ],
+    "Free Stalkers": [
+      "Master",
+      "Legend"
+    ]
+  },
+  "wpn_ppsh41": {
+    "Military": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Bandit": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ],
+    "Clear Sky": [
+      "Trainee"
+    ],
+    "Duty": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Ecologist": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Renegade": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional"
+    ],
+    "Free Stalkers": [
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Veteran"
+    ],
+    "Zombified": [
+      "Any",
+      "Rookie",
+      "Trainee",
+      "Experienced",
+      "Professional",
+      "Veteran",
+      "Expert"
+    ]
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "7.62x54": {
+    "name": "7.62x54",
+    "variants": [
+      {
+        "id": "ammo_7.62x54_7h1",
+        "displayName": "7.62x54  7N1",
+        "apClass": 4,
+        "apValue": 30
+      },
+      {
+        "id": "ammo_7.62x54_ap",
+        "displayName": "7.62x54  AP",
+        "apClass": 7,
+        "apValue": 80
+      },
+      {
+        "id": "ammo_7.62x54_7h14",
+        "displayName": "7.62x54  7N14",
+        "apClass": 5,
+        "apValue": 45
+      }
+    ]
+  },
+  "20x70": {
+    "name": "20x70",
+    "variants": [
+      {
+        "id": "ammo_20x70_buck",
+        "displayName": "20x70 buckshot",
+        "apClass": 1,
+        "apValue": 3
+      }
+    ]
+  },
+  "5.56x45": {
+    "name": "5.56x45",
+    "variants": [
+      {
+        "id": "ammo_5.56x45_fmj",
+        "displayName": "5.56x45  FMJ",
+        "apClass": 3,
+        "apValue": 29
+      },
+      {
+        "id": "ammo_5.56x45_ss190",
+        "displayName": "5.56x45  HP",
+        "apClass": 2,
+        "apValue": 13
+      },
+      {
+        "id": "ammo_5.56x45_ap",
+        "displayName": "5.56x45  AP",
+        "apClass": 6,
+        "apValue": 52
+      }
+    ]
+  },
+  "7.62x51": {
+    "name": "7.62x51",
+    "variants": [
+      {
+        "id": "ammo_7.62x51_ap",
+        "displayName": "7.62x51  NATO AP",
+        "apClass": 7,
+        "apValue": 62
+      },
+      {
+        "id": "ammo_7.62x51_fmj",
+        "displayName": "7.62x51  NATO ball",
+        "apClass": 4,
+        "apValue": 34
+      }
+    ]
+  },
+  "7.62x39": {
+    "name": "7.62x39",
+    "variants": [
+      {
+        "id": "ammo_7.62x39_ap",
+        "displayName": "7.62x39  M43",
+        "apClass": 7,
+        "apValue": 55
+      },
+      {
+        "id": "ammo_7.62x39_fmj",
+        "displayName": "7.62x39  FMJ",
+        "apClass": 4,
+        "apValue": 30
+      }
+    ]
+  },
+  "12x76": {
+    "name": "12x76",
+    "variants": [
+      {
+        "id": "ammo_12x76_zhekan",
+        "displayName": "12x76 slug",
+        "apClass": 3,
+        "apValue": 24
+      },
+      {
+        "id": "ammo_12x76_dart",
+        "displayName": "12x76 AP slugs",
+        "apClass": 5,
+        "apValue": 42
+      },
+      {
+        "id": "ammo_12x76_bull",
+        "displayName": "12x76 Bull",
+        "apClass": 5,
+        "apValue": 40
+      }
+    ]
+  },
+  "4.6x30": {
+    "name": "4.6x30",
+    "variants": [
+      {
+        "id": "ammo_4.6x30_fmj",
+        "displayName": "4.6x30  FMJ",
+        "apClass": 3,
+        "apValue": 25
+      }
+    ]
+  },
+  "7.62x25": {
+    "name": "7.62x25",
+    "variants": [
+      {
+        "id": "ammo_7.62x25_ps",
+        "displayName": "7.62x25  Pst",
+        "apClass": 3,
+        "apValue": 25
+      },
+      {
+        "id": "ammo_7.62x25_p",
+        "displayName": "7.62x25  LRNPC",
+        "apClass": 1,
+        "apValue": 8
+      }
+    ]
+  },
+  "5.7x28": {
+    "name": "5.7x28",
+    "variants": [
+      {
+        "id": "ammo_5.7x28_ss190",
+        "displayName": "5.7x28 SS190",
+        "apClass": 5,
+        "apValue": 40
+      },
+      {
+        "id": "ammo_5.7x28_ss195",
+        "displayName": "5.7x28  SS195",
+        "apClass": 3,
+        "apValue": 25
+      }
+    ]
+  },
+  "9x19": {
+    "name": "9x19",
+    "variants": [
+      {
+        "id": "ammo_9x19_ap",
+        "displayName": "9x19  AP",
+        "apClass": 4,
+        "apValue": 34
+      },
+      {
+        "id": "ammo_9x19_pbp",
+        "displayName": "9x19  HP",
+        "apClass": 1,
+        "apValue": 10
+      },
+      {
+        "id": "ammo_9x19_fmj",
+        "displayName": "9x19  FMJ",
+        "apClass": 2,
+        "apValue": 17
+      }
+    ]
+  },
+  "12.7x55": {
+    "name": "12.7x55",
+    "variants": [
+      {
+        "id": "ammo_12.7x55_fmj",
+        "displayName": "12.7x55 STs-130",
+        "apClass": 4,
+        "apValue": 38
+      },
+      {
+        "id": "ammo_12.7x55_ap",
+        "displayName": "12.7x55  STs-130 VPS",
+        "apClass": 7,
+        "apValue": 75
+      }
+    ]
+  },
+  "5.45x39": {
+    "name": "5.45x39",
+    "variants": [
+      {
+        "id": "ammo_5.45x39_fmj",
+        "displayName": "5.45x39  FMJ",
+        "apClass": 3,
+        "apValue": 27
+      },
+      {
+        "id": "ammo_5.45x39_ep",
+        "displayName": "5.45x39  HP",
+        "apClass": 1,
+        "apValue": 10
+      },
+      {
+        "id": "ammo_5.45x39_ap",
+        "displayName": "5.45x39  AP",
+        "apClass": 6,
+        "apValue": 47
+      }
+    ]
+  },
+  "23x75": {
+    "name": "23x75",
+    "variants": [
+      {
+        "id": "ammo_23x75_barrikada",
+        "displayName": "Barrikada 23x75",
+        "apClass": 6,
+        "apValue": 54
+      },
+      {
+        "id": "ammo_23x75_shrapnel",
+        "displayName": "Shrapnel-25 23x75",
+        "apClass": 1,
+        "apValue": 6
+      }
+    ]
+  },
+  "7.92x33": {
+    "name": "7.92x33",
+    "variants": [
+      {
+        "id": "ammo_7.92x33_fmj",
+        "displayName": "7.92x57  FMJ",
+        "apClass": 3,
+        "apValue": 27
+      },
+      {
+        "id": "ammo_7.92x33_ap",
+        "displayName": "7.92x57  AP",
+        "apClass": 5,
+        "apValue": 39
+      }
+    ]
+  },
+  "11.43x23": {
+    "name": "11.43x23",
+    "variants": [
+      {
+        "id": "ammo_11.43x23_fmj",
+        "displayName": ".45 ACP FMJ",
+        "apClass": 3,
+        "apValue": 20
+      },
+      {
+        "id": "ammo_11.43x23_hydro",
+        "displayName": ".45 ACP Hydra-shock HP",
+        "apClass": 1,
+        "apValue": 10
+      }
+    ]
+  },
+  "9x21": {
+    "name": "9x21",
+    "variants": [
+      {
+        "id": "ammo_9x21_sp10",
+        "displayName": "9x21  SP10",
+        "apClass": 4,
+        "apValue": 32
+      }
+    ]
+  },
+  "12x70": {
+    "name": "12x70",
+    "variants": [
+      {
+        "id": "ammo_12x70_buck_self",
+        "displayName": "Home-made 12x70 shot",
+        "apClass": 1,
+        "apValue": 3
+      },
+      {
+        "id": "ammo_12x70_buck",
+        "displayName": "12x70 buckshot",
+        "apClass": 1,
+        "apValue": 3
+      }
+    ]
+  },
+  "9x39": {
+    "name": "9x39",
+    "variants": [
+      {
+        "id": "ammo_9x39_pab9",
+        "displayName": "9x39  SP-5",
+        "apClass": 4,
+        "apValue": 34
+      },
+      {
+        "id": "ammo_9x39_ap",
+        "displayName": "9x39  SP-6",
+        "apClass": 7,
+        "apValue": 55
+      }
+    ]
+  },
+  "9x18": {
+    "name": "9x18",
+    "variants": [
+      {
+        "id": "ammo_9x18_fmj",
+        "displayName": "9x18  FMJ",
+        "apClass": 2,
+        "apValue": 15
+      },
+      {
+        "id": "ammo_9x18_pmm",
+        "displayName": "9x18  HP",
+        "apClass": 1,
+        "apValue": 10
+      },
+      {
+        "id": "ammo_9x18_ap",
+        "displayName": "9x18  AP",
+        "apClass": 3,
+        "apValue": 27
+      }
+    ]
+  }
+}

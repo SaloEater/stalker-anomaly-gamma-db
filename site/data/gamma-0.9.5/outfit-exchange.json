@@ -1,0 +1,1665 @@
+{
+  "factions": [
+    "Military",
+    "Bandit",
+    "Clear Sky",
+    "Duty",
+    "Ecologist",
+    "Freedom",
+    "Sin",
+    "UNISG",
+    "Mercenary",
+    "Monolith",
+    "Renegade",
+    "Free Stalkers"
+  ],
+  "exchanges": [
+    {
+      "name": "Ghillie Suit",
+      "sourceFaction": "Unknown",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Heavy Brown Overcoat",
+      "sourceFaction": "Unknown",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Heavy Green Overcoat",
+      "sourceFaction": "Unknown",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Overcoat",
+      "sourceFaction": "Unknown",
+      "results": {
+        "Renegade": "Renegade LC Suit"
+      }
+    },
+    {
+      "name": "Woodland Exosuit",
+      "sourceFaction": "Unknown",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Military Stalker Exoskeleton",
+      "sourceFaction": "Military",
+      "results": {
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "Military Stalker Exosuit",
+      "sourceFaction": "Military",
+      "results": {
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Military Stalker Nosorog",
+      "sourceFaction": "Military",
+      "results": {
+        "Duty": "PSZ-10d Nosorog",
+        "Freedom": "Champion of Freedom",
+        "UNISG": "UNISG Nosorog",
+        "Mercenary": "Mercenary Nosorog",
+        "Monolith": "Monolith Nosorog"
+      }
+    },
+    {
+      "name": "Skat-9 Armored Suit",
+      "sourceFaction": "Military",
+      "results": {
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Duty": "PSZ-9kl Command Armor",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "Sunset Tactical Suit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Fenced LC Suit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Clear Sky": "CS-2a Body Armor",
+        "Mercenary": "Mercenary LC-S Suit",
+        "Free Stalkers": "Salamander Stalker Suit"
+      }
+    },
+    {
+      "name": "Fenced PS5-M Universal Protection Suit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Load-bearing 'Sunset' Tactical Suit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Looted Exosuit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Looted SEVA Suit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Looted Skat-9 Armored Suit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Duty": "PSZ-9kl Command Armor",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "Patchwork Anomaly Suit",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Stolen Exoskeleton",
+      "sourceFaction": "Bandit",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "CS-1 Body Armor",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Mercenary": "Mercenary LC-S Suit",
+        "Free Stalkers": "Salamander Stalker Suit"
+      }
+    },
+    {
+      "name": "CS-2a Body Armor",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Mercenary": "Mercenary LC-S Suit",
+        "Free Stalkers": "Salamander Stalker Suit"
+      }
+    },
+    {
+      "name": "CS-2b Body Armor",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "CS-2t Suit",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "CS-4a SEVA Suit",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "CS-4b Armored Suit",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Duty": "PSZ-9kl Command Armor",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "CS-5 Exoskeleton",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "CS-5 Exosuit",
+      "sourceFaction": "Clear Sky",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Heavy Duty Overcoat",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "PS5-9Md Light Pathfinder",
+      "sourceFaction": "Duty",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "PS5-9Md Light Scientific Suit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "PS5-9Md Universal Scientific Suit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "PS5-M Hunter Suit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "PS5-M Universal Protection Suit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "PS5-Mt Suit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "PS5-R Scout Vest",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "PSZ-10d Duty Battlesuit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "PSZ-10d Duty Battlesuit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "PSZ-10d Exoskeleton",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "PSZ-10d Nosorog",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Military Stalker Nosorog",
+        "Freedom": "Champion of Freedom",
+        "UNISG": "UNISG Nosorog",
+        "Mercenary": "Mercenary Nosorog",
+        "Monolith": "Monolith Nosorog"
+      }
+    },
+    {
+      "name": "PSZ-10d Venator Battlesuit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "PSZ-10g Urban Battlesuit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "PSZ-10l Forest Battlesuit",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "PSZ-7p Shell Armor",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "PSZ-9d Body Armor",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "PSZ-9kl Command Armor",
+      "sourceFaction": "Duty",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "ISRIT Guard Jumpsuit",
+      "sourceFaction": "Ecologist",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Scientific Exoskeleton",
+      "sourceFaction": "Ecologist",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "Champion of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Military Stalker Nosorog",
+        "Duty": "PSZ-10d Nosorog",
+        "UNISG": "UNISG Nosorog",
+        "Mercenary": "Mercenary Nosorog",
+        "Monolith": "Monolith Nosorog"
+      }
+    },
+    {
+      "name": "Heavy Freedom Overcoat",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Hero of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Keeper of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Liberated Skat-9 Armored Suit",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Duty": "PSZ-9kl Command Armor",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "Paragon of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "Sentinel of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Warrior of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Watchman of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Wind of Freedom",
+      "sourceFaction": "Freedom",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Irij Flak Armor",
+      "sourceFaction": "Sin",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Sin Heavy Overcoat",
+      "sourceFaction": "Sin",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Volos Flak Armor",
+      "sourceFaction": "Sin",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Vyraj Power Armor",
+      "sourceFaction": "Sin",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "Vyriy Flak Armor",
+      "sourceFaction": "Sin",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "UNISG Exoskeleton",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "UNISG Exosuit",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "UNISG LC Suit",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "UNISG LC-C Suit",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Clear Sky": "CS-2a Body Armor",
+        "Mercenary": "Mercenary LC-S Suit",
+        "Free Stalkers": "Salamander Stalker Suit"
+      }
+    },
+    {
+      "name": "UNISG LC-UC Suit",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "UNISG Mk1 Tactical Body Armor",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "UNISG Mk2 Tactical Body Armor",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "UNISG Nosorog",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Military": "Military Stalker Nosorog",
+        "Duty": "PSZ-10d Nosorog",
+        "Freedom": "Champion of Freedom",
+        "Mercenary": "Mercenary Nosorog",
+        "Monolith": "Monolith Nosorog"
+      }
+    },
+    {
+      "name": "UNISG SEVA Suit",
+      "sourceFaction": "UNISG",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Twilight Tactical Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Load-bearing 'Twilight' Tactical Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary Exoskeleton",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "Mercenary Exosuit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Mercenary Grassland Exosuit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Mercenary LC Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary LC-F Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Clear Sky": "CS-2a Body Armor",
+        "Free Stalkers": "Salamander Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary LC-S Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Clear Sky": "CS-2a Body Armor",
+        "Free Stalkers": "Salamander Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary LCz Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary LTS-J Body Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary MTS-C Body Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary Nosorog",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Military Stalker Nosorog",
+        "Duty": "PSZ-10d Nosorog",
+        "Freedom": "Champion of Freedom",
+        "UNISG": "UNISG Nosorog",
+        "Monolith": "Monolith Nosorog"
+      }
+    },
+    {
+      "name": "Mercenary SEVA Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Mercenary STS-W Body Armor",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Clear Sky": "CS-2a Body Armor",
+        "Free Stalkers": "Salamander Stalker Suit"
+      }
+    },
+    {
+      "name": "Mercenary Skat-9 Armored Suit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Duty": "PSZ-9kl Command Armor",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Monolith": "Monolith Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "Mercenary Urban Exosuit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Mercenary Woodland Exosuit",
+      "sourceFaction": "Mercenary",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Monolith": "Monolith Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Monolith Exoskeleton",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Renegade": "Renegade Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "Monolith Exosuit",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Free Stalkers": "Exosuit"
+      }
+    },
+    {
+      "name": "Monolith Nosorog",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Military": "Military Stalker Nosorog",
+        "Duty": "PSZ-10d Nosorog",
+        "Freedom": "Champion of Freedom",
+        "UNISG": "UNISG Nosorog",
+        "Mercenary": "Mercenary Nosorog"
+      }
+    },
+    {
+      "name": "Monolith Overcoat",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Monolith Patchwork Science Suit",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Monolith Scientific Suit",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Renegade": "Renegade SEVA Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Monolith Skat-9 Armored Suit",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Military": "Skat-9 Armored Suit",
+        "Bandit": "Looted Skat-9 Armored Suit",
+        "Clear Sky": "CS-4b Armored Suit",
+        "Duty": "PSZ-9kl Command Armor",
+        "Freedom": "Liberated Skat-9 Armored Suit",
+        "UNISG": "UNISG IBAz Suit",
+        "Mercenary": "Mercenary Skat-9 Armored Suit"
+      }
+    },
+    {
+      "name": "Monolith X-18 Suit",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Tactical Monolith Suit",
+      "sourceFaction": "Monolith",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Renegade": "Renegade LC Suit",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Renegade Exoskeleton",
+      "sourceFaction": "Renegade",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Free Stalkers": "Exoskeleton"
+      }
+    },
+    {
+      "name": "Renegade LC Suit",
+      "sourceFaction": "Renegade",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Free Stalkers": "Drought Stalker Suit"
+      }
+    },
+    {
+      "name": "Renegade SEVA Suit",
+      "sourceFaction": "Renegade",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Free Stalkers": "SEVA Bodysuit"
+      }
+    },
+    {
+      "name": "Autumn Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Clear Sky": "CS-2a Body Armor",
+        "Mercenary": "Mercenary LC-S Suit"
+      }
+    },
+    {
+      "name": "Bear Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit"
+      }
+    },
+    {
+      "name": "Drought Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit"
+      }
+    },
+    {
+      "name": "Graphite Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit"
+      }
+    },
+    {
+      "name": "Salamander Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Clear Sky": "CS-2a Body Armor",
+        "Mercenary": "Mercenary LC-S Suit"
+      }
+    },
+    {
+      "name": "Sunrise Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Bandit": "Fenced LC Suit",
+        "Clear Sky": "CS-2a Body Armor",
+        "Mercenary": "Mercenary LC-S Suit"
+      }
+    },
+    {
+      "name": "Tigerstripe Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit"
+      }
+    },
+    {
+      "name": "Voyager Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit"
+      }
+    },
+    {
+      "name": "Exoskeleton",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Military Stalker Exoskeleton",
+        "Bandit": "Stolen Exoskeleton",
+        "Clear Sky": "CS-5 Exoskeleton",
+        "Duty": "PSZ-10d Exoskeleton",
+        "Ecologist": "Scientific Exoskeleton",
+        "Freedom": "Paragon of Freedom",
+        "Sin": "Vyraj Power Armor",
+        "UNISG": "UNISG Exoskeleton",
+        "Mercenary": "Mercenary Exoskeleton",
+        "Monolith": "Monolith Exoskeleton",
+        "Renegade": "Renegade Exoskeleton"
+      }
+    },
+    {
+      "name": "Exosuit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Military Stalker Exosuit",
+        "Bandit": "Looted Exosuit",
+        "Clear Sky": "CS-5 Exosuit",
+        "Duty": "PSZ-10d Duty Battlesuit",
+        "Freedom": "Warrior of Freedom",
+        "UNISG": "UNISG Exosuit",
+        "Mercenary": "Mercenary Grassland Exosuit",
+        "Monolith": "Monolith Exosuit"
+      }
+    },
+    {
+      "name": "SEVA Bodysuit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Bandit": "Looted SEVA Suit",
+        "Clear Sky": "CS-4a SEVA Suit",
+        "Duty": "PS5-9Md Universal Scientific Suit",
+        "Ecologist": "SSP-99M Bodysuit",
+        "Freedom": "Watchman of Freedom",
+        "UNISG": "UNISG SEVA Suit",
+        "Mercenary": "Mercenary SEVA Suit",
+        "Monolith": "Monolith Patchwork Science Suit",
+        "Renegade": "Renegade SEVA Suit"
+      }
+    },
+    {
+      "name": "Tactical Stalker Suit",
+      "sourceFaction": "Free Stalkers",
+      "results": {
+        "Military": "Berill-5M Armored Suit",
+        "Bandit": "Deserter's B-5M Armored Suit",
+        "Clear Sky": "CS-2b Body Armor",
+        "Duty": "PS5-M Universal Protection Suit",
+        "Ecologist": "ISRIT Guard Jumpsuit",
+        "Freedom": "Guardian of Freedom",
+        "Sin": "Vyriy Flak Armor",
+        "UNISG": "UNISG Mk2 Tactical Body Armor",
+        "Mercenary": "Mercenary LTS-J Body Suit",
+        "Monolith": "Monolith Overcoat",
+        "Renegade": "Renegade LC Suit"
+      }
+    }
+  ]
+}

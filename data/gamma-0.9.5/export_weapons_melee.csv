@@ -1,0 +1,12 @@
+~, Name, Weight, Cost, Light Attack Power, Heavy Attack Power, BR, Max Range, Cuts thick skin, Minimum pelts quality, Maximum pelts quality
+wpn_axe3,Sledgehammer,8,18500,120,170,45,9,N,,
+wpn_knife8,Kukri,0.7,30585,65,117,35,5.5,Y,75%,98%
+wpn_knife7,Monolith Blade,0.7,35585,65,117,35,5.5,Y,75%,98%
+wpn_knife5,M9 Bayonet,0.279,15585,48,87,35,5.5,Y,65%,85%
+wpn_knife,6h4 Bayonet,0.182,1000,30.5,52.5,10,5.5,N,25%,40%
+wpn_knife3,Hunting Knife,0.302,6825,42,71,23.5,5.5,Y,45%,60%
+wpn_knife6,OTs-4 Combat Knife,0.3,20585,52,97,35,5.5,Y,75%,98%
+wpn_knife4,Spetsnaz Switchblade,0.366,12425,54,78,35,5.5,Y,55%,70%
+wpn_knife2,NR-40 Scout Knife,0.263,3960,45,55,18,5.5,N,35%,50%
+wpn_knife9,Gerber Tomahawk,1.861,33585,90,137,35,5.5,Y,,
+wpn_axe,Hunting Axe,4.8,7850,120,170,23.5,9,N,,

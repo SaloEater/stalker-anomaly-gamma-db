@@ -11,6 +11,18 @@
       ]
     },
     {
+      "id": "gamma-0.9.5",
+      "name": "GAMMA 0.9.5",
+      "status": "preview",
+      "statusColor": "#f87171",
+      "baseCarryWeight": 33,
+      "links": [
+        { "url": "https://discord.gg/stalker-gamma", "icon": "discord", "label": "Discord" },
+        { "url": "https://www.stalkergamma.com/", "icon": "globe", "label": "Website" },
+        { "url": "https://github.com/Grokitach/Stalker_GAMMA", "icon": "github", "label": "GitHub" }
+      ]
+    },
+    {
       "id": "anomaly-1.5.3",
       "name": "Anomaly 1.5.3",
       "status": "experimental",

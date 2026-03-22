@@ -1,0 +1,1727 @@
+{
+  "category": "Materials",
+  "headers": [
+    "id",
+    "pda_encyclopedia_name"
+  ],
+  "items": [
+    {
+      "id": "medkit_army",
+      "pda_encyclopedia_name": "Army Medkit",
+      "sources": [
+        {
+          "name": "Survival Kit",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "bandage",
+      "pda_encyclopedia_name": "Bandage",
+      "sources": [
+        {
+          "name": "Army Medkit",
+          "amount": "1"
+        },
+        {
+          "name": "Scientific Medkit",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Kit",
+          "amount": "1"
+        },
+        {
+          "name": "Tourniquet",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_resistors",
+      "pda_encyclopedia_name": "Box of Resistors",
+      "sources": [
+        {
+          "name": "Svarog Detector",
+          "amount": "4"
+        },
+        {
+          "name": "Artefact Application Module (Empty)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomalous Measurement Device",
+          "amount": "2"
+        },
+        {
+          "name": "Artefact Application Container (Empty)",
+          "amount": "2"
+        },
+        {
+          "name": "Bear Detector",
+          "amount": "2"
+        },
+        {
+          "name": "Geiger Counter",
+          "amount": "2"
+        },
+        {
+          "name": "Headlamp w/ Oracle Psi-stimulator",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Surge Regenerator",
+          "amount": "2"
+        },
+        {
+          "name": "PDA",
+          "amount": "2"
+        },
+        {
+          "name": "PDA v2.0 KilTrak�",
+          "amount": "2"
+        },
+        {
+          "name": "PDA v3.1 with KilTrak�",
+          "amount": "2"
+        },
+        {
+          "name": "RF Receiver",
+          "amount": "2"
+        },
+        {
+          "name": "Veles Detector",
+          "amount": "2"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Flashlight",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Radio",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Walkie Talkie",
+          "amount": "1"
+        },
+        {
+          "name": "Echo Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Flashlight",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp w/ 1PN93-1 Night Vision",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp w/ PN21KL Night Vision",
+          "amount": "1"
+        },
+        {
+          "name": "Improvised Application Module (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "Radio (Broken)",
+          "amount": "1"
+        },
+        {
+          "name": "Surge Suppressor",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_transistors",
+      "pda_encyclopedia_name": "Box of Transistors",
+      "sources": [
+        {
+          "name": "PDA v3.1 with KilTrak�",
+          "amount": "4"
+        },
+        {
+          "name": "Svarog Detector",
+          "amount": "4"
+        },
+        {
+          "name": "Veles Detector",
+          "amount": "4"
+        },
+        {
+          "name": "Bear Detector",
+          "amount": "3"
+        },
+        {
+          "name": "Headlamp w/ Oracle Psi-stimulator",
+          "amount": "3"
+        },
+        {
+          "name": "Anomalous Measurement Device",
+          "amount": "2"
+        },
+        {
+          "name": "Artefact Application Container (Empty)",
+          "amount": "2"
+        },
+        {
+          "name": "Artefact Application Module (Empty)",
+          "amount": "2"
+        },
+        {
+          "name": "Echo Detector",
+          "amount": "2"
+        },
+        {
+          "name": "Geiger Counter",
+          "amount": "2"
+        },
+        {
+          "name": "Headlamp w/ PN21KL Night Vision",
+          "amount": "2"
+        },
+        {
+          "name": "PDA",
+          "amount": "2"
+        },
+        {
+          "name": "PDA v2.0 KilTrak�",
+          "amount": "2"
+        },
+        {
+          "name": "RF Receiver",
+          "amount": "2"
+        },
+        {
+          "name": "Broken Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Head Lamp",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Radio",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Walkie Talkie",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp w/ 1PN93-1 Night Vision",
+          "amount": "1"
+        },
+        {
+          "name": "Improvised Application Module (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_ballistic_15",
+      "pda_encyclopedia_name": "Carbon Nanotube Layers w/ Kevlar-49 Fabrics",
+      "sources": [
+        {
+          "name": "Aluminium Frames",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Aluminium Frames",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_fabrics_1",
+      "pda_encyclopedia_name": "Cloth Sheets",
+      "sources": [
+        {
+          "name": "Tourist Backpack",
+          "amount": "3"
+        },
+        {
+          "name": "Bed Spread",
+          "amount": "1"
+        },
+        {
+          "name": "Camping Backpack",
+          "amount": "1"
+        },
+        {
+          "name": "Old Leather Gloves",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_copper",
+      "pda_encyclopedia_name": "Copper Wire",
+      "sources": [
+        {
+          "name": "Artefact Application Module (Empty)",
+          "amount": "2"
+        },
+        {
+          "name": "Anomalous Measurement Device",
+          "amount": "1"
+        },
+        {
+          "name": "Artefact Application Container (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Head Lamp",
+          "amount": "1"
+        },
+        {
+          "name": "Echo Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Flashlight",
+          "amount": "1"
+        },
+        {
+          "name": "Geiger Counter",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp w/ 1PN93-1 Night Vision",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp w/ Oracle Psi-stimulator",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp w/ PN21KL Night Vision",
+          "amount": "1"
+        },
+        {
+          "name": "Improvised Application Module (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA v2.0 KilTrak�",
+          "amount": "1"
+        },
+        {
+          "name": "PDA v3.1 with KilTrak�",
+          "amount": "1"
+        },
+        {
+          "name": "Radio (Broken)",
+          "amount": "1"
+        },
+        {
+          "name": "RF Receiver",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "duct_tape",
+      "pda_encyclopedia_name": "Duct Tape",
+      "sources": [
+        {
+          "name": "Armor Repair Kit (Emergency)",
+          "amount": "2"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_fabrics_3",
+      "pda_encyclopedia_name": "Durable Textiles",
+      "sources": [
+        {
+          "name": "Tourist Backpack",
+          "amount": "3"
+        },
+        {
+          "name": "Camping Tent (Full)",
+          "amount": "2"
+        },
+        {
+          "name": "Combat Backpack",
+          "amount": "2"
+        },
+        {
+          "name": "Hunter's Kit",
+          "amount": "2"
+        },
+        {
+          "name": "Sleeping Bag (Full)",
+          "amount": "2"
+        },
+        {
+          "name": "Aluminium Frames",
+          "amount": "1"
+        },
+        {
+          "name": "Backpack",
+          "amount": "1"
+        },
+        {
+          "name": "Bandage",
+          "amount": "1"
+        },
+        {
+          "name": "Bed Spread",
+          "amount": "1"
+        },
+        {
+          "name": "Camping Backpack",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Aluminium Frames",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Titanium Grid",
+          "amount": "1"
+        },
+        {
+          "name": "Old Leather Boots",
+          "amount": "1"
+        },
+        {
+          "name": "Old Leather Gloves",
+          "amount": "1"
+        },
+        {
+          "name": "Sleeping Bag (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "Titanium Grid",
+          "amount": "1"
+        },
+        {
+          "name": "Travel Backpack",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "e0t2",
+      "pda_encyclopedia_name": "EOTech XPS3-0",
+      "sources": [
+        {
+          "name": "Eotech XPS3 w/ Eotech 3x Magnifier",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "magnifier",
+      "pda_encyclopedia_name": "Eotech Magnifier",
+      "sources": [
+        {
+          "name": "Eotech XPS3 w/ Eotech 3x Magnifier",
+          "amount": "1"
+        },
+        {
+          "name": "UH-1 w/ Eotech 6x Magnifier",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_fasteners",
+      "pda_encyclopedia_name": "Fasteners",
+      "sources": [
+        {
+          "name": "Gas Stove",
+          "amount": "3"
+        },
+        {
+          "name": "Exoskeleton Frame",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Aluminium Frames",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Body Cooler",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Carbon Steel Plates",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Surge Regenerator",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Titanium Grid",
+          "amount": "2"
+        },
+        {
+          "name": "st_lead_box_name",
+          "amount": "2"
+        },
+        {
+          "name": "Aluminium Frames",
+          "amount": "1"
+        },
+        {
+          "name": "Anomalous Measurement Device",
+          "amount": "1"
+        },
+        {
+          "name": "Armor Repair Kit (Exoskeleton)",
+          "amount": "1"
+        },
+        {
+          "name": "Armor Repair Kit (Heavy Armor)",
+          "amount": "1"
+        },
+        {
+          "name": "Bear Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Body Cooler",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Head Lamp",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Radio",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Walkie Talkie",
+          "amount": "1"
+        },
+        {
+          "name": "Carbon Steel Plates",
+          "amount": "1"
+        },
+        {
+          "name": "Echo Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Field Cooking Kit",
+          "amount": "1"
+        },
+        {
+          "name": "Flashlight",
+          "amount": "1"
+        },
+        {
+          "name": "Gas Balloon",
+          "amount": "1"
+        },
+        {
+          "name": "Geiger Counter",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA v2.0 KilTrak�",
+          "amount": "1"
+        },
+        {
+          "name": "PDA v3.1 with KilTrak�",
+          "amount": "1"
+        },
+        {
+          "name": "PFM-1 Scatterable Anti-personnel Mine",
+          "amount": "1"
+        },
+        {
+          "name": "RF Receiver",
+          "amount": "1"
+        },
+        {
+          "name": "Surge Suppressor",
+          "amount": "1"
+        },
+        {
+          "name": "Svarog Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Telescopic Mirror",
+          "amount": "1"
+        },
+        {
+          "name": "Titanium Grid",
+          "amount": "1"
+        },
+        {
+          "name": "Veles Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Wrist Watch",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_ballistic_9",
+      "pda_encyclopedia_name": "Grade-B Polyethylene Plates w/ Expanded Carrier",
+      "sources": [
+        {
+          "name": "Camelbak",
+          "amount": "1"
+        },
+        {
+          "name": "Carbon Steel Plates",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Camelbak",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Carbon Steel Plates",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_retardant_17",
+      "pda_encyclopedia_name": "Insulating Constantan Inserts",
+      "sources": [
+        {
+          "name": "Improved Surge Regenerator",
+          "amount": "1"
+        },
+        {
+          "name": "Surge Suppressor",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_retardant_7",
+      "pda_encyclopedia_name": "Insulating Magnesium Grid Inserts",
+      "sources": [
+        {
+          "name": "Body Cooler",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Body Cooler",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_ballistic_5",
+      "pda_encyclopedia_name": "Kevlar AP Steel Plates",
+      "sources": [
+        {
+          "name": "Improved Kevlar Plates and Attachments",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Titanium Grid",
+          "amount": "1"
+        },
+        {
+          "name": "Kevlar Plates and Attachments",
+          "amount": "1"
+        },
+        {
+          "name": "Titanium Grid",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_ballistic_7",
+      "pda_encyclopedia_name": "Kevlar K119 Plates w/ Polycarbonate Inserts",
+      "sources": [
+        {
+          "name": "Improved Kevlar Plates and Attachments",
+          "amount": "2"
+        },
+        {
+          "name": "Kevlar Plates and Attachments",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_ballistic_3",
+      "pda_encyclopedia_name": "Kevlar K129 Plates w/ Polycarbonate Composite",
+      "sources": [
+        {
+          "name": "Improved Kevlar Plates and Attachments",
+          "amount": "1"
+        },
+        {
+          "name": "Kevlar Plates and Attachments",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_ballistic_1",
+      "pda_encyclopedia_name": "Kevlar K129 Plates w/ Reinforced Ceramic Inserts",
+      "sources": [
+        {
+          "name": "Improved Kevlar Plates and Attachments",
+          "amount": "1"
+        },
+        {
+          "name": "Kevlar Plates and Attachments",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "powder_3",
+      "pda_encyclopedia_name": "Large Rifle Propellant",
+      "sources": [
+        {
+          "name": "Powder Can",
+          "amount": "2"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_retardant_1",
+      "pda_encyclopedia_name": "Layered Fire Retardant Fabrics",
+      "sources": [
+        {
+          "name": "Freon Emission Module",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Freon Emission Module",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_scrap",
+      "pda_encyclopedia_name": "Metallic Scrap",
+      "sources": [
+        {
+          "name": "Armor Repair Kit (Exoskeleton)",
+          "amount": "3"
+        },
+        {
+          "name": "Gas Stove",
+          "amount": "3"
+        },
+        {
+          "name": "Armor Repair Kit (Heavy Armor)",
+          "amount": "2"
+        },
+        {
+          "name": "Exoskeleton Frame",
+          "amount": "2"
+        },
+        {
+          "name": "IED (Chemical)",
+          "amount": "2"
+        },
+        {
+          "name": "IED (OG-7V Warhead)",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Aluminium Frames",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Body Cooler",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Camelbak",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Carbon Steel Plates",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Freon Emission Module",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Surge Regenerator",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Titanium Grid",
+          "amount": "2"
+        },
+        {
+          "name": "Old Field Shovel",
+          "amount": "2"
+        },
+        {
+          "name": "Old Metal Shovel",
+          "amount": "2"
+        },
+        {
+          "name": "st_lead_box_name",
+          "amount": "2"
+        },
+        {
+          "name": "Aluminium Frames",
+          "amount": "1"
+        },
+        {
+          "name": "Anomalous Measurement Device",
+          "amount": "1"
+        },
+        {
+          "name": "Army Kettle",
+          "amount": "1"
+        },
+        {
+          "name": "Artefact Application Container (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "Artefact Application Module (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "Baked Beans",
+          "amount": "1"
+        },
+        {
+          "name": "Ball-peen Hammer",
+          "amount": "1"
+        },
+        {
+          "name": "Bear Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Beef Tushonka",
+          "amount": "1"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Body Cooler",
+          "amount": "1"
+        },
+        {
+          "name": "Camelbak",
+          "amount": "1"
+        },
+        {
+          "name": "Canned Corn",
+          "amount": "1"
+        },
+        {
+          "name": "Canned Tomatoes",
+          "amount": "1"
+        },
+        {
+          "name": "Canned Tuna",
+          "amount": "1"
+        },
+        {
+          "name": "Carbon Steel Plates",
+          "amount": "1"
+        },
+        {
+          "name": "Chili Beans",
+          "amount": "1"
+        },
+        {
+          "name": "Echo Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Field Cutlery",
+          "amount": "1"
+        },
+        {
+          "name": "Freon Emission Module",
+          "amount": "1"
+        },
+        {
+          "name": "Gas Balloon",
+          "amount": "1"
+        },
+        {
+          "name": "Geiger Counter",
+          "amount": "1"
+        },
+        {
+          "name": "Improvised Application Module (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "PFM-1 Scatterable Anti-personnel Mine",
+          "amount": "1"
+        },
+        {
+          "name": "Powder Can",
+          "amount": "1"
+        },
+        {
+          "name": "Surge Suppressor",
+          "amount": "1"
+        },
+        {
+          "name": "Svarog Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Telescopic Mirror",
+          "amount": "1"
+        },
+        {
+          "name": "Titanium Grid",
+          "amount": "1"
+        },
+        {
+          "name": "Veles Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Wrist Watch",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_fabrics_4",
+      "pda_encyclopedia_name": "Mil-Spec Textiles",
+      "sources": [
+        {
+          "name": "Camping Tent (Full)",
+          "amount": "3"
+        },
+        {
+          "name": "Combat Backpack",
+          "amount": "3"
+        },
+        {
+          "name": "Hunter's Kit",
+          "amount": "2"
+        },
+        {
+          "name": "Sleeping Bag (Full)",
+          "amount": "2"
+        },
+        {
+          "name": "Tourniquet",
+          "amount": "2"
+        },
+        {
+          "name": "Travel Backpack",
+          "amount": "2"
+        },
+        {
+          "name": "Armor Repair Kit (Emergency)",
+          "amount": "1"
+        },
+        {
+          "name": "Body Cooler",
+          "amount": "1"
+        },
+        {
+          "name": "Cleaning Solvent Hoppe's No. 9",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube M17",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube Tur",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube Zviezda",
+          "amount": "1"
+        },
+        {
+          "name": "Gun Oil Rusak",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Body Cooler",
+          "amount": "1"
+        },
+        {
+          "name": "Old Leather Boots",
+          "amount": "1"
+        },
+        {
+          "name": "Sleeping Bag (Empty)",
+          "amount": "1"
+        },
+        {
+          "name": "Tarpaulin",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_retardant_13",
+      "pda_encyclopedia_name": "PBI-blended Fabrics",
+      "sources": [
+        {
+          "name": "Camelbak",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Camelbak",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_retardant_5",
+      "pda_encyclopedia_name": "PVC/Rubber Coated Fabrics",
+      "sources": [
+        {
+          "name": "Freon Emission Module",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Freon Emission Module",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_capacitors",
+      "pda_encyclopedia_name": "Pack of Capacitors",
+      "sources": [
+        {
+          "name": "Svarog Detector",
+          "amount": "4"
+        },
+        {
+          "name": "Artefact Application Module (Empty)",
+          "amount": "3"
+        },
+        {
+          "name": "Bear Detector",
+          "amount": "3"
+        },
+        {
+          "name": "PDA v2.0 KilTrak�",
+          "amount": "3"
+        },
+        {
+          "name": "Anomalous Measurement Device",
+          "amount": "2"
+        },
+        {
+          "name": "Artefact Application Container (Empty)",
+          "amount": "2"
+        },
+        {
+          "name": "Echo Detector",
+          "amount": "2"
+        },
+        {
+          "name": "Geiger Counter",
+          "amount": "2"
+        },
+        {
+          "name": "Headlamp w/ 1PN93-1 Night Vision",
+          "amount": "2"
+        },
+        {
+          "name": "Headlamp w/ PN21KL Night Vision",
+          "amount": "2"
+        },
+        {
+          "name": "Improvised Application Module (Empty)",
+          "amount": "2"
+        },
+        {
+          "name": "PDA",
+          "amount": "2"
+        },
+        {
+          "name": "PDA v3.1 with KilTrak�",
+          "amount": "2"
+        },
+        {
+          "name": "RF Receiver",
+          "amount": "2"
+        },
+        {
+          "name": "Veles Detector",
+          "amount": "2"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Binoculars",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Detector",
+          "amount": "1"
+        },
+        {
+          "name": "Broken Flashlight",
+          "amount": "1"
+        },
+        {
+          "name": "Flashlight",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp",
+          "amount": "1"
+        },
+        {
+          "name": "Headlamp w/ Oracle Psi-stimulator",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "PDA",
+          "amount": "1"
+        },
+        {
+          "name": "Radio (Broken)",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_paper",
+      "pda_encyclopedia_name": "Paper Sheets",
+      "sources": [
+        {
+          "name": "Anomaly Map (Agroprom)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Army Warehouses)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Dead City)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Garbage)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Jupiter)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Red Forest)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Truck Cemetery)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Yantar)",
+          "amount": "3"
+        },
+        {
+          "name": "Anomaly Map (Zaton)",
+          "amount": "3"
+        },
+        {
+          "name": "Walking Dead Findings Field Report 39B rev. 2 (Part 1 of 3)",
+          "amount": "3"
+        },
+        {
+          "name": "Walking Dead Findings Field Report 39B rev. 2 (Part 2 of 3)",
+          "amount": "3"
+        },
+        {
+          "name": "Walking Dead Findings Field Report 39B rev. 2 (part 3 of 3)",
+          "amount": "3"
+        },
+        {
+          "name": "A Stalker's Journal (Part 1 of 2)",
+          "amount": "1"
+        },
+        {
+          "name": "A Stalker's Journal (Part 2 of 2)",
+          "amount": "1"
+        },
+        {
+          "name": "AI-2 Medkit",
+          "amount": "1"
+        },
+        {
+          "name": "Atmosfear Magazine",
+          "amount": "1"
+        },
+        {
+          "name": "Communication Log / MSRC Operation / 05.04.2014 18:36:21",
+          "amount": "1"
+        },
+        {
+          "name": "Drug Recipe #1",
+          "amount": "1"
+        },
+        {
+          "name": "Drug Recipe #2",
+          "amount": "1"
+        },
+        {
+          "name": "Drug Recipe #3",
+          "amount": "1"
+        },
+        {
+          "name": "Drug Recipe #4",
+          "amount": "1"
+        },
+        {
+          "name": "Electronics Handbook Vol. 1",
+          "amount": "1"
+        },
+        {
+          "name": "Electronics Handbook Vol. 2",
+          "amount": "1"
+        },
+        {
+          "name": "Electronics Handbook Vol. 3",
+          "amount": "1"
+        },
+        {
+          "name": "Fundamentals of Guns and Armors Upgrades Vol. 1",
+          "amount": "1"
+        },
+        {
+          "name": "Fundamentals of Guns and Armors Upgrades Vol. 2",
+          "amount": "1"
+        },
+        {
+          "name": "Fundamentals of Guns and Armors Upgrades Vol. 3",
+          "amount": "1"
+        },
+        {
+          "name": "Interrogation Techniques: The Basics (Part 1 of 2)",
+          "amount": "1"
+        },
+        {
+          "name": "Interrogation Techniques: The Basics (Part 1 of 2)",
+          "amount": "1"
+        },
+        {
+          "name": "Letter to Natalie",
+          "amount": "1"
+        },
+        {
+          "name": "Letter to Nikolai",
+          "amount": "1"
+        },
+        {
+          "name": "Mein Kampf",
+          "amount": "1"
+        },
+        {
+          "name": "Memoir (Part 1 of 2)",
+          "amount": "1"
+        },
+        {
+          "name": "Memoir (Part 2 of 2)",
+          "amount": "1"
+        },
+        {
+          "name": "Mercenary's Note",
+          "amount": "1"
+        },
+        {
+          "name": "Military Stalker's Note",
+          "amount": "1"
+        },
+        {
+          "name": "Monolith Prayer (Part 1 of 3)",
+          "amount": "1"
+        },
+        {
+          "name": "Monolith Prayer (Part 2 of 3)",
+          "amount": "1"
+        },
+        {
+          "name": "Monolith Prayer (Part 3 of 3)",
+          "amount": "1"
+        },
+        {
+          "name": "Monolithian's Journal",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Guide Vol. 1",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Guide Vol. 2",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Guide Vol. 3",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Kit",
+          "amount": "1"
+        },
+        {
+          "name": "Terroraiser Magazine",
+          "amount": "1"
+        },
+        {
+          "name": "The Art of Artefacts Fusion Vol. 1",
+          "amount": "1"
+        },
+        {
+          "name": "The Art of Artefacts Fusion Vol. 2",
+          "amount": "1"
+        },
+        {
+          "name": "The Art of Artefacts Fusion Vol. 3",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "powder_1",
+      "pda_encyclopedia_name": "Pistol/Shotgun Propellant",
+      "sources": [
+        {
+          "name": "Powder Can",
+          "amount": "3"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_plastic",
+      "pda_encyclopedia_name": "Plastic Film",
+      "sources": [
+        {
+          "name": "Army Medkit",
+          "amount": "2"
+        },
+        {
+          "name": "Improved Freon Emission Module",
+          "amount": "2"
+        },
+        {
+          "name": "Scientific Medkit",
+          "amount": "2"
+        },
+        {
+          "name": "Field Cooking Kit",
+          "amount": "1"
+        },
+        {
+          "name": "Freon Emission Module",
+          "amount": "1"
+        },
+        {
+          "name": "Improvised Stimpack",
+          "amount": "1"
+        },
+        {
+          "name": "Military Stimpack",
+          "amount": "1"
+        },
+        {
+          "name": "Scientific Stimpack",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Kit",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "jar",
+      "pda_encyclopedia_name": "Plastic Jar",
+      "sources": [
+        {
+          "name": "Cleaning Solvent Hoppe's No. 9",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube M17",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube Tur",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube Zviezda",
+          "amount": "1"
+        },
+        {
+          "name": "Gun Oil Rusak",
+          "amount": "1"
+        },
+        {
+          "name": "Hercules",
+          "amount": "1"
+        },
+        {
+          "name": "Industrial Grease",
+          "amount": "1"
+        },
+        {
+          "name": "Yadulin",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_ballistic_13",
+      "pda_encyclopedia_name": "Polyethylene Lightweight Armor Plates",
+      "sources": [
+        {
+          "name": "Camelbak",
+          "amount": "1"
+        },
+        {
+          "name": "Carbon Steel Plates",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Camelbak",
+          "amount": "1"
+        },
+        {
+          "name": "Improved Carbon Steel Plates",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "uh2",
+      "pda_encyclopedia_name": "Razor AMG UH-1 Gen. II",
+      "sources": [
+        {
+          "name": "UH-1 w/ Eotech 6x Magnifier",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "rope",
+      "pda_encyclopedia_name": "Rope",
+      "sources": [
+        {
+          "name": "Synthetic Ropes",
+          "amount": "2"
+        }
+      ]
+    },
+    {
+      "id": "powder_2",
+      "pda_encyclopedia_name": "Small Rifle Propellant",
+      "sources": [
+        {
+          "name": "Powder Can",
+          "amount": "3"
+        }
+      ]
+    },
+    {
+      "id": "swiss_knife",
+      "pda_encyclopedia_name": "Swiss Knife",
+      "sources": [
+        {
+          "name": "Hunter's Kit",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_o_fabrics_2",
+      "pda_encyclopedia_name": "Synthetic Cloth Sheets",
+      "sources": [
+        {
+          "name": "Combat Backpack",
+          "amount": "2"
+        },
+        {
+          "name": "Tourist Backpack",
+          "amount": "2"
+        },
+        {
+          "name": "Backpack",
+          "amount": "1"
+        },
+        {
+          "name": "Camping Backpack",
+          "amount": "1"
+        },
+        {
+          "name": "Old Underwear",
+          "amount": "1"
+        },
+        {
+          "name": "Travel Backpack",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "e_syringe",
+      "pda_encyclopedia_name": "Syringe",
+      "sources": [
+        {
+          "name": "AI-2 Medkit",
+          "amount": "2"
+        },
+        {
+          "name": "Scientific Medkit",
+          "amount": "2"
+        },
+        {
+          "name": "Scientific Stimpack",
+          "amount": "2"
+        },
+        {
+          "name": "Army Medkit",
+          "amount": "1"
+        },
+        {
+          "name": "Axyltallisal The Rebirth",
+          "amount": "1"
+        },
+        {
+          "name": "Diclofenac Sodium",
+          "amount": "1"
+        },
+        {
+          "name": "Epinephrine Shot",
+          "amount": "1"
+        },
+        {
+          "name": "Fentanyl",
+          "amount": "1"
+        },
+        {
+          "name": "Glucose Shot",
+          "amount": "1"
+        },
+        {
+          "name": "Improvised Stimpack",
+          "amount": "1"
+        },
+        {
+          "name": "Large Glucose Shot",
+          "amount": "1"
+        },
+        {
+          "name": "Metamizole Ampoule",
+          "amount": "1"
+        },
+        {
+          "name": "Military Stimpack",
+          "amount": "1"
+        },
+        {
+          "name": "Morphine Ampoule",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Kit",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_textolite",
+      "pda_encyclopedia_name": "Textolite Base",
+      "sources": [
+        {
+          "name": "AI-2 Medkit",
+          "amount": "1"
+        },
+        {
+          "name": "Armor Repair Kit (Emergency)",
+          "amount": "1"
+        },
+        {
+          "name": "Army Medkit",
+          "amount": "1"
+        },
+        {
+          "name": "Cleaning Solvent Hoppe's No. 9",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube M17",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube Tur",
+          "amount": "1"
+        },
+        {
+          "name": "Glue Tube Zviezda",
+          "amount": "1"
+        },
+        {
+          "name": "Gun Oil Rusak",
+          "amount": "1"
+        },
+        {
+          "name": "Scientific Medkit",
+          "amount": "1"
+        },
+        {
+          "name": "Survival Kit",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "prt_i_wood",
+      "pda_encyclopedia_name": "Wooden Parts",
+      "sources": [
+        {
+          "name": "Guitar",
+          "amount": "4"
+        },
+        {
+          "name": "Firewood",
+          "amount": "2"
+        },
+        {
+          "name": "Old Field Shovel",
+          "amount": "2"
+        },
+        {
+          "name": "Old Metal Shovel",
+          "amount": "2"
+        },
+        {
+          "name": "Ball-peen Hammer",
+          "amount": "1"
+        }
+      ]
+    }
+  ]
+}

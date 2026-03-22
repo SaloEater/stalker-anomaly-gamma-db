@@ -1,0 +1,5587 @@
+[
+  {
+    "id": "ammo_338_federal",
+    "name": ".338 Federal",
+    "category": "Ammo",
+    "displayName": ".338 Federal"
+  },
+  {
+    "id": "ammo_magnum_300",
+    "name": ".338 Lapua Magnum",
+    "category": "Ammo",
+    "displayName": ".338 Lapua Magnum"
+  },
+  {
+    "id": "ammo_357_hp_mag",
+    "name": ".357 HP",
+    "category": "Ammo",
+    "displayName": ".357 HP"
+  },
+  {
+    "id": "ammo_11.43x23_fmj",
+    "name": ".45 ACP FMJ",
+    "category": "Ammo",
+    "displayName": ".45 ACP FMJ"
+  },
+  {
+    "id": "ammo_11.43x23_hydro",
+    "name": ".45 ACP Hydra-shock HP",
+    "category": "Ammo",
+    "displayName": ".45 ACP Hydra-shock HP"
+  },
+  {
+    "id": "ammo_50_bmg",
+    "name": ".50 BMG",
+    "category": "Ammo",
+    "displayName": ".50 BMG"
+  },
+  {
+    "id": "powder_poltergeist",
+    "name": "'Diamond Powder'",
+    "category": "Belt Attachments",
+    "displayName": "'Diamond Powder'"
+  },
+  {
+    "id": "ammo_12.7x55_ap",
+    "name": "12.7x55  STs-130 VPS",
+    "category": "Ammo",
+    "displayName": "12.7x55  STs-130 VPS"
+  },
+  {
+    "id": "ammo_12.7x55_fmj",
+    "name": "12.7x55 STs-130",
+    "category": "Ammo",
+    "displayName": "12.7x55 STs-130"
+  },
+  {
+    "id": "ammo_12x70_buck",
+    "name": "12x70 buckshot",
+    "category": "Ammo",
+    "displayName": "12x70 buckshot"
+  },
+  {
+    "id": "ammo_12x76_dart",
+    "name": "12x76 AP slugs",
+    "category": "Ammo",
+    "displayName": "12x76 AP slugs"
+  },
+  {
+    "id": "ammo_12x76_bull",
+    "name": "12x76 Bull",
+    "category": "Ammo",
+    "displayName": "12x76 Bull"
+  },
+  {
+    "id": "ammo_12x76_zhekan",
+    "name": "12x76 slug",
+    "category": "Ammo",
+    "displayName": "12x76 slug"
+  },
+  {
+    "id": "ammo_20x70_buck",
+    "name": "20x70 buckshot",
+    "category": "Ammo",
+    "displayName": "20x70 buckshot"
+  },
+  {
+    "id": "ammo_4.6x30_fmj",
+    "name": "4.6x30  FMJ",
+    "category": "Ammo",
+    "displayName": "4.6x30  FMJ"
+  },
+  {
+    "id": "ammo_5.45x39_ap",
+    "name": "5.45x39  AP",
+    "category": "Ammo",
+    "displayName": "5.45x39  AP"
+  },
+  {
+    "id": "ammo_5.45x39_fmj",
+    "name": "5.45x39  FMJ",
+    "category": "Ammo",
+    "displayName": "5.45x39  FMJ"
+  },
+  {
+    "id": "ammo_5.45x39_ep",
+    "name": "5.45x39  HP",
+    "category": "Ammo",
+    "displayName": "5.45x39  HP"
+  },
+  {
+    "id": "ammo_5.56x45_ap",
+    "name": "5.56x45  AP",
+    "category": "Ammo",
+    "displayName": "5.56x45  AP"
+  },
+  {
+    "id": "ammo_5.56x45_fmj",
+    "name": "5.56x45  FMJ",
+    "category": "Ammo",
+    "displayName": "5.56x45  FMJ"
+  },
+  {
+    "id": "ammo_5.56x45_ss190",
+    "name": "5.56x45  HP",
+    "category": "Ammo",
+    "displayName": "5.56x45  HP"
+  },
+  {
+    "id": "ammo_5.7x28_ss195",
+    "name": "5.7x28  SS195",
+    "category": "Ammo",
+    "displayName": "5.7x28  SS195"
+  },
+  {
+    "id": "ammo_5.7x28_ss190",
+    "name": "5.7x28 SS190",
+    "category": "Ammo",
+    "displayName": "5.7x28 SS190"
+  },
+  {
+    "id": "wpn_knife",
+    "name": "6h4 Bayonet",
+    "category": "Melee",
+    "displayName": "6h4 Bayonet"
+  },
+  {
+    "id": "ammo_7.62x25_p",
+    "name": "7.62x25  LRNPC",
+    "category": "Ammo",
+    "displayName": "7.62x25  LRNPC"
+  },
+  {
+    "id": "ammo_7.62x25_ps",
+    "name": "7.62x25  Pst",
+    "category": "Ammo",
+    "displayName": "7.62x25  Pst"
+  },
+  {
+    "id": "ammo_7.62x39_fmj",
+    "name": "7.62x39  FMJ",
+    "category": "Ammo",
+    "displayName": "7.62x39  FMJ"
+  },
+  {
+    "id": "ammo_7.62x39_ap",
+    "name": "7.62x39  M43",
+    "category": "Ammo",
+    "displayName": "7.62x39  M43"
+  },
+  {
+    "id": "ammo_7.62x51_ap",
+    "name": "7.62x51  NATO AP",
+    "category": "Ammo",
+    "displayName": "7.62x51  NATO AP"
+  },
+  {
+    "id": "ammo_7.62x51_fmj",
+    "name": "7.62x51  NATO ball",
+    "category": "Ammo",
+    "displayName": "7.62x51  NATO ball"
+  },
+  {
+    "id": "ammo_7.62x54_7h1",
+    "name": "7.62x54  7N1",
+    "category": "Ammo",
+    "displayName": "7.62x54  7N1"
+  },
+  {
+    "id": "ammo_7.62x54_7h14",
+    "name": "7.62x54  7N14",
+    "category": "Ammo",
+    "displayName": "7.62x54  7N14"
+  },
+  {
+    "id": "ammo_7.62x54_ap",
+    "name": "7.62x54  AP",
+    "category": "Ammo",
+    "displayName": "7.62x54  AP"
+  },
+  {
+    "id": "ammo_pkm_100",
+    "name": "7.62x54  PP",
+    "category": "Ammo",
+    "displayName": "7.62x54  PP"
+  },
+  {
+    "id": "ammo_7.92x33_ap",
+    "name": "7.92x57  AP",
+    "category": "Ammo",
+    "displayName": "7.92x57  AP"
+  },
+  {
+    "id": "ammo_7.92x33_fmj",
+    "name": "7.92x57  FMJ",
+    "category": "Ammo",
+    "displayName": "7.92x57  FMJ"
+  },
+  {
+    "id": "wpn_9a91",
+    "name": "9A-91",
+    "category": "Rifles",
+    "displayName": "9A-91",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "ammo_9x18_ap",
+    "name": "9x18  AP",
+    "category": "Ammo",
+    "displayName": "9x18  AP"
+  },
+  {
+    "id": "ammo_9x18_fmj",
+    "name": "9x18  FMJ",
+    "category": "Ammo",
+    "displayName": "9x18  FMJ"
+  },
+  {
+    "id": "ammo_9x18_pmm",
+    "name": "9x18  HP",
+    "category": "Ammo",
+    "displayName": "9x18  HP"
+  },
+  {
+    "id": "ammo_9x19_ap",
+    "name": "9x19  AP",
+    "category": "Ammo",
+    "displayName": "9x19  AP"
+  },
+  {
+    "id": "ammo_9x19_fmj",
+    "name": "9x19  FMJ",
+    "category": "Ammo",
+    "displayName": "9x19  FMJ"
+  },
+  {
+    "id": "ammo_9x19_pbp",
+    "name": "9x19  HP",
+    "category": "Ammo",
+    "displayName": "9x19  HP"
+  },
+  {
+    "id": "ammo_9x21_sp10",
+    "name": "9x21  SP10",
+    "category": "Ammo",
+    "displayName": "9x21  SP10"
+  },
+  {
+    "id": "ammo_9x39_pab9",
+    "name": "9x39  SP-5",
+    "category": "Ammo",
+    "displayName": "9x39  SP-5"
+  },
+  {
+    "id": "ammo_9x39_ap",
+    "name": "9x39  SP-6",
+    "category": "Ammo",
+    "displayName": "9x39  SP-6"
+  },
+  {
+    "id": "helm_ach7",
+    "name": "ACH-7 Headgear Set",
+    "category": "Helmets",
+    "displayName": "ACH-7 Headgear Set"
+  },
+  {
+    "id": "helm_ach7ex",
+    "name": "ACH-7EX Headgear Set",
+    "category": "Helmets",
+    "displayName": "ACH-7EX Headgear Set"
+  },
+  {
+    "id": "wpn_adar2_15",
+    "name": "ADAR 2-15",
+    "category": "Rifles",
+    "displayName": "ADAR 2-15",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_aek",
+    "name": "AEK-971",
+    "category": "Rifles",
+    "displayName": "AEK-971",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "medkit",
+    "name": "AI-2 Medkit",
+    "category": "Medicine",
+    "displayName": "AI-2 Medkit"
+  },
+  {
+    "id": "wpn_ak5c_bas",
+    "name": "AK 5C",
+    "category": "Rifles",
+    "displayName": "AK 5C",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak5c_bas_5c_tik",
+    "name": "AK 5C \"ISG Special\"",
+    "category": "Rifles",
+    "displayName": "AK 5C \"ISG Special\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak5c_isg",
+    "name": "AK 5C \"ISG\"",
+    "category": "Rifles",
+    "displayName": "AK 5C \"ISG\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_akm_alfa",
+    "name": "AK Alfa",
+    "category": "Rifles",
+    "displayName": "AK Alfa",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak101_camo",
+    "name": "AK-101",
+    "category": "Rifles",
+    "displayName": "AK-101 [1_camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak101",
+    "name": "AK-101",
+    "category": "Rifles",
+    "displayName": "AK-101 [1]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak102",
+    "name": "AK-101",
+    "category": "Rifles",
+    "displayName": "AK-101 [2]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak103_camo",
+    "name": "AK-103",
+    "category": "Rifles",
+    "displayName": "AK-103 [camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak103",
+    "name": "AK-103",
+    "category": "Rifles",
+    "displayName": "AK-103 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak104_alfa",
+    "name": "AK-104 \"Alpha\"",
+    "category": "Rifles",
+    "displayName": "AK-104 \"Alpha\" [alfa]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak104",
+    "name": "AK-104 \"Alpha\"",
+    "category": "Rifles",
+    "displayName": "AK-104 \"Alpha\" [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak105",
+    "name": "AK-105",
+    "category": "Rifles",
+    "displayName": "AK-105",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak105_shakal",
+    "name": "AK-105 \"Shakal\"",
+    "category": "Rifles",
+    "displayName": "AK-105 \"Shakal\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak105_sp",
+    "name": "AK-105 \"Specialist\"",
+    "category": "Rifles",
+    "displayName": "AK-105 \"Specialist\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak105_swamp",
+    "name": "AK-105 \"Swamp Thing\"",
+    "category": "Rifles",
+    "displayName": "AK-105 \"Swamp Thing\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak12_custom_mono_kit",
+    "name": "AK-12 \"Monolith's Light\"",
+    "category": "Rifles",
+    "displayName": "AK-12 \"Monolith's Light\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak12_custom",
+    "name": "AK-12 \"Monolith\"",
+    "category": "Rifles",
+    "displayName": "AK-12 \"Monolith\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak12",
+    "name": "AK-12",
+    "category": "Rifles",
+    "displayName": "AK-12 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak12_m1",
+    "name": "AK-12",
+    "category": "Rifles",
+    "displayName": "AK-12 [m1]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak",
+    "name": "AK-47",
+    "category": "Rifles",
+    "displayName": "AK-47",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak74_n",
+    "name": "AK-74",
+    "category": "Rifles",
+    "displayName": "AK-74",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak74m_beard",
+    "name": "AK-74 \"PMC\"",
+    "category": "Rifles",
+    "displayName": "AK-74 \"PMC\" [m_beard]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak74_pmc",
+    "name": "AK-74 \"PMC\"",
+    "category": "Rifles",
+    "displayName": "AK-74 \"PMC\" [pmc]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak74m_camo",
+    "name": "AK-74M",
+    "category": "Rifles",
+    "displayName": "AK-74M [camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak74m",
+    "name": "AK-74M",
+    "category": "Rifles",
+    "displayName": "AK-74M [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak74m_n",
+    "name": "AK-74M",
+    "category": "Rifles",
+    "displayName": "AK-74M [n]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak74",
+    "name": "AK-74N",
+    "category": "Rifles",
+    "displayName": "AK-74N [74]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_aks74_new",
+    "name": "AK-74N",
+    "category": "Rifles",
+    "displayName": "AK-74N [s74_new]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_akm_bas",
+    "name": "AKM",
+    "category": "Rifles",
+    "displayName": "AKM [bas]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_akm",
+    "name": "AKM",
+    "category": "Rifles",
+    "displayName": "AKM [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_akms_alt",
+    "name": "AKMS",
+    "category": "Rifles",
+    "displayName": "AKMS [alt]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_akms_bas",
+    "name": "AKMS",
+    "category": "Rifles",
+    "displayName": "AKMS [bas]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_akms",
+    "name": "AKMS",
+    "category": "Rifles",
+    "displayName": "AKMS [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aks",
+    "name": "AKS-47",
+    "category": "Rifles",
+    "displayName": "AKS-47",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak74u_n1",
+    "name": "AKS-74U",
+    "category": "Rifles",
+    "displayName": "AKS-74U",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak74u_tac",
+    "name": "AKS-74U \"Tactician\"",
+    "category": "Rifles",
+    "displayName": "AKS-74U \"Tactician\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak74u",
+    "name": "AKS-74UN",
+    "category": "Rifles",
+    "displayName": "AKS-74UN",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "mint",
+    "name": "Altoids",
+    "category": "Food",
+    "displayName": "Altoids"
+  },
+  {
+    "id": "af_frames",
+    "name": "Aluminium Frames",
+    "category": "Belt Attachments",
+    "displayName": "Aluminium Frames"
+  },
+  {
+    "id": "wpn_am17",
+    "name": "AM-17",
+    "category": "Rifles",
+    "displayName": "AM-17",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_amb17",
+    "name": "AMB-17",
+    "category": "Rifles",
+    "displayName": "AMB-17",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_abakan",
+    "name": "AN-94",
+    "category": "Rifles",
+    "displayName": "AN-94 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_abakan_n",
+    "name": "AN-94",
+    "category": "Rifles",
+    "displayName": "AN-94 [n]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "drug_anabiotic",
+    "name": "Anabiotics",
+    "category": "Medicine",
+    "displayName": "Anabiotics"
+  },
+  {
+    "id": "antirad",
+    "name": "Anti-radiation Drugs",
+    "category": "Medicine",
+    "displayName": "Anti-radiation Drugs"
+  },
+  {
+    "id": "drug_antidot",
+    "name": "Antidote",
+    "category": "Medicine",
+    "displayName": "Antidote"
+  },
+  {
+    "id": "helm_metro",
+    "name": "Apocalypse Helmet",
+    "category": "Helmets",
+    "displayName": "Apocalypse Helmet"
+  },
+  {
+    "id": "wpn_aps_bas_apsabigo",
+    "name": "APS Stechkin",
+    "category": "Pistols",
+    "displayName": "APS Stechkin [bas_apsabigo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aps_bas",
+    "name": "APS Stechkin",
+    "category": "Pistols",
+    "displayName": "APS Stechkin [bas]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aps",
+    "name": "APS Stechkin",
+    "category": "Pistols",
+    "displayName": "APS Stechkin [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ar15_freedom",
+    "name": "AR-15 HERA",
+    "category": "Rifles",
+    "displayName": "AR-15 HERA",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "bandit_novice_outfit_alt",
+    "name": "Armored Leather Jacket",
+    "category": "Outfits",
+    "displayName": "Armored Leather Jacket"
+  },
+  {
+    "id": "wpn_protecta_aim",
+    "name": "Armsel Protecta",
+    "category": "Shotguns",
+    "displayName": "Armsel Protecta [aim]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_protecta_camo",
+    "name": "Armsel Protecta",
+    "category": "Shotguns",
+    "displayName": "Armsel Protecta [camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_protecta_custom",
+    "name": "Armsel Protecta",
+    "category": "Shotguns",
+    "displayName": "Armsel Protecta [custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_protecta",
+    "name": "Armsel Protecta",
+    "category": "Shotguns",
+    "displayName": "Armsel Protecta [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_protecta_nimble",
+    "name": "Armsel Protecta Custom",
+    "category": "Shotguns",
+    "displayName": "Armsel Protecta Custom",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "medkit_army",
+    "name": "Army Medkit",
+    "category": "Medicine",
+    "displayName": "Army Medkit"
+  },
+  {
+    "id": "af_ah_s1",
+    "name": "Aroth-8",
+    "category": "Artefacts",
+    "displayName": "Aroth-8"
+  },
+  {
+    "id": "artefact_container",
+    "name": "Artefact Container",
+    "category": "Belt Attachments",
+    "displayName": "Artefact Container"
+  },
+  {
+    "id": "wpn_val",
+    "name": "AS Val",
+    "category": "Rifles",
+    "displayName": "AS Val [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_val_modern",
+    "name": "AS Val",
+    "category": "Rifles",
+    "displayName": "AS Val [modern]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_val_tac",
+    "name": "AS Val",
+    "category": "Rifles",
+    "displayName": "AS Val [tac]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_atom",
+    "name": "Atom",
+    "category": "Artefacts",
+    "displayName": "Atom"
+  },
+  {
+    "id": "stalker_autumn_outfit",
+    "name": "Autumn Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Autumn Stalker Suit"
+  },
+  {
+    "id": "wpn_l96a1m",
+    "name": "AWSM",
+    "category": "Snipers",
+    "displayName": "AWSM",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "rebirth",
+    "name": "Axyltallisal \"The Rebirth\"",
+    "category": "Medicine",
+    "displayName": "Axyltallisal \"The Rebirth\""
+  },
+  {
+    "id": "itm_backpack",
+    "name": "Backpack",
+    "category": "Belt Attachments",
+    "displayName": "Backpack"
+  },
+  {
+    "id": "beans",
+    "name": "Baked Beans",
+    "category": "Food",
+    "displayName": "Baked Beans"
+  },
+  {
+    "id": "helm_rp_bala",
+    "name": "Balaclava",
+    "category": "Helmets",
+    "displayName": "Balaclava"
+  },
+  {
+    "id": "af_ball",
+    "name": "Ball",
+    "category": "Artefacts",
+    "displayName": "Ball"
+  },
+  {
+    "id": "bandage",
+    "name": "Bandage",
+    "category": "Medicine",
+    "displayName": "Bandage"
+  },
+  {
+    "id": "helm_bandana",
+    "name": "Bandana",
+    "category": "Helmets",
+    "displayName": "Bandana"
+  },
+  {
+    "id": "wpn_m82",
+    "name": "Barrett M82",
+    "category": "Snipers",
+    "displayName": "Barrett M82",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_m98b",
+    "name": "Barrett M98B",
+    "category": "Snipers",
+    "displayName": "Barrett M98B",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "ammo_23x75_barrikada",
+    "name": "Barrikada 23x75",
+    "category": "Ammo",
+    "displayName": "Barrikada 23x75"
+  },
+  {
+    "id": "af_vaselisk",
+    "name": "Basilisk",
+    "category": "Artefacts",
+    "displayName": "Basilisk"
+  },
+  {
+    "id": "af_bat",
+    "name": "Bat",
+    "category": "Artefacts",
+    "displayName": "Bat"
+  },
+  {
+    "id": "ammo_gauss",
+    "name": "Batteries",
+    "category": "Ammo",
+    "displayName": "Batteries"
+  },
+  {
+    "id": "af_dummy_battery",
+    "name": "Battery",
+    "category": "Artefacts",
+    "displayName": "Battery"
+  },
+  {
+    "id": "af_lighthouse",
+    "name": "Beacon",
+    "category": "Artefacts",
+    "displayName": "Beacon"
+  },
+  {
+    "id": "stalker_bear_outfit",
+    "name": "Bear Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Bear Stalker Suit"
+  },
+  {
+    "id": "tea",
+    "name": "Beard's Tea",
+    "category": "Food",
+    "displayName": "Beard's Tea"
+  },
+  {
+    "id": "tushonka",
+    "name": "Beef Tushonka",
+    "category": "Food",
+    "displayName": "Beef Tushonka"
+  },
+  {
+    "id": "beer",
+    "name": "Beer",
+    "category": "Food",
+    "displayName": "Beer"
+  },
+  {
+    "id": "wpn_beretta",
+    "name": "Beretta M9A3",
+    "category": "Pistols",
+    "displayName": "Beretta M9A3 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_beretta_m9_upgr_kit",
+    "name": "Beretta M9A3",
+    "category": "Pistols",
+    "displayName": "Beretta M9A3 [m9_upgr_kit]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_beretta_camo",
+    "name": "Beretta Px4 Storm",
+    "category": "Pistols",
+    "displayName": "Beretta Px4 Storm",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "specops_outfit",
+    "name": "Berill-5M Armored Suit",
+    "category": "Outfits",
+    "displayName": "Berill-5M Armored Suit"
+  },
+  {
+    "id": "af_black_angel",
+    "name": "Black Angel",
+    "category": "Artefacts",
+    "displayName": "Black Angel"
+  },
+  {
+    "id": "bandit_novice_outfit",
+    "name": "Black Leather Jacket",
+    "category": "Outfits",
+    "displayName": "Black Leather Jacket"
+  },
+  {
+    "id": "af_black_spray",
+    "name": "Black Spray",
+    "category": "Artefacts",
+    "displayName": "Black Spray"
+  },
+  {
+    "id": "af_black",
+    "name": "Black Stone",
+    "category": "Artefacts",
+    "displayName": "Black Stone"
+  },
+  {
+    "id": "meat_bloodsucker_a",
+    "name": "Bloodsucker Goulash",
+    "category": "Food",
+    "displayName": "Bloodsucker Goulash [a]"
+  },
+  {
+    "id": "meat_bloodsucker_b",
+    "name": "Bloodsucker Goulash",
+    "category": "Food",
+    "displayName": "Bloodsucker Goulash [b]"
+  },
+  {
+    "id": "meat_bloodsucker",
+    "name": "Bloodsucker Goulash",
+    "category": "Food",
+    "displayName": "Bloodsucker Goulash [default]"
+  },
+  {
+    "id": "mutant_part_heart_bloodsucker",
+    "name": "Bloodsucker Heart",
+    "category": "Mutant Parts",
+    "displayName": "Bloodsucker Heart"
+  },
+  {
+    "id": "mutant_part_krovosos_jaw",
+    "name": "Bloodsucker Jaw",
+    "category": "Mutant Parts",
+    "displayName": "Bloodsucker Jaw"
+  },
+  {
+    "id": "mutant_part_krovosos_meat",
+    "name": "Bloodsucker Meat",
+    "category": "Food",
+    "displayName": "Bloodsucker Meat"
+  },
+  {
+    "id": "hide_bloodsucker",
+    "name": "Bloodsucker Skin",
+    "category": "Belt Attachments",
+    "displayName": "Bloodsucker Skin"
+  },
+  {
+    "id": "mutant_part_boar_chop",
+    "name": "Boar Chop",
+    "category": "Food",
+    "displayName": "Boar Chop"
+  },
+  {
+    "id": "meat_boar_a",
+    "name": "Boar Chops",
+    "category": "Food",
+    "displayName": "Boar Chops [a]"
+  },
+  {
+    "id": "meat_boar_b",
+    "name": "Boar Chops",
+    "category": "Food",
+    "displayName": "Boar Chops [b]"
+  },
+  {
+    "id": "meat_boar",
+    "name": "Boar Chops",
+    "category": "Food",
+    "displayName": "Boar Chops [default]"
+  },
+  {
+    "id": "mutant_part_tusk_boar",
+    "name": "Boar Fang",
+    "category": "Mutant Parts",
+    "displayName": "Boar Fang"
+  },
+  {
+    "id": "mutant_part_boar_leg",
+    "name": "Boar Leg",
+    "category": "Mutant Parts",
+    "displayName": "Boar Leg"
+  },
+  {
+    "id": "hide_boar",
+    "name": "Boar Pelt",
+    "category": "Belt Attachments",
+    "displayName": "Boar Pelt"
+  },
+  {
+    "id": "af_cooler",
+    "name": "Body Cooler",
+    "category": "Belt Attachments",
+    "displayName": "Body Cooler"
+  },
+  {
+    "id": "af_bracelet",
+    "name": "Bracelet",
+    "category": "Artefacts",
+    "displayName": "Bracelet"
+  },
+  {
+    "id": "bread",
+    "name": "Bread Loaf",
+    "category": "Food",
+    "displayName": "Bread Loaf"
+  },
+  {
+    "id": "breadold",
+    "name": "Bread Loaf (Stale)",
+    "category": "Food",
+    "displayName": "Bread Loaf (Stale)"
+  },
+  {
+    "id": "brewed_coffee",
+    "name": "Brewed Coffee",
+    "category": "Food",
+    "displayName": "Brewed Coffee"
+  },
+  {
+    "id": "wpn_brn180",
+    "name": "BRN-180",
+    "category": "Rifles",
+    "displayName": "BRN-180",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp9",
+    "name": "Brugger & Thomet MP9",
+    "category": "SMGs",
+    "displayName": "Brugger & Thomet MP9",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_baloon",
+    "name": "Bubble",
+    "category": "Artefacts",
+    "displayName": "Bubble"
+  },
+  {
+    "id": "mutant_part_brain_burer",
+    "name": "Burer Brain",
+    "category": "Mutant Parts",
+    "displayName": "Burer Brain"
+  },
+  {
+    "id": "mutant_part_burer_hand",
+    "name": "Burer Hand",
+    "category": "Mutant Parts",
+    "displayName": "Burer Hand"
+  },
+  {
+    "id": "hide_burer",
+    "name": "Burer Skin",
+    "category": "Belt Attachments",
+    "displayName": "Burer Skin"
+  },
+  {
+    "id": "caffeine",
+    "name": "Caffeine Tablets",
+    "category": "Medicine",
+    "displayName": "Caffeine Tablets"
+  },
+  {
+    "id": "cigar3",
+    "name": "Camel Yellow cigarettes",
+    "category": "Food",
+    "displayName": "Camel Yellow cigarettes"
+  },
+  {
+    "id": "af_camelbak",
+    "name": "Camelbak",
+    "category": "Belt Attachments",
+    "displayName": "Camelbak"
+  },
+  {
+    "id": "equ_small_pack",
+    "name": "Camping Backpack",
+    "category": "Belt Attachments",
+    "displayName": "Camping Backpack"
+  },
+  {
+    "id": "joint",
+    "name": "Cannabis Joint",
+    "category": "Medicine",
+    "displayName": "Cannabis Joint"
+  },
+  {
+    "id": "corn",
+    "name": "Canned Corn",
+    "category": "Food",
+    "displayName": "Canned Corn"
+  },
+  {
+    "id": "tomato",
+    "name": "Canned Tomatoes",
+    "category": "Food",
+    "displayName": "Canned Tomatoes"
+  },
+  {
+    "id": "conserva",
+    "name": "Canned Tuna",
+    "category": "Food",
+    "displayName": "Canned Tuna"
+  },
+  {
+    "id": "wpn_xm4",
+    "name": "CAR-15",
+    "category": "Rifles",
+    "displayName": "CAR-15",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_xm4_admin",
+    "name": "CAR-15 \"Administrator\"",
+    "category": "Rifles",
+    "displayName": "CAR-15 \"Administrator\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_xm4_bd",
+    "name": "CAR-15 \"Blood Diamond\"",
+    "category": "Rifles",
+    "displayName": "CAR-15 \"Blood Diamond\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_plates",
+    "name": "Carbon Steel Plates",
+    "category": "Belt Attachments",
+    "displayName": "Carbon Steel Plates"
+  },
+  {
+    "id": "mutant_part_cat_claw",
+    "name": "Cat Claw",
+    "category": "Mutant Parts",
+    "displayName": "Cat Claw"
+  },
+  {
+    "id": "mutant_part_cat_tail",
+    "name": "Cat Tail",
+    "category": "Mutant Parts",
+    "displayName": "Cat Tail"
+  },
+  {
+    "id": "mutant_part_cat_thyroid",
+    "name": "Cat Thyroid",
+    "category": "Mutant Parts",
+    "displayName": "Cat Thyroid"
+  },
+  {
+    "id": "af_cell",
+    "name": "Cell",
+    "category": "Artefacts",
+    "displayName": "Cell"
+  },
+  {
+    "id": "af_chelust",
+    "name": "Chain",
+    "category": "Artefacts",
+    "displayName": "Chain"
+  },
+  {
+    "id": "freedom_nosorog_outfit",
+    "name": "Champion of Freedom",
+    "category": "Outfits",
+    "displayName": "Champion of Freedom"
+  },
+  {
+    "id": "chili",
+    "name": "Chili Beans",
+    "category": "Food",
+    "displayName": "Chili Beans"
+  },
+  {
+    "id": "mutant_part_chimera_claw",
+    "name": "Chimera Claw",
+    "category": "Mutant Parts",
+    "displayName": "Chimera Claw"
+  },
+  {
+    "id": "meat_chimera_a",
+    "name": "Chimera Goulash",
+    "category": "Food",
+    "displayName": "Chimera Goulash [a]"
+  },
+  {
+    "id": "meat_chimera_b",
+    "name": "Chimera Goulash",
+    "category": "Food",
+    "displayName": "Chimera Goulash [b]"
+  },
+  {
+    "id": "meat_chimera",
+    "name": "Chimera Goulash",
+    "category": "Food",
+    "displayName": "Chimera Goulash [default]"
+  },
+  {
+    "id": "mutant_part_heart_chimera",
+    "name": "Chimera Heart",
+    "category": "Mutant Parts",
+    "displayName": "Chimera Heart"
+  },
+  {
+    "id": "hide_chimera",
+    "name": "Chimera Hide",
+    "category": "Belt Attachments",
+    "displayName": "Chimera Hide"
+  },
+  {
+    "id": "mutant_part_chimera_kogot",
+    "name": "Chimera Horn",
+    "category": "Mutant Parts",
+    "displayName": "Chimera Horn"
+  },
+  {
+    "id": "mutant_part_chimera_meat",
+    "name": "Chimera Meat",
+    "category": "Food",
+    "displayName": "Chimera Meat"
+  },
+  {
+    "id": "antibio_chlor",
+    "name": "Chlortetracycline",
+    "category": "Medicine",
+    "displayName": "Chlortetracycline"
+  },
+  {
+    "id": "chocolate",
+    "name": "Chocolate",
+    "category": "Food",
+    "displayName": "Chocolate"
+  },
+  {
+    "id": "chocolate_p",
+    "name": "Chocolate (Half-consumed)",
+    "category": "Food",
+    "displayName": "Chocolate (Half-consumed)"
+  },
+  {
+    "id": "cigarettes_lucky",
+    "name": "Cigarettes (Lucky Strike)",
+    "category": "Food",
+    "displayName": "Cigarettes (Lucky Strike)"
+  },
+  {
+    "id": "cigarettes",
+    "name": "Cigarettes (Marlboro)",
+    "category": "Food",
+    "displayName": "Cigarettes (Marlboro)"
+  },
+  {
+    "id": "cigarettes_russian",
+    "name": "Cigarettes (Russian)",
+    "category": "Food",
+    "displayName": "Cigarettes (Russian)"
+  },
+  {
+    "id": "cigar1",
+    "name": "Cigarettes (Soviet)",
+    "category": "Food",
+    "displayName": "Cigarettes (Soviet) [1]"
+  },
+  {
+    "id": "cigar2",
+    "name": "Cigarettes (Soviet)",
+    "category": "Food",
+    "displayName": "Cigarettes (Soviet) [2]"
+  },
+  {
+    "id": "af_kogot",
+    "name": "Claw",
+    "category": "Artefacts",
+    "displayName": "Claw"
+  },
+  {
+    "id": "cs_novice_outfit",
+    "name": "Clear Sky Leather Jacket",
+    "category": "Outfits",
+    "displayName": "Clear Sky Leather Jacket"
+  },
+  {
+    "id": "helm_cloth_mask",
+    "name": "Cloth Mask",
+    "category": "Helmets",
+    "displayName": "Cloth Mask"
+  },
+  {
+    "id": "wpn_mk47_custom",
+    "name": "CMMG Mk47 Mutant",
+    "category": "Rifles",
+    "displayName": "CMMG Mk47 Mutant [custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_mk47",
+    "name": "CMMG Mk47 Mutant",
+    "category": "Rifles",
+    "displayName": "CMMG Mk47 Mutant [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "cocaine",
+    "name": "Cocaine",
+    "category": "Medicine",
+    "displayName": "Cocaine"
+  },
+  {
+    "id": "af_cocoon",
+    "name": "Cocoon",
+    "category": "Artefacts",
+    "displayName": "Cocoon"
+  },
+  {
+    "id": "wpn_colt1911_custom",
+    "name": "Colt 1911 Nightsword Custom (NSC)",
+    "category": "Pistols",
+    "displayName": "Colt 1911 Nightsword Custom (NSC)",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_colt1911_anarchy",
+    "name": "Colt M1911A1 .45 ACP",
+    "category": "Pistols",
+    "displayName": "Colt M1911A1 .45 ACP [anarchy]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_colt1911",
+    "name": "Colt M1911A1 .45 ACP",
+    "category": "Pistols",
+    "displayName": "Colt M1911A1 .45 ACP [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_colt1911_duty",
+    "name": "Colt M1911A1 .45 ACP",
+    "category": "Pistols",
+    "displayName": "Colt M1911A1 .45 ACP [duty]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_colt1911_n",
+    "name": "Colt M1911A1 .45 ACP",
+    "category": "Pistols",
+    "displayName": "Colt M1911A1 .45 ACP [n]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_m45a1",
+    "name": "Colt M45A1 .45 ACP",
+    "category": "Pistols",
+    "displayName": "Colt M45A1 .45 ACP",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "equ_military_pack",
+    "name": "Combat Backpack",
+    "category": "Belt Attachments",
+    "displayName": "Combat Backpack"
+  },
+  {
+    "id": "af_compass",
+    "name": "Compass",
+    "category": "Artefacts",
+    "displayName": "Compass"
+  },
+  {
+    "id": "mutant_part_controller_glass",
+    "name": "Controller Brain Tissue",
+    "category": "Mutant Parts",
+    "displayName": "Controller Brain Tissue"
+  },
+  {
+    "id": "mutant_part_controller_hand",
+    "name": "Controller Hand",
+    "category": "Mutant Parts",
+    "displayName": "Controller Hand"
+  },
+  {
+    "id": "hide_controller",
+    "name": "Controller Scalp",
+    "category": "Belt Attachments",
+    "displayName": "Controller Scalp"
+  },
+  {
+    "id": "meat_snork_a",
+    "name": "Cooked Snork Hand",
+    "category": "Food",
+    "displayName": "Cooked Snork Hand [a]"
+  },
+  {
+    "id": "meat_snork_b",
+    "name": "Cooked Snork Hand",
+    "category": "Food",
+    "displayName": "Cooked Snork Hand [b]"
+  },
+  {
+    "id": "meat_snork",
+    "name": "Cooked Snork Hand",
+    "category": "Food",
+    "displayName": "Cooked Snork Hand [default]"
+  },
+  {
+    "id": "af_cristall",
+    "name": "Crystal",
+    "category": "Artefacts",
+    "displayName": "Crystal"
+  },
+  {
+    "id": "cs_light_novice_outfit",
+    "name": "CS-1 Body Armor",
+    "category": "Outfits",
+    "displayName": "CS-1 Body Armor"
+  },
+  {
+    "id": "cs_light_outfit",
+    "name": "CS-2a Body Armor",
+    "category": "Outfits",
+    "displayName": "CS-2a Body Armor"
+  },
+  {
+    "id": "cs_stalker_outfit",
+    "name": "CS-2b Body Armor",
+    "category": "Outfits",
+    "displayName": "CS-2b Body Armor"
+  },
+  {
+    "id": "cs_stalker_proto_exo_outfit",
+    "name": "CS-2b Exoskeleton",
+    "category": "Outfits",
+    "displayName": "CS-2b Exoskeleton"
+  },
+  {
+    "id": "cs_nbc_outfit",
+    "name": "CS-2t Suit",
+    "category": "Outfits",
+    "displayName": "CS-2t Suit"
+  },
+  {
+    "id": "cs_medium_outfit",
+    "name": "CS-3a Body Armor",
+    "category": "Outfits",
+    "displayName": "CS-3a Body Armor"
+  },
+  {
+    "id": "cs_heavy_outfit",
+    "name": "CS-3b Body Armor",
+    "category": "Outfits",
+    "displayName": "CS-3b Body Armor"
+  },
+  {
+    "id": "cs_scientific_outfit_good",
+    "name": "CS-4a Pathfinder",
+    "category": "Outfits",
+    "displayName": "CS-4a Pathfinder"
+  },
+  {
+    "id": "cs_scientific_outfit",
+    "name": "CS-4a SEVA Suit",
+    "category": "Outfits",
+    "displayName": "CS-4a SEVA Suit"
+  },
+  {
+    "id": "military_sky_outfit",
+    "name": "CS-4b Armored Suit",
+    "category": "Outfits",
+    "displayName": "CS-4b Armored Suit"
+  },
+  {
+    "id": "cs_exo_outfit",
+    "name": "CS-5 Exoskeleton",
+    "category": "Outfits",
+    "displayName": "CS-5 Exoskeleton"
+  },
+  {
+    "id": "cs_exolight_outfit",
+    "name": "CS-5 Exosuit",
+    "category": "Outfits",
+    "displayName": "CS-5 Exosuit"
+  },
+  {
+    "id": "cigar",
+    "name": "Cuban Cigar",
+    "category": "Food",
+    "displayName": "Cuban Cigar"
+  },
+  {
+    "id": "antirad_cystamine",
+    "name": "Cystamine",
+    "category": "Medicine",
+    "displayName": "Cystamine"
+  },
+  {
+    "id": "wpn_cz75",
+    "name": "CZ-75",
+    "category": "Pistols",
+    "displayName": "CZ-75",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "helm_spartan",
+    "name": "Cz-M10 Spartan Helmet",
+    "category": "Helmets",
+    "displayName": "Cz-M10 Spartan Helmet"
+  },
+  {
+    "id": "af_death_lamp",
+    "name": "Death Lamp",
+    "category": "Artefacts",
+    "displayName": "Death Lamp"
+  },
+  {
+    "id": "light_freedom_outfit",
+    "name": "Defender of Freedom",
+    "category": "Outfits",
+    "displayName": "Defender of Freedom"
+  },
+  {
+    "id": "wpn_desert_eagle",
+    "name": "Desert Eagle",
+    "category": "Pistols",
+    "displayName": "Desert Eagle",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_desert_eagle_nimble",
+    "name": "Desert Eagle \"Steppe Eagle\"",
+    "category": "Pistols",
+    "displayName": "Desert Eagle \"Steppe Eagle\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_dtmdr",
+    "name": "Desert Tech MDR 5.56x45",
+    "category": "Rifles",
+    "displayName": "Desert Tech MDR 5.56x45 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_dtmdr_sup",
+    "name": "Desert Tech MDR 5.56x45",
+    "category": "Rifles",
+    "displayName": "Desert Tech MDR 5.56x45 [sup]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_dtmdr_black",
+    "name": "Desert Tech MDR 7.62x51",
+    "category": "Rifles",
+    "displayName": "Desert Tech MDR 7.62x51 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_dtmdr_black_sup",
+    "name": "Desert Tech MDR 7.62x51",
+    "category": "Rifles",
+    "displayName": "Desert Tech MDR 7.62x51 [sup]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "specops_bandit_outfit",
+    "name": "Deserter's B-5M Armored Suit",
+    "category": "Outfits",
+    "displayName": "Deserter's B-5M Armored Suit"
+  },
+  {
+    "id": "analgetic",
+    "name": "Diclofenac Sodium",
+    "category": "Medicine",
+    "displayName": "Diclofenac Sodium"
+  },
+  {
+    "id": "kolbasa",
+    "name": "Doctor's Sausage",
+    "category": "Food",
+    "displayName": "Doctor's Sausage"
+  },
+  {
+    "id": "meat_dog_a",
+    "name": "Dog Chops",
+    "category": "Food",
+    "displayName": "Dog Chops [a]"
+  },
+  {
+    "id": "meat_dog_b",
+    "name": "Dog Chops",
+    "category": "Food",
+    "displayName": "Dog Chops [b]"
+  },
+  {
+    "id": "meat_dog",
+    "name": "Dog Chops",
+    "category": "Food",
+    "displayName": "Dog Chops [default]"
+  },
+  {
+    "id": "mutant_part_dog_heart",
+    "name": "Dog Heart",
+    "category": "Mutant Parts",
+    "displayName": "Dog Heart"
+  },
+  {
+    "id": "mutant_part_dog_liver",
+    "name": "Dog Liver",
+    "category": "Mutant Parts",
+    "displayName": "Dog Liver"
+  },
+  {
+    "id": "mutant_part_dog_meat",
+    "name": "Dog Meat",
+    "category": "Food",
+    "displayName": "Dog Meat"
+  },
+  {
+    "id": "mutant_part_dog_tail",
+    "name": "Dog Tail",
+    "category": "Mutant Parts",
+    "displayName": "Dog Tail"
+  },
+  {
+    "id": "af_dragon_eye",
+    "name": "Dragon's Eye",
+    "category": "Artefacts",
+    "displayName": "Dragon's Eye"
+  },
+  {
+    "id": "stalker_drought_outfit",
+    "name": "Drought Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Drought Stalker Suit"
+  },
+  {
+    "id": "dolg_novice_outfit",
+    "name": "Duty Leather Jacket",
+    "category": "Outfits",
+    "displayName": "Duty Leather Jacket"
+  },
+  {
+    "id": "wpn_dvl10_m1",
+    "name": "DVL-10 M1 Saboteur",
+    "category": "Snipers",
+    "displayName": "DVL-10 M1 Saboteur",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_dvl10",
+    "name": "DVL-10 M2 Urbana",
+    "category": "Snipers",
+    "displayName": "DVL-10 M2 Urbana",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_ah_g1",
+    "name": "Easy",
+    "category": "Artefacts",
+    "displayName": "Easy [1]"
+  },
+  {
+    "id": "af_ah_g2",
+    "name": "Easy",
+    "category": "Artefacts",
+    "displayName": "Easy [2]"
+  },
+  {
+    "id": "ammo_23_eco",
+    "name": "Ecolog-23 cartridge",
+    "category": "Ammo",
+    "displayName": "Ecolog-23 cartridge"
+  },
+  {
+    "id": "af_elektron",
+    "name": "Electron",
+    "category": "Artefacts",
+    "displayName": "Electron"
+  },
+  {
+    "id": "af_empty",
+    "name": "Empty",
+    "category": "Artefacts",
+    "displayName": "Empty"
+  },
+  {
+    "id": "energy_drink",
+    "name": "Energy Drink",
+    "category": "Food",
+    "displayName": "Energy Drink"
+  },
+  {
+    "id": "adrenalin",
+    "name": "Epinephrine Shot",
+    "category": "Medicine",
+    "displayName": "Epinephrine Shot"
+  },
+  {
+    "id": "antiemetic",
+    "name": "Etperazine",
+    "category": "Medicine",
+    "displayName": "Etperazine"
+  },
+  {
+    "id": "helm_exo",
+    "name": "ExoHelmet",
+    "category": "Helmets",
+    "displayName": "ExoHelmet"
+  },
+  {
+    "id": "exo_outfit",
+    "name": "Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Exoskeleton"
+  },
+  {
+    "id": "exolight_outfit",
+    "name": "Exosuit",
+    "category": "Outfits",
+    "displayName": "Exosuit"
+  },
+  {
+    "id": "af_eye",
+    "name": "Eye",
+    "category": "Artefacts",
+    "displayName": "Eye"
+  },
+  {
+    "id": "wpn_famas3",
+    "name": "FAMAS F1",
+    "category": "Rifles",
+    "displayName": "FAMAS F1",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "banditmerc_outfit",
+    "name": "Fenced LC Suit",
+    "category": "Outfits",
+    "displayName": "Fenced LC Suit"
+  },
+  {
+    "id": "bandit_ps5_outfit",
+    "name": "Fenced PS5-M Universal Protection Suit",
+    "category": "Outfits",
+    "displayName": "Fenced PS5-M Universal Protection Suit"
+  },
+  {
+    "id": "tetanus",
+    "name": "Fentanyl",
+    "category": "Medicine",
+    "displayName": "Fentanyl"
+  },
+  {
+    "id": "novice_outfit_camo",
+    "name": "Firearm Enthusiast's Jacket",
+    "category": "Outfits",
+    "displayName": "Firearm Enthusiast's Jacket"
+  },
+  {
+    "id": "af_fireball",
+    "name": "Fireball",
+    "category": "Artefacts",
+    "displayName": "Fireball"
+  },
+  {
+    "id": "af_glass",
+    "name": "Firefly",
+    "category": "Artefacts",
+    "displayName": "Firefly"
+  },
+  {
+    "id": "af_fire",
+    "name": "Flame",
+    "category": "Artefacts",
+    "displayName": "Flame"
+  },
+  {
+    "id": "af_electra_flash",
+    "name": "Flash",
+    "category": "Artefacts",
+    "displayName": "Flash"
+  },
+  {
+    "id": "flask",
+    "name": "Flask (Clean Water)",
+    "category": "Food",
+    "displayName": "Flask (Clean Water)"
+  },
+  {
+    "id": "meat_flesh_a",
+    "name": "Flesh Bacon",
+    "category": "Food",
+    "displayName": "Flesh Bacon [a]"
+  },
+  {
+    "id": "meat_flesh_b",
+    "name": "Flesh Bacon",
+    "category": "Food",
+    "displayName": "Flesh Bacon [b]"
+  },
+  {
+    "id": "meat_flesh",
+    "name": "Flesh Bacon",
+    "category": "Food",
+    "displayName": "Flesh Bacon [default]"
+  },
+  {
+    "id": "mutant_part_flesh_eye",
+    "name": "Flesh Eye",
+    "category": "Mutant Parts",
+    "displayName": "Flesh Eye"
+  },
+  {
+    "id": "hide_flesh",
+    "name": "Flesh Hide",
+    "category": "Belt Attachments",
+    "displayName": "Flesh Hide"
+  },
+  {
+    "id": "mutant_part_flesh_meat",
+    "name": "Flesh Meat",
+    "category": "Food",
+    "displayName": "Flesh Meat"
+  },
+  {
+    "id": "wpn_fn2000_nimble",
+    "name": "FN F2000 \"Competitor\"",
+    "category": "Rifles",
+    "displayName": "FN F2000 \"Competitor\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_fn2000_camo",
+    "name": "FN F2000",
+    "category": "Rifles",
+    "displayName": "FN F2000 [camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_fn2000_custom",
+    "name": "FN F2000",
+    "category": "Rifles",
+    "displayName": "FN F2000 [custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_fn2000",
+    "name": "FN F2000",
+    "category": "Rifles",
+    "displayName": "FN F2000 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_fal",
+    "name": "FN FAL",
+    "category": "Rifles",
+    "displayName": "FN FAL",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_fn57",
+    "name": "FN Five-seveN",
+    "category": "Pistols",
+    "displayName": "FN Five-seveN",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_fnc",
+    "name": "FN FNC",
+    "category": "Rifles",
+    "displayName": "FN FNC",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_p90",
+    "name": "FN P90",
+    "category": "SMGs",
+    "displayName": "FN P90 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_p90gamma",
+    "name": "FN P90",
+    "category": "SMGs",
+    "displayName": "FN P90 [gamma]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_p90_gs",
+    "name": "FN P90",
+    "category": "SMGs",
+    "displayName": "FN P90 [gs]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_scar_siber_black",
+    "name": "FN SCAR-H \"Black\"",
+    "category": "Rifles",
+    "displayName": "FN SCAR-H \"Black\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_scar_siber_m2",
+    "name": "FN SCAR-H \"Expert Operator\"",
+    "category": "Rifles",
+    "displayName": "FN SCAR-H \"Expert Operator\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_scar_siber_m2_custom",
+    "name": "FN SCAR-H \"Specialist Operator\"",
+    "category": "Rifles",
+    "displayName": "FN SCAR-H \"Specialist Operator\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_scar_siber_m1_black",
+    "name": "FN SCAR-H \"Tactical Black\"",
+    "category": "Rifles",
+    "displayName": "FN SCAR-H \"Tactical Black\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_scar_siber_m1",
+    "name": "FN SCAR-H \"Tactical\"",
+    "category": "Rifles",
+    "displayName": "FN SCAR-H \"Tactical\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_scar_new",
+    "name": "FN SCAR-H",
+    "category": "Rifles",
+    "displayName": "FN SCAR-H [new]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_scar_siber",
+    "name": "FN SCAR-H",
+    "category": "Rifles",
+    "displayName": "FN SCAR-H [siber]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_fnp45",
+    "name": "FNP-45",
+    "category": "Pistols",
+    "displayName": "FNP-45",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_fnx45_custom",
+    "name": "FNX-45",
+    "category": "Pistols",
+    "displayName": "FNX-45 [custom]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_fnx45",
+    "name": "FNX-45",
+    "category": "Pistols",
+    "displayName": "FNX-45 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_fort_snag",
+    "name": "Fort-17",
+    "category": "Pistols",
+    "displayName": "Fort-17 [fort_snag]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_fort",
+    "name": "Fort-17",
+    "category": "Pistols",
+    "displayName": "Fort-17 [fort]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_fort17",
+    "name": "Fort-17",
+    "category": "Pistols",
+    "displayName": "Fort-17 [fort17]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_gsh18_custom",
+    "name": "Fort-17",
+    "category": "Pistols",
+    "displayName": "Fort-17 [gsh18_custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_gsh18",
+    "name": "Fort-17",
+    "category": "Pistols",
+    "displayName": "Fort-17 [gsh18]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_fort500",
+    "name": "Fort-500",
+    "category": "Shotguns",
+    "displayName": "Fort-500",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_fountain",
+    "name": "Fountain",
+    "category": "Artefacts",
+    "displayName": "Fountain"
+  },
+  {
+    "id": "mutant_part_fracture_hand",
+    "name": "Fracture Hand",
+    "category": "Mutant Parts",
+    "displayName": "Fracture Hand"
+  },
+  {
+    "id": "svoboda_novice_outfit",
+    "name": "Freedom Leather Jacket",
+    "category": "Outfits",
+    "displayName": "Freedom Leather Jacket"
+  },
+  {
+    "id": "af_freon",
+    "name": "Freon Emission Module",
+    "category": "Belt Attachments",
+    "displayName": "Freon Emission Module"
+  },
+  {
+    "id": "af_full_empty",
+    "name": "Full Empty",
+    "category": "Artefacts",
+    "displayName": "Full Empty"
+  },
+  {
+    "id": "wpn_g36",
+    "name": "G36",
+    "category": "Rifles",
+    "displayName": "G36 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_g36v_rwap",
+    "name": "G36",
+    "category": "Rifles",
+    "displayName": "G36 [v_rwap]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_g36c_rwap",
+    "name": "G36C",
+    "category": "Rifles",
+    "displayName": "G36C",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_g36nimble_rwap",
+    "name": "G36C \"Merc\"",
+    "category": "Rifles",
+    "displayName": "G36C \"Merc\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_g36_camo",
+    "name": "G36K",
+    "category": "Rifles",
+    "displayName": "G36K [camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_g36k_rwap",
+    "name": "G36K",
+    "category": "Rifles",
+    "displayName": "G36K [k_rwap]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_g36ka4_rwap",
+    "name": "G36K",
+    "category": "Rifles",
+    "displayName": "G36K [ka4_rwap]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_g3",
+    "name": "G3A3",
+    "category": "Rifles",
+    "displayName": "G3A3",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_g3sg1",
+    "name": "G3SG1",
+    "category": "Rifles",
+    "displayName": "G3SG1",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ace21",
+    "name": "Galil ACE-52",
+    "category": "Rifles",
+    "displayName": "Galil ACE-52 [21]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ace52",
+    "name": "Galil ACE-52",
+    "category": "Rifles",
+    "displayName": "Galil ACE-52 [52]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_gauss",
+    "name": "Gauss Rifle",
+    "category": "Snipers",
+    "displayName": "Gauss Rifle",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_generator",
+    "name": "Generator",
+    "category": "Artefacts",
+    "displayName": "Generator"
+  },
+  {
+    "id": "wpn_knife9",
+    "name": "Gerber Tomahawk",
+    "category": "Melee",
+    "displayName": "Gerber Tomahawk"
+  },
+  {
+    "id": "wpn_g43",
+    "name": "Gewehr 43",
+    "category": "Snipers",
+    "displayName": "Gewehr 43",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "ghillie_outfit",
+    "name": "Ghillie Suit",
+    "category": "Outfits",
+    "displayName": "Ghillie Suit"
+  },
+  {
+    "id": "af_gimlet",
+    "name": "Gimlet",
+    "category": "Artefacts",
+    "displayName": "Gimlet"
+  },
+  {
+    "id": "wpn_glock17",
+    "name": "Glock 17",
+    "category": "Pistols",
+    "displayName": "Glock 17",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_glock17_m1",
+    "name": "Glock 17 \"Bruder\"",
+    "category": "Pistols",
+    "displayName": "Glock 17 \"Bruder\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_glock",
+    "name": "Glock 19",
+    "category": "Pistols",
+    "displayName": "Glock 19",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_glock_modern",
+    "name": "Glock 19 \"Hornet\"",
+    "category": "Pistols",
+    "displayName": "Glock 19 \"Hornet\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "glucose_s",
+    "name": "Glucose Shot",
+    "category": "Medicine",
+    "displayName": "Glucose Shot"
+  },
+  {
+    "id": "af_gold_fish",
+    "name": "Goldfish",
+    "category": "Artefacts",
+    "displayName": "Goldfish"
+  },
+  {
+    "id": "helm_ranger",
+    "name": "GP-10z Ranger Gas Mask",
+    "category": "Helmets",
+    "displayName": "GP-10z Ranger Gas Mask"
+  },
+  {
+    "id": "helm_respirator_gp5",
+    "name": "GP-5 Gas Mask",
+    "category": "Helmets",
+    "displayName": "GP-5 Gas Mask"
+  },
+  {
+    "id": "af_grapes",
+    "name": "Grapes",
+    "category": "Artefacts",
+    "displayName": "Grapes"
+  },
+  {
+    "id": "stalker_graphite_outfit",
+    "name": "Graphite Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Graphite Stalker Suit"
+  },
+  {
+    "id": "af_gravi",
+    "name": "Gravi",
+    "category": "Artefacts",
+    "displayName": "Gravi"
+  },
+  {
+    "id": "ground_coffee",
+    "name": "Ground Coffee",
+    "category": "Food",
+    "displayName": "Ground Coffee"
+  },
+  {
+    "id": "svoboda_heavy_outfit",
+    "name": "Guardian of Freedom",
+    "category": "Outfits",
+    "displayName": "Guardian of Freedom"
+  },
+  {
+    "id": "hand_rolling_tobacco",
+    "name": "Hand-rolling Tobacco",
+    "category": "Food",
+    "displayName": "Hand-rolling Tobacco"
+  },
+  {
+    "id": "af_ear",
+    "name": "Heart",
+    "category": "Artefacts",
+    "displayName": "Heart"
+  },
+  {
+    "id": "af_oasis_heart",
+    "name": "Heart of the Oasis",
+    "category": "Artefacts",
+    "displayName": "Heart of the Oasis"
+  },
+  {
+    "id": "trenchcoat_brown_outfit",
+    "name": "Heavy Brown Overcoat",
+    "category": "Outfits",
+    "displayName": "Heavy Brown Overcoat"
+  },
+  {
+    "id": "trenchcoat_dolg_brown_outfit",
+    "name": "Heavy Duty Overcoat",
+    "category": "Outfits",
+    "displayName": "Heavy Duty Overcoat"
+  },
+  {
+    "id": "trenchcoat_freedom_brown_outfit",
+    "name": "Heavy Freedom Overcoat",
+    "category": "Outfits",
+    "displayName": "Heavy Freedom Overcoat"
+  },
+  {
+    "id": "trenchcoat_green_outfit",
+    "name": "Heavy Green Overcoat",
+    "category": "Outfits",
+    "displayName": "Heavy Green Overcoat"
+  },
+  {
+    "id": "af_geliy",
+    "name": "Helium",
+    "category": "Artefacts",
+    "displayName": "Helium"
+  },
+  {
+    "id": "drug_booster",
+    "name": "Hercules",
+    "category": "Medicine",
+    "displayName": "Hercules"
+  },
+  {
+    "id": "freedom_exo_vineleaf_outfit",
+    "name": "Hero of Freedom",
+    "category": "Outfits",
+    "displayName": "Hero of Freedom"
+  },
+  {
+    "id": "wpn_usp",
+    "name": "HK MK23",
+    "category": "Pistols",
+    "displayName": "HK MK23",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_usp_tac_45",
+    "name": "HK USP Tactical .45 ACP",
+    "category": "Pistols",
+    "displayName": "HK USP Tactical .45 ACP",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_hk416",
+    "name": "HK416",
+    "category": "Rifles",
+    "displayName": "HK416",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_hk417",
+    "name": "HK417",
+    "category": "Rifles",
+    "displayName": "HK417",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "ammo_12x70_buck_self",
+    "name": "Home-made 12x70 shot",
+    "category": "Ammo",
+    "displayName": "Home-made 12x70 shot"
+  },
+  {
+    "id": "ammo_gauss_cardan",
+    "name": "Home-made batteries",
+    "category": "Ammo",
+    "displayName": "Home-made batteries"
+  },
+  {
+    "id": "wpn_howa20",
+    "name": "Howa Type 20",
+    "category": "Rifles",
+    "displayName": "Howa Type 20",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_glock_custom",
+    "name": "HS2000",
+    "category": "Pistols",
+    "displayName": "HS2000",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "kit_hunt",
+    "name": "Hunter's Kit",
+    "category": "Belt Attachments",
+    "displayName": "Hunter's Kit"
+  },
+  {
+    "id": "wpn_axe",
+    "name": "Hunting Axe",
+    "category": "Melee",
+    "displayName": "Hunting Axe"
+  },
+  {
+    "id": "wpn_knife3",
+    "name": "Hunting Knife",
+    "category": "Melee",
+    "displayName": "Hunting Knife"
+  },
+  {
+    "id": "hybrid_outfit",
+    "name": "Hybrid Armored Suit",
+    "category": "Outfits",
+    "displayName": "Hybrid Armored Suit"
+  },
+  {
+    "id": "light_dolg_outfit",
+    "name": "IBAz Universal Protection Suit",
+    "category": "Outfits",
+    "displayName": "IBAz Universal Protection Suit"
+  },
+  {
+    "id": "akvatab",
+    "name": "Ibuprofen",
+    "category": "Medicine",
+    "displayName": "Ibuprofen"
+  },
+  {
+    "id": "af_frames_up",
+    "name": "Improved Aluminium Frames",
+    "category": "Belt Attachments",
+    "displayName": "Improved Aluminium Frames"
+  },
+  {
+    "id": "af_cooler_up",
+    "name": "Improved Body Cooler",
+    "category": "Belt Attachments",
+    "displayName": "Improved Body Cooler"
+  },
+  {
+    "id": "af_camelbak_up",
+    "name": "Improved Camelbak",
+    "category": "Belt Attachments",
+    "displayName": "Improved Camelbak"
+  },
+  {
+    "id": "af_plates_up",
+    "name": "Improved Carbon Steel Plates",
+    "category": "Belt Attachments",
+    "displayName": "Improved Carbon Steel Plates"
+  },
+  {
+    "id": "af_freon_up",
+    "name": "Improved Freon Emission Module",
+    "category": "Belt Attachments",
+    "displayName": "Improved Freon Emission Module"
+  },
+  {
+    "id": "af_kevlar_up",
+    "name": "Improved Kevlar Plates and Attachments",
+    "category": "Belt Attachments",
+    "displayName": "Improved Kevlar Plates and Attachments"
+  },
+  {
+    "id": "af_surge_up",
+    "name": "Improved Surge Regenerator",
+    "category": "Belt Attachments",
+    "displayName": "Improved Surge Regenerator"
+  },
+  {
+    "id": "af_grid_up",
+    "name": "Improved Titanium Grid",
+    "category": "Belt Attachments",
+    "displayName": "Improved Titanium Grid"
+  },
+  {
+    "id": "stimpack",
+    "name": "Improvised Stimpack",
+    "category": "Medicine",
+    "displayName": "Improvised Stimpack"
+  },
+  {
+    "id": "light_loner_outfit",
+    "name": "Interceptor Body Armor",
+    "category": "Outfits",
+    "displayName": "Interceptor Body Armor"
+  },
+  {
+    "id": "greh_armored_outfit",
+    "name": "Irij Flak Armor",
+    "category": "Outfits",
+    "displayName": "Irij Flak Armor"
+  },
+  {
+    "id": "ecolog_guard_outfit",
+    "name": "ISRIT Guard Jumpsuit",
+    "category": "Outfits",
+    "displayName": "ISRIT Guard Jumpsuit"
+  },
+  {
+    "id": "af_itcher",
+    "name": "Itcher",
+    "category": "Artefacts",
+    "displayName": "Itcher"
+  },
+  {
+    "id": "wpn_gauss_quest",
+    "name": "Item �62",
+    "category": "Snipers",
+    "displayName": "Item �62",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ithacam37_sawnoff",
+    "name": "Ithaca M37 (Sawn-off)",
+    "category": "Shotguns",
+    "displayName": "Ithaca M37 (Sawn-off)",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ithacam37_mag",
+    "name": "Ithaca M37 Defense",
+    "category": "Shotguns",
+    "displayName": "Ithaca M37 Defense",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ithacam37",
+    "name": "Ithaca M37 Riot",
+    "category": "Shotguns",
+    "displayName": "Ithaca M37 Riot",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ithacam37_stakeout_20x70",
+    "name": "Ithaca M37 Stakeout",
+    "category": "Shotguns",
+    "displayName": "Ithaca M37 Stakeout [20x70]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ithacam37_stakeout",
+    "name": "Ithaca M37 Stakeout",
+    "category": "Shotguns",
+    "displayName": "Ithaca M37 Stakeout [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ithacam37_trench",
+    "name": "Ithaca M37 Trenchgun",
+    "category": "Shotguns",
+    "displayName": "Ithaca M37 Trenchgun",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_medusa",
+    "name": "Jellyfish",
+    "category": "Artefacts",
+    "displayName": "Jellyfish"
+  },
+  {
+    "id": "wpn_k98",
+    "name": "Karabiner 98k",
+    "category": "Snipers",
+    "displayName": "Karabiner 98k",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_k98_mauser_kit",
+    "name": "Karabiner 98k Forester mk.2",
+    "category": "Snipers",
+    "displayName": "Karabiner 98k Forester mk.2 [auser_kit]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_k98_mod_silen98",
+    "name": "Karabiner 98k Forester mk.2",
+    "category": "Snipers",
+    "displayName": "Karabiner 98k Forester mk.2 [od_silen98]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "nbc_freedom_outfit",
+    "name": "Keeper of Freedom",
+    "category": "Outfits",
+    "displayName": "Keeper of Freedom"
+  },
+  {
+    "id": "af_kevlar",
+    "name": "Kevlar Plates and Attachments",
+    "category": "Belt Attachments",
+    "displayName": "Kevlar Plates and Attachments"
+  },
+  {
+    "id": "wpn_korth_custom",
+    "name": "Kimber Rapide .45 ACP",
+    "category": "Pistols",
+    "displayName": "Kimber Rapide .45 ACP",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_fire_loop",
+    "name": "Knot",
+    "category": "Artefacts",
+    "displayName": "Knot"
+  },
+  {
+    "id": "af_fuzz_kolobok",
+    "name": "Kolobok",
+    "category": "Artefacts",
+    "displayName": "Kolobok"
+  },
+  {
+    "id": "wpn_korth",
+    "name": "Korth Custom 4",
+    "category": "Pistols",
+    "displayName": "Korth Custom 4",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_kriss_vector",
+    "name": "KRISS Vector",
+    "category": "SMGs",
+    "displayName": "KRISS Vector",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_saiga12s_isg",
+    "name": "KS-12",
+    "category": "Shotguns",
+    "displayName": "KS-12",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ks23",
+    "name": "KS-23",
+    "category": "Shotguns",
+    "displayName": "KS-23",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ks23_ecolog",
+    "name": "KS-23 Eco",
+    "category": "Shotguns",
+    "displayName": "KS-23 Eco",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ks23_23_up",
+    "name": "KS-23 Shortie",
+    "category": "Shotguns",
+    "displayName": "KS-23 Shortie",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ks23_vorkuta",
+    "name": "KS-23M \"Vorkuta\"",
+    "category": "Shotguns",
+    "displayName": "KS-23M \"Vorkuta\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ks23_kaban",
+    "name": "KS-23M Drozd",
+    "category": "Shotguns",
+    "displayName": "KS-23M Drozd",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ks23_kaban_kab_up",
+    "name": "KS-23M Drozd \"Boar\"",
+    "category": "Shotguns",
+    "displayName": "KS-23M Drozd \"Boar\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ksg23",
+    "name": "KSG-23",
+    "category": "Shotguns",
+    "displayName": "KSG-23",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_knife8",
+    "name": "Kukri",
+    "category": "Melee",
+    "displayName": "Kukri"
+  },
+  {
+    "id": "wpn_colt1911_camo",
+    "name": "L.A.R. Grizzly Win Mag .357",
+    "category": "Pistols",
+    "displayName": "L.A.R. Grizzly Win Mag .357",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_l85_m3",
+    "name": "L85A2 \"Tactical\"",
+    "category": "Rifles",
+    "displayName": "L85A2 \"Tactical\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_l85",
+    "name": "L85A2",
+    "category": "Rifles",
+    "displayName": "L85A2 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_l85_m1",
+    "name": "L85A2",
+    "category": "Rifles",
+    "displayName": "L85A2 [m1]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_l85_m2",
+    "name": "L85A2",
+    "category": "Rifles",
+    "displayName": "L85A2 [m2]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_l85_modern",
+    "name": "L85A2",
+    "category": "Rifles",
+    "displayName": "L85A2 [modern]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_l96a1",
+    "name": "L96A1",
+    "category": "Snipers",
+    "displayName": "L96A1",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_fonar",
+    "name": "Lamp",
+    "category": "Artefacts",
+    "displayName": "Lamp"
+  },
+  {
+    "id": "glucose",
+    "name": "Large Glucose Shot",
+    "category": "Medicine",
+    "displayName": "Large Glucose Shot"
+  },
+  {
+    "id": "novice_outfit",
+    "name": "Leather Jacket",
+    "category": "Outfits",
+    "displayName": "Leather Jacket"
+  },
+  {
+    "id": "wpn_pl15",
+    "name": "Lebedev PL-15",
+    "category": "Pistols",
+    "displayName": "Lebedev PL-15",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pl15_pl15_scolaz",
+    "name": "Lebedev PL-15 \"Bearcat\"",
+    "category": "Pistols",
+    "displayName": "Lebedev PL-15 \"Bearcat\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pl15_tan",
+    "name": "Lebedev PL-15 9x19 pistol",
+    "category": "Pistols",
+    "displayName": "Lebedev PL-15 9x19 pistol",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "military_freedom_outfit",
+    "name": "Liberated Skat-9 Armored Suit",
+    "category": "Outfits",
+    "displayName": "Liberated Skat-9 Armored Suit"
+  },
+  {
+    "id": "bandit_nbc_outfit",
+    "name": "Load-bearing 'Sunset' Tactical Suit",
+    "category": "Outfits",
+    "displayName": "Load-bearing 'Sunset' Tactical Suit"
+  },
+  {
+    "id": "nbc_merc_outfit",
+    "name": "Load-bearing 'Twilight' Tactical Suit",
+    "category": "Outfits",
+    "displayName": "Load-bearing 'Twilight' Tactical Suit"
+  },
+  {
+    "id": "af_lobster_eyes",
+    "name": "Lobster Eyes",
+    "category": "Artefacts",
+    "displayName": "Lobster Eyes"
+  },
+  {
+    "id": "bandit_exolight_outfit",
+    "name": "Looted Exosuit",
+    "category": "Outfits",
+    "displayName": "Looted Exosuit"
+  },
+  {
+    "id": "bandit_scientific_outfit",
+    "name": "Looted SEVA Suit",
+    "category": "Outfits",
+    "displayName": "Looted SEVA Suit"
+  },
+  {
+    "id": "military_bandit_outfit",
+    "name": "Looted Skat-9 Armored Suit",
+    "category": "Outfits",
+    "displayName": "Looted Skat-9 Armored Suit"
+  },
+  {
+    "id": "af_tlf_lost_soul",
+    "name": "Lost Soul",
+    "category": "Artefacts",
+    "displayName": "Lost Soul"
+  },
+  {
+    "id": "meat_lurker_a",
+    "name": "Lurker Chops",
+    "category": "Food",
+    "displayName": "Lurker Chops [a]"
+  },
+  {
+    "id": "meat_lurker_b",
+    "name": "Lurker Chops",
+    "category": "Food",
+    "displayName": "Lurker Chops [b]"
+  },
+  {
+    "id": "meat_lurker",
+    "name": "Lurker Chops",
+    "category": "Food",
+    "displayName": "Lurker Chops [default]"
+  },
+  {
+    "id": "mutant_part_lurker_eye",
+    "name": "Lurker Eye",
+    "category": "Mutant Parts",
+    "displayName": "Lurker Eye"
+  },
+  {
+    "id": "hide_lurker",
+    "name": "Lurker Hide",
+    "category": "Belt Attachments",
+    "displayName": "Lurker Hide"
+  },
+  {
+    "id": "mutant_part_lurker_meat",
+    "name": "Lurker Meat",
+    "category": "Food",
+    "displayName": "Lurker Meat"
+  },
+  {
+    "id": "mutant_part_lurker_tail",
+    "name": "Lurker Tail",
+    "category": "Mutant Parts",
+    "displayName": "Lurker Tail"
+  },
+  {
+    "id": "wpn_benelli_m1014",
+    "name": "M1014",
+    "category": "Shotguns",
+    "displayName": "M1014",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_m16a2",
+    "name": "M16A2",
+    "category": "Rifles",
+    "displayName": "M16A2",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_m16",
+    "name": "M16A4",
+    "category": "Rifles",
+    "displayName": "M16A4",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "ammo_m209",
+    "name": "M203",
+    "category": "Ammo",
+    "displayName": "M203"
+  },
+  {
+    "id": "wpn_m24",
+    "name": "M24 SWS",
+    "category": "Snipers",
+    "displayName": "M24 SWS",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_m249",
+    "name": "M249 SAW",
+    "category": "Rifles",
+    "displayName": "M249 SAW",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_m4",
+    "name": "M4",
+    "category": "Rifles",
+    "displayName": "M4",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "helm_m40",
+    "name": "M40 Gas Mask",
+    "category": "Helmets",
+    "displayName": "M40 Gas Mask"
+  },
+  {
+    "id": "wpn_m4_butcher",
+    "name": "M4A1 \"Butcher\"",
+    "category": "Rifles",
+    "displayName": "M4A1 \"Butcher\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_m4_tac",
+    "name": "M4A1 \"Protector\"",
+    "category": "Rifles",
+    "displayName": "M4A1 \"Protector\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_lr300_camo",
+    "name": "M4A1",
+    "category": "Rifles",
+    "displayName": "M4A1 [lr300_camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_lr300",
+    "name": "M4A1",
+    "category": "Rifles",
+    "displayName": "M4A1 [lr300]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_m4a1_camo",
+    "name": "M4A1",
+    "category": "Rifles",
+    "displayName": "M4A1 [m4a1_camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_m4a1_siber",
+    "name": "M4A1",
+    "category": "Rifles",
+    "displayName": "M4A1 [m4a1_siber]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "helm_m50",
+    "name": "M50z Gas Mask",
+    "category": "Helmets",
+    "displayName": "M50z Gas Mask"
+  },
+  {
+    "id": "wpn_m60",
+    "name": "M60",
+    "category": "Rifles",
+    "displayName": "M60",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_m79",
+    "name": "M79",
+    "category": "Launchers",
+    "displayName": "M79",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_knife5",
+    "name": "M9 Bayonet",
+    "category": "Melee",
+    "displayName": "M9 Bayonet"
+  },
+  {
+    "id": "af_ah_o1",
+    "name": "Magnet",
+    "category": "Artefacts",
+    "displayName": "Magnet [1]"
+  },
+  {
+    "id": "af_ah_o2",
+    "name": "Magnet",
+    "category": "Artefacts",
+    "displayName": "Magnet [2]"
+  },
+  {
+    "id": "wpn_pm_bas",
+    "name": "Makarov PM",
+    "category": "Pistols",
+    "displayName": "Makarov PM",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pm_bas_actor",
+    "name": "Makarov PM \"Mythic\"",
+    "category": "Pistols",
+    "displayName": "Makarov PM \"Mythic\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pm_bas_custom",
+    "name": "Makarov PM Custom",
+    "category": "Pistols",
+    "displayName": "Makarov PM Custom",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pm_actor",
+    "name": "Makarov PM Pistol 9x18",
+    "category": "Pistols",
+    "displayName": "Makarov PM Pistol 9x18 [actor]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pm_custom",
+    "name": "Makarov PM Pistol 9x18",
+    "category": "Pistols",
+    "displayName": "Makarov PM Pistol 9x18 [custom]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_pm",
+    "name": "Makarov PM Pistol 9x18",
+    "category": "Pistols",
+    "displayName": "Makarov PM Pistol 9x18 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pmm_bas",
+    "name": "Makarov PMM",
+    "category": "Pistols",
+    "displayName": "Makarov PMM",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_dummy_glassbeads",
+    "name": "Mama's Beads",
+    "category": "Artefacts",
+    "displayName": "Mama's Beads"
+  },
+  {
+    "id": "wpn_tt33_modern_tt_upgr_kit",
+    "name": "Mangun's ��-33 7.62x25 ��",
+    "category": "Pistols",
+    "displayName": "Mangun's ��-33 7.62x25 ��",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "marijuana",
+    "name": "Marijuana",
+    "category": "Medicine",
+    "displayName": "Marijuana"
+  },
+  {
+    "id": "wpn_k98_mod",
+    "name": "Mauser 98k Forester mk.1",
+    "category": "Snipers",
+    "displayName": "Mauser 98k Forester mk.1",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_mincer_meat",
+    "name": "Meat Chunk",
+    "category": "Artefacts",
+    "displayName": "Meat Chunk"
+  },
+  {
+    "id": "af_medallion",
+    "name": "Medal",
+    "category": "Artefacts",
+    "displayName": "Medal"
+  },
+  {
+    "id": "merc_ace_outfit",
+    "name": "Mercenary ACE Scientific Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary ACE Scientific Suit"
+  },
+  {
+    "id": "specops_merc_outfit",
+    "name": "Mercenary B-5M Armored Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary B-5M Armored Suit"
+  },
+  {
+    "id": "merc_exo_outfit",
+    "name": "Mercenary Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Mercenary Exoskeleton"
+  },
+  {
+    "id": "merc_exolight_outfit",
+    "name": "Mercenary Exosuit",
+    "category": "Outfits",
+    "displayName": "Mercenary Exosuit"
+  },
+  {
+    "id": "exo_merc_grass_outfit",
+    "name": "Mercenary Grassland Exosuit",
+    "category": "Outfits",
+    "displayName": "Mercenary Grassland Exosuit"
+  },
+  {
+    "id": "light_merc_outfit",
+    "name": "Mercenary IBAz Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary IBAz Suit"
+  },
+  {
+    "id": "merc_outfit",
+    "name": "Mercenary LC Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary LC Suit"
+  },
+  {
+    "id": "merc_fighter_outfit",
+    "name": "Mercenary LC-F Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary LC-F Suit"
+  },
+  {
+    "id": "merc_scout_outfit",
+    "name": "Mercenary LC-S Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary LC-S Suit"
+  },
+  {
+    "id": "merc_sunset_outfit",
+    "name": "Mercenary LCz Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary LCz Suit"
+  },
+  {
+    "id": "merc_jackal_outfit",
+    "name": "Mercenary LTS-J Body Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary LTS-J Body Suit"
+  },
+  {
+    "id": "merc_coyote_outfit",
+    "name": "Mercenary MTS-C Body Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary MTS-C Body Suit"
+  },
+  {
+    "id": "merc_nosorog_outfit",
+    "name": "Mercenary Nosorog",
+    "category": "Outfits",
+    "displayName": "Mercenary Nosorog"
+  },
+  {
+    "id": "merc_combat_scientific_outfit",
+    "name": "Mercenary Pathfinder",
+    "category": "Outfits",
+    "displayName": "Mercenary Pathfinder"
+  },
+  {
+    "id": "merc_scientific_armored_outfit",
+    "name": "Mercenary SEVA Body Armor",
+    "category": "Outfits",
+    "displayName": "Mercenary SEVA Body Armor"
+  },
+  {
+    "id": "merc_scientific_outfit",
+    "name": "Mercenary SEVA Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary SEVA Suit"
+  },
+  {
+    "id": "military_merc_outfit",
+    "name": "Mercenary Skat-9 Armored Suit",
+    "category": "Outfits",
+    "displayName": "Mercenary Skat-9 Armored Suit"
+  },
+  {
+    "id": "merc_nighthunter_outfit",
+    "name": "Mercenary STS-N Body Armor",
+    "category": "Outfits",
+    "displayName": "Mercenary STS-N Body Armor"
+  },
+  {
+    "id": "merc_wolven_outfit",
+    "name": "Mercenary STS-W Body Armor",
+    "category": "Outfits",
+    "displayName": "Mercenary STS-W Body Armor"
+  },
+  {
+    "id": "exo_merc_urban_outfit",
+    "name": "Mercenary Urban Exosuit",
+    "category": "Outfits",
+    "displayName": "Mercenary Urban Exosuit"
+  },
+  {
+    "id": "exo_merc_wood_outfit",
+    "name": "Mercenary Woodland Exosuit",
+    "category": "Outfits",
+    "displayName": "Mercenary Woodland Exosuit"
+  },
+  {
+    "id": "salicidic_acid",
+    "name": "Metamizole Ampoule",
+    "category": "Medicine",
+    "displayName": "Metamizole Ampoule"
+  },
+  {
+    "id": "army_outfit",
+    "name": "Military Service Outfit",
+    "category": "Outfits",
+    "displayName": "Military Service Outfit"
+  },
+  {
+    "id": "military_exo_outfit",
+    "name": "Military Stalker Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Military Stalker Exoskeleton"
+  },
+  {
+    "id": "military_exolight_outfit",
+    "name": "Military Stalker Exosuit",
+    "category": "Outfits",
+    "displayName": "Military Stalker Exosuit"
+  },
+  {
+    "id": "light_voen_outfit",
+    "name": "Military Stalker IBAz Suit",
+    "category": "Outfits",
+    "displayName": "Military Stalker IBAz Suit"
+  },
+  {
+    "id": "army_nosorog_outfit",
+    "name": "Military Stalker Nosorog",
+    "category": "Outfits",
+    "displayName": "Military Stalker Nosorog"
+  },
+  {
+    "id": "stimpack_army",
+    "name": "Military Stimpack",
+    "category": "Medicine",
+    "displayName": "Military Stimpack"
+  },
+  {
+    "id": "mineral_water",
+    "name": "Mineral Water",
+    "category": "Food",
+    "displayName": "Mineral Water"
+  },
+  {
+    "id": "af_skull_miser",
+    "name": "Miser's Skull",
+    "category": "Artefacts",
+    "displayName": "Miser's Skull"
+  },
+  {
+    "id": "nuts",
+    "name": "Mixed Nuts",
+    "category": "Food",
+    "displayName": "Mixed Nuts"
+  },
+  {
+    "id": "wpn_mk14",
+    "name": "Mk 14 EBR",
+    "category": "Rifles",
+    "displayName": "Mk 14 EBR",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_knife7",
+    "name": "Monolith Blade",
+    "category": "Melee",
+    "displayName": "Monolith Blade"
+  },
+  {
+    "id": "monolith_exo_outfit",
+    "name": "Monolith Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Monolith Exoskeleton"
+  },
+  {
+    "id": "monolith_exolight_outfit",
+    "name": "Monolith Exosuit",
+    "category": "Outfits",
+    "displayName": "Monolith Exosuit"
+  },
+  {
+    "id": "light_monolit_outfit",
+    "name": "Monolith IBAz Assault Suit",
+    "category": "Outfits",
+    "displayName": "Monolith IBAz Assault Suit"
+  },
+  {
+    "id": "monolith_nosorog_outfit",
+    "name": "Monolith Nosorog",
+    "category": "Outfits",
+    "displayName": "Monolith Nosorog"
+  },
+  {
+    "id": "monolith_trenchcoat_outfit",
+    "name": "Monolith Overcoat",
+    "category": "Outfits",
+    "displayName": "Monolith Overcoat"
+  },
+  {
+    "id": "monolith_scientific_light_outfit",
+    "name": "Monolith Patchwork Science Suit",
+    "category": "Outfits",
+    "displayName": "Monolith Patchwork Science Suit"
+  },
+  {
+    "id": "monolith_scientific_outfit",
+    "name": "Monolith Scientific Suit",
+    "category": "Outfits",
+    "displayName": "Monolith Scientific Suit"
+  },
+  {
+    "id": "military_monolit_outfit",
+    "name": "Monolith Skat-9 Armored Suit",
+    "category": "Outfits",
+    "displayName": "Monolith Skat-9 Armored Suit"
+  },
+  {
+    "id": "monolith_outfit",
+    "name": "Monolith X-18 Suit",
+    "category": "Outfits",
+    "displayName": "Monolith X-18 Suit"
+  },
+  {
+    "id": "af_peas",
+    "name": "Moon",
+    "category": "Artefacts",
+    "displayName": "Moon"
+  },
+  {
+    "id": "af_electra_moonlight",
+    "name": "Moonlight",
+    "category": "Artefacts",
+    "displayName": "Moonlight"
+  },
+  {
+    "id": "morphine",
+    "name": "Morphine Ampoule",
+    "category": "Medicine",
+    "displayName": "Morphine Ampoule"
+  },
+  {
+    "id": "wpn_mosin",
+    "name": "Mosin Nagant",
+    "category": "Snipers",
+    "displayName": "Mosin Nagant",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_moh",
+    "name": "Moss",
+    "category": "Artefacts",
+    "displayName": "Moss"
+  },
+  {
+    "id": "wpn_mossberg590",
+    "name": "Mossberg 590A1",
+    "category": "Shotguns",
+    "displayName": "Mossberg 590A1 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_mossberg590_rail",
+    "name": "Mossberg 590A1",
+    "category": "Shotguns",
+    "displayName": "Mossberg 590A1 [rail]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp133",
+    "name": "MP-133",
+    "category": "Shotguns",
+    "displayName": "MP-133",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_mp153",
+    "name": "MP-153",
+    "category": "Shotguns",
+    "displayName": "MP-153",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_mp153_m1",
+    "name": "MP-153 \"Carabineer\"",
+    "category": "Shotguns",
+    "displayName": "MP-153 \"Carabineer\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_mp155",
+    "name": "MP-155",
+    "category": "Shotguns",
+    "displayName": "MP-155",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp412",
+    "name": "MP-412 Rex",
+    "category": "Pistols",
+    "displayName": "MP-412 Rex",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp443",
+    "name": "MP-443 Grach",
+    "category": "Pistols",
+    "displayName": "MP-443 Grach",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp5",
+    "name": "MP5A3",
+    "category": "SMGs",
+    "displayName": "MP5A3",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp5_nimble",
+    "name": "MP5A3 \"Frasier\"",
+    "category": "SMGs",
+    "displayName": "MP5A3 \"Frasier\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp5sd",
+    "name": "MP5SD6",
+    "category": "SMGs",
+    "displayName": "MP5SD6",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_mp7",
+    "name": "MP7",
+    "category": "SMGs",
+    "displayName": "MP7",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "mre",
+    "name": "MRE",
+    "category": "Food",
+    "displayName": "MRE"
+  },
+  {
+    "id": "af_ah_r1",
+    "name": "Mushroom",
+    "category": "Artefacts",
+    "displayName": "Mushroom [1]"
+  },
+  {
+    "id": "af_ah_r2",
+    "name": "Mushroom",
+    "category": "Artefacts",
+    "displayName": "Mushroom [2]"
+  },
+  {
+    "id": "af_ah_r3",
+    "name": "Mushroom",
+    "category": "Artefacts",
+    "displayName": "Mushroom [3]"
+  },
+  {
+    "id": "af_ah_r4",
+    "name": "Mushroom",
+    "category": "Artefacts",
+    "displayName": "Mushroom [4]"
+  },
+  {
+    "id": "af_ah_r5",
+    "name": "Mushroom",
+    "category": "Artefacts",
+    "displayName": "Mushroom [5]"
+  },
+  {
+    "id": "mutant_part_crow_beak",
+    "name": "Mutated Crow Beak",
+    "category": "Mutant Parts",
+    "displayName": "Mutated Crow Beak"
+  },
+  {
+    "id": "af_night_star",
+    "name": "Nightstar",
+    "category": "Artefacts",
+    "displayName": "Nightstar"
+  },
+  {
+    "id": "nomad_outfit",
+    "name": "Nomad Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Nomad Stalker Suit"
+  },
+  {
+    "id": "wpn_knife2",
+    "name": "NR-40 Scout Knife",
+    "category": "Melee",
+    "displayName": "NR-40 Scout Knife"
+  },
+  {
+    "id": "wpn_groza",
+    "name": "OC-14 Groza",
+    "category": "Rifles",
+    "displayName": "OC-14 Groza",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "ammo_og-7b",
+    "name": "OG-7V",
+    "category": "Ammo",
+    "displayName": "OG-7V"
+  },
+  {
+    "id": "wpn_kiparis",
+    "name": "OTs-02 Kiparis",
+    "category": "SMGs",
+    "displayName": "OTs-02 Kiparis",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_svu_alt",
+    "name": "OTs-03 SVU",
+    "category": "Snipers",
+    "displayName": "OTs-03 SVU [alt]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_svu",
+    "name": "OTs-03 SVU",
+    "category": "Snipers",
+    "displayName": "OTs-03 SVU [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_svu_nimble",
+    "name": "OTs-03A SVU-A",
+    "category": "Snipers",
+    "displayName": "OTs-03A SVU-A",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_groza_nimble",
+    "name": "OTs-14 Groza \"Storm\"",
+    "category": "Rifles",
+    "displayName": "OTs-14 Groza \"Storm\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_oc33",
+    "name": "OTs-33 \"Pernach\"",
+    "category": "Pistols",
+    "displayName": "OTs-33 \"Pernach\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_knife6",
+    "name": "OTs-4 Combat Knife",
+    "category": "Melee",
+    "displayName": "OTs-4 Combat Knife"
+  },
+  {
+    "id": "trenchcoat_outfit",
+    "name": "Overcoat",
+    "category": "Outfits",
+    "displayName": "Overcoat"
+  },
+  {
+    "id": "svoboda_exo_outfit",
+    "name": "Paragon of Freedom",
+    "category": "Outfits",
+    "displayName": "Paragon of Freedom"
+  },
+  {
+    "id": "bandit_scientific_dark_outfit",
+    "name": "Patchwork Anomaly Suit",
+    "category": "Outfits",
+    "displayName": "Patchwork Anomaly Suit"
+  },
+  {
+    "id": "wpn_pb_bas_custom",
+    "name": "PB",
+    "category": "Pistols",
+    "displayName": "PB [custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pb_bas",
+    "name": "PB",
+    "category": "Pistols",
+    "displayName": "PB [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_star_phantom",
+    "name": "Phantom Star",
+    "category": "Artefacts",
+    "displayName": "Phantom Star"
+  },
+  {
+    "id": "af_pin",
+    "name": "Pin",
+    "category": "Artefacts",
+    "displayName": "Pin"
+  },
+  {
+    "id": "wpn_pkm_zenit_siber",
+    "name": "PKM \"Zenit\"",
+    "category": "Rifles",
+    "displayName": "PKM \"Zenit\" [enit_siber]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pkm_zulus",
+    "name": "PKM \"Zenit\"",
+    "category": "Rifles",
+    "displayName": "PKM \"Zenit\" [ulus]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pkm",
+    "name": "PKM",
+    "category": "Rifles",
+    "displayName": "PKM [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pkm_siber",
+    "name": "PKM",
+    "category": "Rifles",
+    "displayName": "PKM [siber]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_pkp",
+    "name": "PKP Pecheneg",
+    "category": "Rifles",
+    "displayName": "PKP Pecheneg [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_pkp_siber",
+    "name": "PKP Pecheneg",
+    "category": "Rifles",
+    "displayName": "PKP Pecheneg [siber]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "antirad_kalium",
+    "name": "Potassium Iodide",
+    "category": "Medicine",
+    "displayName": "Potassium Iodide"
+  },
+  {
+    "id": "wpn_bizon",
+    "name": "PP-19 Bizon",
+    "category": "SMGs",
+    "displayName": "PP-19 Bizon",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_vityaz",
+    "name": "PP-19-01 Vityaz",
+    "category": "SMGs",
+    "displayName": "PP-19-01 Vityaz",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_pp2000",
+    "name": "PP-2000",
+    "category": "SMGs",
+    "displayName": "PP-2000",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_pp2000_operator",
+    "name": "PP-2000 \"Operator\"",
+    "category": "SMGs",
+    "displayName": "PP-2000 \"Operator\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "helm_ppm88",
+    "name": "PPM-88 Gas Mask",
+    "category": "Helmets",
+    "displayName": "PPM-88 Gas Mask"
+  },
+  {
+    "id": "wpn_ppsh41",
+    "name": "PPSh-41",
+    "category": "SMGs",
+    "displayName": "PPSh-41 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ppsh41_rednew",
+    "name": "PPSh-41",
+    "category": "SMGs",
+    "displayName": "PPSh-41 [rednew]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ppsh41_woodnew",
+    "name": "PPSh-41",
+    "category": "SMGs",
+    "displayName": "PPSh-41 [woodnew]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "stalker_predator_outfit",
+    "name": "Predator Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Predator Stalker Suit"
+  },
+  {
+    "id": "af_tlf_prometheus",
+    "name": "Prometheus",
+    "category": "Artefacts",
+    "displayName": "Prometheus"
+  },
+  {
+    "id": "protein",
+    "name": "Protein Bar",
+    "category": "Food",
+    "displayName": "Protein Bar"
+  },
+  {
+    "id": "dolg_scientific_wood_outfit",
+    "name": "PS5-9Md Light Pathfinder",
+    "category": "Outfits",
+    "displayName": "PS5-9Md Light Pathfinder"
+  },
+  {
+    "id": "dolg_scientific_red_outfit",
+    "name": "PS5-9Md Light Scientific Suit",
+    "category": "Outfits",
+    "displayName": "PS5-9Md Light Scientific Suit"
+  },
+  {
+    "id": "dolg_scientific_outfit",
+    "name": "PS5-9Md Universal Scientific Suit",
+    "category": "Outfits",
+    "displayName": "PS5-9Md Universal Scientific Suit"
+  },
+  {
+    "id": "specops_dolg_outfit",
+    "name": "PS5-B Battle Armor",
+    "category": "Outfits",
+    "displayName": "PS5-B Battle Armor"
+  },
+  {
+    "id": "dolg_specops_red_outfit",
+    "name": "PS5-B2 Veteran Battlesuit",
+    "category": "Outfits",
+    "displayName": "PS5-B2 Veteran Battlesuit"
+  },
+  {
+    "id": "dolg_proto_exo_outfit",
+    "name": "PS5-M Exoskeleton",
+    "category": "Outfits",
+    "displayName": "PS5-M Exoskeleton"
+  },
+  {
+    "id": "dolg_red_outfit",
+    "name": "PS5-M Hunter Suit",
+    "category": "Outfits",
+    "displayName": "PS5-M Hunter Suit"
+  },
+  {
+    "id": "dolg_outfit",
+    "name": "PS5-M Universal Protection Suit",
+    "category": "Outfits",
+    "displayName": "PS5-M Universal Protection Suit"
+  },
+  {
+    "id": "nbc_dolg_outfit",
+    "name": "PS5-Mt Suit",
+    "category": "Outfits",
+    "displayName": "PS5-Mt Suit"
+  },
+  {
+    "id": "dolg_scout_outfit",
+    "name": "PS5-R Scout Vest",
+    "category": "Outfits",
+    "displayName": "PS5-R Scout Vest"
+  },
+  {
+    "id": "dolg_voin_outfit",
+    "name": "PS6-V Warrior Suit",
+    "category": "Outfits",
+    "displayName": "PS6-V Warrior Suit"
+  },
+  {
+    "id": "meat_pseudodog_a",
+    "name": "Pseudodog Chops",
+    "category": "Food",
+    "displayName": "Pseudodog Chops [a]"
+  },
+  {
+    "id": "meat_pseudodog_b",
+    "name": "Pseudodog Chops",
+    "category": "Food",
+    "displayName": "Pseudodog Chops [b]"
+  },
+  {
+    "id": "meat_pseudodog",
+    "name": "Pseudodog Chops",
+    "category": "Food",
+    "displayName": "Pseudodog Chops [default]"
+  },
+  {
+    "id": "mutant_part_fang_psevdodog",
+    "name": "Pseudodog Fang",
+    "category": "Mutant Parts",
+    "displayName": "Pseudodog Fang"
+  },
+  {
+    "id": "hide_pseudodog",
+    "name": "Pseudodog Fur",
+    "category": "Belt Attachments",
+    "displayName": "Pseudodog Fur"
+  },
+  {
+    "id": "mutant_part_psevdodog_meat",
+    "name": "Pseudodog Meat",
+    "category": "Food",
+    "displayName": "Pseudodog Meat"
+  },
+  {
+    "id": "mutant_part_psevdodog_tail",
+    "name": "Pseudodog Tail",
+    "category": "Mutant Parts",
+    "displayName": "Pseudodog Tail"
+  },
+  {
+    "id": "mutant_part_pseudogigant_eye",
+    "name": "Pseudogiant Eye",
+    "category": "Mutant Parts",
+    "displayName": "Pseudogiant Eye"
+  },
+  {
+    "id": "mutant_part_pseudogigant_hand",
+    "name": "Pseudogiant Hand",
+    "category": "Mutant Parts",
+    "displayName": "Pseudogiant Hand"
+  },
+  {
+    "id": "hide_pseudogiant",
+    "name": "Pseudogiant Hide",
+    "category": "Belt Attachments",
+    "displayName": "Pseudogiant Hide"
+  },
+  {
+    "id": "drug_psy_blockade",
+    "name": "Psy-block",
+    "category": "Medicine",
+    "displayName": "Psy-block"
+  },
+  {
+    "id": "hide_psy_dog",
+    "name": "Psy-dog Fur",
+    "category": "Belt Attachments",
+    "displayName": "Psy-dog Fur"
+  },
+  {
+    "id": "meat_psysucker_a",
+    "name": "Psysucker Goulash",
+    "category": "Food",
+    "displayName": "Psysucker Goulash [a]"
+  },
+  {
+    "id": "meat_psysucker_b",
+    "name": "Psysucker Goulash",
+    "category": "Food",
+    "displayName": "Psysucker Goulash [b]"
+  },
+  {
+    "id": "meat_psysucker",
+    "name": "Psysucker Goulash",
+    "category": "Food",
+    "displayName": "Psysucker Goulash [default]"
+  },
+  {
+    "id": "mutant_part_psysucker_hand",
+    "name": "Psysucker Hand",
+    "category": "Mutant Parts",
+    "displayName": "Psysucker Hand"
+  },
+  {
+    "id": "mutant_part_psysucker_meat",
+    "name": "Psysucker Meat",
+    "category": "Food",
+    "displayName": "Psysucker Meat"
+  },
+  {
+    "id": "hide_psysucker",
+    "name": "Psysucker Skin",
+    "category": "Belt Attachments",
+    "displayName": "Psysucker Skin"
+  },
+  {
+    "id": "dolg_exolight_outfit",
+    "name": "PSZ-10d Duty Battlesuit",
+    "category": "Outfits",
+    "displayName": "PSZ-10d Duty Battlesuit [dolg_exolight_outfit]"
+  },
+  {
+    "id": "exo_dolg_outfit",
+    "name": "PSZ-10d Duty Battlesuit",
+    "category": "Outfits",
+    "displayName": "PSZ-10d Duty Battlesuit [exo_dolg_outfit]"
+  },
+  {
+    "id": "dolg_exo_outfit",
+    "name": "PSZ-10d Exoskeleton",
+    "category": "Outfits",
+    "displayName": "PSZ-10d Exoskeleton"
+  },
+  {
+    "id": "dolg_nosorog_outfit",
+    "name": "PSZ-10d Nosorog",
+    "category": "Outfits",
+    "displayName": "PSZ-10d Nosorog"
+  },
+  {
+    "id": "exo_dolg_red_outfit",
+    "name": "PSZ-10d Venator Battlesuit",
+    "category": "Outfits",
+    "displayName": "PSZ-10d Venator Battlesuit"
+  },
+  {
+    "id": "exo_dolg_urban_outfit",
+    "name": "PSZ-10g Urban Battlesuit",
+    "category": "Outfits",
+    "displayName": "PSZ-10g Urban Battlesuit"
+  },
+  {
+    "id": "exo_dolg_wood_outfit",
+    "name": "PSZ-10l Forest Battlesuit",
+    "category": "Outfits",
+    "displayName": "PSZ-10l Forest Battlesuit"
+  },
+  {
+    "id": "dolg_pantsir_outfit",
+    "name": "PSZ-7p Shell Armor",
+    "category": "Outfits",
+    "displayName": "PSZ-7p Shell Armor"
+  },
+  {
+    "id": "dolg_heavy_outfit",
+    "name": "PSZ-9d Body Armor",
+    "category": "Outfits",
+    "displayName": "PSZ-9d Body Armor"
+  },
+  {
+    "id": "dolg_heavy_proto_exo_outfit",
+    "name": "PSZ-9d Exoskeleton",
+    "category": "Outfits",
+    "displayName": "PSZ-9d Exoskeleton"
+  },
+  {
+    "id": "dolg_heavy_redline_outfit",
+    "name": "PSZ-9kl Command Armor",
+    "category": "Outfits",
+    "displayName": "PSZ-9kl Command Armor"
+  },
+  {
+    "id": "drug_radioprotector",
+    "name": "Radioprotectant",
+    "category": "Medicine",
+    "displayName": "Radioprotectant"
+  },
+  {
+    "id": "raisins",
+    "name": "Raisins",
+    "category": "Food",
+    "displayName": "Raisins"
+  },
+  {
+    "id": "wpn_raptr",
+    "name": "RAPTR",
+    "category": "Shotguns",
+    "displayName": "RAPTR [raptr]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_usas12",
+    "name": "RAPTR",
+    "category": "Shotguns",
+    "displayName": "RAPTR [usas12]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "meat_tushkano_a",
+    "name": "Rat Skewers",
+    "category": "Food",
+    "displayName": "Rat Skewers [a]"
+  },
+  {
+    "id": "meat_tushkano_b",
+    "name": "Rat Skewers",
+    "category": "Food",
+    "displayName": "Rat Skewers [b]"
+  },
+  {
+    "id": "meat_tushkano",
+    "name": "Rat Skewers",
+    "category": "Food",
+    "displayName": "Rat Skewers [default]"
+  },
+  {
+    "id": "wpn_ak74_isg",
+    "name": "RD 5.45 Custom \"ISG\"",
+    "category": "Rifles",
+    "displayName": "RD 5.45 Custom \"ISG\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_akm_isg",
+    "name": "RD 706 \"ISG\"",
+    "category": "Rifles",
+    "displayName": "RD 706 \"ISG\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ak74u_isg",
+    "name": "RD Quickhatch 5.45 \"ISG\"",
+    "category": "Rifles",
+    "displayName": "RD Quickhatch 5.45 \"ISG\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_ak74u_m1_isg",
+    "name": "RD Quickhatch 7.62 \"ISG\"",
+    "category": "Rifles",
+    "displayName": "RD Quickhatch 7.62 \"ISG\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_vintorez_isg",
+    "name": "RD-939",
+    "category": "Rifles",
+    "displayName": "RD-939",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "redline_novice_outfit",
+    "name": "Redline Leather Jacket",
+    "category": "Outfits",
+    "displayName": "Redline Leather Jacket"
+  },
+  {
+    "id": "helm_respirator",
+    "name": "Refitted PBF Gas Mask Kit",
+    "category": "Helmets",
+    "displayName": "Refitted PBF Gas Mask Kit [default]"
+  },
+  {
+    "id": "helm_respirator_old",
+    "name": "Refitted PBF Gas Mask Kit",
+    "category": "Helmets",
+    "displayName": "Refitted PBF Gas Mask Kit [old]"
+  },
+  {
+    "id": "wpn_remington700",
+    "name": "Remington 700",
+    "category": "Snipers",
+    "displayName": "Remington 700",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_remington700_archangel",
+    "name": "Remington 700 \"Archangel\"",
+    "category": "Snipers",
+    "displayName": "Remington 700 \"Archangel\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_remington700_lapua700",
+    "name": "Remington 700 \"Deer Hunter\"",
+    "category": "Snipers",
+    "displayName": "Remington 700 \"Deer Hunter\" [remington700_lapua700]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_trg",
+    "name": "Remington 700 \"Deer Hunter\"",
+    "category": "Snipers",
+    "displayName": "Remington 700 \"Deer Hunter\" [trg]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_remington700_magpul_pro",
+    "name": "Remington 700 \"Magpul PRO\"",
+    "category": "Snipers",
+    "displayName": "Remington 700 \"Magpul PRO\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_remington700_mod_x_gen3",
+    "name": "Remington 700 \"MOD X Gen.3\"",
+    "category": "Snipers",
+    "displayName": "Remington 700 \"MOD X Gen.3\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_remington870",
+    "name": "Remington 870",
+    "category": "Shotguns",
+    "displayName": "Remington 870",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "renegade_exo_outfit",
+    "name": "Renegade Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Renegade Exoskeleton"
+  },
+  {
+    "id": "renegademerc_outfit",
+    "name": "Renegade LC Suit",
+    "category": "Outfits",
+    "displayName": "Renegade LC Suit"
+  },
+  {
+    "id": "renegade_scientific_outfit",
+    "name": "Renegade SEVA Suit",
+    "category": "Outfits",
+    "displayName": "Renegade SEVA Suit"
+  },
+  {
+    "id": "helm_resp",
+    "name": "Respirator",
+    "category": "Helmets",
+    "displayName": "Respirator"
+  },
+  {
+    "id": "wpn_rg-6",
+    "name": "RG-6 Grenade Launcher",
+    "category": "Launchers",
+    "displayName": "RG-6 Grenade Launcher",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_ring",
+    "name": "Ring",
+    "category": "Artefacts",
+    "displayName": "Ring"
+  },
+  {
+    "id": "wpn_rpd",
+    "name": "RPD",
+    "category": "Rifles",
+    "displayName": "RPD",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_rpg7",
+    "name": "RPG-7",
+    "category": "Launchers",
+    "displayName": "RPG-7",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_rpk",
+    "name": "RPK",
+    "category": "Rifles",
+    "displayName": "RPK",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_rpk74_16",
+    "name": "RPK-16 LMG",
+    "category": "Rifles",
+    "displayName": "RPK-16 LMG [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_rpk74_16_drum",
+    "name": "RPK-16 LMG",
+    "category": "Rifles",
+    "displayName": "RPK-16 LMG [drum]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_rpk74",
+    "name": "RPK-74",
+    "category": "Rifles",
+    "displayName": "RPK-74",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_eft_rsh12",
+    "name": "RSh-12 Shorty 12.7x55mm",
+    "category": "Pistols",
+    "displayName": "RSh-12 Shorty 12.7x55mm",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_m4_ru556",
+    "name": "Ruger SR-556",
+    "category": "Rifles",
+    "displayName": "Ruger SR-556",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "ration_ru",
+    "name": "Russian IRP-B Combat Ration",
+    "category": "Food",
+    "displayName": "Russian IRP-B Combat Ration"
+  },
+  {
+    "id": "tobacco",
+    "name": "Russian Tobacco",
+    "category": "Food",
+    "displayName": "Russian Tobacco"
+  },
+  {
+    "id": "wpn_fal_aus",
+    "name": "SA-58 AUS",
+    "category": "Rifles",
+    "displayName": "SA-58 AUS",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_fal_sa58_osw",
+    "name": "SA-58 OSW",
+    "category": "Rifles",
+    "displayName": "SA-58 OSW",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_saiga12s_m1",
+    "name": "Saiga-12",
+    "category": "Shotguns",
+    "displayName": "Saiga-12 [saiga12s_m1]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_saiga12s",
+    "name": "Saiga-12",
+    "category": "Shotguns",
+    "displayName": "Saiga-12 [saiga12s]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_vepr",
+    "name": "Saiga-12",
+    "category": "Shotguns",
+    "displayName": "Saiga-12 [vepr]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_saiga12s_m2",
+    "name": "Saiga-12 Tactical",
+    "category": "Shotguns",
+    "displayName": "Saiga-12 Tactical",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "stalker_salamander_outfit",
+    "name": "Salamander Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Salamander Stalker Suit"
+  },
+  {
+    "id": "af_sandstone",
+    "name": "Sandstone",
+    "category": "Artefacts",
+    "displayName": "Sandstone"
+  },
+  {
+    "id": "af_zhelch",
+    "name": "Scar",
+    "category": "Artefacts",
+    "displayName": "Scar"
+  },
+  {
+    "id": "ecolog_exo_outfit",
+    "name": "Scientific Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Scientific Exoskeleton"
+  },
+  {
+    "id": "medkit_scientic",
+    "name": "Scientific Medkit",
+    "category": "Medicine",
+    "displayName": "Scientific Medkit"
+  },
+  {
+    "id": "stimpack_scientic",
+    "name": "Scientific Stimpack",
+    "category": "Medicine",
+    "displayName": "Scientific Stimpack"
+  },
+  {
+    "id": "svoboda_heavy_outfit_2",
+    "name": "Sentinel of Freedom",
+    "category": "Outfits",
+    "displayName": "Sentinel of Freedom"
+  },
+  {
+    "id": "af_serofim",
+    "name": "Seraphim",
+    "category": "Artefacts",
+    "displayName": "Seraphim"
+  },
+  {
+    "id": "wpn_sr1m",
+    "name": "Serdyukov SR-1MP Gyurza 9x21 pistol",
+    "category": "Pistols",
+    "displayName": "Serdyukov SR-1MP Gyurza 9x21 pistol [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sr1m_sr1upgr1",
+    "name": "Serdyukov SR-1MP Gyurza 9x21 pistol",
+    "category": "Pistols",
+    "displayName": "Serdyukov SR-1MP Gyurza 9x21 pistol [sr1upgr1]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "scientific_outfit",
+    "name": "SEVA Bodysuit",
+    "category": "Outfits",
+    "displayName": "SEVA Bodysuit"
+  },
+  {
+    "id": "wpn_ash12",
+    "name": "ShAK-12",
+    "category": "Rifles",
+    "displayName": "ShAK-12 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ash12_sup",
+    "name": "ShAK-12",
+    "category": "Rifles",
+    "displayName": "ShAK-12 [sup]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_dummy_dummy",
+    "name": "Shell",
+    "category": "Artefacts",
+    "displayName": "Shell"
+  },
+  {
+    "id": "ammo_23x75_shrapnel",
+    "name": "Shrapnel-25 23x75",
+    "category": "Ammo",
+    "displayName": "Shrapnel-25 23x75"
+  },
+  {
+    "id": "wpn_sig220_n_u2p2g0r",
+    "name": "SIG P220 \"Stalker\"",
+    "category": "Pistols",
+    "displayName": "SIG P220 \"Stalker\" [n_u2p2g0r]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig220_u2p2g0r",
+    "name": "SIG P220 \"Stalker\"",
+    "category": "Pistols",
+    "displayName": "SIG P220 \"Stalker\" [u2p2g0r]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig220_n_upg220",
+    "name": "SIG P220 \"XXX\"",
+    "category": "Pistols",
+    "displayName": "SIG P220 \"XXX\" [n_upg220]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sig220_upg220",
+    "name": "SIG P220 \"XXX\"",
+    "category": "Pistols",
+    "displayName": "SIG P220 \"XXX\" [upg220]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig220",
+    "name": "SIG P220",
+    "category": "Pistols",
+    "displayName": "SIG P220 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig220_n",
+    "name": "SIG P220",
+    "category": "Pistols",
+    "displayName": "SIG P220 [n]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_hpsa",
+    "name": "SIG P226R",
+    "category": "Pistols",
+    "displayName": "SIG P226R [hpsa]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig226",
+    "name": "SIG P226R",
+    "category": "Pistols",
+    "displayName": "SIG P226R [sig226]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_hpsa_226sig_kit",
+    "name": "SIG P226R Custom",
+    "category": "Pistols",
+    "displayName": "SIG P226R Custom [hpsa_226sig_kit]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig226_226sig_kit",
+    "name": "SIG P226R Custom",
+    "category": "Pistols",
+    "displayName": "SIG P226R Custom [sig226_226sig_kit]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig550_camo",
+    "name": "SIG SG 550",
+    "category": "Rifles",
+    "displayName": "SIG SG 550 [0_camo]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig550_custom",
+    "name": "SIG SG 550",
+    "category": "Rifles",
+    "displayName": "SIG SG 550 [0_custom]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sig550_luckygun",
+    "name": "SIG SG 550",
+    "category": "Rifles",
+    "displayName": "SIG SG 550 [0_luckygun]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig550_sniper",
+    "name": "SIG SG 550",
+    "category": "Rifles",
+    "displayName": "SIG SG 550 [0_sniper]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sig550",
+    "name": "SIG SG 550",
+    "category": "Rifles",
+    "displayName": "SIG SG 550 [0]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sig552",
+    "name": "SIG SG 550",
+    "category": "Rifles",
+    "displayName": "SIG SG 550 [2]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "af_signet",
+    "name": "Signet",
+    "category": "Artefacts",
+    "displayName": "Signet"
+  },
+  {
+    "id": "wpn_pb",
+    "name": "Silenced Pistol PB 9x18",
+    "category": "Pistols",
+    "displayName": "Silenced Pistol PB 9x18",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "greh_trenchcoat_outfit",
+    "name": "Sin Heavy Overcoat",
+    "category": "Outfits",
+    "displayName": "Sin Heavy Overcoat"
+  },
+  {
+    "id": "military_outfit",
+    "name": "Skat-9 Armored Suit",
+    "category": "Outfits",
+    "displayName": "Skat-9 Armored Suit"
+  },
+  {
+    "id": "military_proto_exo_outfit",
+    "name": "Skat-9 Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Skat-9 Exoskeleton"
+  },
+  {
+    "id": "wpn_vz61_alt",
+    "name": "Skorpion vz.68",
+    "category": "SMGs",
+    "displayName": "Skorpion vz.68 [alt]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_vz61",
+    "name": "Skorpion vz.68",
+    "category": "SMGs",
+    "displayName": "Skorpion vz.68 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sks_b",
+    "name": "SKS",
+    "category": "Snipers",
+    "displayName": "SKS [b]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sks",
+    "name": "SKS",
+    "category": "Snipers",
+    "displayName": "SKS [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sks_modern",
+    "name": "SKS",
+    "category": "Snipers",
+    "displayName": "SKS [modern]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sks_molot",
+    "name": "SKS Molot",
+    "category": "Snipers",
+    "displayName": "SKS Molot",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sks_tac",
+    "name": "SKS Tactical",
+    "category": "Snipers",
+    "displayName": "SKS Tactical",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_axe3",
+    "name": "Sledgehammer",
+    "category": "Melee",
+    "displayName": "Sledgehammer"
+  },
+  {
+    "id": "drug_sleepingpills",
+    "name": "Sleeping Pills",
+    "category": "Medicine",
+    "displayName": "Sleeping Pills"
+  },
+  {
+    "id": "salmon",
+    "name": "Smoked Salmon",
+    "category": "Food",
+    "displayName": "Smoked Salmon"
+  },
+  {
+    "id": "sausage",
+    "name": "Smoked Sausage",
+    "category": "Food",
+    "displayName": "Smoked Sausage"
+  },
+  {
+    "id": "mutant_part_snork_hand",
+    "name": "Snork Hand",
+    "category": "Food",
+    "displayName": "Snork Hand"
+  },
+  {
+    "id": "mutant_part_snork_mask",
+    "name": "Snork Mask",
+    "category": "Mutant Parts",
+    "displayName": "Snork Mask"
+  },
+  {
+    "id": "mutant_part_snork_leg",
+    "name": "Snork Tendons",
+    "category": "Mutant Parts",
+    "displayName": "Snork Tendons"
+  },
+  {
+    "id": "af_ice",
+    "name": "Snowflake",
+    "category": "Artefacts",
+    "displayName": "Snowflake"
+  },
+  {
+    "id": "af_soul",
+    "name": "Soul",
+    "category": "Artefacts",
+    "displayName": "Soul"
+  },
+  {
+    "id": "af_kislushka",
+    "name": "Sourpuss",
+    "category": "Artefacts",
+    "displayName": "Sourpuss"
+  },
+  {
+    "id": "af_ah_e1",
+    "name": "Souvenir",
+    "category": "Artefacts",
+    "displayName": "Souvenir [1]"
+  },
+  {
+    "id": "af_ah_e2",
+    "name": "Souvenir",
+    "category": "Artefacts",
+    "displayName": "Souvenir [2]"
+  },
+  {
+    "id": "af_electra_sparkler",
+    "name": "Sparkler",
+    "category": "Artefacts",
+    "displayName": "Sparkler"
+  },
+  {
+    "id": "water_drink",
+    "name": "Sparkling Water",
+    "category": "Food",
+    "displayName": "Sparkling Water"
+  },
+  {
+    "id": "wpn_spas12_custom",
+    "name": "SPAS-12",
+    "category": "Shotguns",
+    "displayName": "SPAS-12 [custom]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_spas12",
+    "name": "SPAS-12",
+    "category": "Shotguns",
+    "displayName": "SPAS-12 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_spas12_nimble",
+    "name": "SPAS-12",
+    "category": "Shotguns",
+    "displayName": "SPAS-12 [nimble]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_knife4",
+    "name": "Spetsnaz Switchblade",
+    "category": "Melee",
+    "displayName": "Spetsnaz Switchblade"
+  },
+  {
+    "id": "helm_battle",
+    "name": "Sphere M12 Helmet",
+    "category": "Helmets",
+    "displayName": "Sphere M12 Helmet"
+  },
+  {
+    "id": "helm_tactic",
+    "name": "Sphere-08 Helmet",
+    "category": "Helmets",
+    "displayName": "Sphere-08 Helmet"
+  },
+  {
+    "id": "af_spaika",
+    "name": "Spike",
+    "category": "Artefacts",
+    "displayName": "Spike"
+  },
+  {
+    "id": "af_ah_h1",
+    "name": "Sponge",
+    "category": "Artefacts",
+    "displayName": "Sponge [ah_h1]"
+  },
+  {
+    "id": "af_ah_h2",
+    "name": "Sponge",
+    "category": "Artefacts",
+    "displayName": "Sponge [ah_h2]"
+  },
+  {
+    "id": "af_sponge",
+    "name": "Sponge",
+    "category": "Artefacts",
+    "displayName": "Sponge [sponge]"
+  },
+  {
+    "id": "wpn_sr25",
+    "name": "SR-25",
+    "category": "Snipers",
+    "displayName": "SR-25",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sr2_veresk_sr2_upkit",
+    "name": "SR-2M Veresk \"Tactical\"",
+    "category": "SMGs",
+    "displayName": "SR-2M Veresk \"Tactical\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sr2_m1",
+    "name": "SR-2M Veresk",
+    "category": "SMGs",
+    "displayName": "SR-2M Veresk [m1]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_sr2_veresk",
+    "name": "SR-2M Veresk",
+    "category": "SMGs",
+    "displayName": "SR-2M Veresk [veresk]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_vihr",
+    "name": "SR-3M Vikhr",
+    "category": "Rifles",
+    "displayName": "SR-3M Vikhr",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "ecolog_outfit_white",
+    "name": "SSP-99 \"Diamond\"",
+    "category": "Outfits",
+    "displayName": "SSP-99 \"Diamond\""
+  },
+  {
+    "id": "ecolog_outfit_orange",
+    "name": "SSP-99 Bodysuit",
+    "category": "Outfits",
+    "displayName": "SSP-99 Bodysuit"
+  },
+  {
+    "id": "helm_protective",
+    "name": "SSP-99 Screen Helmet",
+    "category": "Helmets",
+    "displayName": "SSP-99 Screen Helmet"
+  },
+  {
+    "id": "ecolog_outfit_yello",
+    "name": "SSP-99 Topaz",
+    "category": "Outfits",
+    "displayName": "SSP-99 Topaz"
+  },
+  {
+    "id": "ecolog_outfit_blue",
+    "name": "SSP-99M \"Sapphire\"",
+    "category": "Outfits",
+    "displayName": "SSP-99M \"Sapphire\""
+  },
+  {
+    "id": "ecolog_outfit_green",
+    "name": "SSP-99M Bodysuit",
+    "category": "Outfits",
+    "displayName": "SSP-99M Bodysuit"
+  },
+  {
+    "id": "ecolog_proto_exo_outfit",
+    "name": "SSP-99M Exoskeleton",
+    "category": "Outfits",
+    "displayName": "SSP-99M Exoskeleton"
+  },
+  {
+    "id": "ecolog_outfit_red",
+    "name": "SSP-99� \"Ruby\"",
+    "category": "Outfits",
+    "displayName": "SSP-99� \"Ruby\""
+  },
+  {
+    "id": "wpn_aug_a1_bas",
+    "name": "Steyr AUG A1",
+    "category": "Rifles",
+    "displayName": "Steyr AUG A1 [a1_bas]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aug_a1_custom_bas",
+    "name": "Steyr AUG A1",
+    "category": "Rifles",
+    "displayName": "Steyr AUG A1 [a1_custom_bas]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aug",
+    "name": "Steyr AUG A1",
+    "category": "Rifles",
+    "displayName": "Steyr AUG A1 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_aug_modern",
+    "name": "Steyr AUG A1",
+    "category": "Rifles",
+    "displayName": "Steyr AUG A1 [modern]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aug_a3_bas",
+    "name": "Steyr AUG A3",
+    "category": "Rifles",
+    "displayName": "Steyr AUG A3 [bas]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aug_a3",
+    "name": "Steyr AUG A3",
+    "category": "Rifles",
+    "displayName": "Steyr AUG A3 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_aug_freedom",
+    "name": "Steyr AUG A3 9mm",
+    "category": "SMGs",
+    "displayName": "Steyr AUG A3 9mm",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_aug_a3_custom_bas",
+    "name": "Steyr AUG A3 Commando",
+    "category": "Rifles",
+    "displayName": "Steyr AUG A3 Commando",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_steyr_scout",
+    "name": "Steyr Scout 5.56",
+    "category": "Snipers",
+    "displayName": "Steyr Scout 5.56",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_steyr_scout_big",
+    "name": "Steyr Scout 7.62",
+    "category": "Snipers",
+    "displayName": "Steyr Scout 7.62",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "bandit_exo_outfit",
+    "name": "Stolen Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Stolen Exoskeleton"
+  },
+  {
+    "id": "af_blood",
+    "name": "Stone Blood",
+    "category": "Artefacts",
+    "displayName": "Stone Blood"
+  },
+  {
+    "id": "af_cristall_flower",
+    "name": "Stone Flower",
+    "category": "Artefacts",
+    "displayName": "Stone Flower"
+  },
+  {
+    "id": "antibio_sulfad",
+    "name": "Sulfadimethoxine",
+    "category": "Medicine",
+    "displayName": "Sulfadimethoxine"
+  },
+  {
+    "id": "af_sun",
+    "name": "Sun",
+    "category": "Artefacts",
+    "displayName": "Sun"
+  },
+  {
+    "id": "stalker_proto_exo_outfit",
+    "name": "Sunrise Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Sunrise Exoskeleton"
+  },
+  {
+    "id": "stalker_outfit",
+    "name": "Sunrise Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Sunrise Stalker Suit"
+  },
+  {
+    "id": "bandit_sun_outfit",
+    "name": "Sunset Tactical Suit",
+    "category": "Outfits",
+    "displayName": "Sunset Tactical Suit"
+  },
+  {
+    "id": "af_surge",
+    "name": "Surge Suppressor",
+    "category": "Belt Attachments",
+    "displayName": "Surge Suppressor"
+  },
+  {
+    "id": "helm_hardhat",
+    "name": "Surplus Steel Helmet",
+    "category": "Helmets",
+    "displayName": "Surplus Steel Helmet [default]"
+  },
+  {
+    "id": "helm_hardhat_snag",
+    "name": "Surplus Steel Helmet",
+    "category": "Helmets",
+    "displayName": "Surplus Steel Helmet [snag]"
+  },
+  {
+    "id": "survival_kit",
+    "name": "Survival Kit",
+    "category": "Medicine",
+    "displayName": "Survival Kit"
+  },
+  {
+    "id": "wpn_sv98_custom",
+    "name": "SV98",
+    "category": "Snipers",
+    "displayName": "SV98 [custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sv98",
+    "name": "SV98",
+    "category": "Snipers",
+    "displayName": "SV98 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_svd",
+    "name": "SVD",
+    "category": "Snipers",
+    "displayName": "SVD [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_svd_m1",
+    "name": "SVD",
+    "category": "Snipers",
+    "displayName": "SVD [m1]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_svd_nimble",
+    "name": "SVD",
+    "category": "Snipers",
+    "displayName": "SVD [nimble]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_svds",
+    "name": "SVDS",
+    "category": "Snipers",
+    "displayName": "SVDS",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_svds_pmc",
+    "name": "SVDS \"Retribution\"",
+    "category": "Snipers",
+    "displayName": "SVDS \"Retribution\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_svt40",
+    "name": "SVT-40",
+    "category": "Snipers",
+    "displayName": "SVT-40 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_svt40_modern",
+    "name": "SVT-40",
+    "category": "Snipers",
+    "displayName": "SVT-40 [modern]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "monolith_nbc_outfit",
+    "name": "Tactical Monolith Suit",
+    "category": "Outfits",
+    "displayName": "Tactical Monolith Suit"
+  },
+  {
+    "id": "nbc_outfit",
+    "name": "Tactical Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Tactical Stalker Suit"
+  },
+  {
+    "id": "af_ah_f1",
+    "name": "Talking Stone",
+    "category": "Artefacts",
+    "displayName": "Talking Stone"
+  },
+  {
+    "id": "af_tapeworm",
+    "name": "Tapeworm",
+    "category": "Artefacts",
+    "displayName": "Tapeworm"
+  },
+  {
+    "id": "drink_crow",
+    "name": "Tea \"The Beak\"",
+    "category": "Food",
+    "displayName": "Tea \"The Beak\""
+  },
+  {
+    "id": "wpn_aug_merc",
+    "name": "Thales EF88",
+    "category": "Rifles",
+    "displayName": "Thales EF88",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "af_repei",
+    "name": "Thistle",
+    "category": "Artefacts",
+    "displayName": "Thistle"
+  },
+  {
+    "id": "wpn_thompson_m1a1",
+    "name": "Thompson M1A1",
+    "category": "SMGs",
+    "displayName": "Thompson M1A1",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_thompson_1921",
+    "name": "Thompson Model 1921",
+    "category": "SMGs",
+    "displayName": "Thompson Model 1921",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "stalker_tigerstripe_outfit",
+    "name": "Tigerstripe Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Tigerstripe Stalker Suit"
+  },
+  {
+    "id": "af_grid",
+    "name": "Titanium Grid",
+    "category": "Belt Attachments",
+    "displayName": "Titanium Grid"
+  },
+  {
+    "id": "equ_tourist_pack",
+    "name": "Tourist Backpack",
+    "category": "Belt Attachments",
+    "displayName": "Tourist Backpack"
+  },
+  {
+    "id": "novice_outfit_tourist",
+    "name": "Tourist�s Jacket",
+    "category": "Outfits",
+    "displayName": "Tourist�s Jacket"
+  },
+  {
+    "id": "jgut",
+    "name": "Tourniquet",
+    "category": "Medicine",
+    "displayName": "Tourniquet"
+  },
+  {
+    "id": "wpn_toz106",
+    "name": "TOZ-106",
+    "category": "Shotguns",
+    "displayName": "TOZ-106 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_toz106_m1",
+    "name": "TOZ-106",
+    "category": "Shotguns",
+    "displayName": "TOZ-106 [m1]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_wincheaster1300",
+    "name": "TOZ-194",
+    "category": "Shotguns",
+    "displayName": "TOZ-194 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_wincheaster1300_trapper",
+    "name": "TOZ-194",
+    "category": "Shotguns",
+    "displayName": "TOZ-194 [trapper]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_bm16_full_alt_23",
+    "name": "TOZ-34 \"Bear\"",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 \"Bear\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_toz34_mark4",
+    "name": "TOZ-34 \"Bison\"",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 \"Bison\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_toz34_bull",
+    "name": "TOZ-34 \"Bull\"",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 \"Bull\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_toz34_mark4_23",
+    "name": "TOZ-34 \"Chimera Hunter\"",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 \"Chimera Hunter\"",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_toz34_obrez_custom",
+    "name": "TOZ-34 (Sawn-off)",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 (Sawn-off) [custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_toz34_obrez_decor",
+    "name": "TOZ-34 (Sawn-off)",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 (Sawn-off) [decor]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_toz34_obrez",
+    "name": "TOZ-34 (Sawn-off)",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 (Sawn-off) [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_toz34_custom",
+    "name": "TOZ-34",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 [custom]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_toz34_decor",
+    "name": "TOZ-34",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 [decor]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_toz34",
+    "name": "TOZ-34",
+    "category": "Shotguns",
+    "displayName": "TOZ-34 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_bm16_alt",
+    "name": "TOZ-66 (Sawn-off)",
+    "category": "Shotguns",
+    "displayName": "TOZ-66 (Sawn-off) [alt]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_bm16",
+    "name": "TOZ-66 (Sawn-off)",
+    "category": "Shotguns",
+    "displayName": "TOZ-66 (Sawn-off) [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_bm16_full_alt",
+    "name": "TOZ-66",
+    "category": "Shotguns",
+    "displayName": "TOZ-66 [alt]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_bm16_full",
+    "name": "TOZ-66",
+    "category": "Shotguns",
+    "displayName": "TOZ-66 [default]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "equ_small_military_pack",
+    "name": "Travel Backpack",
+    "category": "Belt Attachments",
+    "displayName": "Travel Backpack"
+  },
+  {
+    "id": "mutant_part_tushkano_head",
+    "name": "Tushkano Head",
+    "category": "Mutant Parts",
+    "displayName": "Tushkano Head"
+  },
+  {
+    "id": "mutant_part_tushkano_meat",
+    "name": "Tushkano Meat",
+    "category": "Food",
+    "displayName": "Tushkano Meat"
+  },
+  {
+    "id": "merc_sun_outfit",
+    "name": "Twilight Tactical Suit",
+    "category": "Outfits",
+    "displayName": "Twilight Tactical Suit"
+  },
+  {
+    "id": "wpn_type63",
+    "name": "Type 63",
+    "category": "Rifles",
+    "displayName": "Type 63",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "coffee_drink",
+    "name": "UCC Cold Brew Coffee",
+    "category": "Food",
+    "displayName": "UCC Cold Brew Coffee"
+  },
+  {
+    "id": "wpn_udp9",
+    "name": "UDP-9 Carbine",
+    "category": "SMGs",
+    "displayName": "UDP-9 Carbine",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "ration_ukr",
+    "name": "Ukrainian Combat Ration",
+    "category": "Food",
+    "displayName": "Ukrainian Combat Ration"
+  },
+  {
+    "id": "wpn_ump45_custom",
+    "name": "UMP45",
+    "category": "SMGs",
+    "displayName": "UMP45 [custom]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_ump45",
+    "name": "UMP45",
+    "category": "SMGs",
+    "displayName": "UMP45 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "pri_a17_gauss_rifle",
+    "name": "Unidentified Weapon",
+    "category": "Snipers",
+    "displayName": "Unidentified Weapon",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "isg_exo_outfit",
+    "name": "UNISG Exoskeleton",
+    "category": "Outfits",
+    "displayName": "UNISG Exoskeleton"
+  },
+  {
+    "id": "isg_exolight_outfit",
+    "name": "UNISG Exosuit",
+    "category": "Outfits",
+    "displayName": "UNISG Exosuit"
+  },
+  {
+    "id": "light_isg_outfit",
+    "name": "UNISG IBAz Suit",
+    "category": "Outfits",
+    "displayName": "UNISG IBAz Suit"
+  },
+  {
+    "id": "isg_lcs_outfit",
+    "name": "UNISG LC Suit",
+    "category": "Outfits",
+    "displayName": "UNISG LC Suit"
+  },
+  {
+    "id": "isg_lcs_camo_outfit",
+    "name": "UNISG LC-C Suit",
+    "category": "Outfits",
+    "displayName": "UNISG LC-C Suit"
+  },
+  {
+    "id": "isg_lcs_urban_outfit",
+    "name": "UNISG LC-UC Suit",
+    "category": "Outfits",
+    "displayName": "UNISG LC-UC Suit"
+  },
+  {
+    "id": "isg_outfit",
+    "name": "UNISG Mk1 Tactical Body Armor",
+    "category": "Outfits",
+    "displayName": "UNISG Mk1 Tactical Body Armor"
+  },
+  {
+    "id": "isg_camo_outfit",
+    "name": "UNISG Mk2 Tactical Body Armor",
+    "category": "Outfits",
+    "displayName": "UNISG Mk2 Tactical Body Armor"
+  },
+  {
+    "id": "isg_nosorog_outfit",
+    "name": "UNISG Nosorog",
+    "category": "Outfits",
+    "displayName": "UNISG Nosorog"
+  },
+  {
+    "id": "isg_scientific_outfit",
+    "name": "UNISG SEVA Suit",
+    "category": "Outfits",
+    "displayName": "UNISG SEVA Suit"
+  },
+  {
+    "id": "isg_proto_exo_outfit",
+    "name": "UNISG Tactical Exoskeleton",
+    "category": "Outfits",
+    "displayName": "UNISG Tactical Exoskeleton"
+  },
+  {
+    "id": "wpn_pl15_tan_pl15_scolaz",
+    "name": "Upgraded Lebedev PL-15 9x19 pistol",
+    "category": "Pistols",
+    "displayName": "Upgraded Lebedev PL-15 9x19 pistol",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_sr1m_gurza_up",
+    "name": "Upgraded SR-1MP Gyurza 9x21 pistol",
+    "category": "Pistols",
+    "displayName": "Upgraded SR-1MP Gyurza 9x21 pistol",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_usp_tac",
+    "name": "USP Match \"Overwatch\"",
+    "category": "Pistols",
+    "displayName": "USP Match \"Overwatch\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "drug_coagulant",
+    "name": "Vinca",
+    "category": "Medicine",
+    "displayName": "Vinca"
+  },
+  {
+    "id": "bottle_metal",
+    "name": "Vodka",
+    "category": "Food",
+    "displayName": "Vodka"
+  },
+  {
+    "id": "vodka",
+    "name": "Vodka (Nemiroff)",
+    "category": "Food",
+    "displayName": "Vodka (Nemiroff)"
+  },
+  {
+    "id": "vodka2",
+    "name": "Vodka (Putinka)",
+    "category": "Food",
+    "displayName": "Vodka (Putinka)"
+  },
+  {
+    "id": "vodka_quality",
+    "name": "Vodka (Stolichnaya)",
+    "category": "Food",
+    "displayName": "Vodka (Stolichnaya)"
+  },
+  {
+    "id": "ammo_vog-25",
+    "name": "VOG-25",
+    "category": "Ammo",
+    "displayName": "VOG-25"
+  },
+  {
+    "id": "ammo_vog-30",
+    "name": "VOG-30",
+    "category": "Ammo",
+    "displayName": "VOG-30"
+  },
+  {
+    "id": "af_monolith",
+    "name": "Volat Emerald",
+    "category": "Artefacts",
+    "displayName": "Volat Emerald"
+  },
+  {
+    "id": "greh_ps5_outfit",
+    "name": "Volos Flak Armor",
+    "category": "Outfits",
+    "displayName": "Volos Flak Armor"
+  },
+  {
+    "id": "travel_outfit",
+    "name": "Voyager Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Voyager Stalker Suit"
+  },
+  {
+    "id": "wpn_vsk94",
+    "name": "VSK-94",
+    "category": "Rifles",
+    "displayName": "VSK-94",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_vintorez_m1",
+    "name": "VSS Vintorez \"Savant\"",
+    "category": "Rifles",
+    "displayName": "VSS Vintorez \"Savant\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_vintorez_m2",
+    "name": "VSS Vintorez \"Venal\"",
+    "category": "Rifles",
+    "displayName": "VSS Vintorez \"Venal\"",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_vintorez",
+    "name": "VSS Vintorez",
+    "category": "Rifles",
+    "displayName": "VSS Vintorez [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_vintorez_n1",
+    "name": "VSS Vintorez",
+    "category": "Rifles",
+    "displayName": "VSS Vintorez [n1]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_vintorez_nimble",
+    "name": "VSS Vintorez",
+    "category": "Rifles",
+    "displayName": "VSS Vintorez [nimble]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_vssk",
+    "name": "VSSK Vykhlop",
+    "category": "Snipers",
+    "displayName": "VSSK Vykhlop",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "greh_exo_outfit",
+    "name": "Vyraj Power Armor",
+    "category": "Outfits",
+    "displayName": "Vyraj Power Armor"
+  },
+  {
+    "id": "greh_armored_camo_outfit",
+    "name": "Vyriy Flak Armor",
+    "category": "Outfits",
+    "displayName": "Vyriy Flak Armor"
+  },
+  {
+    "id": "wpn_walther",
+    "name": "Walther P99",
+    "category": "Pistols",
+    "displayName": "Walther P99 [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_walther_p99",
+    "name": "Walther P99",
+    "category": "Pistols",
+    "displayName": "Walther P99 [p99]",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "wpn_walther_mod9",
+    "name": "Walther P99 Custom",
+    "category": "Pistols",
+    "displayName": "Walther P99 Custom [mod9]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_walther_p99_mod9",
+    "name": "Walther P99 Custom",
+    "category": "Pistols",
+    "displayName": "Walther P99 Custom [p99_mod9]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_wa2000",
+    "name": "Walther WA 2000",
+    "category": "Snipers",
+    "displayName": "Walther WA 2000",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "svoboda_exolight_outfit",
+    "name": "Warrior of Freedom",
+    "category": "Outfits",
+    "displayName": "Warrior of Freedom"
+  },
+  {
+    "id": "wastelander_outfit",
+    "name": "Wastelander Stalker Suit",
+    "category": "Outfits",
+    "displayName": "Wastelander Stalker Suit"
+  },
+  {
+    "id": "svoboda_scientific_outfit",
+    "name": "Watchman of Freedom",
+    "category": "Outfits",
+    "displayName": "Watchman of Freedom"
+  },
+  {
+    "id": "wpn_winchester1873",
+    "name": "Winchester Model 1873",
+    "category": "Snipers",
+    "displayName": "Winchester Model 1873",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "svoboda_light_outfit",
+    "name": "Wind of Freedom",
+    "category": "Outfits",
+    "displayName": "Wind of Freedom"
+  },
+  {
+    "id": "svoboda_light_proto_exo_outfit",
+    "name": "Wind of Freedom Exoskeleton",
+    "category": "Outfits",
+    "displayName": "Wind of Freedom Exoskeleton"
+  },
+  {
+    "id": "exo_wood_outfit",
+    "name": "Woodland Exosuit",
+    "category": "Outfits",
+    "displayName": "Woodland Exosuit"
+  },
+  {
+    "id": "af_vyvert",
+    "name": "Wrenched",
+    "category": "Artefacts",
+    "displayName": "Wrenched"
+  },
+  {
+    "id": "monolith_proto_exo_outfit",
+    "name": "X-18 Exoskeleton",
+    "category": "Outfits",
+    "displayName": "X-18 Exoskeleton"
+  },
+  {
+    "id": "wpn_xm8",
+    "name": "XM8",
+    "category": "Rifles",
+    "displayName": "XM8",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "yadylin",
+    "name": "Yadulin",
+    "category": "Medicine",
+    "displayName": "Yadulin"
+  },
+  {
+    "id": "mutant_part_zombi_hand",
+    "name": "Zombie Hand",
+    "category": "Mutant Parts",
+    "displayName": "Zombie Hand"
+  },
+  {
+    "id": "wpn_tt33",
+    "name": "��-33 7.62x25 ��",
+    "category": "Pistols",
+    "displayName": "��-33 7.62x25 �� [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "wpn_tt33_modern",
+    "name": "��-33 7.62x25 ��",
+    "category": "Pistols",
+    "displayName": "��-33 7.62x25 �� [modern]",
+    "hasNpcWeaponDrop": true
+  }
+]
