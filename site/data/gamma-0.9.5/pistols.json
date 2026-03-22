@@ -40,7 +40,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fn57",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -63,7 +62,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pb_bas_custom",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -86,7 +84,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_desert_eagle",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -109,7 +106,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sr1mp_new",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -132,7 +128,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_1911_nsc",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -155,7 +150,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_bas_custom",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -178,7 +172,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [n]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -201,7 +194,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fnx45_custom [default]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -224,7 +216,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [gsh18]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -247,7 +238,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_aps_bas_apsabigo",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -270,7 +260,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_mk23",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -293,7 +282,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_u2p2g0r [n_u2p2g0r]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -316,7 +304,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_rapide",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -339,7 +326,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fnp45",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -362,7 +348,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226 [sig226]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -385,7 +370,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_tt33_custom [default]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -408,7 +392,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_cz75",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -431,7 +414,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_bas",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -454,7 +436,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99 [p99]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -477,7 +458,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_glock17",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -500,7 +480,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_tt33_custom [modern]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -523,7 +502,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sr1mp_upgr",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -546,7 +524,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_usp_tac",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -569,7 +546,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99_mod9 [p99_mod9]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -592,7 +568,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_desert_eagle_nimble",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -615,7 +590,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_glock17_m1",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -638,7 +612,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_beretta_px4",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -661,7 +634,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_korth",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -684,7 +656,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15_new",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -707,7 +678,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n [default]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -730,7 +700,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_new [default]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -753,7 +722,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_oc33_new",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -776,7 +744,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fnx45_custom [custom]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -799,7 +766,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [fort17]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -822,7 +788,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sr1mp_las",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -845,7 +810,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_new [custom]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -868,7 +832,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [duty]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -891,7 +854,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226_226sig_kit [sig226_226sig_kit]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -914,7 +876,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226_226sig_kit [hpsa_226sig_kit]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -937,7 +898,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_u2p2g0r [u2p2g0r]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -960,7 +920,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_glock",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -983,7 +942,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_tt33_custom_upgr",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1006,7 +964,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_new [actor]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1029,7 +986,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99_mod9 [mod9]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1052,7 +1008,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15_pl15_scolaz",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1075,7 +1030,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [default]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1098,7 +1052,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_lar_grizzly",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1121,7 +1074,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_usp_tac45",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1144,7 +1096,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_upg220 [upg220]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1167,7 +1118,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_glock_modern",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1190,7 +1140,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [gsh18_custom]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1213,7 +1162,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_aps",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1236,7 +1184,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n [n]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1259,7 +1206,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_mp412",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1282,7 +1228,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_upg220 [n_upg220]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1305,7 +1250,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [anarchy]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1328,7 +1272,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [fort_snag]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1351,7 +1294,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_m45a1",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1374,7 +1316,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226 [hpsa]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1397,7 +1338,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15_upgr",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1420,7 +1360,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_bas_actor",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1443,7 +1382,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_beretta_new [m9_upgr_kit]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1466,7 +1404,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_grach",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1489,7 +1426,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_hs2000",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1512,7 +1448,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99 [default]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1535,7 +1470,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pb_bas",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1558,7 +1492,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1581,7 +1514,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pb_new",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1604,7 +1536,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_rsh12_shorty",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1627,7 +1558,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_beretta_new [default]",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1650,7 +1580,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pmm_bas",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1673,7 +1602,6 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [fort]",
       "hasNpcWeaponDrop": true,
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1696,7 +1624,6 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_aps_bas",
       "hasNpcWeaponDrop": false,
-      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

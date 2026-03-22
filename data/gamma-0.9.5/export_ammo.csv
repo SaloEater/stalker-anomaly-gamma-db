@@ -1,4 +1,4 @@
-~, Pda_encyclopedia_name, St_prop_weight, St_data_export_ammo_box_size, St_upgr_cost, BR1, BR2, BR3, BR4, BR5, BR6, BR7, St_data_export_projectiles, Ui_inv_damage, Ui_inv_accuracy, Ui_inv_wrange, St_data_export_falloff, Ui_inv_bspeed, St_data_export_impulse, St_data_export_weapon_degradation
+~, pda_encyclopedia_name, st_prop_weight, st_data_export_ammo_box_size, st_upgr_cost, BR1, BR2, BR3, BR4, BR5, BR6, BR7, st_data_export_projectiles, ui_inv_damage, ui_inv_accuracy, ui_inv_wrange, st_data_export_falloff, ui_inv_bspeed, st_data_export_impulse, st_data_export_weapon_degradation
 ammo_7.62x54_7h1,"ammo-7.62x54-7n1",0.22,10,2250,,,,30,,,,1,0.85,66%,100%,25%,150%,150%,40%
 ammo_20x70_buck,"ammo_20x70_buck",0.35,10,600,3,,,,,,,9,0.3,380%,75%,100%,100%,70%,105%
 ammo_5.56x45_fmj,"ammo-5.56x45-fmj",0.17,15,1500,,,29,,,,,1,1.05,66%,100%,20%,160%,57%,40%

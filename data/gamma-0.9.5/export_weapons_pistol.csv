@@ -1,4 +1,4 @@
-~, Pda_encyclopedia_name, St_prop_weight, St_upgr_cost, Ui_mm_repair, St_data_export_single_handed, Ui_inv_accuracy, Ui_inv_handling, Ui_inv_damage, Ui_inv_rate_of_fire, Ui_ammo_count, Ui_inv_wrange, Ui_inv_bspeed, Ui_inv_reli, Ui_inv_recoil, Ui_ammo_types, St_data_export_ammo_types_alt, BR1, BR2, BR3, BR4, BR5, BR6, BR7
+~, pda_encyclopedia_name, st_prop_weight, st_upgr_cost, ui_mm_repair, st_data_export_single_handed, ui_inv_accuracy, ui_inv_handling, ui_inv_damage, ui_inv_rate_of_fire, ui_ammo_count, ui_inv_wrange, ui_inv_bspeed, ui_inv_reli, ui_inv_recoil, ui_ammo_types, st_data_export_ammo_types_alt, BR1, BR2, BR3, BR4, BR5, BR6, BR7
 wpn_fn57,st_wpn_fn57,0.61,15280,A,Y,74%,82%,23,400,20,600,677,87%,32,"ammo-5.7x28-ss190";"ammo-5.7x28-ss195",,,,25,,40,,
 wpn_pb_bas_custom,st_wpn_pb_bas_custom,1.15,8190,A,Y,62%,83%,17,325,8,300,380,90%,42,"ammo-9x18-fmj";"ammo-9x18-pmm";"ammo-9x18-ap",,,15,27,,,,
 wpn_desert_eagle,st_wpn_desert_eagle,1.897,19680,A,Y,57%,79%,104,110,9,500,461,72%,28,"ammo-357-hp",,,,19,,,,

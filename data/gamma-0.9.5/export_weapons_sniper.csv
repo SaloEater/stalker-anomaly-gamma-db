@@ -1,4 +1,4 @@
-~, Pda_encyclopedia_name, St_prop_weight, St_upgr_cost, Ui_mm_repair, St_data_export_single_handed, Ui_inv_accuracy, Ui_inv_handling, Ui_inv_damage, Ui_inv_rate_of_fire, Ui_ammo_count, Ui_inv_wrange, Ui_inv_bspeed, Ui_inv_reli, Ui_inv_recoil, Ui_ammo_types, St_data_export_ammo_types_alt, BR1, BR2, BR3, BR4, BR5, BR6, BR7
+~, pda_encyclopedia_name, st_prop_weight, st_upgr_cost, ui_mm_repair, st_data_export_single_handed, ui_inv_accuracy, ui_inv_handling, ui_inv_damage, ui_inv_rate_of_fire, ui_ammo_count, ui_inv_wrange, ui_inv_bspeed, ui_inv_reli, ui_inv_recoil, ui_ammo_types, st_data_export_ammo_types_alt, BR1, BR2, BR3, BR4, BR5, BR6, BR7
 wpn_dvl10_m1,st_wpn_dvl10_m1,5.7,99580,D,N,95%,65%,606,40,10,600,420,60%,25,"ammo_338_federal",,,,,,,,
 wpn_steyr_scout,st_wpn_steyr_scout,3.96,33000,C,N,93%,80%,70,35,8,1400,1512,60%,27,"ammo-5.56x45-fmj";"ammo-5.56x45-ss190";"ammo-5.56x45-ap",,,13,29,,,52,
 wpn_m24,st_wpn_m24_new,5.4,76680,D,N,96%,60%,96,35,10,1500,887,40%,25,"ammo-338-lapua",,,,,,,,140

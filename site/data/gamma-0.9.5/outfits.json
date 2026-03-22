@@ -47,7 +47,6 @@
       "ui_inv_outfit_additional_weight": "42",
       "ui_inv_outfit_speed": "104%",
       "displayName": "dolg_pantsir_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -73,7 +72,6 @@
       "ui_inv_outfit_additional_weight": "28",
       "ui_inv_outfit_speed": "101%",
       "displayName": "hybrid_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -99,7 +97,6 @@
       "ui_inv_outfit_additional_weight": "42",
       "ui_inv_outfit_speed": "94%",
       "displayName": "freedom_exo_vineleaf_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -125,7 +122,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "107%",
       "displayName": "light_loner_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -151,7 +147,6 @@
       "ui_inv_outfit_additional_weight": "21",
       "ui_inv_outfit_speed": "98%",
       "displayName": "merc_combat_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -177,7 +172,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "104%",
       "displayName": "light_isg_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -203,7 +197,6 @@
       "ui_inv_outfit_additional_weight": "24.799999237061",
       "ui_inv_outfit_speed": "104%",
       "displayName": "greh_trenchcoat_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -229,7 +222,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "109%",
       "displayName": "dolg_heavy_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -255,7 +247,6 @@
       "ui_inv_outfit_additional_weight": "28",
       "ui_inv_outfit_speed": "97%",
       "displayName": "exo_dolg_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -281,7 +272,6 @@
       "ui_inv_outfit_additional_weight": "42",
       "ui_inv_outfit_speed": "101%",
       "displayName": "military_sky_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -307,7 +297,6 @@
       "ui_inv_outfit_additional_weight": "45",
       "ui_inv_outfit_speed": "92%",
       "displayName": "monolith_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -333,7 +322,6 @@
       "ui_inv_outfit_additional_weight": "50",
       "ui_inv_outfit_speed": "95%",
       "displayName": "exo_dolg_wood_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -359,7 +347,6 @@
       "ui_inv_outfit_additional_weight": "55",
       "ui_inv_outfit_speed": "95%",
       "displayName": "exo_dolg_red_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -385,7 +372,6 @@
       "ui_inv_outfit_additional_weight": "115",
       "ui_inv_outfit_speed": "103%",
       "displayName": "freedom_nosorog_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -411,7 +397,6 @@
       "ui_inv_outfit_additional_weight": "86.400001525879",
       "ui_inv_outfit_speed": "105%",
       "displayName": "isg_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -437,7 +422,6 @@
       "ui_inv_outfit_additional_weight": "65",
       "ui_inv_outfit_speed": "96%",
       "displayName": "bandit_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -463,7 +447,6 @@
       "ui_inv_outfit_additional_weight": "28",
       "ui_inv_outfit_speed": "104%",
       "displayName": "dolg_specops_red_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -489,7 +472,6 @@
       "ui_inv_outfit_additional_weight": "60",
       "ui_inv_outfit_speed": "93%",
       "displayName": "exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -515,7 +497,6 @@
       "ui_inv_outfit_additional_weight": "28",
       "ui_inv_outfit_speed": "103%",
       "displayName": "csky_heavy_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -541,7 +522,6 @@
       "ui_inv_outfit_additional_weight": "42",
       "ui_inv_outfit_speed": "102%",
       "displayName": "dolg_heavy_redline_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -567,7 +547,6 @@
       "ui_inv_outfit_additional_weight": "115.19999694824",
       "ui_inv_outfit_speed": "108%",
       "displayName": "stalker_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -593,7 +572,6 @@
       "ui_inv_outfit_additional_weight": "76.800003051758",
       "ui_inv_outfit_speed": "101%",
       "displayName": "greh_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -619,7 +597,6 @@
       "ui_inv_outfit_additional_weight": "20",
       "ui_inv_outfit_speed": "106%",
       "displayName": "light_freedom_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -645,7 +622,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "102%",
       "displayName": "svoboda_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -671,7 +647,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "107%",
       "displayName": "svoboda_light_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -697,7 +672,6 @@
       "ui_inv_outfit_additional_weight": "37.5",
       "ui_inv_outfit_speed": "93%",
       "displayName": "merc_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -723,7 +697,6 @@
       "ui_inv_outfit_additional_weight": "27.89999961853",
       "ui_inv_outfit_speed": "105%",
       "displayName": "monolith_trenchcoat_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -749,7 +722,6 @@
       "ui_inv_outfit_additional_weight": "86.400001525879",
       "ui_inv_outfit_speed": "100%",
       "displayName": "isg_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -775,7 +747,6 @@
       "ui_inv_outfit_additional_weight": "50",
       "ui_inv_outfit_speed": "93%",
       "displayName": "exo_wood_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -801,7 +772,6 @@
       "ui_inv_outfit_additional_weight": "45",
       "ui_inv_outfit_speed": "92%",
       "displayName": "military_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -827,7 +797,6 @@
       "ui_inv_outfit_additional_weight": "75",
       "ui_inv_outfit_speed": "93%",
       "displayName": "exo_dolg_urban_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -853,7 +822,6 @@
       "ui_inv_outfit_additional_weight": "20.25",
       "ui_inv_outfit_speed": "103%",
       "displayName": "merc_nighthunter_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -879,7 +847,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "103%",
       "displayName": "renegade_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -905,7 +872,6 @@
       "ui_inv_outfit_additional_weight": "86.400001525879",
       "ui_inv_outfit_speed": "107%",
       "displayName": "monolith_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -931,7 +897,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "108%",
       "displayName": "ecolog_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -957,7 +922,6 @@
       "ui_inv_outfit_additional_weight": "103.5",
       "ui_inv_outfit_speed": "101%",
       "displayName": "isg_nosorog_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -983,7 +947,6 @@
       "ui_inv_outfit_additional_weight": "20",
       "ui_inv_outfit_speed": "108%",
       "displayName": "light_dolg_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1009,7 +972,6 @@
       "ui_inv_outfit_additional_weight": "115",
       "ui_inv_outfit_speed": "105%",
       "displayName": "dolg_nosorog_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1035,7 +997,6 @@
       "ui_inv_outfit_additional_weight": "42",
       "ui_inv_outfit_speed": "102%",
       "displayName": "dolg_heavy_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1061,7 +1022,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "103%",
       "displayName": "ecolog_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1087,7 +1047,6 @@
       "ui_inv_outfit_additional_weight": "86.400001525879",
       "ui_inv_outfit_speed": "101%",
       "displayName": "military_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1113,7 +1072,6 @@
       "ui_inv_outfit_additional_weight": "86.400001525879",
       "ui_inv_outfit_speed": "106%",
       "displayName": "military_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1139,7 +1097,6 @@
       "ui_inv_outfit_additional_weight": "45",
       "ui_inv_outfit_speed": "90%",
       "displayName": "isg_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1165,7 +1122,6 @@
       "ui_inv_outfit_additional_weight": "124.80000305176",
       "ui_inv_outfit_speed": "106%",
       "displayName": "bandit_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1191,7 +1147,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "104%",
       "displayName": "dolg_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1217,7 +1172,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "107%",
       "displayName": "light_merc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1243,7 +1197,6 @@
       "ui_inv_outfit_additional_weight": "37.799999237061",
       "ui_inv_outfit_speed": "100%",
       "displayName": "military_monolit_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1269,7 +1222,6 @@
       "ui_inv_outfit_additional_weight": "42",
       "ui_inv_outfit_speed": "100%",
       "displayName": "military_freedom_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1295,7 +1247,6 @@
       "ui_inv_outfit_additional_weight": "31.5",
       "ui_inv_outfit_speed": "101%",
       "displayName": "military_merc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1321,7 +1272,6 @@
       "ui_inv_outfit_additional_weight": "56.25",
       "ui_inv_outfit_speed": "92%",
       "displayName": "exo_merc_urban_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1347,7 +1297,6 @@
       "ui_inv_outfit_additional_weight": "28",
       "ui_inv_outfit_speed": "98%",
       "displayName": "cs_scientific_outfit_good_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1373,7 +1322,6 @@
       "ui_inv_outfit_additional_weight": "103.5",
       "ui_inv_outfit_speed": "103%",
       "displayName": "monolith_nosorog_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1399,7 +1347,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "108%",
       "displayName": "cs_stalker_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1425,7 +1372,6 @@
       "ui_inv_outfit_additional_weight": "54.599998474121",
       "ui_inv_outfit_speed": "104%",
       "displayName": "military_bandit_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1451,7 +1397,6 @@
       "ui_inv_outfit_additional_weight": "72",
       "ui_inv_outfit_speed": "103%",
       "displayName": "merc_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1477,7 +1422,6 @@
       "ui_inv_outfit_additional_weight": "50",
       "ui_inv_outfit_speed": "93%",
       "displayName": "cs_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1503,7 +1447,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "109%",
       "displayName": "dolg_proto_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1529,7 +1472,6 @@
       "ui_inv_outfit_additional_weight": "21",
       "ui_inv_outfit_speed": "97%",
       "displayName": "ace_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1555,7 +1497,6 @@
       "ui_inv_outfit_additional_weight": "86.400001525879",
       "ui_inv_outfit_speed": "102%",
       "displayName": "monolith_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1581,7 +1522,6 @@
       "ui_inv_outfit_additional_weight": "115.19999694824",
       "ui_inv_outfit_speed": "103%",
       "displayName": "exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1607,7 +1547,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "106%",
       "displayName": "light_monolit_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1633,7 +1572,6 @@
       "ui_inv_outfit_additional_weight": "18.75",
       "ui_inv_outfit_speed": "96%",
       "displayName": "exo_merc_grass_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1659,7 +1597,6 @@
       "ui_inv_outfit_additional_weight": "96",
       "ui_inv_outfit_speed": "103%",
       "displayName": "cs_exo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1685,7 +1622,6 @@
       "ui_inv_outfit_additional_weight": "50",
       "ui_inv_outfit_speed": "92%",
       "displayName": "svoboda_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1711,7 +1647,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "105%",
       "displayName": "light_voen_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1737,7 +1672,6 @@
       "ui_inv_outfit_additional_weight": "103.5",
       "ui_inv_outfit_speed": "102%",
       "displayName": "army_nosorog_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1763,7 +1697,6 @@
       "ui_inv_outfit_additional_weight": "86.25",
       "ui_inv_outfit_speed": "104%",
       "displayName": "merc_nosorog_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1789,7 +1722,6 @@
       "ui_inv_outfit_additional_weight": "37.799999237061",
       "ui_inv_outfit_speed": "99%",
       "displayName": "military_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1815,7 +1747,6 @@
       "ui_inv_outfit_additional_weight": "37.5",
       "ui_inv_outfit_speed": "94%",
       "displayName": "exo_merc_wood_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1841,7 +1772,6 @@
       "ui_inv_outfit_additional_weight": "50",
       "ui_inv_outfit_speed": "94%",
       "displayName": "dolg_exolight_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1867,7 +1797,6 @@
       "ui_inv_outfit_additional_weight": "10.800000190735",
       "ui_inv_outfit_speed": "97%",
       "displayName": "army_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1893,7 +1822,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "106%",
       "displayName": "novice_outfit_camo_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1919,7 +1847,6 @@
       "ui_inv_outfit_additional_weight": "15.60000038147",
       "ui_inv_outfit_speed": "111%",
       "displayName": "bandit_novice_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1945,7 +1872,6 @@
       "ui_inv_outfit_additional_weight": "12",
       "ui_inv_outfit_speed": "101%",
       "displayName": "csky_light_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1971,7 +1897,6 @@
       "ui_inv_outfit_additional_weight": "34",
       "ui_inv_outfit_speed": "110%",
       "displayName": "nbc_dolg_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1997,7 +1922,6 @@
       "ui_inv_outfit_additional_weight": "10.5",
       "ui_inv_outfit_speed": "96%",
       "displayName": "merc_fighter_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2023,7 +1947,6 @@
       "ui_inv_outfit_additional_weight": "19.200000762939",
       "ui_inv_outfit_speed": "106%",
       "displayName": "stalker_predator_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2049,7 +1972,6 @@
       "ui_inv_outfit_additional_weight": "10",
       "ui_inv_outfit_speed": "112%",
       "displayName": "redline_novice_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2075,7 +1997,6 @@
       "ui_inv_outfit_additional_weight": "15.60000038147",
       "ui_inv_outfit_speed": "101%",
       "displayName": "stalker_salamander_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2101,7 +2022,6 @@
       "ui_inv_outfit_additional_weight": "34",
       "ui_inv_outfit_speed": "109%",
       "displayName": "cs_nbc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2127,7 +2047,6 @@
       "ui_inv_outfit_additional_weight": "44.200000762939",
       "ui_inv_outfit_speed": "112%",
       "displayName": "bandit_nbc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2153,7 +2072,6 @@
       "ui_inv_outfit_additional_weight": "12",
       "ui_inv_outfit_speed": "108%",
       "displayName": "novice_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2179,7 +2097,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "100%",
       "displayName": "merc_scout_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2205,7 +2122,6 @@
       "ui_inv_outfit_additional_weight": "9.75",
       "ui_inv_outfit_speed": "101%",
       "displayName": "merc_wolven_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2231,7 +2147,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "111%",
       "displayName": "travel_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2257,7 +2172,6 @@
       "ui_inv_outfit_additional_weight": "13",
       "ui_inv_outfit_speed": "101%",
       "displayName": "csky_light_novice_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2283,7 +2197,6 @@
       "ui_inv_outfit_additional_weight": "14",
       "ui_inv_outfit_speed": "110%",
       "displayName": "ghillie_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2309,7 +2222,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "102%",
       "displayName": "trenchcoat_freedom_brown_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2335,7 +2247,6 @@
       "ui_inv_outfit_additional_weight": "18.200000762939",
       "ui_inv_outfit_speed": "101%",
       "displayName": "banditmerc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2361,7 +2272,6 @@
       "ui_inv_outfit_additional_weight": "12.60000038147",
       "ui_inv_outfit_speed": "95%",
       "displayName": "isg_lcs_camo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2387,7 +2297,6 @@
       "ui_inv_outfit_additional_weight": "9.1000003814697",
       "ui_inv_outfit_speed": "108%",
       "displayName": "bandit_novice_alt_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2413,7 +2322,6 @@
       "ui_inv_outfit_additional_weight": "12",
       "ui_inv_outfit_speed": "108%",
       "displayName": "csky_novice_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2439,7 +2347,6 @@
       "ui_inv_outfit_additional_weight": "25.5",
       "ui_inv_outfit_speed": "109%",
       "displayName": "nbc_merc_outfit_name",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2465,7 +2372,6 @@
       "ui_inv_outfit_additional_weight": "40.799999237061",
       "ui_inv_outfit_speed": "109%",
       "displayName": "nbc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2491,7 +2397,6 @@
       "ui_inv_outfit_additional_weight": "34",
       "ui_inv_outfit_speed": "108%",
       "displayName": "nbc_freedom_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2517,7 +2422,6 @@
       "ui_inv_outfit_additional_weight": "14.39999961853",
       "ui_inv_outfit_speed": "99%",
       "displayName": "stalker_autumn_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2543,7 +2447,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "101%",
       "displayName": "stalker_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2569,7 +2472,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "103%",
       "displayName": "trenchcoat_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2595,7 +2497,6 @@
       "ui_inv_outfit_additional_weight": "12",
       "ui_inv_outfit_speed": "109%",
       "displayName": "dolg_novice_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2621,7 +2522,6 @@
       "ui_inv_outfit_additional_weight": "16",
       "ui_inv_outfit_speed": "107%",
       "displayName": "dolg_red_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2647,7 +2547,6 @@
       "ui_inv_outfit_additional_weight": "14.39999961853",
       "ui_inv_outfit_speed": "108%",
       "displayName": "novice_outfit_tourist_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2673,7 +2572,6 @@
       "ui_inv_outfit_additional_weight": "30.60000038147",
       "ui_inv_outfit_speed": "108%",
       "displayName": "monolith_nbc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2699,7 +2597,6 @@
       "ui_inv_outfit_additional_weight": "12",
       "ui_inv_outfit_speed": "107%",
       "displayName": "svoboda_novice_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2725,7 +2622,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "101%",
       "displayName": "merc_sunset_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2751,7 +2647,6 @@
       "ui_inv_outfit_additional_weight": "19.200000762939",
       "ui_inv_outfit_speed": "99%",
       "displayName": "greh_armored_camo_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2777,7 +2672,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "101%",
       "displayName": "st_ecologist_outfit_blue_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2803,7 +2697,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "102%",
       "displayName": "isg_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2829,7 +2722,6 @@
       "ui_inv_outfit_additional_weight": "20.799999237061",
       "ui_inv_outfit_speed": "110%",
       "displayName": "bandit_sun_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2855,7 +2747,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "104%",
       "displayName": "dolg_scientific_red_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2881,7 +2772,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "98%",
       "displayName": "ecologist_guard_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2907,7 +2797,6 @@
       "ui_inv_outfit_additional_weight": "16.5",
       "ui_inv_outfit_speed": "100%",
       "displayName": "merc_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2933,7 +2822,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "98%",
       "displayName": "merc_sun_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2959,7 +2847,6 @@
       "ui_inv_outfit_additional_weight": "21.60000038147",
       "ui_inv_outfit_speed": "97%",
       "displayName": "monolith_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -2985,7 +2872,6 @@
       "ui_inv_outfit_additional_weight": "19.799999237061",
       "ui_inv_outfit_speed": "99%",
       "displayName": "monolith_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3011,7 +2897,6 @@
       "ui_inv_outfit_additional_weight": "20",
       "ui_inv_outfit_speed": "106%",
       "displayName": "dolg_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3037,7 +2922,6 @@
       "ui_inv_outfit_additional_weight": "27.89999961853",
       "ui_inv_outfit_speed": "91%",
       "displayName": "isg_lcs_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3063,7 +2947,6 @@
       "ui_inv_outfit_additional_weight": "22",
       "ui_inv_outfit_speed": "100%",
       "displayName": "renegade_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3089,7 +2972,6 @@
       "ui_inv_outfit_additional_weight": "31",
       "ui_inv_outfit_speed": "94%",
       "displayName": "renegademerc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3115,7 +2997,6 @@
       "ui_inv_outfit_additional_weight": "31.200000762939",
       "ui_inv_outfit_speed": "106%",
       "displayName": "specops_bandit_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3141,7 +3022,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "104%",
       "displayName": "specops_dolg_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3167,7 +3047,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "101%",
       "displayName": "st_ecologist_outfit_white_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3193,7 +3072,6 @@
       "ui_inv_outfit_additional_weight": "31.200000762939",
       "ui_inv_outfit_speed": "99%",
       "displayName": "nomad_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3219,7 +3097,6 @@
       "ui_inv_outfit_additional_weight": "25.5",
       "ui_inv_outfit_speed": "95%",
       "displayName": "merc_jackal_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3245,7 +3122,6 @@
       "ui_inv_outfit_additional_weight": "23.25",
       "ui_inv_outfit_speed": "94%",
       "displayName": "merc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3271,7 +3147,6 @@
       "ui_inv_outfit_additional_weight": "19.5",
       "ui_inv_outfit_speed": "101%",
       "displayName": "merc_scientific_armored_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3297,7 +3172,6 @@
       "ui_inv_outfit_additional_weight": "22",
       "ui_inv_outfit_speed": "101%",
       "displayName": "dolg_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3323,7 +3197,6 @@
       "ui_inv_outfit_additional_weight": "25.200000762939",
       "ui_inv_outfit_speed": "103%",
       "displayName": "monolith_scientific_light_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3349,7 +3222,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "99%",
       "displayName": "dolg_scientific_wood_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3375,7 +3247,6 @@
       "ui_inv_outfit_additional_weight": "21.60000038147",
       "ui_inv_outfit_speed": "101%",
       "displayName": "specops_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3401,7 +3272,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "101%",
       "displayName": "st_ecologist_outfit_grn_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3427,7 +3297,6 @@
       "ui_inv_outfit_additional_weight": "16",
       "ui_inv_outfit_speed": "103%",
       "displayName": "greh_ps5_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3453,7 +3322,6 @@
       "ui_inv_outfit_additional_weight": "20",
       "ui_inv_outfit_speed": "104%",
       "displayName": "svoboda_heavy_outfit_2_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3479,7 +3347,6 @@
       "ui_inv_outfit_additional_weight": "19.200000762939",
       "ui_inv_outfit_speed": "107%",
       "displayName": "stalker_graphite_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3505,7 +3372,6 @@
       "ui_inv_outfit_additional_weight": "19.200000762939",
       "ui_inv_outfit_speed": "107%",
       "displayName": "stalker_drought_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3531,7 +3397,6 @@
       "ui_inv_outfit_additional_weight": "19.200000762939",
       "ui_inv_outfit_speed": "109%",
       "displayName": "stalker_tigerstripe_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3557,7 +3422,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "102%",
       "displayName": "svoboda_heavy_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3583,7 +3447,6 @@
       "ui_inv_outfit_additional_weight": "21.75",
       "ui_inv_outfit_speed": "93%",
       "displayName": "merc_coyote_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3609,7 +3472,6 @@
       "ui_inv_outfit_additional_weight": "21.60000038147",
       "ui_inv_outfit_speed": "95%",
       "displayName": "isg_merc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3635,7 +3497,6 @@
       "ui_inv_outfit_additional_weight": "19.200000762939",
       "ui_inv_outfit_speed": "105%",
       "displayName": "stalker_bear_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3661,7 +3522,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "101%",
       "displayName": "st_ecologist_outfit_red_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3687,7 +3547,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "97%",
       "displayName": "svoboda_light_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3713,7 +3572,6 @@
       "ui_inv_outfit_additional_weight": "22",
       "ui_inv_outfit_speed": "99%",
       "displayName": "svoboda_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3739,7 +3597,6 @@
       "ui_inv_outfit_additional_weight": "28.60000038147",
       "ui_inv_outfit_speed": "103%",
       "displayName": "bandit_scientific_dark_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3765,7 +3622,6 @@
       "ui_inv_outfit_additional_weight": "33.799999237061",
       "ui_inv_outfit_speed": "104%",
       "displayName": "bandit_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3791,7 +3647,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "101%",
       "displayName": "csky_medium_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3817,7 +3672,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "99%",
       "displayName": "dolg_voin_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3843,7 +3697,6 @@
       "ui_inv_outfit_additional_weight": "26.39999961853",
       "ui_inv_outfit_speed": "100%",
       "displayName": "scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3869,7 +3722,6 @@
       "ui_inv_outfit_additional_weight": "18",
       "ui_inv_outfit_speed": "103%",
       "displayName": "specops_merc_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3895,7 +3747,6 @@
       "ui_inv_outfit_additional_weight": "22",
       "ui_inv_outfit_speed": "106%",
       "displayName": "trenchcoat_dolg_brown_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3921,7 +3772,6 @@
       "ui_inv_outfit_additional_weight": "22",
       "ui_inv_outfit_speed": "105%",
       "displayName": "trenchcoat_brown_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3947,7 +3797,6 @@
       "ui_inv_outfit_additional_weight": "19.799999237061",
       "ui_inv_outfit_speed": "97%",
       "displayName": "isg_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3973,7 +3822,6 @@
       "ui_inv_outfit_additional_weight": "26",
       "ui_inv_outfit_speed": "108%",
       "displayName": "bandit_ps5_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -3999,7 +3847,6 @@
       "ui_inv_outfit_additional_weight": "16",
       "ui_inv_outfit_speed": "107%",
       "displayName": "cs_stalker_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4025,7 +3872,6 @@
       "ui_inv_outfit_additional_weight": "28.799999237061",
       "ui_inv_outfit_speed": "105%",
       "displayName": "wastelander_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4051,7 +3897,6 @@
       "ui_inv_outfit_additional_weight": "0",
       "ui_inv_outfit_speed": "105%",
       "displayName": "trenchcoat_green_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4077,7 +3922,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "101%",
       "displayName": "st_ecologist_outfit_orange_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4103,7 +3947,6 @@
       "ui_inv_outfit_additional_weight": "22",
       "ui_inv_outfit_speed": "100%",
       "displayName": "cs_scientific_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4129,7 +3972,6 @@
       "ui_inv_outfit_additional_weight": "24",
       "ui_inv_outfit_speed": "108%",
       "displayName": "dolg_scout_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4155,7 +3997,6 @@
       "ui_inv_outfit_additional_weight": "21.60000038147",
       "ui_inv_outfit_speed": "98%",
       "displayName": "isg_lcs_urban_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4181,7 +4022,6 @@
       "ui_inv_outfit_additional_weight": "15",
       "ui_inv_outfit_speed": "101%",
       "displayName": "st_ecologist_outfit_yello_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -4207,7 +4047,6 @@
       "ui_inv_outfit_additional_weight": "24.799999237061",
       "ui_inv_outfit_speed": "92%",
       "displayName": "greh_armored_outfit_name",
-      "hasStashDrop": true,
       "hasDisassemble": false
     }
   ]

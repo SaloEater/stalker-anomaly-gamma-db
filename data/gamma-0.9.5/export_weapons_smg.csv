@@ -1,4 +1,4 @@
-~, Pda_encyclopedia_name, St_prop_weight, St_upgr_cost, Ui_mm_repair, St_data_export_single_handed, Ui_inv_accuracy, Ui_inv_handling, Ui_inv_damage, Ui_inv_rate_of_fire, Ui_ammo_count, Ui_inv_wrange, Ui_inv_bspeed, Ui_inv_reli, Ui_inv_recoil, Ui_ammo_types, St_data_export_ammo_types_alt, BR1, BR2, BR3, BR4, BR5, BR6, BR7
+~, pda_encyclopedia_name, st_prop_weight, st_upgr_cost, ui_mm_repair, st_data_export_single_handed, ui_inv_accuracy, ui_inv_handling, ui_inv_damage, ui_inv_rate_of_fire, ui_ammo_count, ui_inv_wrange, ui_inv_bspeed, ui_inv_reli, ui_inv_recoil, ui_ammo_types, st_data_export_ammo_types_alt, BR1, BR2, BR3, BR4, BR5, BR6, BR7
 wpn_udp9,st_wpn_udp9,2.2,19350,A,N,83%,84%,21,500,33,400,525,89%,90,"ammo-9x19-fmj";"ammo-9x19-pbp";"ammo-9x19-ap","ammo-11.43x23-fmj";"ammo-11.43x23-hydro",,17,,34,,,
 wpn_ppsh41_rednew,st_wpn_ppsh41_camo,3.6,20580,A,N,64%,82%,21,880,71,500,630,91%,70,"ammo-7.62x25-p";"ammo-7.62x25-ps",,,,25,,,,
 wpn_vz61,st_wpn_vz61,1.44,15680,A,N,57%,84%,21,850,20,400,485,91%,90,"ammo-9x19-fmj";"ammo-9x19-pbp";"ammo-9x19-ap",,,17,,34,,,

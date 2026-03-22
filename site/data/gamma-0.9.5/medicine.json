@@ -90,7 +90,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_stim_scientic",
-      "hasStashDrop": false,
       "hasDisassemble": true
     },
     {
@@ -136,7 +135,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_adrenalin",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -182,7 +180,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_antibio_sulfad",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -228,7 +225,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_drug_radioprotector",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -274,7 +270,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_antibio_chlor",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -320,7 +315,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_antiemetic",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -366,7 +360,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_drug_antidot",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -412,7 +405,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_joint",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -458,7 +450,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_drug_coagulant",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -504,7 +495,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_cocaine",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -550,7 +540,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_drug_booster",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -596,7 +585,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_akvatab",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -642,7 +630,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_medkit_army",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -688,7 +675,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_glucose_s",
-      "hasStashDrop": false,
       "hasDisassemble": true
     },
     {
@@ -734,7 +720,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_antirad",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -780,7 +765,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_salicidic_acid",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -826,7 +810,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_jgut_zhgut",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -872,7 +855,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_yadylin",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -918,7 +900,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_stim_military",
-      "hasStashDrop": false,
       "hasDisassemble": true
     },
     {
@@ -964,7 +945,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_caffeine",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1010,7 +990,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_bandage",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1056,7 +1035,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_medkit",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1102,7 +1080,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_rebirth",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1148,7 +1125,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_drug_anabiotic",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1194,7 +1170,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_medkit_science",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1240,7 +1215,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_tetanus",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1286,7 +1260,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_analgetic",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1332,7 +1305,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_glucose",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1378,7 +1350,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_morphine",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1424,7 +1395,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_survival_kit",
-      "hasStashDrop": false,
       "hasDisassemble": true
     },
     {
@@ -1470,7 +1440,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_marijuana",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1516,7 +1485,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_drug_psy_blockade",
-      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
@@ -1562,7 +1530,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_stim_impro",
-      "hasStashDrop": true,
       "hasDisassemble": true
     },
     {
@@ -1608,7 +1575,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_sleepingpills",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1654,7 +1620,6 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_antirad_cystamine",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1700,7 +1665,6 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_antirad_kalium",
-      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

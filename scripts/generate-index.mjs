@@ -125,7 +125,9 @@ function loadTranslations(packDir) {
       const cols = parseCsvLine(lines[i]);
       const key = cols[0]?.trim().toLowerCase();
       // Rejoin cols after key — color codes like %c[0,255,255,255] contain commas
-      let value = cols.slice(1).join(",").trim();
+      // Drop the last column (Category) if present (3+ columns)
+      const valueCols = cols.length >= 3 ? cols.slice(1, -1) : cols.slice(1);
+      let value = valueCols.join(",").trim();
       if (!key) continue;
       // Strip %c[...] color codes
       value = value.replace(/%c\[[^\]]*\]/g, "");

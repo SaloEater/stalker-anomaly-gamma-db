@@ -27,7 +27,6 @@
       "st_data_export_pelts_quality_min": "",
       "st_data_export_pelts_quality_max": "",
       "displayName": "st_sledge_hammer",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -43,7 +42,6 @@
       "st_data_export_pelts_quality_min": "75%",
       "st_data_export_pelts_quality_max": "98%",
       "displayName": "st_kukri",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -59,7 +57,6 @@
       "st_data_export_pelts_quality_min": "75%",
       "st_data_export_pelts_quality_max": "98%",
       "displayName": "st_tactical_knife",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -75,7 +72,6 @@
       "st_data_export_pelts_quality_min": "65%",
       "st_data_export_pelts_quality_max": "85%",
       "displayName": "st_knife_combat",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -91,7 +87,6 @@
       "st_data_export_pelts_quality_min": "25%",
       "st_data_export_pelts_quality_max": "40%",
       "displayName": "st_knife_6x4",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -107,7 +102,6 @@
       "st_data_export_pelts_quality_min": "45%",
       "st_data_export_pelts_quality_max": "60%",
       "displayName": "st_knife_hunting",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -123,7 +117,6 @@
       "st_data_export_pelts_quality_min": "75%",
       "st_data_export_pelts_quality_max": "98%",
       "displayName": "st_knifebf4",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -139,7 +132,6 @@
       "st_data_export_pelts_quality_min": "55%",
       "st_data_export_pelts_quality_max": "70%",
       "displayName": "st_knife_swat",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -155,7 +147,6 @@
       "st_data_export_pelts_quality_min": "35%",
       "st_data_export_pelts_quality_max": "50%",
       "displayName": "st_knife_needle",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -171,7 +162,6 @@
       "st_data_export_pelts_quality_min": "",
       "st_data_export_pelts_quality_max": "",
       "displayName": "st_tomahawk",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -187,7 +177,6 @@
       "st_data_export_pelts_quality_min": "",
       "st_data_export_pelts_quality_max": "",
       "displayName": "st_axe",
-      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

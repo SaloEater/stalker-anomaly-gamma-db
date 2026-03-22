@@ -13,7 +13,6 @@
       "yan_st_sakharov_name": "175",
       "hunter_gar_trader_name": "201",
       "displayName": "mutant_boar_leg",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -22,7 +21,6 @@
       "yan_st_sakharov_name": "459",
       "hunter_gar_trader_name": "525",
       "displayName": "mutant_brain_burer",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -31,7 +29,6 @@
       "yan_st_sakharov_name": "771",
       "hunter_gar_trader_name": "882",
       "displayName": "mutant_burer_hand",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -40,7 +37,6 @@
       "yan_st_sakharov_name": "85",
       "hunter_gar_trader_name": "97",
       "displayName": "mutant_cat_claw",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -49,7 +45,6 @@
       "yan_st_sakharov_name": "181",
       "hunter_gar_trader_name": "207",
       "displayName": "mutant_cat_tail",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -58,7 +53,6 @@
       "yan_st_sakharov_name": "108",
       "hunter_gar_trader_name": "124",
       "displayName": "mutant_cat_thyroid",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -67,7 +61,6 @@
       "yan_st_sakharov_name": "207",
       "hunter_gar_trader_name": "237",
       "displayName": "mutant_chimera_claw",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -76,7 +69,6 @@
       "yan_st_sakharov_name": "981",
       "hunter_gar_trader_name": "1122",
       "displayName": "mutant_chimera_cogot",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -85,7 +77,6 @@
       "yan_st_sakharov_name": "1097",
       "hunter_gar_trader_name": "1254",
       "displayName": "mutant_controller_hand",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -94,7 +85,6 @@
       "yan_st_sakharov_name": "94",
       "hunter_gar_trader_name": "108",
       "displayName": "mutant_dog_heart",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -103,7 +93,6 @@
       "yan_st_sakharov_name": "98",
       "hunter_gar_trader_name": "112",
       "displayName": "mutant_dog_liver",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -112,7 +101,6 @@
       "yan_st_sakharov_name": "162",
       "hunter_gar_trader_name": "186",
       "displayName": "mutant_dog_tail",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -121,7 +109,6 @@
       "yan_st_sakharov_name": "65",
       "hunter_gar_trader_name": "75",
       "displayName": "mutant_fang_psevdodog",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -130,7 +117,6 @@
       "yan_st_sakharov_name": "167",
       "hunter_gar_trader_name": "192",
       "displayName": "mutant_flesh_eye",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -139,7 +125,6 @@
       "yan_st_sakharov_name": "146",
       "hunter_gar_trader_name": "168",
       "displayName": "mutant_fracture_hand",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -148,7 +133,6 @@
       "yan_st_sakharov_name": "162",
       "hunter_gar_trader_name": "186",
       "displayName": "mutant_heart_bloodsucker",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -157,7 +141,6 @@
       "yan_st_sakharov_name": "1378",
       "hunter_gar_trader_name": "1575",
       "displayName": "mutant_heart_chimera",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -166,7 +149,6 @@
       "yan_st_sakharov_name": "362",
       "hunter_gar_trader_name": "414",
       "displayName": "mutant_krovosos_jaw",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -175,7 +157,6 @@
       "yan_st_sakharov_name": "167",
       "hunter_gar_trader_name": "192",
       "displayName": "mutant_lurker_eye",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -184,7 +165,6 @@
       "yan_st_sakharov_name": "167",
       "hunter_gar_trader_name": "192",
       "displayName": "mutant_lurker_tail",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -193,7 +173,6 @@
       "yan_st_sakharov_name": "1257",
       "hunter_gar_trader_name": "1437",
       "displayName": "mutant_part_controller_brain_tissue",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -202,7 +181,6 @@
       "yan_st_sakharov_name": "1475",
       "hunter_gar_trader_name": "1686",
       "displayName": "mutant_pseudogigant_eye",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -211,7 +189,6 @@
       "yan_st_sakharov_name": "1401",
       "hunter_gar_trader_name": "1602",
       "displayName": "mutant_pseudogigant_hand",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -220,7 +197,6 @@
       "yan_st_sakharov_name": "181",
       "hunter_gar_trader_name": "207",
       "displayName": "mutant_psevdodog_tail",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -229,7 +205,6 @@
       "yan_st_sakharov_name": "167",
       "hunter_gar_trader_name": "192",
       "displayName": "mutant_psysucker_hand",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -238,7 +213,6 @@
       "yan_st_sakharov_name": "207",
       "hunter_gar_trader_name": "237",
       "displayName": "mutant_snork_leg",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -247,7 +221,6 @@
       "yan_st_sakharov_name": "278",
       "hunter_gar_trader_name": "318",
       "displayName": "mutant_snork_mask",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -256,7 +229,6 @@
       "yan_st_sakharov_name": "133",
       "hunter_gar_trader_name": "153",
       "displayName": "mutant_tushkano_head",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -265,7 +237,6 @@
       "yan_st_sakharov_name": "98",
       "hunter_gar_trader_name": "112",
       "displayName": "mutant_tusk_boar",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -274,7 +245,6 @@
       "yan_st_sakharov_name": "162",
       "hunter_gar_trader_name": "186",
       "displayName": "mutant_zombi_hand",
-      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -283,7 +253,6 @@
       "yan_st_sakharov_name": "427",
       "hunter_gar_trader_name": "489",
       "displayName": "st_mutant_part_crow_beak",
-      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

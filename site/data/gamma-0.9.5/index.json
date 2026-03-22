@@ -1337,6 +1337,13 @@
     "displayName": "nbc_outfit_name"
   },
   {
+    "id": "mine_new_blow",
+    "name": "nil",
+    "category": "Explosives",
+    "displayName": "nil",
+    "hasNpcWeaponDrop": false
+  },
+  {
     "id": "nomad_outfit",
     "name": "nomad_outfit_name",
     "category": "Outfits",
@@ -2357,6 +2364,34 @@
     "displayName": "st_glucose_s"
   },
   {
+    "id": "grenade_f1",
+    "name": "st_grenade_f1",
+    "category": "Explosives",
+    "displayName": "st_grenade_f1",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "grenade_rgd5",
+    "name": "st_grenade_rgd5",
+    "category": "Explosives",
+    "displayName": "st_grenade_rgd5",
+    "hasNpcWeaponDrop": true
+  },
+  {
+    "id": "grenade_smoke",
+    "name": "st_grenade_smoke",
+    "category": "Explosives",
+    "displayName": "st_grenade_smoke",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "grenade_gd-05",
+    "name": "st_grenade_thermite",
+    "category": "Explosives",
+    "displayName": "st_grenade_thermite",
+    "hasNpcWeaponDrop": true
+  },
+  {
     "id": "ground_coffee",
     "name": "st_ground_coffee",
     "category": "Food",
@@ -2523,6 +2558,34 @@
     "name": "st_hide_psysucker_name",
     "category": "Belt Attachments",
     "displayName": "st_hide_psysucker_name"
+  },
+  {
+    "id": "ied_blow",
+    "name": "st_ied",
+    "category": "Explosives",
+    "displayName": "st_ied [blow]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "ied",
+    "name": "st_ied",
+    "category": "Explosives",
+    "displayName": "st_ied [default]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "ied_new_blow",
+    "name": "st_ied",
+    "category": "Explosives",
+    "displayName": "st_ied [new_blow]",
+    "hasNpcWeaponDrop": false
+  },
+  {
+    "id": "ied_rpg",
+    "name": "st_ied_rpg",
+    "category": "Explosives",
+    "displayName": "st_ied_rpg",
+    "hasNpcWeaponDrop": false
   },
   {
     "id": "artefact_container",
@@ -2805,6 +2868,13 @@
     "name": "st_medkit_science",
     "category": "Medicine",
     "displayName": "st_medkit_science"
+  },
+  {
+    "id": "mine",
+    "name": "st_mine_name",
+    "category": "Explosives",
+    "displayName": "st_mine_name",
+    "hasNpcWeaponDrop": false
   },
   {
     "id": "mineral_water",

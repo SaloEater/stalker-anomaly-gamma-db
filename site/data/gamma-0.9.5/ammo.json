@@ -32,7 +32,6 @@
       "st_data_export_impulse": "150%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x54-7n1",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 30
     },
@@ -51,7 +50,6 @@
       "st_data_export_impulse": "70%",
       "st_data_export_weapon_degradation": "105%",
       "displayName": "ammo_20x70_buck",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 3
     },
@@ -70,7 +68,6 @@
       "st_data_export_impulse": "57%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.56x45-fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 29
     },
@@ -89,7 +86,6 @@
       "st_data_export_impulse": "50%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x51_ap",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 62
     },
@@ -108,7 +104,6 @@
       "st_data_export_impulse": "60%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x39_ap",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 55
     },
@@ -127,7 +122,6 @@
       "st_data_export_impulse": "190%",
       "st_data_export_weapon_degradation": "105%",
       "displayName": "ammo-12x76-zhekan",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 24
     },
@@ -146,7 +140,6 @@
       "st_data_export_impulse": "36%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-4.6x30-fmj",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 25
     },
@@ -165,7 +158,6 @@
       "st_data_export_impulse": "57%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.56x45-ss190",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 13
     },
@@ -184,7 +176,6 @@
       "st_data_export_impulse": "60%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x54-r",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 37
     },
@@ -203,7 +194,6 @@
       "st_data_export_impulse": "170%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x54-ap",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 80
     },
@@ -222,7 +212,6 @@
       "st_data_export_impulse": "15%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo_23_eco",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 12
     },
@@ -241,7 +230,6 @@
       "st_data_export_impulse": "66%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x51_fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 34
     },
@@ -260,7 +248,6 @@
       "st_data_export_impulse": "50%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x25-ps",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 25
     },
@@ -279,7 +266,6 @@
       "st_data_export_impulse": "36%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.7x28-ss190",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 40
     },
@@ -298,7 +284,6 @@
       "st_data_export_impulse": "36%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x19-ap",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 34
     },
@@ -317,7 +302,6 @@
       "st_data_export_impulse": "280%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-12.7x55-fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 38
     },
@@ -336,7 +320,6 @@
       "st_data_export_impulse": "150%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x54_7n14",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 45
     },
@@ -355,7 +338,6 @@
       "st_data_export_impulse": "75%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-357-hp",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 19
     },
@@ -374,7 +356,6 @@
       "st_data_export_impulse": "60%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.45x39-fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 27
     },
@@ -393,7 +374,6 @@
       "st_data_export_impulse": "400%",
       "st_data_export_weapon_degradation": "105%",
       "displayName": "ammo_23x75_barrikada",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 54
     },
@@ -412,7 +392,6 @@
       "st_data_export_impulse": "150%",
       "st_data_export_weapon_degradation": "200%",
       "displayName": "ammo-7.92x33_fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 27
     },
@@ -431,7 +410,6 @@
       "st_data_export_impulse": "55%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.45x39-ep",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 10
     },
@@ -450,7 +428,6 @@
       "st_data_export_impulse": "135%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-m209",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 35
     },
@@ -469,7 +446,6 @@
       "st_data_export_impulse": "100%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.7x28-ss195",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 25
     },
@@ -488,7 +464,6 @@
       "st_data_export_impulse": "100%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-gauss",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 500
     },
@@ -507,7 +482,6 @@
       "st_data_export_impulse": "100%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x19-pbp",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 10
     },
@@ -526,7 +500,6 @@
       "st_data_export_impulse": "54%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.56x45-ap",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 52
     },
@@ -545,7 +518,6 @@
       "st_data_export_impulse": "55%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-11.43x23-fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 20
     },
@@ -564,7 +536,6 @@
       "st_data_export_impulse": "190%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-50-bmg",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 190
     },
@@ -583,7 +554,6 @@
       "st_data_export_impulse": "200%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-338-lapua",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 140
     },
@@ -602,7 +572,6 @@
       "st_data_export_impulse": "80%",
       "st_data_export_weapon_degradation": "110%",
       "displayName": "ammo_9x21_sp10",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 32
     },
@@ -621,7 +590,6 @@
       "st_data_export_impulse": "110%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo_vog_30",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 35
     },
@@ -640,7 +608,6 @@
       "st_data_export_impulse": "130%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-vog-25",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 35
     },
@@ -659,7 +626,6 @@
       "st_data_export_impulse": "25%",
       "st_data_export_weapon_degradation": "100%",
       "displayName": "ammo-12x70-buck_self",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 3
     },
@@ -678,7 +644,6 @@
       "st_data_export_impulse": "150%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-og-7b",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 125
     },
@@ -697,7 +662,6 @@
       "st_data_export_impulse": "100%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-gauss_cardan",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 500
     },
@@ -716,7 +680,6 @@
       "st_data_export_impulse": "70%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-11.43x23-hydro",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 10
     },
@@ -735,7 +698,6 @@
       "st_data_export_impulse": "55%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x39-pab9",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 34
     },
@@ -754,7 +716,6 @@
       "st_data_export_impulse": "50%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x39-ap",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 55
     },
@@ -773,7 +734,6 @@
       "st_data_export_impulse": "44%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x19-fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 17
     },
@@ -792,7 +752,6 @@
       "st_data_export_impulse": "200%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo_338_federal",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 8
     },
@@ -811,7 +770,6 @@
       "st_data_export_impulse": "70%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x25-p",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 8
     },
@@ -830,7 +788,6 @@
       "st_data_export_impulse": "350%",
       "st_data_export_weapon_degradation": "105%",
       "displayName": "ammo_23x75_shrapnel",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 6
     },
@@ -849,7 +806,6 @@
       "st_data_export_impulse": "190%",
       "st_data_export_weapon_degradation": "105%",
       "displayName": "ammo-12x76-dart",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 42
     },
@@ -868,7 +824,6 @@
       "st_data_export_impulse": "60%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x18-fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 15
     },
@@ -887,7 +842,6 @@
       "st_data_export_impulse": "70%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x18-pmm",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 10
     },
@@ -906,7 +860,6 @@
       "st_data_export_impulse": "55%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-9x18-ap",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 27
     },
@@ -925,7 +878,6 @@
       "st_data_export_impulse": "150%",
       "st_data_export_weapon_degradation": "200%",
       "displayName": "ammo-7.92x33_ap",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 39
     },
@@ -944,7 +896,6 @@
       "st_data_export_impulse": "55%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-5.45x39-ap",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 47
     },
@@ -963,7 +914,6 @@
       "st_data_export_impulse": "100%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-12x76-bull",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 40
     },
@@ -982,7 +932,6 @@
       "st_data_export_impulse": "280%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo_12.7x55_ap",
-      "hasStashDrop": false,
       "hasDisassemble": false,
       "st_data_export_ap": 75
     },
@@ -1001,7 +950,6 @@
       "st_data_export_impulse": "50%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-12x70-buck",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 3
     },
@@ -1020,7 +968,6 @@
       "st_data_export_impulse": "66%",
       "st_data_export_weapon_degradation": "40%",
       "displayName": "ammo-7.62x39_fmj",
-      "hasStashDrop": true,
       "hasDisassemble": false,
       "st_data_export_ap": 30
     }
