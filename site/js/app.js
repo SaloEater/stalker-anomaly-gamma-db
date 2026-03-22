@@ -336,6 +336,7 @@ const app = createApp({
             settingsOpen: false,
             sidebarOpen: false,
             sidebarCollapsed: false,
+            collapsedGroups: {},
             hideNoDrop: true,
             hideUnusedAmmo: true,
 
@@ -3366,6 +3367,10 @@ const app = createApp({
             }
         },
 
+        toggleGroup(name) {
+            this.collapsedGroups = { ...this.collapsedGroups, [name]: !this.collapsedGroups[name] };
+            try { localStorage.setItem("collapsedGroups", JSON.stringify(this.collapsedGroups)); } catch (e) {}
+        },
         toggleSidebar() { this.sidebarOpen = !this.sidebarOpen; },
         closeSidebar() { this.sidebarOpen = false; },
         toggleSidebarCollapse() {
@@ -4808,6 +4813,8 @@ const app = createApp({
         // 5a. Restore sidebar collapsed state
         try {
             this.sidebarCollapsed = !!localStorage.getItem("sidebarCollapsed");
+            const cg = localStorage.getItem("collapsedGroups");
+            if (cg) this.collapsedGroups = JSON.parse(cg);
         } catch (e) { /* ignore */ }
 
         // 5b. Restore view mode from localStorage

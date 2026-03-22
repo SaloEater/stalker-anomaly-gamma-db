@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Keyboard shortcuts for common actions like search, view toggling, and item navigation
 - Sidebar can now be collapsed on desktop for more screen space
+- Collapsible sidebar category groups with persistent accordion state
 - Contact page with Discord channel link for feature requests, bugs, and discussions
 
 ### Fixed
