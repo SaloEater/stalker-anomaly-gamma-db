@@ -3025,6 +3025,10 @@ kbd {
 .footer-left, .footer-right {
     flex: 1;
 }
+.footer-left {
+    display: flex;
+    gap: 0.75rem;
+}
 .footer-center {
     flex: none;
 }

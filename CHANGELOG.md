@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Keyboard shortcuts for common actions like search, view toggling, and item navigation
 - Sidebar can now be collapsed on desktop for more screen space
+- Contact page with Discord channel link for feature requests, bugs, and discussions
 
 ### Fixed
 
@@ -19,5 +20,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Global search now shows item IDs to distinguish items with the same name
 - Compact mobile footer with icon-only links and shorter copyright text
+- Acknowledgements and contact pages now use clean directory-based URLs
 - Use data-driven `is_backpack` field from CSV instead of hardcoded backpack ID list
 - Reduce max belt slots from 12 to 6
