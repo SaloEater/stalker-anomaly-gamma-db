@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Global search now shows item IDs to distinguish items with the same name
 - Compact mobile footer with icon-only links and shorter copyright text
 - Use data-driven `is_backpack` field from CSV instead of hardcoded backpack ID list
 - Reduce max belt slots from 12 to 6
