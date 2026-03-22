@@ -127,7 +127,7 @@ st_wpn_desert_eagle_nimble,Desert Eagle "Steppe Eagle"
 st_detector3,Veles Detector
 st_af_kislushka_name,Sourpuss
 st_data_export_blast_power,st_data_export_blast_power
-st_bolt_10,Rotating Locking Head [8 Locks] [À] (Bolt)
+st_bolt_10,Rotating Locking Head [8 Locks] [ï¿½] (Bolt)
 st_bolt_2,Rotating Locking Head [2 Locks] [P] (Bolt)
 mutant_burer_hand,Burer Hand
 st_data_export_disassemble_amount,Amount
@@ -347,7 +347,7 @@ st_prt_o_retardant_16,Active Charcoal-treated Non-woven Fabrics
 st_wpn_aug_9mm,Steyr AUG A3 9mm
 st_prt_o_fabrics_4,Mil-Spec Textiles
 ecolog_exo_outfit_name,Scientific Exoskeleton
-st_bolt_8,Rotating Locking Head [6 Locks] [À] (Bolt)
+st_bolt_8,Rotating Locking Head [6 Locks] [ï¿½] (Bolt)
 st_cooking,Field Cooking Kit
 st_memoirs_2_of_2_name,A Stalker's Journal (Part 2 of 2)
 st_wpn_ak74m_alt,AK-74M
@@ -366,7 +366,7 @@ st_prt_o_retardant_18,Insulating Constantan Inserts w/ Fiberglass Coating
 st_helm_protective,SSP-99 Screen Helmet
 l10_limansk,Limansk
 st_af_sandstone_name,Sandstone
-st_bolt_6,Rotating Locking Head [2 Locks] [À] (Bolt)
+st_bolt_6,Rotating Locking Head [2 Locks] [ï¿½] (Bolt)
 st_kit_hunt,Hunter's Kit
 ui_inv_outfit_shock_protection,%c[0,255,255,255]Electrical Res:
 st_wpn_ak74u_m1_isg,Rifle Dynamics Draco ISG
@@ -397,7 +397,7 @@ st_wpn_pp2000n,PP-2000
 st_hide_flesh_name,Flesh Hide
 merc_exolight_outfit_name,Mercenary Exosuit
 l03u_agr_underground,Agroprom Underground
-st_barrel_9,5.56mm Barrel [À] (Barrel)
+st_barrel_9,5.56mm Barrel [ï¿½] (Barrel)
 monolith_nbc_outfit_name,Tactical Monolith Suit
 st_af_gold_fish_name,Goldfish
 MDR_black,Desert Tech MDR 7.62x51
@@ -702,7 +702,7 @@ st_trigger_components_6,Trigger Mechanism with Hammer [R] (Trigger)
 st_data_export_first_aid_arm,First-Aid arm
 st_wpn_svd,SVD
 st_wpn_sr2_veresk_sr2_upkit,SR-2M Veresk "Tactical"
-novice_outfit_tourist_name,Tourist’s Jacket
+novice_outfit_tourist_name,Touristï¿½s Jacket
 st_wpn_sks_tac,SKS Tactical
 stalker_salamander_outfit_name,"Salamander" Stalker Suit
 st_wpn_sks_modern,SKS
@@ -813,7 +813,7 @@ st_data_export_pelts_quality_max,Maximum pelts quality
 st_data_export_falloff,Falloff
 l12u_control_monolith,Monolith Control Center
 st_itm_backpack_name,Backpack
-lttz_ll_wpn_gauss_quest_name,"Item ¹62"
+lttz_ll_wpn_gauss_quest_name,"Item ï¿½62"
 st_sausage,Smoked Sausage
 st_bolt_carrier_4,Sliding Bolt Carrier with a Locking Bias (Carrier)
 bandit_exo_outfit_name,Stolen Exoskeleton
@@ -917,7 +917,7 @@ st_wpn_sks_molot,SKS Molot
 renegade_exo_outfit_name,Renegade Exoskeleton
 st_knife_hunting,Hunting Knife
 st_cigarettes,Cigarettes (Marlboro)
-st_barrel_8,5.45mm Barrel [À] (Barrel)
+st_barrel_8,5.45mm Barrel [ï¿½] (Barrel)
 st_medkit_science,Scientific Medkit
 st_helm_rp_bala,Balaclava
 st_device_torch_name,Headlamp
@@ -966,7 +966,7 @@ st_wpn_fal,FN FAL
 st_wpn_ks23,KS-23
 military_proto_exo_outfit_name,Skat-9 Exoskeleton
 st_rank_blackops,Blackops squad
-st_bolt_14,Rotating Locking Head [À/PP] (Bolt)
+st_bolt_14,Rotating Locking Head [ï¿½/PP] (Bolt)
 st_vodka_quality,Vodka (Stolichnaya)
 monolith,Monolith
 st_steel_wool,Steel Wool
@@ -1072,7 +1072,7 @@ st_wpn_akm_alfa,AK Alfa
 st_helm_m40,M40 Gas Mask
 y04_pole,Meadow
 st_energy_drink,Energy Drink
-st_pda_3_name,PDA v3.1 with KilTrak™
+st_pda_3_name,PDA v3.1 with KilTrakï¿½
 st_powder_poltergeist,'Diamond Powder'
 st_wpn_rpd,RPD
 st_equ_touristpack_name,Tourist Backpack
@@ -1122,7 +1122,7 @@ st_data_export_can_be_cooked,Can be cooked
 st_af_kevlar_name,Kevlar Plates and Attachments
 st_af_pin_name,Pin
 st_stim_scientic,Scientific Stimpack
-st_bolt_9,Rotating Locking Head [7 Locks] [À] (Bolt)
+st_bolt_9,Rotating Locking Head [7 Locks] [ï¿½] (Bolt)
 st_wpn_cz75,CZ-75
 st_wpn_scar_custom,FN SCAR-H
 st_wpn_toz34_obrez_custom,TOZ-34 (Sawn-off)
@@ -1175,7 +1175,7 @@ military_exolight_outfit_name,Military Stalker Exosuit
 military_freedom_outfit_name,Liberated Skat-9 Armored Suit
 st_wpn_g3,G3A3
 st_wpn_saiga12s_m2,Saiga-12 Tactical
-st_ecologist_outfit_red_name,SSP-99Ì "Ruby"
+st_ecologist_outfit_red_name,SSP-99ï¿½ "Ruby"
 light_dolg_outfit_name,IBAz Universal Protection Suit
 st_gamma_recipe_advanced_4,The Art of Artefacts Fusion Vol. 2
 st_vodka2,Vodka (Putinka)
@@ -1268,7 +1268,7 @@ st_wpn_aug_a1,Steyr AUG A1
 st_data_export_from,from
 st_prt_o_ballistic_16,Carbon Nanotube Layers w/ Kevlar-29 Fabrics (Reinforced)
 st_wpn_colt1911_n,Colt M1911
-st_bolt_13,Rotating Locking Head [2 Locks] [À] [NATO] (Bolt)
+st_bolt_13,Rotating Locking Head [2 Locks] [ï¿½] [NATO] (Bolt)
 ammo-7.62x39_ap,7.62x39 mm M43 rounds
 st_wpn_guns_groza,OC-14 Groza
 st_wpn_aek971,AEK-971
@@ -1308,7 +1308,7 @@ st_af_iam_name,Improvised Application Module (Empty)
 st_corn,Canned Corn
 st_detector8,Anomalous Measurement Device
 st_detector4,Svarog Detector
-st_pda_2_name,PDA v2.0 KilTrak™
+st_pda_2_name,PDA v2.0 KilTrakï¿½
 st_device_torch_nv_2_name,Headlamp w/ PN21KL Night Vision
 st_device_torch_nv_3_name,Headlamp w/ Oracle Psi-stimulator
 bandit_novice_outfit_name,Black Leather Jacket
@@ -1329,3 +1329,4 @@ specops_bandit_outfit_name,Deserter's B-5M Armored Suit
 st_stalker_letter_1_of_2_name,Memoir (Part 1 of 2)
 st_meat_tushkano,Rat Skewers
 st_prt_o_fabrics_1,Cloth Sheets
+st_data_export_is_backpack,Is backpack

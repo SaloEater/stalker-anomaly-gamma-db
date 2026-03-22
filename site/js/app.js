@@ -116,8 +116,7 @@ const CAT = {
 };
 
 const BUILD_SLOT_CATEGORIES = { outfit: CAT.OUTFITS, helmet: CAT.HELMETS, belt: CAT.BELT_ATTACHMENTS, artifact: CAT.ARTEFACTS, backpack: CAT.BELT_ATTACHMENTS };
-// TODO: replace with a data-driven field (e.g. item kind) from the generate script
-const BACKPACK_IDS = new Set(["itm_backpack", "equ_military_pack", "equ_small_pack", "equ_small_military_pack", "equ_tourist_pack"]);
+function isBackpack(item) { return item?.st_data_export_is_backpack === "Y"; }
 const MAX_SAVED_BUILDS = 10;
 
 // Weapon/Ammo build planner constants
@@ -1347,7 +1346,7 @@ const app = createApp({
             const slug = categorySlug(cat);
             let items = this.categoryItems[slug] || [];
             if (this.hideNoDrop) items = items.filter(i => i.hasNpcWeaponDrop !== false);
-            if (slotType === "backpack") items = items.filter(i => BACKPACK_IDS.has(i.id));
+            if (slotType === "backpack") items = items.filter(i => isBackpack(i));
             return searchOrSort(items);
         },
     },
@@ -3992,7 +3991,7 @@ const app = createApp({
             for (const [slug, type] of checks) {
                 const items = this.categoryItems[slug] || [];
                 if (items.some(i => i.id === item.id)) {
-                    if (slug === "belt-attachments") return BACKPACK_IDS.has(item.id) ? "backpack" : "belt";
+                    if (slug === "belt-attachments") return isBackpack(item) ? "backpack" : "belt";
                     return type;
                 }
             }

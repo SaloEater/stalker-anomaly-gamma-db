@@ -2,7 +2,7 @@
   "ammo-weapons.json": "638b02b1",
   "ammo.json": "22033956",
   "artefacts.json": "9208419d",
-  "belt-attachments.json": "915bc142",
+  "belt-attachments.json": "d1ac3b83",
   "calibers.json": "dbf79e4b",
   "categories.json": "4ee86af3",
   "dictionary.json": "8b368dcf",
@@ -26,5 +26,5 @@
   "shotguns.json": "b16e1804",
   "smgs.json": "80bd8617",
   "snipers.json": "c131ff5a",
-  "translations.json": "16102fa5"
+  "translations.json": "22541703"
 }
