@@ -8,6 +8,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Cross-pack build sharing via Cloudflare KV - shared builds now work across different mod packs, dropping items that don't exist in the target pack
+- Build payload validation on the server to prevent abuse
+- Per-IP rate limiting on build share endpoint
+- App UI translations loaded independently from pack data - adding UI strings no longer requires regenerating all packs
+
+### Changed
+
+- Build share URLs now use clean format with no query parameters
+- Share and import buttons show loading state during async operations
+
+### Removed
+
+- Sqids-based build codes and per-pack dictionary.json files replaced by server-side storage
+
+### Added
+
 - GAMMA 0.9.5 mod pack support (preview)
 - Cross-pack stat comparison in item modal to see what changed between pack versions
 - Version compare tool page listing all items with stat differences between packs, with CSV export
