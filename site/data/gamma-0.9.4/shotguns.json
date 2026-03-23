@@ -3,6 +3,7 @@
   "headers": [
     "id",
     "pda_encyclopedia_name",
+    "st_data_export_description",
     "st_prop_weight",
     "st_upgr_cost",
     "ui_mm_repair",
@@ -23,7 +24,8 @@
     {
       "id": "wpn_toz34_obrez",
       "pda_encyclopedia_name": "st_wpn_toz34_obrez",
-      "st_prop_weight": "2.1",
+      "st_data_export_description": "st_wpn_toz34_obrez_descr",
+      "st_prop_weight": "2.10",
       "st_upgr_cost": "9860",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -46,7 +48,8 @@
     {
       "id": "wpn_toz106_m1",
       "pda_encyclopedia_name": "st_wpn_toz106_m1",
-      "st_prop_weight": "2.5",
+      "st_data_export_description": "st_wpn_toz106_m1_descr",
+      "st_prop_weight": "2.50",
       "st_upgr_cost": "6300",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -69,7 +72,8 @@
     {
       "id": "wpn_ksg23",
       "pda_encyclopedia_name": "st_wpn_ksg",
-      "st_prop_weight": "3.1",
+      "st_data_export_description": "st_wpn_ksg_descr",
+      "st_prop_weight": "3.10",
       "st_upgr_cost": "98520",
       "ui_mm_repair": "D",
       "st_data_export_single_handed": "N",
@@ -92,7 +96,8 @@
     {
       "id": "wpn_protecta_custom",
       "pda_encyclopedia_name": "st_wpn_streetsweeper",
-      "st_prop_weight": "3.9",
+      "st_data_export_description": "st_wpn_streetsweeper_descr",
+      "st_prop_weight": "3.90",
       "st_upgr_cost": "30650",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -115,7 +120,8 @@
     {
       "id": "wpn_ithacam37",
       "pda_encyclopedia_name": "st_wpn_ithacam37",
-      "st_prop_weight": "3.3",
+      "st_data_export_description": "st_wpn_ithacam37_descr",
+      "st_prop_weight": "3.30",
       "st_upgr_cost": "18340",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -138,7 +144,8 @@
     {
       "id": "wpn_bm16_full",
       "pda_encyclopedia_name": "st_wpn_bm16_full",
-      "st_prop_weight": "3.4",
+      "st_data_export_description": "st_wpn_bm16_full_descr",
+      "st_prop_weight": "3.40",
       "st_upgr_cost": "15480",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -161,7 +168,8 @@
     {
       "id": "wpn_protecta_camo",
       "pda_encyclopedia_name": "st_wpn_streetsweeper",
-      "st_prop_weight": "4.2",
+      "st_data_export_description": "st_wpn_streetsweeper_descr",
+      "st_prop_weight": "4.20",
       "st_upgr_cost": "33850",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -184,6 +192,7 @@
     {
       "id": "wpn_bm16",
       "pda_encyclopedia_name": "st_wpn_bm16",
+      "st_data_export_description": "st_wpn_bm16_descr",
       "st_prop_weight": "1.92",
       "st_upgr_cost": "9650",
       "ui_mm_repair": "B",
@@ -207,6 +216,7 @@
     {
       "id": "wpn_ithacam37_trench",
       "pda_encyclopedia_name": "st_wpn_ithacam37_trench",
+      "st_data_export_description": "st_wpn_ithacam37_trench_descr",
       "st_prop_weight": "3.33",
       "st_upgr_cost": "25200",
       "ui_mm_repair": "B",
@@ -230,7 +240,8 @@
     {
       "id": "wpn_mossberg590_rail",
       "pda_encyclopedia_name": "st_wpn_mossberg590a1_rail",
-      "st_prop_weight": "3.2",
+      "st_data_export_description": "st_wpn_mossberg590a1_rail_descr",
+      "st_prop_weight": "3.20",
       "st_upgr_cost": "19960",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -253,6 +264,7 @@
     {
       "id": "wpn_saiga12s",
       "pda_encyclopedia_name": "st_wpn_saiga12s",
+      "st_data_export_description": "st_wpn_saiga12s_descr",
       "st_prop_weight": "3.81",
       "st_upgr_cost": "31680",
       "ui_mm_repair": "C",
@@ -276,6 +288,7 @@
     {
       "id": "wpn_ithacam37_mag",
       "pda_encyclopedia_name": "st_wpn_ithacam37_extmag",
+      "st_data_export_description": "st_wpn_ithacam37_extmag_descr",
       "st_prop_weight": "3.78",
       "st_upgr_cost": "21660",
       "ui_mm_repair": "B",
@@ -299,7 +312,8 @@
     {
       "id": "wpn_saiga12s_isg",
       "pda_encyclopedia_name": "st_wpn_saiga12s_isg",
-      "st_prop_weight": "3.2",
+      "st_data_export_description": "st_wpn_saiga12s_isg_descr",
+      "st_prop_weight": "3.20",
       "st_upgr_cost": "88680",
       "ui_mm_repair": "D",
       "st_data_export_single_handed": "N",
@@ -322,7 +336,8 @@
     {
       "id": "wpn_mp153",
       "pda_encyclopedia_name": "st_wpn_mp153_bas",
-      "st_prop_weight": "3.5",
+      "st_data_export_description": "st_wpn_mp153_bas_descr",
+      "st_prop_weight": "3.50",
       "st_upgr_cost": "30580",
       "ui_mm_repair": "C",
       "st_data_export_single_handed": "N",
@@ -345,7 +360,8 @@
     {
       "id": "wpn_toz34_decor",
       "pda_encyclopedia_name": "st_wpn_toz34_decor",
-      "st_prop_weight": "3.2",
+      "st_data_export_description": "st_wpn_toz34_descr",
+      "st_prop_weight": "3.20",
       "st_upgr_cost": "18550",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -368,7 +384,8 @@
     {
       "id": "wpn_bm16_full_alt_23",
       "pda_encyclopedia_name": "st_wpn_bm16_full_alt_23",
-      "st_prop_weight": "3.4",
+      "st_data_export_description": "st_wpn_bm16_full_alt_23_descr",
+      "st_prop_weight": "3.40",
       "st_upgr_cost": "29850",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -391,7 +408,8 @@
     {
       "id": "wpn_wincheaster1300",
       "pda_encyclopedia_name": "st_wpn_toz194",
-      "st_prop_weight": "2.9",
+      "st_data_export_description": "st_wpn_toz194_descr",
+      "st_prop_weight": "2.90",
       "st_upgr_cost": "19580",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -414,7 +432,8 @@
     {
       "id": "wpn_vepr",
       "pda_encyclopedia_name": "st_wpn_vepr12",
-      "st_prop_weight": "4.3",
+      "st_data_export_description": "st_wpn_vepr12_descr",
+      "st_prop_weight": "4.30",
       "st_upgr_cost": "36980",
       "ui_mm_repair": "C",
       "st_data_export_single_handed": "N",
@@ -437,7 +456,8 @@
     {
       "id": "wpn_toz34",
       "pda_encyclopedia_name": "st_wpn_toz34",
-      "st_prop_weight": "3.2",
+      "st_data_export_description": "st_wpn_toz34_descr",
+      "st_prop_weight": "3.20",
       "st_upgr_cost": "14800",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -460,7 +480,8 @@
     {
       "id": "wpn_mp153_m1",
       "pda_encyclopedia_name": "st_wpn_mp153_m1",
-      "st_prop_weight": "3.5",
+      "st_data_export_description": "st_wpn_mp153_m1_descr",
+      "st_prop_weight": "3.50",
       "st_upgr_cost": "40580",
       "ui_mm_repair": "C",
       "st_data_export_single_handed": "N",
@@ -483,7 +504,8 @@
     {
       "id": "wpn_usas12",
       "pda_encyclopedia_name": "st_wpn_usas12",
-      "st_prop_weight": "6.2",
+      "st_data_export_description": "st_wpn_usas12_descr",
+      "st_prop_weight": "6.20",
       "st_upgr_cost": "38660",
       "ui_mm_repair": "D",
       "st_data_export_single_handed": "N",
@@ -506,6 +528,7 @@
     {
       "id": "wpn_mossberg590_wood",
       "pda_encyclopedia_name": "st_wpn_mossberg590a1_wood",
+      "st_data_export_description": "st_wpn_mossberg590a1_wood_descr",
       "st_prop_weight": "3.52",
       "st_upgr_cost": "19960",
       "ui_mm_repair": "B",
@@ -529,7 +552,8 @@
     {
       "id": "wpn_raptr",
       "pda_encyclopedia_name": "st_wpn_raptr",
-      "st_prop_weight": "4.3",
+      "st_data_export_description": "st_wpn_raptr_descr",
+      "st_prop_weight": "4.30",
       "st_upgr_cost": "125660",
       "ui_mm_repair": "D",
       "st_data_export_single_handed": "N",
@@ -552,7 +576,8 @@
     {
       "id": "wpn_toz34_obrez_decor",
       "pda_encyclopedia_name": "st_wpn_toz34_obrez_decor",
-      "st_prop_weight": "2.1",
+      "st_data_export_description": "st_wpn_toz34_obrez_descr",
+      "st_prop_weight": "2.10",
       "st_upgr_cost": "13880",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -575,7 +600,8 @@
     {
       "id": "wpn_toz34_obrez_custom",
       "pda_encyclopedia_name": "st_wpn_toz34_obrez_custom",
-      "st_prop_weight": "2.1",
+      "st_data_export_description": "st_wpn_toz34_obrez_descr",
+      "st_prop_weight": "2.10",
       "st_upgr_cost": "12690",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -598,7 +624,8 @@
     {
       "id": "wpn_toz34_mark4_23",
       "pda_encyclopedia_name": "st_wpn_toz34_mark4_23",
-      "st_prop_weight": "3.9",
+      "st_data_export_description": "st_wpn_toz34_mark4_23_descr",
+      "st_prop_weight": "3.90",
       "st_upgr_cost": "98950",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -621,7 +648,8 @@
     {
       "id": "wpn_toz34_mark4",
       "pda_encyclopedia_name": "st_wpn_toz34_mark4",
-      "st_prop_weight": "3.2",
+      "st_data_export_description": "st_wpn_toz34_mark4_descr",
+      "st_prop_weight": "3.20",
       "st_upgr_cost": "36860",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -644,7 +672,8 @@
     {
       "id": "wpn_ithacam37_stakeout_20x70",
       "pda_encyclopedia_name": "st_wpn_ithacam37_stakeout",
-      "st_prop_weight": "2.6",
+      "st_data_export_description": "st_wpn_ithacam37_stakeout_descr",
+      "st_prop_weight": "2.60",
       "st_upgr_cost": "13890",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -667,6 +696,7 @@
     {
       "id": "wpn_spas12_custom",
       "pda_encyclopedia_name": "st_wpn_spas12_new",
+      "st_data_export_description": "st_wpn_spas12_descr_new",
       "st_prop_weight": "4.13",
       "st_upgr_cost": "29390",
       "ui_mm_repair": "C",
@@ -690,7 +720,8 @@
     {
       "id": "wpn_toz106",
       "pda_encyclopedia_name": "st_wpn_toz106",
-      "st_prop_weight": "2.5",
+      "st_data_export_description": "st_wpn_toz106_descr",
+      "st_prop_weight": "2.50",
       "st_upgr_cost": "5300",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -713,7 +744,8 @@
     {
       "id": "wpn_fort500",
       "pda_encyclopedia_name": "st_wpn_fort500",
-      "st_prop_weight": "4.3",
+      "st_data_export_description": "st_wpn_fort500_descr",
+      "st_prop_weight": "4.30",
       "st_upgr_cost": "17700",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -736,6 +768,7 @@
     {
       "id": "wpn_benelli_m1014",
       "pda_encyclopedia_name": "st_wpn_benelli_m1014",
+      "st_data_export_description": "st_wpn_benelli_m1014_descr",
       "st_prop_weight": "4.13",
       "st_upgr_cost": "63500",
       "ui_mm_repair": "C",
@@ -759,6 +792,7 @@
     {
       "id": "wpn_ks23",
       "pda_encyclopedia_name": "st_wpn_ks23",
+      "st_data_export_description": "st_wpn_ks23_descr",
       "st_prop_weight": "3.85",
       "st_upgr_cost": "32960",
       "ui_mm_repair": "B",
@@ -782,7 +816,8 @@
     {
       "id": "wpn_toz34_bull",
       "pda_encyclopedia_name": "st_wpn_toz34_bull",
-      "st_prop_weight": "3.9",
+      "st_data_export_description": "st_wpn_toz34_bull_descr",
+      "st_prop_weight": "3.90",
       "st_upgr_cost": "98950",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -805,7 +840,8 @@
     {
       "id": "wpn_ks23_ecolog",
       "pda_encyclopedia_name": "st_wpn_ks23_ecolog",
-      "st_prop_weight": "4",
+      "st_data_export_description": "st_wpn_ks23_ecolog_descr",
+      "st_prop_weight": "4.00",
       "st_upgr_cost": "32960",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -828,7 +864,8 @@
     {
       "id": "wpn_protecta_nimble",
       "pda_encyclopedia_name": "st_wpn_streetsweeper_nimble",
-      "st_prop_weight": "4",
+      "st_data_export_description": "st_wpn_streetsweeper_nimble_descr",
+      "st_prop_weight": "4.00",
       "st_upgr_cost": "32680",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -851,7 +888,8 @@
     {
       "id": "wpn_ithacam37_stakeout",
       "pda_encyclopedia_name": "st_wpn_ithacam37_stakeout",
-      "st_prop_weight": "2.6",
+      "st_data_export_description": "st_wpn_ithacam37_stakeout_descr",
+      "st_prop_weight": "2.60",
       "st_upgr_cost": "13890",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -874,7 +912,8 @@
     {
       "id": "wpn_bm16_full_alt",
       "pda_encyclopedia_name": "st_wpn_bm16_full_alt",
-      "st_prop_weight": "3.4",
+      "st_data_export_description": "st_wpn_bm16_full_descr",
+      "st_prop_weight": "3.40",
       "st_upgr_cost": "18250",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -897,7 +936,8 @@
     {
       "id": "wpn_toz34_custom",
       "pda_encyclopedia_name": "st_wpn_toz34_custom",
-      "st_prop_weight": "3.2",
+      "st_data_export_description": "st_wpn_toz34_descr",
+      "st_prop_weight": "3.20",
       "st_upgr_cost": "16680",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -920,6 +960,7 @@
     {
       "id": "wpn_bm16_alt",
       "pda_encyclopedia_name": "st_wpn_bm16_alt",
+      "st_data_export_description": "st_wpn_bm16_descr",
       "st_prop_weight": "1.92",
       "st_upgr_cost": "12850",
       "ui_mm_repair": "B",
@@ -943,6 +984,7 @@
     {
       "id": "wpn_spas12_nimble",
       "pda_encyclopedia_name": "st_wpn_spas12_new",
+      "st_data_export_description": "st_wpn_spas12_descr_new",
       "st_prop_weight": "4.13",
       "st_upgr_cost": "29390",
       "ui_mm_repair": "C",
@@ -966,6 +1008,7 @@
     {
       "id": "wpn_spas12",
       "pda_encyclopedia_name": "st_wpn_spas12_new",
+      "st_data_export_description": "st_wpn_spas12_descr_new",
       "st_prop_weight": "4.13",
       "st_upgr_cost": "29390",
       "ui_mm_repair": "C",
@@ -989,6 +1032,7 @@
     {
       "id": "wpn_saiga12s_m2",
       "pda_encyclopedia_name": "st_wpn_saiga12s_m2",
+      "st_data_export_description": "st_wpn_saiga12s_m2_descr",
       "st_prop_weight": "3.96",
       "st_upgr_cost": "58680",
       "ui_mm_repair": "C",
@@ -1012,7 +1056,8 @@
     {
       "id": "wpn_wincheaster1300_trapper",
       "pda_encyclopedia_name": "st_wpn_toz194",
-      "st_prop_weight": "2.9",
+      "st_data_export_description": "st_wpn_toz194_descr",
+      "st_prop_weight": "2.90",
       "st_upgr_cost": "19580",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1035,7 +1080,8 @@
     {
       "id": "wpn_mp133",
       "pda_encyclopedia_name": "st_wpn_mp133_bas",
-      "st_prop_weight": "3",
+      "st_data_export_description": "st_wpn_mp133_bas_descr",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "19960",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1058,7 +1104,8 @@
     {
       "id": "wpn_ks23_kaban",
       "pda_encyclopedia_name": "st_wpn_ks23_kaban",
-      "st_prop_weight": "3.5",
+      "st_data_export_description": "st_wpn_ks23_kaban_descr",
+      "st_prop_weight": "3.50",
       "st_upgr_cost": "38950",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1081,6 +1128,7 @@
     {
       "id": "wpn_ithacam37_sawnoff",
       "pda_encyclopedia_name": "st_wpn_ithacam37_sawnoff",
+      "st_data_export_description": "st_wpn_ithacam37_sawnoff_descr",
       "st_prop_weight": "2.76",
       "st_upgr_cost": "14510",
       "ui_mm_repair": "B",
@@ -1104,7 +1152,8 @@
     {
       "id": "wpn_remington870",
       "pda_encyclopedia_name": "st_wpn_remington870",
-      "st_prop_weight": "3.4",
+      "st_data_export_description": "st_wpn_remington870_descr",
+      "st_prop_weight": "3.40",
       "st_upgr_cost": "23600",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1127,6 +1176,7 @@
     {
       "id": "wpn_ks23_23_up",
       "pda_encyclopedia_name": "st_wpn_ks23_23_up",
+      "st_data_export_description": "st_wpn_ks23_23_up_descr",
       "st_prop_weight": "3.53",
       "st_upgr_cost": "32960",
       "ui_mm_repair": "B",
@@ -1150,7 +1200,8 @@
     {
       "id": "wpn_ks23_kaban_kab_up",
       "pda_encyclopedia_name": "st_wpn_ks23_kaban_kab_up",
-      "st_prop_weight": "3.6",
+      "st_data_export_description": "st_wpn_ks23_kaban_kab_up_descr",
+      "st_prop_weight": "3.60",
       "st_upgr_cost": "38950",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1173,7 +1224,8 @@
     {
       "id": "wpn_protecta",
       "pda_encyclopedia_name": "st_wpn_streetsweeper",
-      "st_prop_weight": "4.2",
+      "st_data_export_description": "st_wpn_streetsweeper_descr",
+      "st_prop_weight": "4.20",
       "st_upgr_cost": "28550",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1196,7 +1248,8 @@
     {
       "id": "wpn_mossberg590",
       "pda_encyclopedia_name": "st_wpn_mossberg590a1",
-      "st_prop_weight": "3.2",
+      "st_data_export_description": "st_wpn_mossberg590a1_descr",
+      "st_prop_weight": "3.20",
       "st_upgr_cost": "19960",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1219,7 +1272,8 @@
     {
       "id": "wpn_protecta_aim",
       "pda_encyclopedia_name": "st_wpn_streetsweeper_aim",
-      "st_prop_weight": "4.2",
+      "st_data_export_description": "st_wpn_streetsweeper_aim_descr",
+      "st_prop_weight": "4.20",
       "st_upgr_cost": "33780",
       "ui_mm_repair": "B",
       "st_data_export_single_handed": "N",
@@ -1242,6 +1296,7 @@
     {
       "id": "wpn_saiga12s_m1",
       "pda_encyclopedia_name": "st_wpn_saiga12s_m1",
+      "st_data_export_description": "st_wpn_saiga12s_m1_descr",
       "st_prop_weight": "3.81",
       "st_upgr_cost": "48680",
       "ui_mm_repair": "C",
@@ -1265,7 +1320,8 @@
     {
       "id": "wpn_mp155",
       "pda_encyclopedia_name": "st_wpn_mp155",
-      "st_prop_weight": "3.5",
+      "st_data_export_description": "st_wpn_mp155_descr",
+      "st_prop_weight": "3.50",
       "st_upgr_cost": "30580",
       "ui_mm_repair": "C",
       "st_data_export_single_handed": "N",

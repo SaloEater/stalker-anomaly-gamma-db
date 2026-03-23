@@ -1218,12 +1218,6 @@
     <button class="modal-close" @click="closeModal()">&times;</button>
     <Transition name="modal" appear>
     <div class="modal" v-if="modalOpen">
-        <img v-if="modalItem && modalItem.ui_st_community && factionIcon(modalItem.ui_st_community)"
-             :src="'img/' + factionIcon(modalItem.ui_st_community)"
-             :alt="modalItem.ui_st_community"
-             class="modal-faction-icon"
-             v-tooltip="t(modalItem.ui_st_community)" />
-
         <div class="modal-body">
             <p v-show="modalLoading" class="loading">{{ t('app_label_loading') }}</p>
 
@@ -1284,7 +1278,20 @@
                     <span v-if="modalItem['st_data_export_cuts_thick_skin'] === 'Y'" class="badge-flag badge-thick-skin">{{ t('app_badge_thick_skin') }}</span>
                 </div>
 
-                <p v-if="modalItem.st_data_export_description" class="modal-description">{{ t(modalItem.st_data_export_description).replaceAll('\\n', ' ').trim() }}</p>
+                <div v-if="parsedDescription || (modalItem.ui_st_community && factionIcon(modalItem.ui_st_community))" class="modal-description-row">
+                    <img v-if="modalItem.ui_st_community && factionIcon(modalItem.ui_st_community)"
+                         :src="'img/' + factionIcon(modalItem.ui_st_community)"
+                         :alt="modalItem.ui_st_community"
+                         class="modal-faction-icon"
+                         v-tooltip="t(modalItem.ui_st_community)" />
+                    <p v-if="parsedDescription" class="modal-description">{{ parsedDescription.text }}</p>
+                </div>
+                <div v-if="parsedDescription && parsedDescription.sections.length" class="modal-desc-meta">
+                    <template v-for="section in parsedDescription.sections">
+                        <span v-if="section.header === 'WARNING'" v-for="item in section.items" class="desc-chip desc-chip-warning">{{ item }}</span>
+                        <span v-else v-for="item in section.items" class="desc-chip">{{ item }}</span>
+                    </template>
+                </div>
 
                 <div class="drop-sources">
                     <h2>{{ t('app_label_stats') }}</h2>

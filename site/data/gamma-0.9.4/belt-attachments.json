@@ -57,7 +57,7 @@
     {
       "id": "af_plates",
       "pda_encyclopedia_name": "st_af_plates_name",
-      "st_prop_weight": "1.846",
+      "st_prop_weight": "1.85",
       "st_upgr_cost": "7860",
       "pda_encyclopedia_tier": "3",
       "st_data_export_is_backpack": "N",
@@ -85,7 +85,7 @@
     {
       "id": "af_kevlar_up",
       "pda_encyclopedia_name": "st_af_kevlar_up_name",
-      "st_prop_weight": "2.983",
+      "st_prop_weight": "2.98",
       "st_upgr_cost": "13380",
       "pda_encyclopedia_tier": "4",
       "st_data_export_is_backpack": "N",
@@ -225,7 +225,7 @@
     {
       "id": "af_plates_up",
       "pda_encyclopedia_name": "st_af_plates_up_name",
-      "st_prop_weight": "3.526",
+      "st_prop_weight": "3.53",
       "st_upgr_cost": "16860",
       "pda_encyclopedia_tier": "5",
       "st_data_export_is_backpack": "N",
@@ -449,7 +449,7 @@
     {
       "id": "kit_hunt",
       "pda_encyclopedia_name": "st_kit_hunt",
-      "st_prop_weight": "1.7",
+      "st_prop_weight": "1.70",
       "st_upgr_cost": "8043",
       "pda_encyclopedia_tier": "0",
       "st_data_export_is_backpack": "N",
@@ -477,7 +477,7 @@
     {
       "id": "af_kevlar",
       "pda_encyclopedia_name": "st_af_kevlar_name",
-      "st_prop_weight": "1.283",
+      "st_prop_weight": "1.28",
       "st_upgr_cost": "6380",
       "pda_encyclopedia_tier": "3",
       "st_data_export_is_backpack": "N",
@@ -813,7 +813,7 @@
     {
       "id": "artefact_container",
       "pda_encyclopedia_name": "st_itm_artefact_container_name",
-      "st_prop_weight": "5",
+      "st_prop_weight": "5.00",
       "st_upgr_cost": "5000",
       "pda_encyclopedia_tier": "0",
       "st_data_export_is_backpack": "Y",

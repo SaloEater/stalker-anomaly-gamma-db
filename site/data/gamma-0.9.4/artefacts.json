@@ -3,6 +3,7 @@
   "headers": [
     "id",
     "pda_encyclopedia_name",
+    "st_data_export_description",
     "st_prop_weight",
     "st_upgr_cost",
     "pda_encyclopedia_tier",
@@ -40,7 +41,8 @@
     {
       "id": "af_monolith",
       "pda_encyclopedia_name": "st_af_monolith_name",
-      "st_prop_weight": "0.2375",
+      "st_data_export_description": "st_af_monolith_descr",
+      "st_prop_weight": "0.24",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "5",
       "ui_st_rank": "0",
@@ -79,7 +81,8 @@
     {
       "id": "af_ah_g1",
       "pda_encyclopedia_name": "st_af_ah_g1",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_af_ah_g1_descr",
+      "st_prop_weight": "2.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -118,7 +121,8 @@
     {
       "id": "af_ah_r4",
       "pda_encyclopedia_name": "st_af_ah_r4",
-      "st_prop_weight": "3",
+      "st_data_export_description": "st_af_ah_r4_descr",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -157,7 +161,8 @@
     {
       "id": "af_ah_r5",
       "pda_encyclopedia_name": "st_af_ah_r5",
-      "st_prop_weight": "3",
+      "st_data_export_description": "st_af_ah_r5_descr",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -196,6 +201,7 @@
     {
       "id": "af_generator",
       "pda_encyclopedia_name": "st_af_generator_name",
+      "st_data_export_description": "st_af_generator_descr",
       "st_prop_weight": "1.36",
       "st_upgr_cost": "6520",
       "pda_encyclopedia_tier": "2",
@@ -235,6 +241,7 @@
     {
       "id": "af_sandstone",
       "pda_encyclopedia_name": "st_af_sandstone_name",
+      "st_data_export_description": "st_af_sandstone_descr",
       "st_prop_weight": "1.45",
       "st_upgr_cost": "4950",
       "pda_encyclopedia_tier": "3",
@@ -274,6 +281,7 @@
     {
       "id": "af_dummy_dummy",
       "pda_encyclopedia_name": "st_af_dummy_dummy_name",
+      "st_data_export_description": "st_af_dummy_dummy_descr",
       "st_prop_weight": "0.09",
       "st_upgr_cost": "74400",
       "pda_encyclopedia_tier": "3",
@@ -313,7 +321,8 @@
     {
       "id": "af_ah_o1",
       "pda_encyclopedia_name": "st_af_ah_o1",
-      "st_prop_weight": "0.8",
+      "st_data_export_description": "st_af_ah_o1_descr",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -352,7 +361,8 @@
     {
       "id": "af_spaika",
       "pda_encyclopedia_name": "st_af_spaika_name",
-      "st_prop_weight": "0.5",
+      "st_data_export_description": "st_af_spaika_descr",
+      "st_prop_weight": "0.50",
       "st_upgr_cost": "5000",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -391,7 +401,8 @@
     {
       "id": "af_ah_g2",
       "pda_encyclopedia_name": "st_af_ah_g2",
-      "st_prop_weight": "2.3",
+      "st_data_export_description": "st_af_ah_g2_descr",
+      "st_prop_weight": "2.30",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -430,6 +441,7 @@
     {
       "id": "af_mincer_meat",
       "pda_encyclopedia_name": "st_af_mincer_meat_name",
+      "st_data_export_description": "st_af_mincer_meat_descr",
       "st_prop_weight": "0.31",
       "st_upgr_cost": "62600",
       "pda_encyclopedia_tier": "2",
@@ -469,6 +481,7 @@
     {
       "id": "af_ear",
       "pda_encyclopedia_name": "st_af_ear_name",
+      "st_data_export_description": "st_af_ear_descr",
       "st_prop_weight": "0.16",
       "st_upgr_cost": "1900",
       "pda_encyclopedia_tier": "1",
@@ -508,6 +521,7 @@
     {
       "id": "af_star_phantom",
       "pda_encyclopedia_name": "st_af_star_phantom_name",
+      "st_data_export_description": "st_af_star_phantom_descr",
       "st_prop_weight": "1.36",
       "st_upgr_cost": "5400",
       "pda_encyclopedia_tier": "1",
@@ -547,7 +561,8 @@
     {
       "id": "af_ah_f1",
       "pda_encyclopedia_name": "st_af_ah_f1",
-      "st_prop_weight": "2.7",
+      "st_data_export_description": "st_af_ah_f1_descr",
+      "st_prop_weight": "2.70",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -586,7 +601,8 @@
     {
       "id": "af_ice",
       "pda_encyclopedia_name": "st_af_ice_name",
-      "st_prop_weight": "0.135",
+      "st_data_export_description": "st_af_ice_descr",
+      "st_prop_weight": "0.14",
       "st_upgr_cost": "102800",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "2",
@@ -625,6 +641,7 @@
     {
       "id": "af_empty",
       "pda_encyclopedia_name": "st_af_empty_name",
+      "st_data_export_description": "st_af_empty_descr",
       "st_prop_weight": "0.19",
       "st_upgr_cost": "85520",
       "pda_encyclopedia_tier": "3",
@@ -664,6 +681,7 @@
     {
       "id": "af_lobster_eyes",
       "pda_encyclopedia_name": "st_af_lobster_eyes_name",
+      "st_data_export_description": "st_af_lobster_eyes_descr",
       "st_prop_weight": "0.93",
       "st_upgr_cost": "71280",
       "pda_encyclopedia_tier": "2",
@@ -703,6 +721,7 @@
     {
       "id": "af_kogot",
       "pda_encyclopedia_name": "st_af_kogot_name",
+      "st_data_export_description": "st_af_kogot_descr",
       "st_prop_weight": "0.21",
       "st_upgr_cost": "2110",
       "pda_encyclopedia_tier": "1",
@@ -742,7 +761,8 @@
     {
       "id": "af_ah_s1",
       "pda_encyclopedia_name": "st_af_ah_s1",
-      "st_prop_weight": "5",
+      "st_data_export_description": "st_af_ah_s1_descr",
+      "st_prop_weight": "5.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -781,6 +801,7 @@
     {
       "id": "af_geliy",
       "pda_encyclopedia_name": "st_af_geliy_name",
+      "st_data_export_description": "st_af_geliy_descr",
       "st_prop_weight": "0.34",
       "st_upgr_cost": "73150",
       "pda_encyclopedia_tier": "4",
@@ -820,7 +841,8 @@
     {
       "id": "af_ah_e1",
       "pda_encyclopedia_name": "st_af_ah_e1",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_af_ah_e1_descr",
+      "st_prop_weight": "2.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -859,6 +881,7 @@
     {
       "id": "af_medallion",
       "pda_encyclopedia_name": "st_af_medallion_name",
+      "st_data_export_description": "st_af_medallion_descr",
       "st_prop_weight": "0.98",
       "st_upgr_cost": "6800",
       "pda_encyclopedia_tier": "2",
@@ -898,6 +921,7 @@
     {
       "id": "af_black_spray",
       "pda_encyclopedia_name": "st_af_black_spray_name",
+      "st_data_export_description": "st_af_black_spray_descr",
       "st_prop_weight": "0.22",
       "st_upgr_cost": "110640",
       "pda_encyclopedia_tier": "4",
@@ -937,7 +961,8 @@
     {
       "id": "af_fire",
       "pda_encyclopedia_name": "st_af_fire_name",
-      "st_prop_weight": "0.8",
+      "st_data_export_description": "st_af_fire_descr",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "93850",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "2",
@@ -976,6 +1001,7 @@
     {
       "id": "af_bracelet",
       "pda_encyclopedia_name": "st_af_bracelet_name",
+      "st_data_export_description": "st_af_bracelet_descr",
       "st_prop_weight": "0.25",
       "st_upgr_cost": "75880",
       "pda_encyclopedia_tier": "3",
@@ -1015,7 +1041,8 @@
     {
       "id": "af_ah_e2",
       "pda_encyclopedia_name": "st_af_ah_e2",
-      "st_prop_weight": "1.5",
+      "st_data_export_description": "st_af_ah_e2_descr",
+      "st_prop_weight": "1.50",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -1054,7 +1081,8 @@
     {
       "id": "af_gravi",
       "pda_encyclopedia_name": "st_af_gravi_name",
-      "st_prop_weight": "0.285",
+      "st_data_export_description": "st_af_gravi_descr",
+      "st_prop_weight": "0.28",
       "st_upgr_cost": "95000",
       "pda_encyclopedia_tier": "3",
       "ui_st_rank": "2",
@@ -1093,6 +1121,7 @@
     {
       "id": "af_fire_loop",
       "pda_encyclopedia_name": "st_af_fire_loop_name",
+      "st_data_export_description": "st_af_fire_loop_descr",
       "st_prop_weight": "0.56",
       "st_upgr_cost": "5080",
       "pda_encyclopedia_tier": "1",
@@ -1132,6 +1161,7 @@
     {
       "id": "af_fountain",
       "pda_encyclopedia_name": "st_af_fountain_name",
+      "st_data_export_description": "st_af_fountain_descr",
       "st_prop_weight": "0.44",
       "st_upgr_cost": "4700",
       "pda_encyclopedia_tier": "1",
@@ -1171,6 +1201,7 @@
     {
       "id": "af_grapes",
       "pda_encyclopedia_name": "st_af_grapes_name",
+      "st_data_export_description": "st_af_grapes_descr",
       "st_prop_weight": "1.59",
       "st_upgr_cost": "5300",
       "pda_encyclopedia_tier": "1",
@@ -1210,7 +1241,8 @@
     {
       "id": "af_ring",
       "pda_encyclopedia_name": "st_af_ring_name",
-      "st_prop_weight": "0.275",
+      "st_data_export_description": "st_af_ring_descr",
+      "st_prop_weight": "0.28",
       "st_upgr_cost": "84440",
       "pda_encyclopedia_tier": "3",
       "ui_st_rank": "2",
@@ -1249,6 +1281,7 @@
     {
       "id": "af_peas",
       "pda_encyclopedia_name": "st_af_peas_name",
+      "st_data_export_description": "st_af_peas_descr",
       "st_prop_weight": "0.27",
       "st_upgr_cost": "2485",
       "pda_encyclopedia_tier": "1",
@@ -1288,7 +1321,8 @@
     {
       "id": "af_ah_r2",
       "pda_encyclopedia_name": "st_af_ah_r2",
-      "st_prop_weight": "1",
+      "st_data_export_description": "st_af_ah_r2_descr",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -1327,6 +1361,7 @@
     {
       "id": "af_baloon",
       "pda_encyclopedia_name": "st_af_baloon_name",
+      "st_data_export_description": "st_af_baloon_descr",
       "st_prop_weight": "0.72",
       "st_upgr_cost": "94800",
       "pda_encyclopedia_tier": "4",
@@ -1366,6 +1401,7 @@
     {
       "id": "af_medusa",
       "pda_encyclopedia_name": "st_af_medusa_name",
+      "st_data_export_description": "st_af_medusa_descr",
       "st_prop_weight": "0.78",
       "st_upgr_cost": "49800",
       "pda_encyclopedia_tier": "2",
@@ -1405,7 +1441,8 @@
     {
       "id": "af_gold_fish",
       "pda_encyclopedia_name": "st_af_gold_fish_name",
-      "st_prop_weight": "0.745",
+      "st_data_export_description": "st_af_gold_fish_descr",
+      "st_prop_weight": "0.74",
       "st_upgr_cost": "132400",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "2",
@@ -1444,7 +1481,8 @@
     {
       "id": "af_bat",
       "pda_encyclopedia_name": "st_af_bat_name",
-      "st_prop_weight": "0.6",
+      "st_data_export_description": "st_af_bat_descr",
+      "st_prop_weight": "0.60",
       "st_upgr_cost": "8600",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1483,6 +1521,7 @@
     {
       "id": "af_moh",
       "pda_encyclopedia_name": "st_af_moh_name",
+      "st_data_export_description": "st_af_moh_descr",
       "st_prop_weight": "0.14",
       "st_upgr_cost": "1800",
       "pda_encyclopedia_tier": "1",
@@ -1522,7 +1561,8 @@
     {
       "id": "af_chelust",
       "pda_encyclopedia_name": "st_af_chelust_name",
-      "st_prop_weight": "1.9",
+      "st_data_export_description": "st_af_chelust_descr",
+      "st_prop_weight": "1.90",
       "st_upgr_cost": "6400",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1561,6 +1601,7 @@
     {
       "id": "af_fonar",
       "pda_encyclopedia_name": "st_af_fonar_name",
+      "st_data_export_description": "st_af_fonar_descr",
       "st_prop_weight": "0.31",
       "st_upgr_cost": "5080",
       "pda_encyclopedia_tier": "1",
@@ -1600,6 +1641,7 @@
     {
       "id": "af_tapeworm",
       "pda_encyclopedia_name": "st_af_tapeworm_name",
+      "st_data_export_description": "st_af_tapeworm_descr",
       "st_prop_weight": "0.28",
       "st_upgr_cost": "3600",
       "pda_encyclopedia_tier": "1",
@@ -1639,6 +1681,7 @@
     {
       "id": "af_fuzz_kolobok",
       "pda_encyclopedia_name": "st_af_fuzz_kolobok_name",
+      "st_data_export_description": "st_af_fuzz_kolobok_descr",
       "st_prop_weight": "0.35",
       "st_upgr_cost": "81200",
       "pda_encyclopedia_tier": "3",
@@ -1678,6 +1721,7 @@
     {
       "id": "af_atom",
       "pda_encyclopedia_name": "st_af_atom_name",
+      "st_data_export_description": "st_af_atom_descr",
       "st_prop_weight": "0.22",
       "st_upgr_cost": "2800",
       "pda_encyclopedia_tier": "1",
@@ -1717,6 +1761,7 @@
     {
       "id": "af_skull_miser",
       "pda_encyclopedia_name": "st_af_skull_miser_name",
+      "st_data_export_description": "st_af_skull_miser_descr",
       "st_prop_weight": "0.32",
       "st_upgr_cost": "2200",
       "pda_encyclopedia_tier": "1",
@@ -1756,6 +1801,7 @@
     {
       "id": "af_fireball",
       "pda_encyclopedia_name": "st_af_fireball_name",
+      "st_data_export_description": "st_af_fireball_descr",
       "st_prop_weight": "0.92",
       "st_upgr_cost": "93600",
       "pda_encyclopedia_tier": "4",
@@ -1795,7 +1841,8 @@
     {
       "id": "af_cell",
       "pda_encyclopedia_name": "st_af_cell_name",
-      "st_prop_weight": "0.6",
+      "st_data_export_description": "st_af_cell_descr",
+      "st_prop_weight": "0.60",
       "st_upgr_cost": "6000",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1834,7 +1881,8 @@
     {
       "id": "af_zhelch",
       "pda_encyclopedia_name": "st_af_zhelch_name",
-      "st_prop_weight": "0.4",
+      "st_data_export_description": "st_af_zhelch_descr",
+      "st_prop_weight": "0.40",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -1873,6 +1921,7 @@
     {
       "id": "af_vyvert",
       "pda_encyclopedia_name": "st_af_vyvert_name",
+      "st_data_export_description": "st_af_vyvert_descr",
       "st_prop_weight": "1.01",
       "st_upgr_cost": "71000",
       "pda_encyclopedia_tier": "3",
@@ -1912,7 +1961,8 @@
     {
       "id": "af_elektron",
       "pda_encyclopedia_name": "st_af_elektron_name",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_af_elektron_descr",
+      "st_prop_weight": "2.00",
       "st_upgr_cost": "5900",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1951,6 +2001,7 @@
     {
       "id": "af_cristall",
       "pda_encyclopedia_name": "st_af_cristall_name",
+      "st_data_export_description": "st_af_cristall_descr",
       "st_prop_weight": "0.68",
       "st_upgr_cost": "63600",
       "pda_encyclopedia_tier": "3",
@@ -1990,7 +2041,8 @@
     {
       "id": "af_ah_r1",
       "pda_encyclopedia_name": "st_af_ah_r1",
-      "st_prop_weight": "0.6",
+      "st_data_export_description": "st_af_ah_r1_descr",
+      "st_prop_weight": "0.60",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2029,6 +2081,7 @@
     {
       "id": "af_gimlet",
       "pda_encyclopedia_name": "st_af_gimlet_name",
+      "st_data_export_description": "st_af_gimlet_descr",
       "st_prop_weight": "0.09",
       "st_upgr_cost": "30700",
       "pda_encyclopedia_tier": "4",
@@ -2068,7 +2121,8 @@
     {
       "id": "af_serofim",
       "pda_encyclopedia_name": "st_af_serofim_name",
-      "st_prop_weight": "0.2",
+      "st_data_export_description": "st_af_serofim_descr",
+      "st_prop_weight": "0.20",
       "st_upgr_cost": "2800",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -2107,7 +2161,8 @@
     {
       "id": "af_tlf_prometheus",
       "pda_encyclopedia_name": "st_af_tlf_prometheus",
-      "st_prop_weight": "3",
+      "st_data_export_description": "st_af_tlf_prometheus_descr",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2146,7 +2201,8 @@
     {
       "id": "af_tlf_lost_soul",
       "pda_encyclopedia_name": "st_af_tlf_lost_soul",
-      "st_prop_weight": "1",
+      "st_data_export_description": "st_af_tlf_lost_soul_descr",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "400000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2185,6 +2241,7 @@
     {
       "id": "af_black",
       "pda_encyclopedia_name": "st_af_black_name",
+      "st_data_export_description": "st_af_black_descr",
       "st_prop_weight": "0.45",
       "st_upgr_cost": "5400",
       "pda_encyclopedia_tier": "2",
@@ -2224,7 +2281,8 @@
     {
       "id": "af_night_star",
       "pda_encyclopedia_name": "st_af_night_star_name",
-      "st_prop_weight": "0.2075",
+      "st_data_export_description": "st_af_night_star_descr",
+      "st_prop_weight": "0.21",
       "st_upgr_cost": "66400",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "1",
@@ -2263,6 +2321,7 @@
     {
       "id": "af_electra_flash",
       "pda_encyclopedia_name": "st_af_electra_flash_name",
+      "st_data_export_description": "st_af_electra_flash_descr",
       "st_prop_weight": "0.04",
       "st_upgr_cost": "97800",
       "pda_encyclopedia_tier": "4",
@@ -2302,7 +2361,8 @@
     {
       "id": "af_full_empty",
       "pda_encyclopedia_name": "st_af_full_empty_name",
-      "st_prop_weight": "1.8",
+      "st_data_export_description": "st_af_full_empty_descr",
+      "st_prop_weight": "1.80",
       "st_upgr_cost": "143300",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "2",
@@ -2341,6 +2401,7 @@
     {
       "id": "af_sun",
       "pda_encyclopedia_name": "st_af_sun_name",
+      "st_data_export_description": "st_af_sun_descr",
       "st_prop_weight": "1.16",
       "st_upgr_cost": "6200",
       "pda_encyclopedia_tier": "2",
@@ -2380,6 +2441,7 @@
     {
       "id": "af_glass",
       "pda_encyclopedia_name": "st_af_glass_name",
+      "st_data_export_description": "st_af_glass_descr",
       "st_prop_weight": "0.32",
       "st_upgr_cost": "108800",
       "pda_encyclopedia_tier": "4",
@@ -2419,6 +2481,7 @@
     {
       "id": "af_sponge",
       "pda_encyclopedia_name": "st_af_sponge_name",
+      "st_data_export_description": "st_af_sponge_descr",
       "st_prop_weight": "0.56",
       "st_upgr_cost": "60640",
       "pda_encyclopedia_tier": "2",
@@ -2458,6 +2521,7 @@
     {
       "id": "af_electra_sparkler",
       "pda_encyclopedia_name": "st_af_electra_sparkler_name",
+      "st_data_export_description": "st_af_electra_sparkler_descr",
       "st_prop_weight": "0.04",
       "st_upgr_cost": "43200",
       "pda_encyclopedia_tier": "2",
@@ -2497,6 +2561,7 @@
     {
       "id": "af_kislushka",
       "pda_encyclopedia_name": "st_af_kislushka_name",
+      "st_data_export_description": "st_af_kislushka_descr",
       "st_prop_weight": "0.39",
       "st_upgr_cost": "2200",
       "pda_encyclopedia_tier": "1",
@@ -2536,6 +2601,7 @@
     {
       "id": "af_black_angel",
       "pda_encyclopedia_name": "st_af_black_angel_name",
+      "st_data_export_description": "st_af_black_angel_descr",
       "st_prop_weight": "1.28",
       "st_upgr_cost": "6700",
       "pda_encyclopedia_tier": "2",
@@ -2575,6 +2641,7 @@
     {
       "id": "af_death_lamp",
       "pda_encyclopedia_name": "st_af_death_lamp_name",
+      "st_data_export_description": "st_af_death_lamp_descr",
       "st_prop_weight": "6.66",
       "st_upgr_cost": "150000",
       "pda_encyclopedia_tier": "4",
@@ -2614,6 +2681,7 @@
     {
       "id": "af_lighthouse",
       "pda_encyclopedia_name": "st_af_lighthouse_name",
+      "st_data_export_description": "st_af_lighthouse_descr",
       "st_prop_weight": "0.49",
       "st_upgr_cost": "6500",
       "pda_encyclopedia_tier": "2",
@@ -2653,6 +2721,7 @@
     {
       "id": "af_dummy_glassbeads",
       "pda_encyclopedia_name": "st_af_dummy_glassbeads_name",
+      "st_data_export_description": "st_af_dummy_glassbeads_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "49600",
       "pda_encyclopedia_tier": "2",
@@ -2692,7 +2761,8 @@
     {
       "id": "af_signet",
       "pda_encyclopedia_name": "st_af_signet_name",
-      "st_prop_weight": "0.2",
+      "st_data_export_description": "st_af_signet_descr",
+      "st_prop_weight": "0.20",
       "st_upgr_cost": "3300",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -2731,7 +2801,8 @@
     {
       "id": "af_repei",
       "pda_encyclopedia_name": "st_af_repei_name",
-      "st_prop_weight": "0.3",
+      "st_data_export_description": "st_af_repei_descr",
+      "st_prop_weight": "0.30",
       "st_upgr_cost": "3000",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -2770,6 +2841,7 @@
     {
       "id": "af_pin",
       "pda_encyclopedia_name": "st_af_pin_name",
+      "st_data_export_description": "st_af_pin_descr",
       "st_prop_weight": "0.25",
       "st_upgr_cost": "42200",
       "pda_encyclopedia_tier": "2",
@@ -2809,6 +2881,7 @@
     {
       "id": "af_oasis_heart",
       "pda_encyclopedia_name": "st_af_oasis_heart_name",
+      "st_data_export_description": "st_af_oasis_heart_descr",
       "st_prop_weight": "0.69",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "5",
@@ -2848,7 +2921,8 @@
     {
       "id": "af_ah_h1",
       "pda_encyclopedia_name": "st_af_ah_h1",
-      "st_prop_weight": "0.8",
+      "st_data_export_description": "st_af_ah_h1_descr",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2887,7 +2961,8 @@
     {
       "id": "af_ah_h2",
       "pda_encyclopedia_name": "st_af_ah_h2",
-      "st_prop_weight": "1",
+      "st_data_export_description": "st_af_ah_h2_descr",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2926,7 +3001,8 @@
     {
       "id": "af_ah_r3",
       "pda_encyclopedia_name": "st_af_ah_r3",
-      "st_prop_weight": "1.2",
+      "st_data_export_description": "st_af_ah_r3_descr",
+      "st_prop_weight": "1.20",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2965,7 +3041,8 @@
     {
       "id": "af_blood",
       "pda_encyclopedia_name": "st_af_blood_name",
-      "st_prop_weight": "0.305",
+      "st_data_export_description": "st_af_blood_descr",
+      "st_prop_weight": "0.30",
       "st_upgr_cost": "44400",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "1",
@@ -3004,6 +3081,7 @@
     {
       "id": "af_compass",
       "pda_encyclopedia_name": "st_af_compass_name",
+      "st_data_export_description": "st_af_compass_descr",
       "st_prop_weight": "1.89",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "5",
@@ -3043,6 +3121,7 @@
     {
       "id": "af_cristall_flower",
       "pda_encyclopedia_name": "st_af_cristall_flower_name",
+      "st_data_export_description": "st_af_cristall_flower_descr",
       "st_prop_weight": "1.27",
       "st_upgr_cost": "45600",
       "pda_encyclopedia_tier": "2",
@@ -3082,6 +3161,7 @@
     {
       "id": "af_soul",
       "pda_encyclopedia_name": "st_af_soul_name",
+      "st_data_export_description": "st_af_soul_descr",
       "st_prop_weight": "0.33",
       "st_upgr_cost": "52400",
       "pda_encyclopedia_tier": "2",
@@ -3121,6 +3201,7 @@
     {
       "id": "af_electra_moonlight",
       "pda_encyclopedia_name": "st_af_electra_moonlight_name",
+      "st_data_export_description": "st_af_electra_moonlight_descr",
       "st_prop_weight": "0.09",
       "st_upgr_cost": "87200",
       "pda_encyclopedia_tier": "3",
@@ -3160,6 +3241,7 @@
     {
       "id": "af_ball",
       "pda_encyclopedia_name": "st_af_ball_name",
+      "st_data_export_description": "st_af_ball_descr",
       "st_prop_weight": "0.19",
       "st_upgr_cost": "2800",
       "pda_encyclopedia_tier": "1",
@@ -3199,6 +3281,7 @@
     {
       "id": "af_dummy_battery",
       "pda_encyclopedia_name": "st_af_dummy_battery_name",
+      "st_data_export_description": "st_af_dummy_battery_descr",
       "st_prop_weight": "0.09",
       "st_upgr_cost": "54400",
       "pda_encyclopedia_tier": "2",
@@ -3238,6 +3321,7 @@
     {
       "id": "af_dragon_eye",
       "pda_encyclopedia_name": "st_af_dragon_eye_name",
+      "st_data_export_description": "st_af_dragon_eye_descr",
       "st_prop_weight": "0.38",
       "st_upgr_cost": "3900",
       "pda_encyclopedia_tier": "1",
@@ -3277,7 +3361,8 @@
     {
       "id": "af_vaselisk",
       "pda_encyclopedia_name": "st_af_vaselisk_name",
-      "st_prop_weight": "0.5",
+      "st_data_export_description": "st_af_vaselisk_descr",
+      "st_prop_weight": "0.50",
       "st_upgr_cost": "64650",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "3",
@@ -3316,6 +3401,7 @@
     {
       "id": "af_eye",
       "pda_encyclopedia_name": "st_af_eye_name",
+      "st_data_export_description": "st_af_eye_descr",
       "st_prop_weight": "0.78",
       "st_upgr_cost": "73800",
       "pda_encyclopedia_tier": "3",
@@ -3355,6 +3441,7 @@
     {
       "id": "af_cocoon",
       "pda_encyclopedia_name": "st_af_cocoon_name",
+      "st_data_export_description": "st_af_cocoon_descr",
       "st_prop_weight": "0.34",
       "st_upgr_cost": "4900",
       "pda_encyclopedia_tier": "1",
@@ -3394,7 +3481,8 @@
     {
       "id": "af_ah_o2",
       "pda_encyclopedia_name": "st_af_ah_o2",
-      "st_prop_weight": "1",
+      "st_data_export_description": "st_af_ah_o2_descr",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -3433,7 +3521,8 @@
     {
       "id": "af_itcher",
       "pda_encyclopedia_name": "st_af_itcher_name",
-      "st_prop_weight": "0.2",
+      "st_data_export_description": "st_af_itcher_descr",
+      "st_prop_weight": "0.20",
       "st_upgr_cost": "36800",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "1",

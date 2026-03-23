@@ -3,6 +3,7 @@
   "headers": [
     "id",
     "pda_encyclopedia_name",
+    "st_data_export_description",
     "st_prop_weight",
     "st_upgr_cost",
     "ui_mm_repair",
@@ -21,7 +22,8 @@
     {
       "id": "helm_ach7ex",
       "pda_encyclopedia_name": "helm_ach7ex",
-      "st_prop_weight": "3",
+      "st_data_export_description": "helm_ach7ex_descr",
+      "st_prop_weight": "3.89",
       "st_upgr_cost": "17500",
       "ui_mm_repair": "M",
       "ui_inv_ap_res": "30",
@@ -41,7 +43,8 @@
     {
       "id": "helm_cloth_mask",
       "pda_encyclopedia_name": "st_helm_cloth_mask",
-      "st_prop_weight": "0",
+      "st_data_export_description": "st_helm_cloth_mask_descr",
+      "st_prop_weight": "0.22",
       "st_upgr_cost": "450",
       "ui_mm_repair": "F",
       "ui_inv_ap_res": "0",
@@ -61,7 +64,8 @@
     {
       "id": "helm_m50",
       "pda_encyclopedia_name": "helm_m50",
-      "st_prop_weight": "2",
+      "st_data_export_description": "helm_m50_descr",
+      "st_prop_weight": "2.18",
       "st_upgr_cost": "20700",
       "ui_mm_repair": "H",
       "ui_inv_ap_res": "15",
@@ -81,7 +85,8 @@
     {
       "id": "helm_hardhat_snag",
       "pda_encyclopedia_name": "st_helm_hardhat",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_helm_hardhat_descr",
+      "st_prop_weight": "2.67",
       "st_upgr_cost": "15820",
       "ui_mm_repair": "L",
       "ui_inv_ap_res": "25",
@@ -101,7 +106,8 @@
     {
       "id": "helm_respirator_old",
       "pda_encyclopedia_name": "st_helm_respirator",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_helm_respirator_descr",
+      "st_prop_weight": "2.28",
       "st_upgr_cost": "7120",
       "ui_mm_repair": "L",
       "ui_inv_ap_res": "10",
@@ -121,7 +127,8 @@
     {
       "id": "helm_respirator",
       "pda_encyclopedia_name": "st_helm_respirator",
-      "st_prop_weight": "1",
+      "st_data_export_description": "st_helm_respirator_descr",
+      "st_prop_weight": "1.18",
       "st_upgr_cost": "6120",
       "ui_mm_repair": "L",
       "ui_inv_ap_res": "10",
@@ -141,7 +148,8 @@
     {
       "id": "helm_hardhat",
       "pda_encyclopedia_name": "st_helm_hardhat",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_helm_hardhat_descr",
+      "st_prop_weight": "2.67",
       "st_upgr_cost": "10640",
       "ui_mm_repair": "L",
       "ui_inv_ap_res": "25",
@@ -161,7 +169,8 @@
     {
       "id": "helm_metro",
       "pda_encyclopedia_name": "st_helm_metro",
-      "st_prop_weight": "6",
+      "st_data_export_description": "st_helm_metro_descr",
+      "st_prop_weight": "6.87",
       "st_upgr_cost": "33440",
       "ui_mm_repair": "H",
       "ui_inv_ap_res": "55",
@@ -181,7 +190,8 @@
     {
       "id": "helm_bandana",
       "pda_encyclopedia_name": "st_helm_bandana",
-      "st_prop_weight": "0",
+      "st_data_export_description": "st_helm_bandana_descr",
+      "st_prop_weight": "0.10",
       "st_upgr_cost": "230",
       "ui_mm_repair": "F",
       "ui_inv_ap_res": "0",
@@ -201,7 +211,8 @@
     {
       "id": "helm_respirator_gp5",
       "pda_encyclopedia_name": "st_helm_respirator_gp5",
-      "st_prop_weight": "1",
+      "st_data_export_description": "st_helm_respirator_gp5_descr",
+      "st_prop_weight": "1.50",
       "st_upgr_cost": "10120",
       "ui_mm_repair": "L",
       "ui_inv_ap_res": "10",
@@ -221,7 +232,8 @@
     {
       "id": "helm_spartan",
       "pda_encyclopedia_name": "helm_spartan",
-      "st_prop_weight": "5",
+      "st_data_export_description": "helm_spartan_descr",
+      "st_prop_weight": "5.12",
       "st_upgr_cost": "37000",
       "ui_mm_repair": "E",
       "ui_inv_ap_res": "65",
@@ -241,7 +253,8 @@
     {
       "id": "helm_battle",
       "pda_encyclopedia_name": "st_helm_battle",
-      "st_prop_weight": "4",
+      "st_data_export_description": "st_helm_battle_descr",
+      "st_prop_weight": "4.87",
       "st_upgr_cost": "27520",
       "ui_mm_repair": "H",
       "ui_inv_ap_res": "30",
@@ -261,7 +274,8 @@
     {
       "id": "helm_resp",
       "pda_encyclopedia_name": "st_helm_resp",
-      "st_prop_weight": "1",
+      "st_data_export_description": "st_helm_resp_descr",
+      "st_prop_weight": "1.10",
       "st_upgr_cost": "4220",
       "ui_mm_repair": "F",
       "ui_inv_ap_res": "5",
@@ -281,7 +295,8 @@
     {
       "id": "helm_exo",
       "pda_encyclopedia_name": "st_helm_exo_name",
-      "st_prop_weight": "5",
+      "st_data_export_description": "st_helm_exo_descr",
+      "st_prop_weight": "5.37",
       "st_upgr_cost": "30520",
       "ui_mm_repair": "E",
       "ui_inv_ap_res": "50",
@@ -301,7 +316,8 @@
     {
       "id": "helm_ach7",
       "pda_encyclopedia_name": "helm_ach7",
-      "st_prop_weight": "3",
+      "st_data_export_description": "helm_ach7_descr",
+      "st_prop_weight": "3.27",
       "st_upgr_cost": "13700",
       "ui_mm_repair": "M",
       "ui_inv_ap_res": "25",
@@ -321,7 +337,8 @@
     {
       "id": "helm_rp_bala",
       "pda_encyclopedia_name": "st_helm_rp_bala",
-      "st_prop_weight": "0",
+      "st_data_export_description": "st_helm_rp_bala_descr",
+      "st_prop_weight": "0.21",
       "st_upgr_cost": "550",
       "ui_mm_repair": "F",
       "ui_inv_ap_res": "0",
@@ -341,7 +358,8 @@
     {
       "id": "helm_m40",
       "pda_encyclopedia_name": "st_helm_m40",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_helm_m40_descr",
+      "st_prop_weight": "2.90",
       "st_upgr_cost": "15920",
       "ui_mm_repair": "M",
       "ui_inv_ap_res": "10",
@@ -361,7 +379,8 @@
     {
       "id": "helm_tactic",
       "pda_encyclopedia_name": "st_helm_tactic",
-      "st_prop_weight": "4",
+      "st_data_export_description": "st_helm_tactic_descr",
+      "st_prop_weight": "4.18",
       "st_upgr_cost": "22440",
       "ui_mm_repair": "H",
       "ui_inv_ap_res": "30",
@@ -381,7 +400,8 @@
     {
       "id": "helm_ranger",
       "pda_encyclopedia_name": "helm_ranger",
-      "st_prop_weight": "2",
+      "st_data_export_description": "helm_ranger_descr",
+      "st_prop_weight": "2.42",
       "st_upgr_cost": "24300",
       "ui_mm_repair": "H",
       "ui_inv_ap_res": "15",
@@ -401,7 +421,8 @@
     {
       "id": "helm_ppm88",
       "pda_encyclopedia_name": "helm_ppm88",
-      "st_prop_weight": "2",
+      "st_data_export_description": "helm_ppm88_descr",
+      "st_prop_weight": "2.25",
       "st_upgr_cost": "18500",
       "ui_mm_repair": "M",
       "ui_inv_ap_res": "10",
@@ -421,7 +442,8 @@
     {
       "id": "helm_protective",
       "pda_encyclopedia_name": "st_helm_protective",
-      "st_prop_weight": "3",
+      "st_data_export_description": "st_helm_protective_descr",
+      "st_prop_weight": "3.60",
       "st_upgr_cost": "17720",
       "ui_mm_repair": "M",
       "ui_inv_ap_res": "15",

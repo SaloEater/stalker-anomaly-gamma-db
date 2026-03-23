@@ -3,6 +3,7 @@
   "headers": [
     "id",
     "pda_encyclopedia_name",
+    "st_data_export_description",
     "st_prop_weight",
     "st_upgr_cost",
     "ui_mm_repair",
@@ -23,7 +24,8 @@
     {
       "id": "wpn_udp9",
       "pda_encyclopedia_name": "st_wpn_udp9",
-      "st_prop_weight": "2.2",
+      "st_data_export_description": "st_wpn_udp9_descr",
+      "st_prop_weight": "2.20",
       "st_upgr_cost": "19350",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -46,6 +48,7 @@
     {
       "id": "wpn_p90",
       "pda_encyclopedia_name": "st_wpn_p90",
+      "st_data_export_description": "st_wpn_p90_descr",
       "st_prop_weight": "2.78",
       "st_upgr_cost": "39880",
       "ui_mm_repair": "C",
@@ -69,6 +72,7 @@
     {
       "id": "wpn_vz61",
       "pda_encyclopedia_name": "st_wpn_vz61",
+      "st_data_export_description": "st_wpn_vz61_descr",
       "st_prop_weight": "1.44",
       "st_upgr_cost": "15680",
       "ui_mm_repair": "A",
@@ -92,6 +96,7 @@
     {
       "id": "wpn_vz61_freedom",
       "pda_encyclopedia_name": "st_wpn_vz61_freedom",
+      "st_data_export_description": "st_wpn_vz61_descr",
       "st_prop_weight": "1.44",
       "st_upgr_cost": "17980",
       "ui_mm_repair": "A",
@@ -115,7 +120,8 @@
     {
       "id": "wpn_mp5",
       "pda_encyclopedia_name": "st_wpn_mp5",
-      "st_prop_weight": "3.1",
+      "st_data_export_description": "st_wpn_mp5_descr",
+      "st_prop_weight": "3.10",
       "st_upgr_cost": "20380",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -138,6 +144,7 @@
     {
       "id": "wpn_pp2000_operator",
       "pda_encyclopedia_name": "st_wpn_pp2000_oper",
+      "st_data_export_description": "st_wpn_pp2000_oper_descr",
       "st_prop_weight": "1.78",
       "st_upgr_cost": "19650",
       "ui_mm_repair": "A",
@@ -161,6 +168,7 @@
     {
       "id": "wpn_vz61_camo",
       "pda_encyclopedia_name": "st_wpn_vz61_camo",
+      "st_data_export_description": "st_wpn_vz61_descr",
       "st_prop_weight": "1.44",
       "st_upgr_cost": "18960",
       "ui_mm_repair": "A",
@@ -184,7 +192,8 @@
     {
       "id": "wpn_vityaz",
       "pda_encyclopedia_name": "st_wpn_vityaznew",
-      "st_prop_weight": "2.9",
+      "st_data_export_description": "st_wpn_vityaznew_descr",
+      "st_prop_weight": "2.90",
       "st_upgr_cost": "20880",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -207,6 +216,7 @@
     {
       "id": "wpn_ump45_custom",
       "pda_encyclopedia_name": "st_wpn_ump45_custom",
+      "st_data_export_description": "st_wpn_ump45_descr",
       "st_prop_weight": "2.48",
       "st_upgr_cost": "33880",
       "ui_mm_repair": "C",
@@ -230,6 +240,7 @@
     {
       "id": "wpn_p90_gs",
       "pda_encyclopedia_name": "st_wpn_p90",
+      "st_data_export_description": "st_wpn_p90_descr",
       "st_prop_weight": "2.78",
       "st_upgr_cost": "39880",
       "ui_mm_repair": "C",
@@ -253,6 +264,7 @@
     {
       "id": "wpn_mp5sd_custom",
       "pda_encyclopedia_name": "st_wpn_mp5sd_custom",
+      "st_data_export_description": "st_wpn_mp5sd_descr",
       "st_prop_weight": "2.97",
       "st_upgr_cost": "24560",
       "ui_mm_repair": "A",
@@ -276,7 +288,8 @@
     {
       "id": "wpn_mp5_alt",
       "pda_encyclopedia_name": "st_wpn_mp5_alt",
-      "st_prop_weight": "3.1",
+      "st_data_export_description": "st_wpn_mp5_descr",
+      "st_prop_weight": "3.10",
       "st_upgr_cost": "22350",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -299,7 +312,8 @@
     {
       "id": "wpn_mp9",
       "pda_encyclopedia_name": "st_wpn_mp9",
-      "st_prop_weight": "2.1",
+      "st_data_export_description": "st_wpn_mp9_descr",
+      "st_prop_weight": "2.10",
       "st_upgr_cost": "43300",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -322,6 +336,7 @@
     {
       "id": "wpn_vz61_alt",
       "pda_encyclopedia_name": "st_wpn_vz61_alt",
+      "st_data_export_description": "st_wpn_vz61_descr",
       "st_prop_weight": "1.44",
       "st_upgr_cost": "13960",
       "ui_mm_repair": "A",
@@ -345,6 +360,7 @@
     {
       "id": "wpn_mp5sd_new",
       "pda_encyclopedia_name": "st_wpn_mp5sd_new",
+      "st_data_export_description": "st_wpn_mp5sd_descr",
       "st_prop_weight": "2.97",
       "st_upgr_cost": "22650",
       "ui_mm_repair": "A",
@@ -368,6 +384,7 @@
     {
       "id": "wpn_aug_freedom",
       "pda_encyclopedia_name": "st_wpn_aug_9mm",
+      "st_data_export_description": "st_wpn_aug_9mm_descr",
       "st_prop_weight": "3.35",
       "st_upgr_cost": "36110",
       "ui_mm_repair": "A",
@@ -391,7 +408,8 @@
     {
       "id": "wpn_mp7",
       "pda_encyclopedia_name": "st_wpn_mp7",
-      "st_prop_weight": "2.1",
+      "st_data_export_description": "st_wpn_mp7_descr_new",
+      "st_prop_weight": "2.10",
       "st_upgr_cost": "58500",
       "ui_mm_repair": "C",
       "st_data_export_single_handed": "Y",
@@ -414,6 +432,7 @@
     {
       "id": "wpn_ump45",
       "pda_encyclopedia_name": "st_wpn_ump45",
+      "st_data_export_description": "st_wpn_ump45_descr",
       "st_prop_weight": "2.48",
       "st_upgr_cost": "28980",
       "ui_mm_repair": "C",
@@ -437,6 +456,7 @@
     {
       "id": "wpn_pp2000",
       "pda_encyclopedia_name": "st_wpn_pp2000n",
+      "st_data_export_description": "st_wpn_pp2000n_descr",
       "st_prop_weight": "1.66",
       "st_upgr_cost": "19650",
       "ui_mm_repair": "A",
@@ -460,7 +480,8 @@
     {
       "id": "wpn_thompson_m1a1",
       "pda_encyclopedia_name": "st_wpn_thompson_m1a1",
-      "st_prop_weight": "4.7",
+      "st_data_export_description": "st_wpn_thompson_m1a1_descr",
+      "st_prop_weight": "4.70",
       "st_upgr_cost": "21880",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -483,6 +504,7 @@
     {
       "id": "wpn_p90gamma",
       "pda_encyclopedia_name": "st_wpn_p90",
+      "st_data_export_description": "st_wpn_p90_descr",
       "st_prop_weight": "2.78",
       "st_upgr_cost": "39880",
       "ui_mm_repair": "C",
@@ -506,7 +528,8 @@
     {
       "id": "wpn_thompson_1921",
       "pda_encyclopedia_name": "st_wpn_thompson_1921",
-      "st_prop_weight": "6.1",
+      "st_data_export_description": "st_wpn_thompson_1921_descr",
+      "st_prop_weight": "6.10",
       "st_upgr_cost": "40590",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -529,6 +552,7 @@
     {
       "id": "wpn_sr2_veresk",
       "pda_encyclopedia_name": "st_wpn_sr2_veresk",
+      "st_data_export_description": "st_wpn_sr2_veresk_descr",
       "st_prop_weight": "1.65",
       "st_upgr_cost": "50300",
       "ui_mm_repair": "C",
@@ -552,7 +576,8 @@
     {
       "id": "wpn_mp5_custom",
       "pda_encyclopedia_name": "st_wpn_mp5_custom",
-      "st_prop_weight": "3.1",
+      "st_data_export_description": "st_wpn_mp5_descr",
+      "st_prop_weight": "3.10",
       "st_upgr_cost": "23680",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -575,6 +600,7 @@
     {
       "id": "wpn_sr2_m1",
       "pda_encyclopedia_name": "st_wpn_sr2_m1",
+      "st_data_export_description": "st_wpn_sr2_m1_descr",
       "st_prop_weight": "1.86",
       "st_upgr_cost": "73300",
       "ui_mm_repair": "C",
@@ -598,7 +624,8 @@
     {
       "id": "wpn_sr2_veresk_sr2_upkit",
       "pda_encyclopedia_name": "st_wpn_sr2_veresk_sr2_upkit",
-      "st_prop_weight": "2.1",
+      "st_data_export_description": "st_wpn_sr2_veresk_sr2_upkit_descr",
+      "st_prop_weight": "2.10",
       "st_upgr_cost": "50300",
       "ui_mm_repair": "C",
       "st_data_export_single_handed": "Y",
@@ -621,7 +648,8 @@
     {
       "id": "wpn_bizon",
       "pda_encyclopedia_name": "st_wpn_bizon",
-      "st_prop_weight": "2.3",
+      "st_data_export_description": "st_wpn_bizon_descr",
+      "st_prop_weight": "2.30",
       "st_upgr_cost": "18560",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",
@@ -644,6 +672,7 @@
     {
       "id": "wpn_kriss_vector",
       "pda_encyclopedia_name": "st_wpn_kriss",
+      "st_data_export_description": "st_wpn_kriss_descr",
       "st_prop_weight": "2.78",
       "st_upgr_cost": "122520",
       "ui_mm_repair": "D",
@@ -667,7 +696,8 @@
     {
       "id": "wpn_mp5_nimble",
       "pda_encyclopedia_name": "st_wpn_mp5_nimble",
-      "st_prop_weight": "3",
+      "st_data_export_description": "st_wpn_mp5_nimble_descr",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "28950",
       "ui_mm_repair": "C",
       "st_data_export_single_handed": "N",
@@ -690,6 +720,7 @@
     {
       "id": "wpn_mp5sd",
       "pda_encyclopedia_name": "st_wpn_mp5sd",
+      "st_data_export_description": "st_wpn_mp5sd_descr",
       "st_prop_weight": "2.97",
       "st_upgr_cost": "21880",
       "ui_mm_repair": "A",
@@ -713,7 +744,8 @@
     {
       "id": "wpn_kiparis",
       "pda_encyclopedia_name": "st_wpn_kiparis",
-      "st_prop_weight": "1.6",
+      "st_data_export_description": "st_wpn_kiparis_descr",
+      "st_prop_weight": "1.60",
       "st_upgr_cost": "16880",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "N",

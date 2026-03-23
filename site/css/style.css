@@ -1473,8 +1473,28 @@ input.range-input {
     color: var(--text-secondary);
     font-size: 0.8rem;
     font-style: italic;
-    margin: 0 0 0.25rem;
+    margin: 0;
     line-height: 1.5;
+}
+.modal-desc-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin: 0.35rem 0 0.25rem;
+}
+.desc-chip {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    background: rgba(140, 160, 180, 0.12);
+    color: var(--text-secondary);
+}
+.desc-chip-warning {
+    background: rgba(220, 80, 60, 0.18);
+    color: #d06050;
 }
 .modal-badges {
     margin: 0 0 0.5rem -0.45rem;
@@ -2096,13 +2116,16 @@ input.range-input {
 }
 .modal-nav-prev { left: 0.5rem; }
 .modal-nav-next { right: 0.5rem; }
+.modal-description-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 .modal-faction-icon {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     opacity: 0.8;
+    flex-shrink: 0;
     transition: opacity 0.15s ease;
 }
 .modal-faction-icon:hover {

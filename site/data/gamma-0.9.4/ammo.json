@@ -3,6 +3,7 @@
   "headers": [
     "id",
     "pda_encyclopedia_name",
+    "st_data_export_description",
     "st_prop_weight",
     "st_data_export_ammo_box_size",
     "st_upgr_cost",
@@ -20,6 +21,7 @@
     {
       "id": "ammo_7.62x54_7h1",
       "pda_encyclopedia_name": "ammo-7.62x54-7n1",
+      "st_data_export_description": "ammo-7.62x54-7n1_descr",
       "st_prop_weight": "0.22",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "2250",
@@ -39,6 +41,7 @@
     {
       "id": "ammo_20x70_buck",
       "pda_encyclopedia_name": "ammo_20x70_buck",
+      "st_data_export_description": "ammo_20x70_buck_descr",
       "st_prop_weight": "0.35",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "600",
@@ -58,6 +61,7 @@
     {
       "id": "ammo_5.56x45_fmj",
       "pda_encyclopedia_name": "ammo-5.56x45-fmj",
+      "st_data_export_description": "ammo-5.56x45-fmj_descr",
       "st_prop_weight": "0.17",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "1500",
@@ -77,6 +81,7 @@
     {
       "id": "ammo_7.62x51_ap",
       "pda_encyclopedia_name": "ammo-7.62x51_ap",
+      "st_data_export_description": "ammo-7.62x51_ap_descr",
       "st_prop_weight": "0.38",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "7500",
@@ -96,6 +101,7 @@
     {
       "id": "ammo_7.62x39_ap",
       "pda_encyclopedia_name": "ammo-7.62x39_ap",
+      "st_data_export_description": "ammo-7.62x39_ap_descr",
       "st_prop_weight": "0.24",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "5450",
@@ -115,6 +121,7 @@
     {
       "id": "ammo_12x76_zhekan",
       "pda_encyclopedia_name": "ammo-12x76-zhekan",
+      "st_data_export_description": "ammo-12x76-zhekan_descr",
       "st_prop_weight": "0.45",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "1650",
@@ -134,6 +141,7 @@
     {
       "id": "ammo_4.6x30_fmj",
       "pda_encyclopedia_name": "ammo-4.6x30-fmj",
+      "st_data_export_description": "ammo-4.6x30-fmj_descr",
       "st_prop_weight": "0.09",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "3000",
@@ -153,6 +161,7 @@
     {
       "id": "ammo_5.56x45_ss190",
       "pda_encyclopedia_name": "ammo-5.56x45-ss190",
+      "st_data_export_description": "ammo-5.56x45-ss190_descr",
       "st_prop_weight": "0.18",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "1600",
@@ -172,6 +181,7 @@
     {
       "id": "ammo_pkm_100",
       "pda_encyclopedia_name": "ammo-7.62x54-r",
+      "st_data_export_description": "ammo-7.62x54-r_descr",
       "st_prop_weight": "0.54",
       "st_data_export_ammo_box_size": "30",
       "st_upgr_cost": "5000",
@@ -191,6 +201,7 @@
     {
       "id": "ammo_7.62x54_ap",
       "pda_encyclopedia_name": "ammo-7.62x54-ap",
+      "st_data_export_description": "ammo-7.62x54-ap_descr",
       "st_prop_weight": "0.33",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "9500",
@@ -210,6 +221,7 @@
     {
       "id": "ammo_23_eco",
       "pda_encyclopedia_name": "ammo_23_eco",
+      "st_data_export_description": "ammo_23_eco_descr",
       "st_prop_weight": "0.05",
       "st_data_export_ammo_box_size": "1",
       "st_upgr_cost": "3500",
@@ -229,6 +241,7 @@
     {
       "id": "ammo_7.62x51_fmj",
       "pda_encyclopedia_name": "ammo-7.62x51_fmj",
+      "st_data_export_description": "ammo-7.62x51_fmj_descr",
       "st_prop_weight": "0.38",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "3000",
@@ -248,6 +261,7 @@
     {
       "id": "ammo_7.62x25_ps",
       "pda_encyclopedia_name": "ammo-7.62x25-ps",
+      "st_data_export_description": "ammo-7.62x25-ps_descr",
       "st_prop_weight": "0.17",
       "st_data_export_ammo_box_size": "16",
       "st_upgr_cost": "975",
@@ -267,6 +281,7 @@
     {
       "id": "ammo_5.7x28_ss190",
       "pda_encyclopedia_name": "ammo-5.7x28-ss190",
+      "st_data_export_description": "ammo-5.7x28-ss190_descr",
       "st_prop_weight": "0.09",
       "st_data_export_ammo_box_size": "20",
       "st_upgr_cost": "2600",
@@ -286,6 +301,7 @@
     {
       "id": "ammo_9x19_ap",
       "pda_encyclopedia_name": "ammo-9x19-ap",
+      "st_data_export_description": "ammo-9x19-ap_descr",
       "st_prop_weight": "0.14",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "2350",
@@ -305,6 +321,7 @@
     {
       "id": "ammo_12.7x55_fmj",
       "pda_encyclopedia_name": "ammo-12.7x55-fmj",
+      "st_data_export_description": "ammo-12.7x55-fmj_descr",
       "st_prop_weight": "0.44",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "3000",
@@ -324,6 +341,7 @@
     {
       "id": "ammo_7.62x54_7h14",
       "pda_encyclopedia_name": "ammo-7.62x54_7n14",
+      "st_data_export_description": "ammo-7.62x54_7n14_descr",
       "st_prop_weight": "0.22",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "4000",
@@ -343,6 +361,7 @@
     {
       "id": "ammo_357_hp_mag",
       "pda_encyclopedia_name": "ammo-357-hp",
+      "st_data_export_description": "ammo-357-hp_descr",
       "st_prop_weight": "0.21",
       "st_data_export_ammo_box_size": "13",
       "st_upgr_cost": "2600",
@@ -362,6 +381,7 @@
     {
       "id": "ammo_5.45x39_fmj",
       "pda_encyclopedia_name": "ammo-5.45x39-fmj",
+      "st_data_export_description": "ammo-5.45x39-fmj_descr",
       "st_prop_weight": "0.16",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "1350",
@@ -381,7 +401,8 @@
     {
       "id": "ammo_23x75_barrikada",
       "pda_encyclopedia_name": "ammo_23x75_barrikada",
-      "st_prop_weight": "0.5",
+      "st_data_export_description": "ammo_23x75_barrikada_descr",
+      "st_prop_weight": "0.50",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "7000",
       "st_data_export_projectiles": "1",
@@ -400,6 +421,7 @@
     {
       "id": "ammo_7.92x33_fmj",
       "pda_encyclopedia_name": "ammo-7.92x33_fmj",
+      "st_data_export_description": "ammo-7.92x33_fmj_descr",
       "st_prop_weight": "0.37",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "1350",
@@ -419,6 +441,7 @@
     {
       "id": "ammo_5.45x39_ep",
       "pda_encyclopedia_name": "ammo-5.45x39-ep",
+      "st_data_export_description": "ammo-5.45x39-ep_descr",
       "st_prop_weight": "0.16",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "1600",
@@ -438,7 +461,8 @@
     {
       "id": "ammo_m209",
       "pda_encyclopedia_name": "ammo-m209",
-      "st_prop_weight": "0.2",
+      "st_data_export_description": "ammo-m209_descr",
+      "st_prop_weight": "0.20",
       "st_data_export_ammo_box_size": "1",
       "st_upgr_cost": "2264",
       "st_data_export_projectiles": "0",
@@ -457,7 +481,8 @@
     {
       "id": "ammo_5.7x28_ss195",
       "pda_encyclopedia_name": "ammo-5.7x28-ss195",
-      "st_prop_weight": "0.1",
+      "st_data_export_description": "ammo-5.7x28-ss195_descr",
+      "st_prop_weight": "0.10",
       "st_data_export_ammo_box_size": "20",
       "st_upgr_cost": "1275",
       "st_data_export_projectiles": "1",
@@ -476,7 +501,8 @@
     {
       "id": "ammo_gauss",
       "pda_encyclopedia_name": "ammo-gauss",
-      "st_prop_weight": "0.6",
+      "st_data_export_description": "ammo-gauss_descr",
+      "st_prop_weight": "0.60",
       "st_data_export_ammo_box_size": "8",
       "st_upgr_cost": "20512",
       "st_data_export_projectiles": "1",
@@ -495,6 +521,7 @@
     {
       "id": "ammo_9x19_pbp",
       "pda_encyclopedia_name": "ammo-9x19-pbp",
+      "st_data_export_description": "ammo-9x19-pbp_descr",
       "st_prop_weight": "0.17",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "1125",
@@ -514,6 +541,7 @@
     {
       "id": "ammo_5.56x45_ap",
       "pda_encyclopedia_name": "ammo-5.56x45-ap",
+      "st_data_export_description": "ammo-5.56x45-ap_descr",
       "st_prop_weight": "0.18",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "4100",
@@ -533,6 +561,7 @@
     {
       "id": "ammo_11.43x23_fmj",
       "pda_encyclopedia_name": "ammo-11.43x23-fmj",
+      "st_data_export_description": "ammo-11.43x23-fmj_descr",
       "st_prop_weight": "0.29",
       "st_data_export_ammo_box_size": "14",
       "st_upgr_cost": "950",
@@ -552,6 +581,7 @@
     {
       "id": "ammo_50_bmg",
       "pda_encyclopedia_name": "ammo-50-bmg",
+      "st_data_export_description": "ammo-50-bmg_descr",
       "st_prop_weight": "0.33",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "27200",
@@ -571,6 +601,7 @@
     {
       "id": "ammo_magnum_300",
       "pda_encyclopedia_name": "ammo-338-lapua",
+      "st_data_export_description": "ammo-338-lapua_descr",
       "st_prop_weight": "0.44",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "17000",
@@ -590,6 +621,7 @@
     {
       "id": "ammo_9x21_sp10",
       "pda_encyclopedia_name": "ammo_9x21_sp10",
+      "st_data_export_description": "ammo_9x21_sp10_descr",
       "st_prop_weight": "0.19",
       "st_data_export_ammo_box_size": "18",
       "st_upgr_cost": "2150",
@@ -609,7 +641,8 @@
     {
       "id": "ammo_vog-30",
       "pda_encyclopedia_name": "ammo_vog_30",
-      "st_prop_weight": "0.2",
+      "st_data_export_description": "ammo_vog_30_descr",
+      "st_prop_weight": "0.20",
       "st_data_export_ammo_box_size": "1",
       "st_upgr_cost": "1850",
       "st_data_export_projectiles": "0",
@@ -628,6 +661,7 @@
     {
       "id": "ammo_vog-25",
       "pda_encyclopedia_name": "ammo-vog-25",
+      "st_data_export_description": "ammo-vog-25_descr",
       "st_prop_weight": "0.26",
       "st_data_export_ammo_box_size": "1",
       "st_upgr_cost": "2180",
@@ -647,6 +681,7 @@
     {
       "id": "ammo_12x70_buck_self",
       "pda_encyclopedia_name": "ammo-12x70-buck_self",
+      "st_data_export_description": "ammo-12x70-buck_self_descr",
       "st_prop_weight": "0.52",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "460",
@@ -666,6 +701,7 @@
     {
       "id": "ammo_og-7b",
       "pda_encyclopedia_name": "ammo-og-7b",
+      "st_data_export_description": "ammo-og-7b_descr",
       "st_prop_weight": "1.96",
       "st_data_export_ammo_box_size": "1",
       "st_upgr_cost": "12490",
@@ -685,7 +721,8 @@
     {
       "id": "ammo_gauss_cardan",
       "pda_encyclopedia_name": "ammo-gauss_cardan",
-      "st_prop_weight": "0.6",
+      "st_data_export_description": "ammo-gauss_cardan_descr",
+      "st_prop_weight": "0.60",
       "st_data_export_ammo_box_size": "6",
       "st_upgr_cost": "8399",
       "st_data_export_projectiles": "1",
@@ -704,6 +741,7 @@
     {
       "id": "ammo_11.43x23_hydro",
       "pda_encyclopedia_name": "ammo-11.43x23-hydro",
+      "st_data_export_description": "ammo-11.43x23-hydro_descr",
       "st_prop_weight": "0.23",
       "st_data_export_ammo_box_size": "14",
       "st_upgr_cost": "1425",
@@ -723,6 +761,7 @@
     {
       "id": "ammo_9x39_pab9",
       "pda_encyclopedia_name": "ammo-9x39-pab9",
+      "st_data_export_description": "ammo-9x39-pab9_descr",
       "st_prop_weight": "0.37",
       "st_data_export_ammo_box_size": "14",
       "st_upgr_cost": "1650",
@@ -742,6 +781,7 @@
     {
       "id": "ammo_9x39_ap",
       "pda_encyclopedia_name": "ammo-9x39-ap",
+      "st_data_export_description": "ammo-9x39-ap_descr",
       "st_prop_weight": "0.36",
       "st_data_export_ammo_box_size": "14",
       "st_upgr_cost": "5350",
@@ -761,6 +801,7 @@
     {
       "id": "ammo_9x19_fmj",
       "pda_encyclopedia_name": "ammo-9x19-fmj",
+      "st_data_export_description": "ammo-9x19-fmj_descr",
       "st_prop_weight": "0.18",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "645",
@@ -780,6 +821,7 @@
     {
       "id": "ammo_338_federal",
       "pda_encyclopedia_name": "ammo_338_federal",
+      "st_data_export_description": "ammo_338_federal_descr",
       "st_prop_weight": "0.42",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "4000",
@@ -799,6 +841,7 @@
     {
       "id": "ammo_7.62x25_p",
       "pda_encyclopedia_name": "ammo-7.62x25-p",
+      "st_data_export_description": "ammo-7.62x25-p_descr",
       "st_prop_weight": "0.17",
       "st_data_export_ammo_box_size": "16",
       "st_upgr_cost": "875",
@@ -818,6 +861,7 @@
     {
       "id": "ammo_23x75_shrapnel",
       "pda_encyclopedia_name": "ammo_23x75_shrapnel",
+      "st_data_export_description": "ammo_23x75_shrapnel_descr",
       "st_prop_weight": "0.45",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "2000",
@@ -837,7 +881,8 @@
     {
       "id": "ammo_12x76_dart",
       "pda_encyclopedia_name": "ammo-12x76-dart",
-      "st_prop_weight": "0.4",
+      "st_data_export_description": "ammo-12x76-dart_descr",
+      "st_prop_weight": "0.40",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "5000",
       "st_data_export_projectiles": "1",
@@ -856,6 +901,7 @@
     {
       "id": "ammo_9x18_fmj",
       "pda_encyclopedia_name": "ammo-9x18-fmj",
+      "st_data_export_description": "ammo-9x18-fmj_descr",
       "st_prop_weight": "0.16",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "560",
@@ -875,6 +921,7 @@
     {
       "id": "ammo_9x18_pmm",
       "pda_encyclopedia_name": "ammo-9x18-pmm",
+      "st_data_export_description": "ammo-9x18-pmm_descr",
       "st_prop_weight": "0.15",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "960",
@@ -894,6 +941,7 @@
     {
       "id": "ammo_9x18_ap",
       "pda_encyclopedia_name": "ammo-9x18-ap",
+      "st_data_export_description": "ammo-9x18-ap_descr",
       "st_prop_weight": "0.17",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "1200",
@@ -913,6 +961,7 @@
     {
       "id": "ammo_7.92x33_ap",
       "pda_encyclopedia_name": "ammo-7.92x33_ap",
+      "st_data_export_description": "ammo-7.92x33_ap_descr",
       "st_prop_weight": "0.37",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "4500",
@@ -932,6 +981,7 @@
     {
       "id": "ammo_5.45x39_ap",
       "pda_encyclopedia_name": "ammo-5.45x39-ap",
+      "st_data_export_description": "ammo-5.45x39-ap_descr",
       "st_prop_weight": "0.16",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "5100",
@@ -951,7 +1001,8 @@
     {
       "id": "ammo_12x76_bull",
       "pda_encyclopedia_name": "ammo-12x76-bull",
-      "st_prop_weight": "0.6",
+      "st_data_export_description": "ammo-12x76-bull_descr",
+      "st_prop_weight": "0.60",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "5000",
       "st_data_export_projectiles": "1",
@@ -970,6 +1021,7 @@
     {
       "id": "ammo_12.7x55_ap",
       "pda_encyclopedia_name": "ammo_12.7x55_ap",
+      "st_data_export_description": "ammo_12.7x55_ap_descr",
       "st_prop_weight": "0.44",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "6900",
@@ -989,6 +1041,7 @@
     {
       "id": "ammo_12x70_buck",
       "pda_encyclopedia_name": "ammo-12x70-buck",
+      "st_data_export_description": "ammo-12x70-buck_descr",
       "st_prop_weight": "0.45",
       "st_data_export_ammo_box_size": "10",
       "st_upgr_cost": "1000",
@@ -1008,6 +1061,7 @@
     {
       "id": "ammo_7.62x39_fmj",
       "pda_encyclopedia_name": "ammo-7.62x39_fmj",
+      "st_data_export_description": "ammo-7.62x39_fmj_descr",
       "st_prop_weight": "0.24",
       "st_data_export_ammo_box_size": "15",
       "st_upgr_cost": "1950",

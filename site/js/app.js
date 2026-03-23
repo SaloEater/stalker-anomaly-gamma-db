@@ -543,6 +543,38 @@ const app = createApp({
             return headers;
         },
 
+        parsedDescription() {
+            if (!this.modalItem?.st_data_export_description) return null;
+            const raw = this.t(this.modalItem.st_data_export_description);
+            // Content uses literal \n (backslash + n), not actual newlines
+            const NL = /\x5cn/g; // matches literal backslash-n
+            const NLNL = /\x5cn\s*\x5cn/; // matches \n \n paragraph break
+            // Split on paragraph breaks to separate prose from metadata sections
+            const parts = raw.split(NLNL);
+            const text = parts[0].replace(NL, " ").trim();
+            const sections = [];
+            for (let i = 1; i < parts.length; i++) {
+                const lines = parts[i].split(NL).map(l => l.trim()).filter(Boolean);
+                if (!lines.length) continue;
+                // First line is the section header (e.g. "PROPERTIES:" or "WARNING: Raw Meat")
+                const headerLine = lines[0];
+                const colonIdx = headerLine.indexOf(":");
+                const header = colonIdx >= 0 ? headerLine.slice(0, colonIdx).trim() : headerLine;
+                const headerValue = colonIdx >= 0 ? headerLine.slice(colonIdx + 1).trim() : "";
+                const ucFirst = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+                const items = [];
+                if (headerValue) items.push(ucFirst(headerValue));
+                for (let j = 1; j < lines.length; j++) {
+                    const item = lines[j].replace(/^[\u2022•]\s*/, "").trim();
+                    if (!item) continue;
+                    const ci = item.indexOf(":");
+                    items.push(ci >= 0 ? ucFirst(item.slice(0, ci)) + ":" + item.slice(ci + 1) : ucFirst(item));
+                }
+                sections.push({ header, items });
+            }
+            return { text, sections };
+        },
+
         modalStatRows() {
             const isWeapon = WEAPON_CATEGORIES.includes(this.modalCategory);
             const rows = buildStatRows(this.modalItem, this.modalHeaders).filter(r => !HEAL_FIELDS.has(r.key) && !MODAL_BADGE_KEYS.has(r.key) && !(isWeapon && r.key === "st_upgr_cost"));
@@ -789,6 +821,7 @@ const app = createApp({
 
             const filtered = raw.filter((h) => {
                 if (h === "id" || h === "st_upgr_cost" || h === "displayName") return false;
+                if (h === "st_data_export_description") return false;
                 if (NAME_TAG_COLS.has(h)) return false;
                 if (HEAL_FIELDS.has(h)) return false;
                 if (items.length > 0) {
