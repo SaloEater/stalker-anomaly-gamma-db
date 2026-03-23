@@ -984,6 +984,15 @@
                                 </template>
                             </div>
                         </div>
+                        <div v-if="parseDescription(buildHoverItem)" class="build-hover-desc">
+                            <p class="modal-description">{{ parseDescription(buildHoverItem).text }}</p>
+                            <div v-if="parseDescription(buildHoverItem).sections.length" class="modal-desc-meta">
+                                <template v-for="section in parseDescription(buildHoverItem).sections">
+                                    <span v-if="section.header === 'WARNING'" v-for="item in section.items" class="desc-chip desc-chip-warning">{{ item }}</span>
+                                    <span v-else v-for="item in section.items" class="desc-chip">{{ item }}</span>
+                                </template>
+                            </div>
+                        </div>
                     </div>
                     <!-- Comparison popover -->
                     <div v-else class="tile-card build-hover-tile build-hover-tile--compare">
@@ -1009,6 +1018,15 @@
                                        : (buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value > 0 ? '+' : '') + formatValue(field, buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value) }}
                                 </span>
                             </template>
+                        </div>
+                        <div v-if="parseDescription(buildHoverItem)" class="build-hover-desc">
+                            <p class="modal-description">{{ parseDescription(buildHoverItem).text }}</p>
+                            <div v-if="parseDescription(buildHoverItem).sections.length" class="modal-desc-meta">
+                                <template v-for="section in parseDescription(buildHoverItem).sections">
+                                    <span v-if="section.header === 'WARNING'" v-for="item in section.items" class="desc-chip desc-chip-warning">{{ item }}</span>
+                                    <span v-else v-for="item in section.items" class="desc-chip">{{ item }}</span>
+                                </template>
+                            </div>
                         </div>
                     </div>
                 </div>

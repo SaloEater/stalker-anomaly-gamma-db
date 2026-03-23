@@ -4530,6 +4530,15 @@ kbd {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
     min-width: 18rem;
     max-width: 24rem;
+    overflow: hidden;
+}
+.build-hover-desc {
+    padding: 0.4rem 0 0;
+    margin-top: 0.4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.build-hover-desc .modal-desc-meta {
+    margin-top: 0.25rem;
 }
 .build-hover-tile--compare {
     min-width: 18rem;

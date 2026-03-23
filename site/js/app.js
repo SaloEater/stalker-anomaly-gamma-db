@@ -69,7 +69,7 @@ const RANGE_EXCLUDE = new Set([
     ...SKIP_KEYS, ...NAME_TAG_COLS, ...HEAL_FIELDS, ...BADGE_COLS,
     "name", "displayName", "ui_st_community",
 ]);
-const TILE_HIDE = new Set(["st_upgr_cost", "pda_encyclopedia_name", "name", "pda_encyclopedia_tier", "ui_st_rank", "Type", "st_data_export_has_perk", "st_data_export_is_junk", "st_data_export_is_backpack", "st_data_export_can_be_crafted", "ui_mcm_menu_exo", "st_data_export_can_be_cooked", "st_data_export_used_in_cooking", "st_data_export_used_in_crafting", "st_data_export_cuts_thick_skin", "st_data_export_restore_health_max", "st_data_export_restore_bleeding_max", "st_data_export_restore_radiation_max", "st_data_export_power_restore_max", ...HEAL_FIELDS]);
+const TILE_HIDE = new Set(["st_upgr_cost", "pda_encyclopedia_name", "name", "pda_encyclopedia_tier", "ui_st_rank", "Type", "st_data_export_has_perk", "st_data_export_is_junk", "st_data_export_is_backpack", "st_data_export_can_be_crafted", "ui_mcm_menu_exo", "st_data_export_can_be_cooked", "st_data_export_used_in_cooking", "st_data_export_used_in_crafting", "st_data_export_cuts_thick_skin", "st_data_export_restore_health_max", "st_data_export_restore_bleeding_max", "st_data_export_restore_radiation_max", "st_data_export_power_restore_max", "st_data_export_description", ...HEAL_FIELDS]);
 
 const UNITS = {
     "st_prop_weight": "unit_kg",
@@ -545,34 +545,7 @@ const app = createApp({
 
         parsedDescription() {
             if (!this.modalItem?.st_data_export_description) return null;
-            const raw = this.t(this.modalItem.st_data_export_description);
-            // Content uses literal \n (backslash + n), not actual newlines
-            const NL = /\x5cn/g; // matches literal backslash-n
-            const NLNL = /\x5cn\s*\x5cn/; // matches \n \n paragraph break
-            // Split on paragraph breaks to separate prose from metadata sections
-            const parts = raw.split(NLNL);
-            const text = parts[0].replace(NL, " ").trim();
-            const sections = [];
-            for (let i = 1; i < parts.length; i++) {
-                const lines = parts[i].split(NL).map(l => l.trim()).filter(Boolean);
-                if (!lines.length) continue;
-                // First line is the section header (e.g. "PROPERTIES:" or "WARNING: Raw Meat")
-                const headerLine = lines[0];
-                const colonIdx = headerLine.indexOf(":");
-                const header = colonIdx >= 0 ? headerLine.slice(0, colonIdx).trim() : headerLine;
-                const headerValue = colonIdx >= 0 ? headerLine.slice(colonIdx + 1).trim() : "";
-                const ucFirst = (s) => s.charAt(0).toUpperCase() + s.slice(1);
-                const items = [];
-                if (headerValue) items.push(ucFirst(headerValue));
-                for (let j = 1; j < lines.length; j++) {
-                    const item = lines[j].replace(/^[\u2022•]\s*/, "").trim();
-                    if (!item) continue;
-                    const ci = item.indexOf(":");
-                    items.push(ci >= 0 ? ucFirst(item.slice(0, ci)) + ":" + item.slice(ci + 1) : ucFirst(item));
-                }
-                sections.push({ header, items });
-            }
-            return { text, sections };
+            return this.parseDescription(this.modalItem);
         },
 
         modalStatRows() {
@@ -4463,6 +4436,37 @@ const app = createApp({
         inventorySlotTypeLabel(slotType) {
             const map = { outfit: "app_type_outfit", helmet: "app_type_helmet", backpack: "app_type_backpack", belt: "app_type_belt_attachment", artifact: "app_type_artefact", weapon: "app_build_weapon", sidearm: "app_build_sidearm", grenade: "app_build_grenade", ammo: "app_build_ammo" };
             return this.t(map[slotType]) || slotType;
+        },
+
+        parseDescription(item) {
+            if (!item?.st_data_export_description) return null;
+            const raw = this.t(item.st_data_export_description);
+            // Content uses literal \n (backslash + n), not actual newlines
+            const NL = /\x5cn/g; // matches literal backslash-n
+            const NLNL = /\x5cn\s*\x5cn/; // matches \n \n paragraph break
+            // Split on paragraph breaks to separate prose from metadata sections
+            const parts = raw.split(NLNL);
+            const text = parts[0].replace(NL, " ").trim();
+            const sections = [];
+            const ucFirst = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+            for (let i = 1; i < parts.length; i++) {
+                const lines = parts[i].split(NL).map(l => l.trim()).filter(Boolean);
+                if (!lines.length) continue;
+                const headerLine = lines[0];
+                const colonIdx = headerLine.indexOf(":");
+                const header = colonIdx >= 0 ? headerLine.slice(0, colonIdx).trim() : headerLine;
+                const headerValue = colonIdx >= 0 ? headerLine.slice(colonIdx + 1).trim() : "";
+                const items = [];
+                if (headerValue) items.push(ucFirst(headerValue));
+                for (let j = 1; j < lines.length; j++) {
+                    const item = lines[j].replace(/^[\u2022•]\s*/, "").trim();
+                    if (!item) continue;
+                    const ci = item.indexOf(":");
+                    items.push(ci >= 0 ? ucFirst(item.slice(0, ci)) + ":" + item.slice(ci + 1) : ucFirst(item));
+                }
+                sections.push({ header, items });
+            }
+            return { text, sections };
         },
 
         getItemFields(item) {
