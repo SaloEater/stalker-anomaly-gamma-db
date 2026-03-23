@@ -4686,6 +4686,11 @@ kbd {
     display: flex;
     flex-direction: column;
 }
+.build-picker-modal .modal-close {
+    font-size: 1rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+}
 .build-picker-modal .modal-body {
     overflow: hidden;
     display: flex;

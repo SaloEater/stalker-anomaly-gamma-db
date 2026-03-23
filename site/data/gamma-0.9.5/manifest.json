@@ -5,7 +5,6 @@
   "belt-attachments.json": "7367da2e",
   "calibers.json": "c1bb5317",
   "categories.json": "5701a3cb",
-  "dictionary.json": "5647c87e",
   "disassemble.json": "6c5df730",
   "display-labels.json": "9f8ec823",
   "drops.json": "df9226b6",
@@ -27,5 +26,5 @@
   "shotguns.json": "b15e5170",
   "smgs.json": "af0cfbb1",
   "snipers.json": "0a36f00c",
-  "translations.json": "888b6ca6"
+  "translations.json": "5ba530ed"
 }
