@@ -34,6 +34,60 @@ function canonicalize(obj) {
 }
 
 const MAX_BODY_SIZE = 4096;
+
+const SINGLE_SLOTS = ["outfit", "helmet", "backpack", "weapon1", "weapon2", "sidearm", "grenade", "ammo1", "ammo2", "ammoSidearm"];
+const ARRAY_SLOTS = ["belts", "artifacts"];
+const VALID_SLOT_TYPES = new Set(["outfit", "helmet", "backpack", "belt", "artifact", "weapon", "sidearm", "grenade", "ammo"]);
+const ALLOWED_KEYS = new Set([...SINGLE_SLOTS, ...ARRAY_SLOTS, "inventory", "beltBonus", "pack"]);
+const MAX_ARRAY_LENGTH = 10;
+const ID_PATTERN = /^[a-z0-9_.]{2,40}$/;
+
+function validateBuild(body) {
+    // Reject unknown keys
+    for (const key of Object.keys(body)) {
+        if (!ALLOWED_KEYS.has(key)) return `Unknown field: ${key}`;
+    }
+
+    // Validate single slots (string ID or null)
+    for (const key of SINGLE_SLOTS) {
+        const val = body[key];
+        if (val !== null && val !== undefined) {
+            if (typeof val !== "string" || !ID_PATTERN.test(val)) return `Invalid ${key}`;
+        }
+    }
+
+    // Validate array slots (arrays of string IDs)
+    for (const key of ARRAY_SLOTS) {
+        const val = body[key];
+        if (val === undefined) continue;
+        if (!Array.isArray(val) || val.length > MAX_ARRAY_LENGTH) return `Invalid ${key}`;
+        for (const id of val) {
+            if (typeof id !== "string" || !ID_PATTERN.test(id)) return `Invalid ${key} entry`;
+        }
+    }
+
+    // Validate inventory (array of {id, slotType})
+    if (body.inventory !== undefined) {
+        if (!Array.isArray(body.inventory) || body.inventory.length > MAX_ARRAY_LENGTH) return "Invalid inventory";
+        for (const entry of body.inventory) {
+            if (!entry || typeof entry !== "object") return "Invalid inventory entry";
+            if (typeof entry.id !== "string" || !ID_PATTERN.test(entry.id)) return "Invalid inventory item";
+            if (!VALID_SLOT_TYPES.has(entry.slotType)) return "Invalid inventory slot type";
+        }
+    }
+
+    // Validate beltBonus
+    if (body.beltBonus !== undefined) {
+        if (typeof body.beltBonus !== "number" || body.beltBonus < 0 || body.beltBonus > 10) return "Invalid beltBonus";
+    }
+
+    // Validate pack (string or null)
+    if (body.pack !== undefined && body.pack !== null) {
+        if (typeof body.pack !== "string" || body.pack.length > 30) return "Invalid pack";
+    }
+
+    return null;
+}
 const RATE_LIMIT_WINDOW = 60; // seconds
 const RATE_LIMIT_MAX = 10; // max POSTs per window per IP
 
@@ -77,6 +131,12 @@ export async function onRequest(context) {
 
         if (!body || typeof body !== "object") {
             return jsonResponse({ error: "Invalid build data" }, 400);
+        }
+
+        // Validate build structure
+        const err = validateBuild(body);
+        if (err) {
+            return jsonResponse({ error: err }, 400);
         }
 
         // Separate metadata fields from build data before hashing
