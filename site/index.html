@@ -39,6 +39,9 @@
     <span class="preloader-footer">&copy; 2026 Created by sw, with data by SaloEater.</span>
 </div>
 <div id="app" @keydown.escape.window="handleEscape()">
+<transition name="toast-fade">
+    <div v-if="toastMessage" class="toast" :class="'toast--' + toastType" @click="toastMessage = ''">{{ toastMessage }}</div>
+</transition>
 <header class="site-header" v-show="translations">
     <button class="hamburger-btn" @click="sidebarCollapsed ? toggleSidebarCollapse() : toggleSidebar()" :class="{ active: sidebarOpen, 'show-desktop': sidebarCollapsed }">
         <span></span><span></span><span></span>

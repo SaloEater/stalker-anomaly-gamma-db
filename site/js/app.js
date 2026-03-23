@@ -418,6 +418,8 @@ const app = createApp({
             buildImportCode: "",
             buildImportError: "",
             buildSharing: false,
+            toastMessage: "",
+            toastType: "error",
 
             // Item hover popover
             buildHoverItem: null,
@@ -1959,6 +1961,12 @@ const app = createApp({
             }
             this.modalLoading = false;
             if (this.crossPackId) this.loadCrossPackItem(this.crossPackId);
+        },
+
+        showToast(message, type = "error", duration = 3000) {
+            this.toastMessage = message;
+            this.toastType = type;
+            setTimeout(() => { this.toastMessage = ""; }, duration);
         },
 
         async copyToClipboard(text, feedbackKey) {
@@ -4177,7 +4185,7 @@ const app = createApp({
                 url.hash = BUILD_HASH_PREFIX + code;
                 await this.copyToClipboard(url.toString(), "copyBuildLinkFeedback");
             } catch {
-                this.buildImportError = this.t("app_build_share_error") || "Failed to create share link";
+                this.showToast(this.t("app_build_share_error"));
             } finally {
                 this.buildSharing = false;
             }
@@ -4189,7 +4197,7 @@ const app = createApp({
                 const code = await this.shareBuild();
                 await this.copyToClipboard(code, "copyBuildCodeFeedback");
             } catch {
-                this.buildImportError = this.t("app_build_share_error") || "Failed to create share code";
+                this.showToast(this.t("app_build_share_error"));
             } finally {
                 this.buildSharing = false;
             }

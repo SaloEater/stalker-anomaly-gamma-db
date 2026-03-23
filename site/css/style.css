@@ -4830,3 +4830,30 @@ kbd {
         max-width: 95vw;
     }
 }
+
+/* Toast */
+.toast {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    z-index: 10000;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.toast--error {
+    background: #f06a5e;
+    color: #fff;
+}
+.toast-fade-enter-active,
+.toast-fade-leave-active {
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.toast-fade-enter-from,
+.toast-fade-leave-to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-0.5rem);
+}

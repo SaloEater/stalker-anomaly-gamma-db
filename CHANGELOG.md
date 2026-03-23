@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Build payload validation on the server to prevent abuse
 - Per-IP rate limiting on build share endpoint
 - App UI translations loaded independently from pack data - adding UI strings no longer requires regenerating all packs
+- Toast notifications for share errors
 
 ### Changed
 
