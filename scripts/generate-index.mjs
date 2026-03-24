@@ -112,7 +112,15 @@ function parseCsvLine(line) {
   return fields;
 }
 
+function loadPackConfig(packDir) {
+  const configPath = join(packDir, "pack.json");
+  if (existsSync(configPath)) return JSON.parse(readFileSync(configPath, "utf-8"));
+  return {};
+}
+
 function loadTranslations(packDir) {
+  const packConfig = loadPackConfig(packDir);
+  const encodingOverrides = packConfig.encoding || {};
   const translations = { locales: ["en", "ru"], en: {}, ru: {} };
   for (const [file, locale] of [["en_us.csv", "en"], ["ru_ru.csv", "ru"]]) {
     const filepath = join(packDir, file);
@@ -120,9 +128,9 @@ function loadTranslations(packDir) {
       console.warn(`Translation file not found: ${filepath}`);
       continue;
     }
-    // Source translation CSVs are Windows-1251 encoded; decode in-memory, output is UTF-8 JSON.
+    const encoding = encodingOverrides[file] || "windows-1251";
     const buf = readFileSync(filepath);
-    const text = new TextDecoder("windows-1251").decode(buf);
+    const text = new TextDecoder(encoding).decode(buf);
     const lines = text.split(/\r?\n/).filter((l) => l.length > 0);
     for (let i = 1; i < lines.length; i++) {
       // Strip color codes before CSV parsing — they contain commas that break column splitting
