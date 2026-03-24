@@ -193,6 +193,7 @@ a:hover {
 .pack-menu-item {
     display: flex;
     align-items: center;
+    gap: 1rem;
     width: 100%;
     padding: 0.4rem 0.75rem;
     border: none;
@@ -217,7 +218,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     padding: 0.1rem 0.35rem;
-    margin-left: 0.4rem;
+    margin-left: auto;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.1);
     color: #999;
