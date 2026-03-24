@@ -10,7 +10,7 @@
 - CSV source files live in `data/<pack>`
 - Run `node scripts/generate-index.mjs --pack <pack-id>` to generate JSON output in `site/data/<pack>/`
 - When a new or updated CSV is added, review it against its docs in `data/docs/` then run the script
-- Some source CSVs (e.g. `ru_ru.csv`) are Windows-1251 encoded. Convert to UTF-8 with: `iconv -f WINDOWS-1251 -t UTF-8 input.csv > output.csv`
+- Source translation CSVs are Windows-1251 encoded; the generation script decodes them automatically
 
 ## Translations
 - `site/data/<pack>/translations.json` is **generated output** — never edit it directly

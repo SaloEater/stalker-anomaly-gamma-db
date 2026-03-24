@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2026-03-24
+
+### Changed
+
+- Translation CSV decoding now uses Node.js TextDecoder instead of external iconv, working cross-platform without extra tools
+
 ## 2026-03-23
 
 ### Added

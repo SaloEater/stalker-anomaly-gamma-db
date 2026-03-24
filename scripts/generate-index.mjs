@@ -119,48 +119,9 @@ function loadTranslations(packDir) {
       console.warn(`Translation file not found: ${filepath}`);
       continue;
     }
-    // Translation CSVs are UTF-8 but their content originates from a Windows-1252 system.
-    // Some bytes in the 0x80-0xFF range are raw Windows-1252 values that aren't valid
-    // standalone UTF-8 (Node's readFileSync("utf-8") would turn them into U+FFFD).
-    //
-    // Fix: read as a raw buffer and walk byte-by-byte.
-    //  1. Detect valid UTF-8 multi-byte sequences (lead byte + expected continuation
-    //     bytes 0x80-0xBF) and skip them untouched.
-    //  2. Any remaining byte >= 0x80 is a stray Windows-1252 character. For 0x80-0x9F
-    //     use an explicit mapping (smart quotes, bullets, dashes, etc.). For 0xA0-0xFF
-    //     the Windows-1252 codepoint equals the Unicode codepoint, so encode directly.
-    //  3. Decode the patched buffer as UTF-8.
+    // Source translation CSVs are Windows-1251 encoded; decode in-memory, output is UTF-8 JSON.
     const buf = readFileSync(filepath);
-    const cp1252ToUtf8 = {
-      0x80: Buffer.from("\u20AC"), 0x82: Buffer.from("\u201A"), 0x83: Buffer.from("\u0192"),
-      0x84: Buffer.from("\u201E"), 0x85: Buffer.from("\u2026"), 0x86: Buffer.from("\u2020"),
-      0x87: Buffer.from("\u2021"), 0x88: Buffer.from("\u02C6"), 0x89: Buffer.from("\u2030"),
-      0x8A: Buffer.from("\u0160"), 0x8B: Buffer.from("\u2039"), 0x8C: Buffer.from("\u0152"),
-      0x8E: Buffer.from("\u017D"), 0x91: Buffer.from("\u2018"), 0x92: Buffer.from("\u2019"),
-      0x93: Buffer.from("\u201C"), 0x94: Buffer.from("\u201D"), 0x95: Buffer.from("\u2022"),
-      0x96: Buffer.from("\u2013"), 0x97: Buffer.from("\u2014"), 0x98: Buffer.from("\u02DC"),
-      0x99: Buffer.from("\u2122"), 0x9A: Buffer.from("\u0161"), 0x9B: Buffer.from("\u203A"),
-      0x9C: Buffer.from("\u0153"), 0x9E: Buffer.from("\u017E"), 0x9F: Buffer.from("\u0178"),
-    };
-    const isCont = (x) => x >= 0x80 && x <= 0xBF;
-    const chunks = [];
-    let start = 0;
-    for (let j = 0; j < buf.length; j++) {
-      const b = buf[j];
-      // Skip valid UTF-8 multi-byte sequences (lead byte followed by correct continuation bytes)
-      if (b >= 0xC0 && b <= 0xDF && isCont(buf[j+1])) { j += 1; continue; }
-      if (b >= 0xE0 && b <= 0xEF && isCont(buf[j+1]) && isCont(buf[j+2])) { j += 2; continue; }
-      if (b >= 0xF0 && b <= 0xF7 && isCont(buf[j+1]) && isCont(buf[j+2]) && isCont(buf[j+3])) { j += 3; continue; }
-      // Replace stray Windows-1252 byte with its correct UTF-8 encoding
-      const replacement = cp1252ToUtf8[b] || (b >= 0x80 ? Buffer.from(String.fromCodePoint(b)) : null);
-      if (replacement) {
-        if (j > start) chunks.push(buf.slice(start, j));
-        chunks.push(replacement);
-        start = j + 1;
-      }
-    }
-    if (start < buf.length) chunks.push(buf.slice(start));
-    const text = Buffer.concat(chunks).toString("utf-8");
+    const text = new TextDecoder("windows-1251").decode(buf);
     const lines = text.split(/\r?\n/).filter((l) => l.length > 0);
     for (let i = 1; i < lines.length; i++) {
       // Strip color codes before CSV parsing — they contain commas that break column splitting
