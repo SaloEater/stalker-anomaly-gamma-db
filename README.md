@@ -51,6 +51,16 @@ This starts a local dev server on port 3000.
 - **[G.A.M.M.A.](https://github.com/Grokitach/Stalker_GAMMA)** — modpack by Grok and the GAMMA community
 - **[USADE](https://github.com/SaloEater/Universal-Stalker-Anomaly-Data-Export)** — data export tool by [SaloEater](https://github.com/SaloEater)
 
+## Contributing
+
+Contributions are welcome! Here's how to get involved:
+
+- Check the [TODO.md](TODO.md) for open tasks
+- Discuss ideas or ask questions in the [GAMMA Discord channel](https://discord.com/channels/912320241713958912/1484195028891861022)
+- DM **@sw** for anything else
+- Submit a pull request - all PRs require approval before merge
+- Deployment to Cloudflare Pages is manual and handled by @sw
+
 ## License
 
 [AGPL-3.0](LICENSE)
