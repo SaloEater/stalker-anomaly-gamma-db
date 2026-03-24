@@ -92,6 +92,7 @@ const PROTECTION_FIELDS = [
 const RESTORATION_FIELDS = [
     "st_prop_restore_health", "st_prop_restore_bleeding", "st_data_export_restore_radiation", "ui_inv_outfit_power_restore",
 ];
+const BASE_RESIST_CAP = 65;
 const CAP_FIELD_MAP = {
     "ui_inv_outfit_fire_wound_protection": "gamma_fire_wound_cap",
     "ui_inv_outfit_wound_protection": "gamma_wound_cap",
@@ -1196,29 +1197,28 @@ const app = createApp({
                     if (v !== 0) breakdown.push({ name: item.pda_encyclopedia_name || item.id, value: v, slot });
                     slotTotals[slot] += v;
                 }
-                const beltArtVal = slotTotals.belt + slotTotals.artifact + slotTotals.backpack;
-                // Apply artifact caps
+                // Apply overall resist cap: base 65% + sum of gamma_*_cap from all items
                 const capField = CAP_FIELD_MAP[f];
-                let cappedBeltArt = beltArtVal;
-                if (capField && beltArtVal > 0) {
-                    let maxCap = 0;
-                    for (const { item, slot } of all) {
-                        if (slot === "artifact" || slot === "belt" || slot === "backpack") {
-                            const c = parseNum(item[capField]);
-                            if (c > maxCap) maxCap = c;
-                        }
+                let total = slotTotals.outfit + slotTotals.helmet + slotTotals.belt + slotTotals.artifact + slotTotals.backpack;
+                let capped = false;
+                if (capField && total > 0) {
+                    let capSum = 0;
+                    for (const { item } of all) {
+                        capSum += parseNum(item[capField]);
                     }
-                    if (maxCap > 0 && beltArtVal > maxCap) {
-                        cappedBeltArt = maxCap;
-                        // Scale belt, artifact & backpack proportionally
-                        const ratio = cappedBeltArt / beltArtVal;
+                    const maxResist = BASE_RESIST_CAP + capSum;
+                    if (total > maxResist) {
+                        const ratio = maxResist / total;
+                        slotTotals.outfit *= ratio;
+                        slotTotals.helmet *= ratio;
                         slotTotals.backpack *= ratio;
                         slotTotals.belt *= ratio;
                         slotTotals.artifact *= ratio;
+                        total = maxResist;
+                        capped = true;
                     }
                 }
-                const total = slotTotals.outfit + slotTotals.helmet + cappedBeltArt;
-                protections[f] = { total, breakdown, capped: cappedBeltArt < beltArtVal, segments: slotTotals };
+                protections[f] = { total, breakdown, capped, segments: slotTotals };
             }
 
             // Sum a field across items, returning { total, breakdown, segments }
@@ -1248,7 +1248,7 @@ const app = createApp({
             const { total: carryWeight, breakdown: carryBreakdown, segments: carrySegments } = sumField("ui_inv_outfit_additional_weight");
             const baseCarryWeight = (this.activePack && this.activePack.baseCarryWeight) || 0;
             const totalCarryCapacity = baseCarryWeight + carryWeight;
-            const { total: armorPoints, breakdown: armorBreakdown, segments: armorSegments } = sumField("ui_inv_ap_res", s => s === "outfit" || s === "helmet");
+            const { total: armorPoints, breakdown: armorBreakdown, segments: armorSegments } = sumField("ui_inv_ap_res", s => s === "outfit" || s === "helmet" || s === "belt");
 
             // Speed (outfit-only)
             const speed = this.buildOutfit ? parseNum(this.buildOutfit["ui_inv_outfit_speed"]) : null;

@@ -71,8 +71,8 @@ function getConfig(filename) {
   return FILE_CONFIG.find((c) => c.match.test(filename));
 }
 
-// Minimal CSV line parser that handles quoted fields with escaped quotes
-function parseCsvLine(line) {
+// Legacy CSV line parser that handles quoted fields with semicolon-separated sub-values
+function parseCsvLineLegacy(line) {
   const fields = [];
   let i = 0;
   while (i < line.length) {
@@ -112,14 +112,54 @@ function parseCsvLine(line) {
   return fields;
 }
 
+// RFC 4180 CSV parser — standard comma-delimited with quoted field escaping
+function parseCsvLineRfc4180(line) {
+  const fields = [];
+  let i = 0;
+  while (i <= line.length) {
+    if (i === line.length) {
+      fields.push("");
+      break;
+    }
+    if (line[i] === '"') {
+      let val = "";
+      i++; // opening quote
+      while (i < line.length) {
+        if (line[i] === '"' && line[i + 1] === '"') {
+          val += '"';
+          i += 2;
+        } else if (line[i] === '"') {
+          i++; // closing quote
+          break;
+        } else {
+          val += line[i++];
+        }
+      }
+      fields.push(val);
+      if (i < line.length && line[i] === ",") i++; // skip delimiter
+    } else {
+      const next = line.indexOf(",", i);
+      if (next === -1) {
+        fields.push(line.slice(i));
+        break;
+      }
+      fields.push(line.slice(i, next));
+      i = next + 1;
+    }
+  }
+  return fields;
+}
+
 function loadPackConfig(packDir) {
   const configPath = join(packDir, "pack.json");
   if (existsSync(configPath)) return JSON.parse(readFileSync(configPath, "utf-8"));
   return {};
 }
 
+const packConfig = loadPackConfig(CSV_DIR);
+const parseCsvLine = packConfig.csvStyle === "rfc4180" ? parseCsvLineRfc4180 : parseCsvLineLegacy;
+
 function loadTranslations(packDir) {
-  const packConfig = loadPackConfig(packDir);
   const encodingOverrides = packConfig.encoding || {};
   const translations = { locales: ["en", "ru"], en: {}, ru: {} };
   for (const [file, locale] of [["en_us.csv", "en"], ["ru_ru.csv", "ru"]]) {

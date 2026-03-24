@@ -75,13 +75,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_monolith_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_g1",
       "pda_encyclopedia_name": "st_af_ah_g1",
       "st_data_export_description": "st_af_ah_g1_descr",
-      "st_prop_weight": "2",
+      "st_prop_weight": "2.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -114,13 +115,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_g1",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_r4",
       "pda_encyclopedia_name": "st_af_ah_r4",
       "st_data_export_description": "st_af_ah_r4_descr",
-      "st_prop_weight": "3",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -153,13 +155,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_r4",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_r5",
       "pda_encyclopedia_name": "st_af_ah_r5",
       "st_data_export_description": "st_af_ah_r5_descr",
-      "st_prop_weight": "3",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -192,6 +195,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_r5",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -231,6 +235,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_generator_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -270,6 +275,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_sandstone_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -309,13 +315,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_dummy_dummy_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_o1",
       "pda_encyclopedia_name": "st_af_ah_o1",
       "st_data_export_description": "st_af_ah_o1_descr",
-      "st_prop_weight": "0.8",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -348,13 +355,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_o1",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_spaika",
       "pda_encyclopedia_name": "st_af_spaika_name",
       "st_data_export_description": "st_af_spaika_descr",
-      "st_prop_weight": "1.498",
+      "st_prop_weight": "1.50",
       "st_upgr_cost": "5000",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -387,13 +395,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_spaika_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_g2",
       "pda_encyclopedia_name": "st_af_ah_g2",
       "st_data_export_description": "st_af_ah_g2_descr",
-      "st_prop_weight": "2.3",
+      "st_prop_weight": "2.30",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -426,6 +435,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_g2",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -465,13 +475,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_mincer_meat_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ear",
       "pda_encyclopedia_name": "st_af_ear_name",
       "st_data_export_description": "st_af_ear_descr",
-      "st_prop_weight": "1.778",
+      "st_prop_weight": "1.78",
       "st_upgr_cost": "1900",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -504,6 +515,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ear_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -543,13 +555,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_star_phantom_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_f1",
       "pda_encyclopedia_name": "st_af_ah_f1",
       "st_data_export_description": "st_af_ah_f1_descr",
-      "st_prop_weight": "2.7",
+      "st_prop_weight": "2.70",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -582,6 +595,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_f1",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -621,6 +635,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_ice_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -660,6 +675,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_empty_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -699,6 +715,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_lobster_eyes_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -738,13 +755,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_kogot_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_s1",
       "pda_encyclopedia_name": "st_af_ah_s1",
       "st_data_export_description": "st_af_ah_s1_descr",
-      "st_prop_weight": "5",
+      "st_prop_weight": "5.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -777,6 +795,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_s1",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -816,13 +835,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_geliy_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_e1",
       "pda_encyclopedia_name": "st_af_ah_e1",
       "st_data_export_description": "st_af_ah_e1_descr",
-      "st_prop_weight": "2",
+      "st_prop_weight": "2.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -855,6 +875,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_e1",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -894,13 +915,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_medallion_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_black_spray",
       "pda_encyclopedia_name": "st_af_black_spray_name",
       "st_data_export_description": "st_af_black_spray_descr",
-      "st_prop_weight": "0.9",
+      "st_prop_weight": "0.90",
       "st_upgr_cost": "110640",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "2",
@@ -933,6 +955,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_black_spray_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -972,13 +995,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_fire_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_bracelet",
       "pda_encyclopedia_name": "st_af_bracelet_name",
       "st_data_export_description": "st_af_bracelet_descr",
-      "st_prop_weight": "1",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "75880",
       "pda_encyclopedia_tier": "3",
       "ui_st_rank": "2",
@@ -1011,13 +1035,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_bracelet_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_e2",
       "pda_encyclopedia_name": "st_af_ah_e2",
       "st_data_export_description": "st_af_ah_e2_descr",
-      "st_prop_weight": "1.5",
+      "st_prop_weight": "1.50",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -1050,6 +1075,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_e2",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1089,13 +1115,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_gravi_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_fire_loop",
       "pda_encyclopedia_name": "st_af_fire_loop_name",
       "st_data_export_description": "st_af_fire_loop_descr",
-      "st_prop_weight": "1.678",
+      "st_prop_weight": "1.68",
       "st_upgr_cost": "5080",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -1128,6 +1155,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_fire_loop_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1167,6 +1195,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_fountain_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1206,13 +1235,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_grapes_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ring",
       "pda_encyclopedia_name": "st_af_ring_name",
       "st_data_export_description": "st_af_ring_descr",
-      "st_prop_weight": "1.1",
+      "st_prop_weight": "1.10",
       "st_upgr_cost": "84440",
       "pda_encyclopedia_tier": "3",
       "ui_st_rank": "2",
@@ -1245,13 +1275,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_ring_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_peas",
       "pda_encyclopedia_name": "st_af_peas_name",
       "st_data_export_description": "st_af_peas_descr",
-      "st_prop_weight": "0.8",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "2485",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -1284,13 +1315,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_peas_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_r2",
       "pda_encyclopedia_name": "st_af_ah_r2",
       "st_data_export_description": "st_af_ah_r2_descr",
-      "st_prop_weight": "1",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -1323,6 +1355,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_r2",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1362,6 +1395,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_baloon_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1401,6 +1435,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_medusa_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1440,13 +1475,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_gold_fish_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_bat",
       "pda_encyclopedia_name": "st_af_bat_name",
       "st_data_export_description": "st_af_bat_descr",
-      "st_prop_weight": "2.771",
+      "st_prop_weight": "2.77",
       "st_upgr_cost": "8600",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1479,6 +1515,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_bat_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1518,13 +1555,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_moh_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_chelust",
       "pda_encyclopedia_name": "st_af_chelust_name",
       "st_data_export_description": "st_af_chelust_descr",
-      "st_prop_weight": "5.432",
+      "st_prop_weight": "5.43",
       "st_upgr_cost": "6400",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1557,6 +1595,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_chelust_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1596,6 +1635,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_fonar_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1635,13 +1675,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_tapeworm_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_fuzz_kolobok",
       "pda_encyclopedia_name": "st_af_fuzz_kolobok_name",
       "st_data_export_description": "st_af_fuzz_kolobok_descr",
-      "st_prop_weight": "1.4",
+      "st_prop_weight": "1.40",
       "st_upgr_cost": "81200",
       "pda_encyclopedia_tier": "3",
       "ui_st_rank": "2",
@@ -1674,13 +1715,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_fuzz_kolobok_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_atom",
       "pda_encyclopedia_name": "st_af_atom_name",
       "st_data_export_description": "st_af_atom_descr",
-      "st_prop_weight": "0.659",
+      "st_prop_weight": "0.66",
       "st_upgr_cost": "2800",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -1713,6 +1755,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_atom_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1752,6 +1795,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_skull_miser_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1791,13 +1835,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_fireball_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_cell",
       "pda_encyclopedia_name": "st_af_cell_name",
       "st_data_export_description": "st_af_cell_descr",
-      "st_prop_weight": "1.814",
+      "st_prop_weight": "1.81",
       "st_upgr_cost": "6000",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1830,13 +1875,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_cell_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_zhelch",
       "pda_encyclopedia_name": "st_af_zhelch_name",
       "st_data_export_description": "st_af_zhelch_descr",
-      "st_prop_weight": "1.3",
+      "st_prop_weight": "1.30",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -1869,6 +1915,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_zhelch_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1908,13 +1955,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_vyvert_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_elektron",
       "pda_encyclopedia_name": "st_af_elektron_name",
       "st_data_export_description": "st_af_elektron_descr",
-      "st_prop_weight": "5.1",
+      "st_prop_weight": "5.10",
       "st_upgr_cost": "5900",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -1947,6 +1995,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_elektron_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -1986,13 +2035,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_cristall_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_r1",
       "pda_encyclopedia_name": "st_af_ah_r1",
       "st_data_export_description": "st_af_ah_r1_descr",
-      "st_prop_weight": "0.6",
+      "st_prop_weight": "0.60",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2025,6 +2075,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_r1",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2064,13 +2115,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_gimlet_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_serofim",
       "pda_encyclopedia_name": "st_af_serofim_name",
       "st_data_export_description": "st_af_serofim_descr",
-      "st_prop_weight": "1.9",
+      "st_prop_weight": "1.90",
       "st_upgr_cost": "2800",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -2103,13 +2155,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_serofim_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_tlf_prometheus",
       "pda_encyclopedia_name": "st_af_tlf_prometheus",
       "st_data_export_description": "st_af_tlf_prometheus_descr",
-      "st_prop_weight": "3",
+      "st_prop_weight": "3.00",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2142,13 +2195,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_tlf_prometheus",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_tlf_lost_soul",
       "pda_encyclopedia_name": "st_af_tlf_lost_soul",
       "st_data_export_description": "st_af_tlf_lost_soul_descr",
-      "st_prop_weight": "1",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "400000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2181,6 +2235,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_tlf_lost_soul",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2220,6 +2275,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_black_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2259,6 +2315,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_night_star_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2298,6 +2355,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_electra_flash_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2337,6 +2395,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_full_empty_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2376,6 +2435,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_sun_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2415,6 +2475,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_glass_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2454,6 +2515,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_sponge_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2493,6 +2555,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_electra_sparkler_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2532,6 +2595,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_kislushka_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2571,13 +2635,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_black_angel_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_death_lamp",
       "pda_encyclopedia_name": "st_af_death_lamp_name",
       "st_data_export_description": "st_af_death_lamp_descr",
-      "st_prop_weight": "9",
+      "st_prop_weight": "9.00",
       "st_upgr_cost": "150000",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "2",
@@ -2610,13 +2675,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_death_lamp_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_lighthouse",
       "pda_encyclopedia_name": "st_af_lighthouse_name",
       "st_data_export_description": "st_af_lighthouse_descr",
-      "st_prop_weight": "1.746",
+      "st_prop_weight": "1.75",
       "st_upgr_cost": "6500",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "0",
@@ -2649,6 +2715,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_lighthouse_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -2688,13 +2755,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_dummy_glassbeads_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_signet",
       "pda_encyclopedia_name": "st_af_signet_name",
       "st_data_export_description": "st_af_signet_descr",
-      "st_prop_weight": "0.6",
+      "st_prop_weight": "0.60",
       "st_upgr_cost": "3300",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -2727,13 +2795,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_signet_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_repei",
       "pda_encyclopedia_name": "st_af_repei_name",
       "st_data_export_description": "st_af_repei_descr",
-      "st_prop_weight": "0.6",
+      "st_prop_weight": "0.60",
       "st_upgr_cost": "3000",
       "pda_encyclopedia_tier": "1",
       "ui_st_rank": "0",
@@ -2766,13 +2835,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_repei_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_pin",
       "pda_encyclopedia_name": "st_af_pin_name",
       "st_data_export_description": "st_af_pin_descr",
-      "st_prop_weight": "1",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "42200",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "1",
@@ -2805,13 +2875,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_pin_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_oasis_heart",
       "pda_encyclopedia_name": "st_af_oasis_heart_name",
       "st_data_export_description": "st_af_oasis_heart_descr",
-      "st_prop_weight": "2.794",
+      "st_prop_weight": "2.79",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "5",
       "ui_st_rank": "0",
@@ -2844,13 +2915,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_oasis_heart_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_h1",
       "pda_encyclopedia_name": "st_af_ah_h1",
       "st_data_export_description": "st_af_ah_h1_descr",
-      "st_prop_weight": "0.8",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2883,13 +2955,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_h1",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_h2",
       "pda_encyclopedia_name": "st_af_ah_h2",
       "st_data_export_description": "st_af_ah_h2_descr",
-      "st_prop_weight": "1",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2922,13 +2995,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_h2",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_r3",
       "pda_encyclopedia_name": "st_af_ah_r3",
       "st_data_export_description": "st_af_ah_r3_descr",
-      "st_prop_weight": "1.2",
+      "st_prop_weight": "1.20",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -2961,6 +3035,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_r3",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3000,13 +3075,14 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_blood_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_compass",
       "pda_encyclopedia_name": "st_af_compass_name",
       "st_data_export_description": "st_af_compass_descr",
-      "st_prop_weight": "3.781",
+      "st_prop_weight": "3.78",
       "st_upgr_cost": "149000",
       "pda_encyclopedia_tier": "5",
       "ui_st_rank": "0",
@@ -3039,6 +3115,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_compass_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3078,6 +3155,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_cristall_flower_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3117,6 +3195,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_soul_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3156,6 +3235,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_electra_moonlight_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3195,6 +3275,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ball_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3234,6 +3315,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_dummy_battery_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3273,13 +3355,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_dragon_eye_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_vaselisk",
       "pda_encyclopedia_name": "st_af_vaselisk_name",
       "st_data_export_description": "st_af_vaselisk_descr",
-      "st_prop_weight": "0.5",
+      "st_prop_weight": "0.50",
       "st_upgr_cost": "64650",
       "pda_encyclopedia_tier": "4",
       "ui_st_rank": "3",
@@ -3312,6 +3395,7 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_vaselisk_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3351,6 +3435,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_eye_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -3390,13 +3475,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_cocoon_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_ah_o2",
       "pda_encyclopedia_name": "st_af_ah_o2",
       "st_data_export_description": "st_af_ah_o2_descr",
-      "st_prop_weight": "1",
+      "st_prop_weight": "1.00",
       "st_upgr_cost": "4000",
       "pda_encyclopedia_tier": "0",
       "ui_st_rank": "0",
@@ -3429,13 +3515,14 @@
       "st_data_export_used_in_crafting": "N",
       "st_data_export_can_be_crafted": "N",
       "displayName": "st_af_ah_o2",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "af_itcher",
       "pda_encyclopedia_name": "st_af_itcher_name",
       "st_data_export_description": "st_af_itcher_descr",
-      "st_prop_weight": "0.8",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "36800",
       "pda_encyclopedia_tier": "2",
       "ui_st_rank": "1",
@@ -3468,6 +3555,7 @@
       "st_data_export_used_in_crafting": "Y",
       "st_data_export_can_be_crafted": "Y",
       "displayName": "st_af_itcher_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

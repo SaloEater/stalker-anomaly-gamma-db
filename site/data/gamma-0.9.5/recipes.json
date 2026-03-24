@@ -23,6 +23,7 @@
         }
       ],
       "displayName": "st_af_baloon_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -47,6 +48,7 @@
         }
       ],
       "displayName": "st_af_black_spray_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -67,6 +69,7 @@
         }
       ],
       "displayName": "st_af_blood_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -83,6 +86,7 @@
         }
       ],
       "displayName": "st_af_bracelet_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -107,6 +111,7 @@
         }
       ],
       "displayName": "st_af_compass_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -127,6 +132,7 @@
         }
       ],
       "displayName": "st_af_cristall_flower_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -147,6 +153,7 @@
         }
       ],
       "displayName": "st_af_cristall_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -167,6 +174,7 @@
         }
       ],
       "displayName": "st_af_dummy_battery_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -183,6 +191,7 @@
         }
       ],
       "displayName": "st_af_dummy_dummy_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -203,6 +212,7 @@
         }
       ],
       "displayName": "st_af_dummy_glassbeads_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -223,6 +233,7 @@
         }
       ],
       "displayName": "st_af_electra_flash_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -243,6 +254,7 @@
         }
       ],
       "displayName": "st_af_electra_moonlight_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -263,6 +275,7 @@
         }
       ],
       "displayName": "st_af_electra_sparkler_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -283,6 +296,7 @@
         }
       ],
       "displayName": "st_af_empty_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -303,6 +317,7 @@
         }
       ],
       "displayName": "st_af_eye_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -327,6 +342,7 @@
         }
       ],
       "displayName": "st_af_fire_loop_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -351,6 +367,7 @@
         }
       ],
       "displayName": "st_af_fire_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -371,6 +388,7 @@
         }
       ],
       "displayName": "st_af_fireball_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -391,6 +409,7 @@
         }
       ],
       "displayName": "st_af_full_empty_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -407,6 +426,7 @@
         }
       ],
       "displayName": "st_af_fuzz_kolobok_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -423,6 +443,7 @@
         }
       ],
       "displayName": "st_af_glass_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -447,6 +468,7 @@
         }
       ],
       "displayName": "st_af_gold_fish_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -471,6 +493,7 @@
         }
       ],
       "displayName": "st_af_gravi_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -495,6 +518,7 @@
         }
       ],
       "displayName": "st_af_ice_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -515,6 +539,7 @@
         }
       ],
       "displayName": "st_af_itcher_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -531,6 +556,7 @@
         }
       ],
       "displayName": "st_af_lobster_eyes_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -551,6 +577,7 @@
         }
       ],
       "displayName": "st_af_medusa_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -571,6 +598,7 @@
         }
       ],
       "displayName": "st_af_mincer_meat_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -595,6 +623,7 @@
         }
       ],
       "displayName": "st_af_monolith_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -615,6 +644,7 @@
         }
       ],
       "displayName": "st_af_night_star_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -639,6 +669,7 @@
         }
       ],
       "displayName": "st_af_oasis_heart_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -659,6 +690,7 @@
         }
       ],
       "displayName": "st_af_pin_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -679,6 +711,7 @@
         }
       ],
       "displayName": "st_af_ring_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -695,6 +728,7 @@
         }
       ],
       "displayName": "st_af_soul_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -715,6 +749,7 @@
         }
       ],
       "displayName": "st_af_sponge_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
@@ -735,6 +770,7 @@
         }
       ],
       "displayName": "st_af_vyvert_name",
+      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

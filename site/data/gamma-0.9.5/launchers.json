@@ -3,6 +3,7 @@
   "headers": [
     "id",
     "pda_encyclopedia_name",
+    "st_data_export_description",
     "st_prop_weight",
     "st_upgr_cost",
     "ui_mm_repair",
@@ -23,7 +24,8 @@
     {
       "id": "wpn_rpg7",
       "pda_encyclopedia_name": "st_wpn_rpg7",
-      "st_prop_weight": "6.3",
+      "st_data_export_description": "st_wpn_rpg7_descr",
+      "st_prop_weight": "6.30",
       "st_upgr_cost": "29800",
       "ui_mm_repair": "N/A",
       "st_data_export_single_handed": "N",
@@ -40,12 +42,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_rpg7",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_m79",
       "pda_encyclopedia_name": "st_wpn_m79",
-      "st_prop_weight": "2.7",
+      "st_data_export_description": "st_wpn_m79_descr",
+      "st_prop_weight": "2.70",
       "st_upgr_cost": "26840",
       "ui_mm_repair": "N/A",
       "st_data_export_single_handed": "N",
@@ -62,12 +66,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_m79",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_rg-6",
       "pda_encyclopedia_name": "st_wpn_rg6",
-      "st_prop_weight": "6.2",
+      "st_data_export_description": "st_wpn_rg6_descr",
+      "st_prop_weight": "6.20",
       "st_upgr_cost": "38850",
       "ui_mm_repair": "N/A",
       "st_data_export_single_handed": "N",
@@ -84,6 +90,7 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_rg6",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

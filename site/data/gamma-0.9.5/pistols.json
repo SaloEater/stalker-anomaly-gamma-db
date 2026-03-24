@@ -3,6 +3,7 @@
   "headers": [
     "id",
     "pda_encyclopedia_name",
+    "st_data_export_description",
     "st_prop_weight",
     "st_upgr_cost",
     "ui_mm_repair",
@@ -23,6 +24,7 @@
     {
       "id": "wpn_fn57",
       "pda_encyclopedia_name": "st_wpn_fn57",
+      "st_data_export_description": "st_wpn_fn57_descr",
       "st_prop_weight": "0.61",
       "st_upgr_cost": "15280",
       "ui_mm_repair": "A",
@@ -40,11 +42,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fn57",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pb_bas_custom",
       "pda_encyclopedia_name": "st_wpn_pb_bas_custom",
+      "st_data_export_description": "st_wpn_pb_bas_descr",
       "st_prop_weight": "1.15",
       "st_upgr_cost": "8190",
       "ui_mm_repair": "A",
@@ -62,12 +66,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pb_bas_custom",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_desert_eagle",
       "pda_encyclopedia_name": "st_wpn_desert_eagle",
-      "st_prop_weight": "1.897",
+      "st_data_export_description": "st_wpn_desert_eagle_descr",
+      "st_prop_weight": "1.90",
       "st_upgr_cost": "19680",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -84,12 +90,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_desert_eagle",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sr1m",
       "pda_encyclopedia_name": "st_wpn_sr1mp_new",
-      "st_prop_weight": "0.895",
+      "st_data_export_description": "st_wpn_sr1mp_new_descr",
+      "st_prop_weight": "0.90",
       "st_upgr_cost": "26960",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -106,12 +114,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sr1mp_new",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_colt1911_custom",
       "pda_encyclopedia_name": "st_wpn_1911_nsc",
-      "st_prop_weight": "1.075",
+      "st_data_export_description": "st_wpn_1911_nsc_descr",
+      "st_prop_weight": "1.07",
       "st_upgr_cost": "19260",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -128,11 +138,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_1911_nsc",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pm_bas_custom",
       "pda_encyclopedia_name": "st_wpn_pm_bas_custom",
+      "st_data_export_description": "st_wpn_pm_bas_custom_descr",
       "st_prop_weight": "0.73",
       "st_upgr_cost": "6890",
       "ui_mm_repair": "A",
@@ -150,12 +162,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_bas_custom",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_colt1911_n",
       "pda_encyclopedia_name": "st_wpn_colt1911_n",
-      "st_prop_weight": "1.075",
+      "st_data_export_description": "st_wpn_colt1911_n_descr",
+      "st_prop_weight": "1.07",
       "st_upgr_cost": "20000",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -172,12 +186,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [n]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_fnx45",
       "pda_encyclopedia_name": "st_wpn_fnx45_custom",
-      "st_prop_weight": "1.3",
+      "st_data_export_description": "st_wpn_fnx45_descr",
+      "st_prop_weight": "1.30",
       "st_upgr_cost": "18650",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -194,11 +210,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fnx45_custom [default]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_gsh18",
       "pda_encyclopedia_name": "st_wpn_fort17",
+      "st_data_export_description": "st_wpn_fort17_descr",
       "st_prop_weight": "0.68",
       "st_upgr_cost": "7860",
       "ui_mm_repair": "A",
@@ -216,12 +234,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [gsh18]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_aps_bas_apsabigo",
       "pda_encyclopedia_name": "st_wpn_aps_bas_apsabigo",
-      "st_prop_weight": "0.995",
+      "st_data_export_description": "st_wpn_aps_bas_apsabigo_descr",
+      "st_prop_weight": "0.99",
       "st_upgr_cost": "9380",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -238,11 +258,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_aps_bas_apsabigo",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_usp",
       "pda_encyclopedia_name": "st_wpn_mk23",
+      "st_data_export_description": "st_wpn_mk23_descr",
       "st_prop_weight": "1.21",
       "st_upgr_cost": "54600",
       "ui_mm_repair": "A",
@@ -260,11 +282,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_mk23",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig220_n_u2p2g0r",
       "pda_encyclopedia_name": "st_wpn_sig220_n_u2p2g0r",
+      "st_data_export_description": "st_wpn_sig220_n_u2p2g0r_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "12980",
       "ui_mm_repair": "A",
@@ -282,11 +306,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_u2p2g0r [n_u2p2g0r]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_korth_custom",
       "pda_encyclopedia_name": "st_wpn_rapide",
+      "st_data_export_description": "st_wpn_rapide_descr",
       "st_prop_weight": "1.42",
       "st_upgr_cost": "78960",
       "ui_mm_repair": "A",
@@ -304,12 +330,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_rapide",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_fnp45",
       "pda_encyclopedia_name": "st_wpn_fnp45",
-      "st_prop_weight": "0.941",
+      "st_data_export_description": "st_wpn_fnp45_descr",
+      "st_prop_weight": "0.94",
       "st_upgr_cost": "14860",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -326,12 +354,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fnp45",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig226",
       "pda_encyclopedia_name": "st_wpn_sig226",
-      "st_prop_weight": "0.802",
+      "st_data_export_description": "st_wpn_sig226_descr",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "14980",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -348,12 +378,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226 [sig226]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_tt33",
       "pda_encyclopedia_name": "st_wpn_tt33_custom",
-      "st_prop_weight": "0.854",
+      "st_data_export_description": "st_wpn_tt33_custom_descr",
+      "st_prop_weight": "0.85",
       "st_upgr_cost": "9860",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -370,11 +402,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_tt33_custom [default]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_cz75",
       "pda_encyclopedia_name": "st_wpn_cz75",
+      "st_data_export_description": "st_wpn_cz75_descr",
       "st_prop_weight": "1.12",
       "st_upgr_cost": "8750",
       "ui_mm_repair": "A",
@@ -392,11 +426,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_cz75",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pm_bas",
       "pda_encyclopedia_name": "st_wpn_pm_bas",
+      "st_data_export_description": "st_wpn_pm_bas_descr",
       "st_prop_weight": "0.73",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
@@ -414,12 +450,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_bas",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_walther_p99",
       "pda_encyclopedia_name": "st_wpn_walther_p99",
-      "st_prop_weight": "0.694",
+      "st_data_export_description": "st_wpn_walther_p99_descr",
+      "st_prop_weight": "0.69",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -436,12 +474,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99 [p99]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_glock17",
       "pda_encyclopedia_name": "st_wpn_glock17",
-      "st_prop_weight": "0.625",
+      "st_data_export_description": "st_wpn_glock17_descr",
+      "st_prop_weight": "0.62",
       "st_upgr_cost": "10960",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -458,12 +498,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_glock17",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_tt33_modern",
       "pda_encyclopedia_name": "st_wpn_tt33_custom",
-      "st_prop_weight": "0.854",
+      "st_data_export_description": "st_wpn_tt33_custom_descr",
+      "st_prop_weight": "0.85",
       "st_upgr_cost": "9860",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -480,11 +522,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_tt33_custom [modern]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sr1m_gurza_up",
       "pda_encyclopedia_name": "st_wpn_sr1mp_upgr",
+      "st_data_export_description": "st_wpn_sr1mp_upgr_descr",
       "st_prop_weight": "1.09",
       "st_upgr_cost": "26960",
       "ui_mm_repair": "A",
@@ -502,11 +546,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sr1mp_upgr",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_usp_tac",
       "pda_encyclopedia_name": "st_wpn_usp_tac",
+      "st_data_export_description": "st_wpn_usp_tac_descr",
       "st_prop_weight": "0.96",
       "st_upgr_cost": "54600",
       "ui_mm_repair": "A",
@@ -524,11 +570,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_usp_tac",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_walther_p99_mod9",
       "pda_encyclopedia_name": "st_wpn_walther_p99_mod9",
+      "st_data_export_description": "st_wpn_walther_p99_mod9_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
@@ -546,12 +594,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99_mod9 [p99_mod9]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_desert_eagle_nimble",
       "pda_encyclopedia_name": "st_wpn_desert_eagle_nimble",
-      "st_prop_weight": "1.925",
+      "st_data_export_description": "st_wpn_desert_eagle_nimble_descr",
+      "st_prop_weight": "1.93",
       "st_upgr_cost": "25880",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -568,12 +618,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_desert_eagle_nimble",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_glock17_m1",
       "pda_encyclopedia_name": "st_wpn_glock17_m1",
-      "st_prop_weight": "0.7",
+      "st_data_export_description": "st_wpn_glock17_m1_descr",
+      "st_prop_weight": "0.70",
       "st_upgr_cost": "16960",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -590,11 +642,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_glock17_m1",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_beretta_camo",
       "pda_encyclopedia_name": "st_wpn_beretta_px4",
+      "st_data_export_description": "st_wpn_beretta_px4_descr",
       "st_prop_weight": "0.95",
       "st_upgr_cost": "11650",
       "ui_mm_repair": "A",
@@ -612,11 +666,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_beretta_px4",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_korth",
       "pda_encyclopedia_name": "st_wpn_korth",
+      "st_data_export_description": "st_wpn_korth_descr",
       "st_prop_weight": "1.14",
       "st_upgr_cost": "48960",
       "ui_mm_repair": "A",
@@ -634,12 +690,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_korth",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pl15_tan",
       "pda_encyclopedia_name": "st_wpn_pl15_new",
-      "st_prop_weight": "0.8",
+      "st_data_export_description": "st_wpn_pl15_new_descr",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "26960",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -656,11 +714,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15_new",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig220",
       "pda_encyclopedia_name": "st_wpn_sig220_n",
+      "st_data_export_description": "st_wpn_sig220_n_descr",
       "st_prop_weight": "1.13",
       "st_upgr_cost": "12980",
       "ui_mm_repair": "A",
@@ -678,11 +738,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n [default]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pm",
       "pda_encyclopedia_name": "st_wpn_pm_new",
+      "st_data_export_description": "st_wpn_pm_new_descr",
       "st_prop_weight": "0.73",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
@@ -700,11 +762,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_new [default]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_oc33",
       "pda_encyclopedia_name": "st_wpn_oc33_new",
+      "st_data_export_description": "st_wpn_oc33_new_descr",
       "st_prop_weight": "1.15",
       "st_upgr_cost": "8860",
       "ui_mm_repair": "A",
@@ -722,12 +786,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_oc33_new",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_fnx45_custom",
       "pda_encyclopedia_name": "st_wpn_fnx45_custom",
-      "st_prop_weight": "1.3",
+      "st_data_export_description": "st_wpn_fnx45_descr",
+      "st_prop_weight": "1.30",
       "st_upgr_cost": "18650",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -744,11 +810,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_fnx45_custom [custom]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_fort17",
       "pda_encyclopedia_name": "st_wpn_fort17",
+      "st_data_export_description": "st_wpn_fort17_descr",
       "st_prop_weight": "0.68",
       "st_upgr_cost": "7860",
       "ui_mm_repair": "A",
@@ -766,12 +834,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [fort17]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sr1m_sr1upgr1",
       "pda_encyclopedia_name": "st_wpn_sr1mp_las",
-      "st_prop_weight": "0.995",
+      "st_data_export_description": "st_wpn_sr1mp_las_descr",
+      "st_prop_weight": "0.99",
       "st_upgr_cost": "26960",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -788,11 +858,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sr1mp_las",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pm_custom",
       "pda_encyclopedia_name": "st_wpn_pm_new",
+      "st_data_export_description": "st_wpn_pm_new_descr",
       "st_prop_weight": "0.73",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
@@ -810,12 +882,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_new [custom]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_colt1911_duty",
       "pda_encyclopedia_name": "st_wpn_colt1911_n",
-      "st_prop_weight": "1.075",
+      "st_data_export_description": "st_wpn_colt1911_n_descr",
+      "st_prop_weight": "1.07",
       "st_upgr_cost": "20000",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -832,11 +906,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [duty]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig226_226sig_kit",
       "pda_encyclopedia_name": "st_wpn_sig226_226sig_kit",
+      "st_data_export_description": "st_wpn_sig226_226sig_kit_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "14980",
       "ui_mm_repair": "A",
@@ -854,11 +930,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226_226sig_kit [sig226_226sig_kit]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_hpsa_226sig_kit",
       "pda_encyclopedia_name": "st_wpn_sig226_226sig_kit",
+      "st_data_export_description": "st_wpn_sig226_226sig_kit_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "14980",
       "ui_mm_repair": "A",
@@ -876,11 +954,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226_226sig_kit [hpsa_226sig_kit]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig220_u2p2g0r",
       "pda_encyclopedia_name": "st_wpn_sig220_n_u2p2g0r",
+      "st_data_export_description": "st_wpn_sig220_n_u2p2g0r_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "12980",
       "ui_mm_repair": "A",
@@ -898,12 +978,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_u2p2g0r [u2p2g0r]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_glock",
       "pda_encyclopedia_name": "st_wpn_glock",
-      "st_prop_weight": "0.625",
+      "st_data_export_description": "st_wpn_glock_descr",
+      "st_prop_weight": "0.62",
       "st_upgr_cost": "10960",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -920,12 +1002,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_glock",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_tt33_modern_tt_upgr_kit",
       "pda_encyclopedia_name": "st_wpn_tt33_custom_upgr",
-      "st_prop_weight": "0.854",
+      "st_data_export_description": "st_wpn_tt33_custom_upgr_descr",
+      "st_prop_weight": "0.85",
       "st_upgr_cost": "9860",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -942,11 +1026,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_tt33_custom_upgr",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pm_actor",
       "pda_encyclopedia_name": "st_wpn_pm_new",
+      "st_data_export_description": "st_wpn_pm_new_descr",
       "st_prop_weight": "0.73",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
@@ -964,11 +1050,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_new [actor]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_walther_mod9",
       "pda_encyclopedia_name": "st_wpn_walther_p99_mod9",
+      "st_data_export_description": "st_wpn_walther_p99_mod9_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
@@ -986,11 +1074,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99_mod9 [mod9]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pl15_pl15_scolaz",
       "pda_encyclopedia_name": "st_wpn_pl15_pl15_scolaz",
+      "st_data_export_description": "st_wpn_pl15_pl15_scolaz_descr",
       "st_prop_weight": "0.94",
       "st_upgr_cost": "26960",
       "ui_mm_repair": "A",
@@ -1008,12 +1098,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15_pl15_scolaz",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_colt1911",
       "pda_encyclopedia_name": "st_wpn_colt1911_n",
-      "st_prop_weight": "1.075",
+      "st_data_export_description": "st_wpn_colt1911_n_descr",
+      "st_prop_weight": "1.07",
       "st_upgr_cost": "20000",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1030,12 +1122,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [default]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_colt1911_camo",
       "pda_encyclopedia_name": "st_wpn_lar_grizzly",
-      "st_prop_weight": "1.114",
+      "st_data_export_description": "st_wpn_lar_grizzly_descr",
+      "st_prop_weight": "1.11",
       "st_upgr_cost": "13880",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1052,11 +1146,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_lar_grizzly",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_usp_tac_45",
       "pda_encyclopedia_name": "st_wpn_usp_tac45",
+      "st_data_export_description": "st_wpn_usp_tac45_descr",
       "st_prop_weight": "0.96",
       "st_upgr_cost": "54600",
       "ui_mm_repair": "A",
@@ -1074,11 +1170,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_usp_tac45",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig220_upg220",
       "pda_encyclopedia_name": "st_wpn_sig220_n_upg220",
+      "st_data_export_description": "st_wpn_sig220_n_upg220_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "12980",
       "ui_mm_repair": "A",
@@ -1096,12 +1194,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_upg220 [upg220]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_glock_modern",
       "pda_encyclopedia_name": "st_wpn_glock_modern",
-      "st_prop_weight": "0.625",
+      "st_data_export_description": "st_wpn_glock_modern_descr",
+      "st_prop_weight": "0.62",
       "st_upgr_cost": "15680",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1118,11 +1218,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_glock_modern",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_gsh18_custom",
       "pda_encyclopedia_name": "st_wpn_fort17",
+      "st_data_export_description": "st_wpn_fort17_descr",
       "st_prop_weight": "0.68",
       "st_upgr_cost": "7860",
       "ui_mm_repair": "A",
@@ -1140,11 +1242,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [gsh18_custom]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_aps",
       "pda_encyclopedia_name": "st_wpn_aps",
+      "st_data_export_description": "st_wpn_aps_descr",
       "st_prop_weight": "1.02",
       "st_upgr_cost": "9380",
       "ui_mm_repair": "A",
@@ -1162,11 +1266,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_aps",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig220_n",
       "pda_encyclopedia_name": "st_wpn_sig220_n",
+      "st_data_export_description": "st_wpn_sig220_n_descr",
       "st_prop_weight": "1.13",
       "st_upgr_cost": "12980",
       "ui_mm_repair": "A",
@@ -1184,12 +1290,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n [n]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_mp412",
       "pda_encyclopedia_name": "st_wpn_mp412",
-      "st_prop_weight": "0.9",
+      "st_data_export_description": "st_wpn_mp412_descr",
+      "st_prop_weight": "0.90",
       "st_upgr_cost": "14680",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1206,11 +1314,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_mp412",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_sig220_n_upg220",
       "pda_encyclopedia_name": "st_wpn_sig220_n_upg220",
+      "st_data_export_description": "st_wpn_sig220_n_upg220_descr",
       "st_prop_weight": "0.86",
       "st_upgr_cost": "12980",
       "ui_mm_repair": "A",
@@ -1228,12 +1338,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig220_n_upg220 [n_upg220]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_colt1911_anarchy",
       "pda_encyclopedia_name": "st_wpn_colt1911_n",
-      "st_prop_weight": "1.075",
+      "st_data_export_description": "st_wpn_colt1911_n_descr",
+      "st_prop_weight": "1.07",
       "st_upgr_cost": "45000",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1250,11 +1362,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_colt1911_n [anarchy]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_fort_snag",
       "pda_encyclopedia_name": "st_wpn_fort17",
+      "st_data_export_description": "st_wpn_fort17_descr",
       "st_prop_weight": "0.68",
       "st_upgr_cost": "7860",
       "ui_mm_repair": "A",
@@ -1272,11 +1386,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [fort_snag]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_m45a1",
       "pda_encyclopedia_name": "st_wpn_m45a1",
+      "st_data_export_description": "st_wpn_m45a1_descr",
       "st_prop_weight": "1.25",
       "st_upgr_cost": "30000",
       "ui_mm_repair": "A",
@@ -1294,12 +1410,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_m45a1",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_hpsa",
       "pda_encyclopedia_name": "st_wpn_sig226",
-      "st_prop_weight": "0.802",
+      "st_data_export_description": "st_wpn_sig226_descr",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "14980",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1316,11 +1434,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_sig226 [hpsa]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pl15_tan_pl15_scolaz",
       "pda_encyclopedia_name": "st_wpn_pl15_upgr",
+      "st_data_export_description": "st_wpn_pl15_upgr_descr",
       "st_prop_weight": "0.94",
       "st_upgr_cost": "26960",
       "ui_mm_repair": "A",
@@ -1338,11 +1458,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15_upgr",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pm_bas_actor",
       "pda_encyclopedia_name": "st_wpn_pm_bas_actor",
+      "st_data_export_description": "st_wpn_pm_bas_actor_descr",
       "st_prop_weight": "0.73",
       "st_upgr_cost": "7130",
       "ui_mm_repair": "A",
@@ -1360,11 +1482,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pm_bas_actor",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_beretta_m9_upgr_kit",
       "pda_encyclopedia_name": "st_wpn_beretta_new",
+      "st_data_export_description": "st_wpn_beretta_new_descr",
       "st_prop_weight": "0.95",
       "st_upgr_cost": "7120",
       "ui_mm_repair": "A",
@@ -1382,11 +1506,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_beretta_new [m9_upgr_kit]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_mp443",
       "pda_encyclopedia_name": "st_wpn_grach",
+      "st_data_export_description": "st_wpn_grach_descr",
       "st_prop_weight": "0.95",
       "st_upgr_cost": "11580",
       "ui_mm_repair": "A",
@@ -1404,12 +1530,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_grach",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_glock_custom",
       "pda_encyclopedia_name": "st_wpn_hs2000",
-      "st_prop_weight": "0.625",
+      "st_data_export_description": "st_wpn_hs2000_descr",
+      "st_prop_weight": "0.62",
       "st_upgr_cost": "19680",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1426,12 +1554,14 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_hs2000",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_walther",
       "pda_encyclopedia_name": "st_wpn_walther_p99",
-      "st_prop_weight": "0.694",
+      "st_data_export_description": "st_wpn_walther_p99_descr",
+      "st_prop_weight": "0.69",
       "st_upgr_cost": "4890",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1448,11 +1578,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_walther_p99 [default]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pb_bas",
       "pda_encyclopedia_name": "st_wpn_pb_bas",
+      "st_data_export_description": "st_wpn_pb_bas_descr",
       "st_prop_weight": "1.15",
       "st_upgr_cost": "6580",
       "ui_mm_repair": "A",
@@ -1470,12 +1602,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pb_bas",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pl15",
       "pda_encyclopedia_name": "st_wpn_pl15",
-      "st_prop_weight": "0.8",
+      "st_data_export_description": "st_wpn_pl15_descr",
+      "st_prop_weight": "0.80",
       "st_upgr_cost": "26960",
       "ui_mm_repair": "A",
       "st_data_export_single_handed": "Y",
@@ -1492,11 +1626,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pl15",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pb",
       "pda_encyclopedia_name": "st_wpn_pb_new",
+      "st_data_export_description": "st_wpn_pb_new_descr",
       "st_prop_weight": "1.15",
       "st_upgr_cost": "6580",
       "ui_mm_repair": "A",
@@ -1514,12 +1650,14 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_pb_new",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": true,
       "hasDisassemble": false
     },
     {
       "id": "wpn_eft_rsh12",
       "pda_encyclopedia_name": "st_wpn_rsh12_shorty",
-      "st_prop_weight": "2",
+      "st_data_export_description": "st_wpn_rsh12_shorty_descr",
+      "st_prop_weight": "2.00",
       "st_upgr_cost": "73500",
       "ui_mm_repair": "D",
       "st_data_export_single_handed": "Y",
@@ -1536,11 +1674,13 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_rsh12_shorty",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_beretta",
       "pda_encyclopedia_name": "st_wpn_beretta_new",
+      "st_data_export_description": "st_wpn_beretta_new_descr",
       "st_prop_weight": "0.95",
       "st_upgr_cost": "7120",
       "ui_mm_repair": "A",
@@ -1558,11 +1698,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x18-fmj;ammo-9x18-pmm;ammo-9x18-ap",
       "displayName": "st_wpn_beretta_new [default]",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_pmm_bas",
       "pda_encyclopedia_name": "st_wpn_pmm_bas",
+      "st_data_export_description": "st_wpn_pmm_bas_descr",
       "st_prop_weight": "0.76",
       "st_upgr_cost": "7580",
       "ui_mm_repair": "A",
@@ -1580,11 +1722,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_pmm_bas",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_fort",
       "pda_encyclopedia_name": "st_wpn_fort17",
+      "st_data_export_description": "st_wpn_fort17_descr",
       "st_prop_weight": "0.68",
       "st_upgr_cost": "7860",
       "ui_mm_repair": "A",
@@ -1602,11 +1746,13 @@
       "st_data_export_ammo_types_alt": "ammo-9x19-fmj;ammo-9x19-pbp;ammo-9x19-ap",
       "displayName": "st_wpn_fort17 [fort]",
       "hasNpcWeaponDrop": true,
+      "hasStashDrop": false,
       "hasDisassemble": false
     },
     {
       "id": "wpn_aps_bas",
       "pda_encyclopedia_name": "st_wpn_aps_bas",
+      "st_data_export_description": "st_wpn_aps_bas_descr",
       "st_prop_weight": "1.02",
       "st_upgr_cost": "9380",
       "ui_mm_repair": "A",
@@ -1624,6 +1770,7 @@
       "st_data_export_ammo_types_alt": "",
       "displayName": "st_wpn_aps_bas",
       "hasNpcWeaponDrop": false,
+      "hasStashDrop": false,
       "hasDisassemble": false
     }
   ]

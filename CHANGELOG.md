@@ -10,9 +10,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Toolkit Rates page showing stash tool drop chances per map with sortable heatmap table, search filtering, and CSV/JSON export
 
+### Fixed
+
+- Resist cap calculation in build planner now correctly sums cap bonuses from all equipped items and adds them to the 65% base cap, instead of using only the highest single cap value as the total belt/artifact allowance
+- Belt attachments now contribute to BR Class (armor points) in the build planner - waiting on `ui_inv_ap_res` column in `export_belt_attachments.csv` data
+
 ### Changed
 
 - Translation CSV decoding now uses Node.js TextDecoder instead of external iconv, working cross-platform without extra tools
+- Per-file encoding overrides via `pack.json` - each translation CSV can specify its own encoding instead of assuming Windows-1251 for all files
+- Refreshed all GAMMA 0.9.5 CSV data with latest game exports
 
 ## 2026-03-23
 

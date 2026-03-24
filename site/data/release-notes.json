@@ -2,7 +2,8 @@
   {
     "date": "2026-03-24",
     "entries": [
-      { "type": "added", "text": "Toolkit Rates - see the drop chances for Basic, Advanced, Expert, Drug-making, and Gunsmithing tools across every map at a glance." }
+      { "type": "added", "text": "Toolkit Rates - see the drop chances for Basic, Advanced, Expert, Drug-making, and Gunsmithing tools across every map at a glance." },
+      { "type": "fixed", "text": "Resist caps in the build planner now calculate correctly - cap bonuses from all equipped artefacts stack onto the 65% base instead of being ignored." }
     ]
   },
   {
