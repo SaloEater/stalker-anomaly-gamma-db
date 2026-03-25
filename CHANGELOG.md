@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## 2026-03-25
 
+### Added
+
+- French translations for app UI strings
+
 ### Changed
 
 - Belt slots now use the outfit's max upgraded slot count directly, removing the manual +/- bonus buttons
