@@ -619,12 +619,14 @@
                             <i data-lucide="trash-2" width="16" height="16"></i>
                         </button>
                         <button class="build-header-icon" :class="{ copied: copyBuildLinkFeedback }" :disabled="buildSharing" v-tooltip="copyBuildLinkFeedback ? t('app_label_copied') : t('app_label_copy_link')" @click="copyBuildLink()">
-                            <i v-show="!copyBuildLinkFeedback" data-lucide="link" width="16" height="16"></i>
-                            <svg v-show="copyBuildLinkFeedback" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span v-if="buildSharing && !copyBuildLinkFeedback" class="loading-spinner loading-spinner-sm"></span>
+                            <span v-else-if="copyBuildLinkFeedback"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                            <span v-else><i data-lucide="link" width="16" height="16"></i></span>
                         </button>
                         <button class="build-header-icon" :class="{ copied: copyBuildCodeFeedback }" :disabled="buildSharing" v-tooltip="copyBuildCodeFeedback ? t('app_label_copied') : (t('app_build_copy_code') || 'Copy Code')" @click="copyBuildCode()">
-                            <i v-show="!copyBuildCodeFeedback" data-lucide="hash" width="16" height="16"></i>
-                            <svg v-show="copyBuildCodeFeedback" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span v-if="buildSharing && !copyBuildCodeFeedback" class="loading-spinner loading-spinner-sm"></span>
+                            <span v-else-if="copyBuildCodeFeedback"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                            <span v-else><i data-lucide="hash" width="16" height="16"></i></span>
                         </button>
                         <div class="build-import-inline">
                             <input class="build-import-input" v-model="buildImportCode" :placeholder="t('app_build_import_placeholder') || 'Paste build code'" @keydown.enter="importBuildFromCode()" spellcheck="false">

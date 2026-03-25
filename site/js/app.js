@@ -4282,12 +4282,15 @@ const app = createApp({
 
         async copyBuildLink() {
             this.buildSharing = true;
+            const minDelay = new Promise(r => setTimeout(r, 2000));
             try {
                 const code = await this.shareBuild();
+                await minDelay;
                 const url = new URL(window.location.origin + window.location.pathname);
                 url.hash = BUILD_HASH_PREFIX + code;
                 await this.copyToClipboard(url.toString(), "copyBuildLinkFeedback");
             } catch {
+                await minDelay;
                 this.showToast(this.t("app_build_share_error"));
             } finally {
                 this.buildSharing = false;
@@ -4296,10 +4299,13 @@ const app = createApp({
 
         async copyBuildCode() {
             this.buildSharing = true;
+            const minDelay = new Promise(r => setTimeout(r, 2000));
             try {
                 const code = await this.shareBuild();
+                await minDelay;
                 await this.copyToClipboard(code, "copyBuildCodeFeedback");
             } catch {
+                await minDelay;
                 this.showToast(this.t("app_build_share_error"));
             } finally {
                 this.buildSharing = false;
