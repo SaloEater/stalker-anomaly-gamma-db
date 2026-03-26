@@ -195,6 +195,12 @@
                                 <div class="filter-group-label">{{ t(def.label) }}</div>
                                 <div v-if="def.type === 'discrete'" class="filter-chips">
                                     <button
+                                        v-if="def.key === 'ui_ammo_types'"
+                                        class="filter-chip filter-chip-alt"
+                                        :class="{ active: includeAltAmmo }"
+                                        @click="includeAltAmmo = !includeAltAmmo; pushUrlState()"
+                                    >{{ t('app_filter_include_alt_ammo') }}</button>
+                                    <button
                                         v-for="v in def.values"
                                         :key="v"
                                         class="filter-chip"

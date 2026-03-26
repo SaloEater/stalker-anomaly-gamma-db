@@ -9,6 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Yes/No toggle for all flag filters, allowing items to be excluded by flags like Powered Exo, Craftable, and others
+- Alt ammo toggle on the ammo type filter to include weapons with matching alternate ammo conversions
+- Contributor credit chips on release notes with role-based tooltips
 
 ## 2026-03-25
 

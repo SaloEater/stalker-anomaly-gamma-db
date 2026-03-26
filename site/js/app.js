@@ -352,6 +352,7 @@ const app = createApp({
 
             // Filter & Sort
             activeFilters: {},
+            includeAltAmmo: false,
             filterPanelOpen: false,
             downloadMenuOpen: false,
             sortMenuOpen: false,
@@ -1785,6 +1786,7 @@ const app = createApp({
                     sortCol: this.sortCol,
                     sortAsc: this.sortAsc,
                     exchangeFactionFilter: this.exchangeFactionFilter,
+                    includeAltAmmo: this.includeAltAmmo,
                 });
             }
 
@@ -1799,6 +1801,7 @@ const app = createApp({
             this.sortAsc = true;
             this.exchangeFactionFilter = null;
             this.activeFilters = {};
+            this.includeAltAmmo = false;
             this.filterPanelOpen = false;
             this.sidebarOpen = false;
 
@@ -1812,6 +1815,7 @@ const app = createApp({
                     this.sortCol = saved.sortCol || "pda_encyclopedia_name";
                     this.sortAsc = saved.sortAsc !== undefined ? saved.sortAsc : true;
                     this.exchangeFactionFilter = saved.exchangeFactionFilter || null;
+                    this.includeAltAmmo = saved.includeAltAmmo || false;
                 }
             }
             this.pushUrlState();
@@ -2975,7 +2979,13 @@ const app = createApp({
                         const itemVal = item[key];
                         if (key === "ui_ammo_types") {
                             const itemCals = String(itemVal || "").split(";").map(s => s.trim()).filter(Boolean);
-                            if (!val.some(v => itemCals.includes(v))) return false;
+                            if (this.includeAltAmmo) {
+                                const altVal = item["st_data_export_ammo_types_alt"];
+                                const altCals = String(altVal || "").split(";").map(s => s.trim()).filter(Boolean);
+                                if (!val.some(v => itemCals.includes(v) || altCals.includes(v))) return false;
+                            } else {
+                                if (!val.some(v => itemCals.includes(v))) return false;
+                            }
                         } else {
                             if (!val.includes(String(itemVal ?? ""))) return false;
                         }
@@ -3075,6 +3085,7 @@ const app = createApp({
             for (const key of Object.keys(this.activeFilters)) {
                 delete this.activeFilters[key];
             }
+            this.includeAltAmmo = false;
             this.pushUrlState();
         },
 
@@ -3610,6 +3621,11 @@ const app = createApp({
                     url.searchParams.append("f", key + ":" + val.join(","));
                 }
             }
+            if (this.includeAltAmmo) {
+                url.searchParams.set("altammo", "1");
+            } else {
+                url.searchParams.delete("altammo");
+            }
             if (this.exchangeFactionFilter) {
                 url.searchParams.set("faction", this.exchangeFactionFilter);
             } else {
@@ -3628,6 +3644,7 @@ const app = createApp({
                     sortCol: this.sortCol,
                     sortAsc: this.sortAsc,
                     exchangeFactionFilter: this.exchangeFactionFilter,
+                    includeAltAmmo: this.includeAltAmmo,
                 });
             }
         },
@@ -3681,6 +3698,7 @@ const app = createApp({
                     }
                 }
             }
+            if (params.get("altammo") === "1") this.includeAltAmmo = true;
             const faction = params.get("faction");
             if (faction) this.exchangeFactionFilter = faction;
         },
