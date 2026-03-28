@@ -10,7 +10,7 @@
             <button :class="{ active: buildPlannerActive }" @click="$emit('openBuildPlanner')">
                 <span class="cat-label">{{ t('app_cat_build_planner') }}</span>
             </button>
-            <button :class="{ active: versionCompareActive }" @click="$emit('openVersionCompare')">
+            <button class="version-compare-nav-btn" :class="{ active: versionCompareActive }" @click="$emit('openVersionCompare')">
                 <span class="cat-label">{{ t('app_cat_version_compare') }}</span>
             </button>
         </div>

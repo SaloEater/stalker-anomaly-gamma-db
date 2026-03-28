@@ -12,6 +12,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Feature callouts that spotlight new UI elements when the user navigates to the relevant page
 - Ammo tooltips on weapon caliber badges — hover any ammo type on a gun to see an image, armor penetration, damage, accuracy, and cost per round (Evincars)
 - Clicking an ammo badge on a weapon now navigates directly to that ammo item (Evincars)
+- Version Compare page accessible from the sidebar with category and property filter dropdowns
+- Version compare filters persist to localStorage and survive modal navigation
 
 ### Changed
 
