@@ -152,186 +152,62 @@
             <div v-if="recentViewActive && recentIds.length === 0" class="favorites-empty">
                 <p>{{ t('app_label_no_recent') }}</p>
             </div>
-            <!-- Outfit Exchange cards -->
-            <div v-if="isOutfitExchange && outfitExchange" class="exchange-view">
-                <div class="exchange-faction-chips">
-                    <button class="exchange-chip" :class="{ active: !exchangeFactionFilter }" @click="exchangeFactionFilter = null">{{ t('app_label_all') }}</button>
-                    <button v-for="f in exchangeFactions" :key="f" class="exchange-chip" :class="{ active: exchangeFactionFilter === f }" @click="exchangeFactionFilter = exchangeFactionFilter === f ? null : f">
-                        <img v-if="factionIcon(f)" :src="'img/' + factionIcon(f)" :alt="f" class="exchange-chip-icon">
-                        <span>{{ t(f) }}</span>
-                    </button>
-                </div>
-                <div class="tile-grid">
-                    <div v-for="ex in filteredExchanges" :key="ex.name + ex.sourceFaction" class="tile-card exchange-card">
-                        <div class="tile-card-header">
-                            <a v-if="exchangeItemId(ex.name)" href="#" @click.prevent.stop="navigateToItem(exchangeItemId(ex.name))" class="tile-card-name">{{ t(ex.name) }}</a>
-                            <span v-else class="tile-card-name">{{ t(ex.name) }}</span>
-                            <span v-if="ex.sourceFaction" class="exchange-source-badge">{{ t(ex.sourceFaction) }}</span>
-                        </div>
-                        <div class="exchange-results">
-                            <template v-for="f in exchangeVisibleFactions" :key="f">
-                                <div v-if="ex.results[f]" class="exchange-result-row">
-                                    <span class="exchange-result-faction">
-                                        <img v-if="factionIcon(f)" :src="'img/' + factionIcon(f)" :alt="f" class="exchange-result-icon">
-                                        <span>{{ t(f) }}</span>
-                                    </span>
-                                    <span class="exchange-result-name">
-                                        <a v-if="exchangeItemId(ex.results[f])" href="#" @click.prevent.stop="navigateToItem(exchangeItemId(ex.results[f]))">{{ t(ex.results[f]) }}</a>
-                                        <span v-else>{{ t(ex.results[f]) }}</span>
-                                    </span>
-                                </div>
-                            </template>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <OutfitExchangeView
+                :is-outfit-exchange="isOutfitExchange"
+                :outfit-exchange="outfitExchange"
+                :exchange-faction-filter="exchangeFactionFilter"
+                :exchange-factions="exchangeFactions"
+                :exchange-visible-factions="exchangeVisibleFactions"
+                :filtered-exchanges="filteredExchanges"
+                @update:exchange-faction-filter="exchangeFactionFilter = $event"
+                @navigate-to-item="navigateToItem"
+            />
 
-            <!-- Toolkit Rates heatmap table -->
-            <div v-if="isToolkitRates && toolkitRates" class="toolkit-rates-view">
-                <div class="table-wrap">
-                    <table class="toolkit-rates-table">
-                        <thead>
-                        <tr>
-                            <th class="toolkit-map-col" @click="toggleToolkitSort('_name')">
-                                <span>{{ t('app_label_map') }}</span><span class="sort-icon">{{ toolkitSortIcon('_name') }}</span>
-                            </th>
-                            <th v-for="tt in toolkitRates.toolTypes" :key="tt" @click="toggleToolkitSort(tt)" class="toolkit-rate-col">
-                                <span>{{ t(tt) }}</span><span class="sort-icon">{{ toolkitSortIcon(tt) }}</span>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr v-for="map in toolkitRatesSorted" :key="map.id">
-                            <td class="toolkit-map-col">{{ t(map.id) }}</td>
-                            <td v-for="tt in toolkitRates.toolTypes" :key="tt" class="toolkit-rate-col" :style="toolkitHeatBg(map.rates[tt])">
-                                {{ map.rates[tt] ? map.rates[tt] + '%' : '--' }}
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <ToolkitRatesView
+                :is-toolkit-rates="isToolkitRates"
+                :toolkit-rates="toolkitRates"
+                :toolkit-rates-sorted="toolkitRatesSorted"
+                :toolkit-sort-col="toolkitSortCol"
+                :toolkit-sort-asc="toolkitSortAsc"
+                @toggle-toolkit-sort="toggleToolkitSort"
+            />
 
-            <!-- Materials view -->
-            <div class="tile-grid" v-if="isMaterialsCategory">
-                <div v-for="item in sortedItems" :key="item.id" class="tile-card recipe-card">
-                    <div class="tile-card-header">
-                        <span class="tile-card-name">{{ tName(item) }}</span>
-                    </div>
-                    <div class="material-sources" v-if="item.sources">
-                        <div v-for="(src, idx) in item.sources" :key="idx" class="material-source">
-                            <span class="recipe-ing-amount">x{{ src.amount }}</span>
-                            <span class="material-from">{{ t('app_label_from') }}</span>
-                            <template v-if="findItemByName(src.name)">
-                                <a href="#" @click.prevent.stop="navigateToItem(findItemByName(src.name).id)">{{ t(src.name) }}</a>
-                            </template>
-                            <template v-else>
-                                <span>{{ t(src.name) }}</span>
-                            </template>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <MaterialsView
+                :is-materials-category="isMaterialsCategory"
+                :items="sortedItems"
+                @navigate-to-item="navigateToItem"
+            />
 
-            <!-- Crafting Trees view -->
-            <div v-if="isCraftingTrees" class="crafting-trees-view">
-                <div class="crafting-trees-toolbar">
-                    <button class="filter-chip" @click="craftingTreeExpandAll ? collapseAllTrees() : expandAllTrees()">
-                        {{ craftingTreeExpandAll ? t('app_label_collapse_all') : t('app_label_expand_all') }}
-                    </button>
-                    <span class="item-count">{{ filteredCraftingTrees.length }} {{ t('app_label_recipes') }}</span>
-                </div>
-                <div class="tile-grid">
-                    <div v-for="tree in filteredCraftingTrees" :key="tree.id" class="tile-card crafting-tree-card">
-                        <div class="tile-card-header">
-                            <a href="#" @click.prevent.stop="navigateToItem(tree.id)" class="tile-card-name">{{ t(tree.name) }}</a>
-                        </div>
-                        <div class="crafting-tree-body">
-                            <div
-                                v-for="(row, idx) in flattenTree(tree)"
-                                :key="row.path"
-                                class="tree-row"
-                                :style="{ paddingLeft: (row.depth * 1.2 + 0.3) + 'rem' }"
-                            >
-                                <span
-                                    v-if="row.hasChildren"
-                                    class="tree-toggle"
-                                    @click.stop="toggleTreeNode(row.path)"
-                                >{{ row.isExpanded ? '\u25BC' : '\u25B6' }}</span>
-                                <span v-else class="tree-leaf-dot">&bull;</span>
-                                <template v-if="row.itemRef">
-                                    <a href="#" @click.prevent.stop="navigateToItem(row.itemRef.id)">{{ t(row.name) }}</a>
-                                </template>
-                                <template v-else>
-                                    <span class="tree-raw">{{ t(row.name) }}</span>
-                                </template>
-                                <span class="recipe-ing-amount">{{ row.amount }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <CraftingTreesView
+                :is-crafting-trees="isCraftingTrees"
+                :filtered-crafting-trees="filteredCraftingTrees"
+                :crafting-tree-expand-all="craftingTreeExpandAll"
+                :crafting-tree-expanded="craftingTreeExpanded"
+                @expand-all-trees="expandAllTrees()"
+                @collapse-all-trees="collapseAllTrees()"
+                @toggle-tree-node="toggleTreeNode"
+                @navigate-to-item="navigateToItem"
+            />
 
-            <!-- Version Compare view -->
-            <div v-if="versionCompareActive" class="version-compare-view">
-                <div class="version-compare-header">
-                    <div class="version-compare-picker">
-                        <span class="version-compare-pack">{{ activePack.name }}</span>
-                        <span class="diff-arrow">▶</span>
-                        <div v-if="packs.length > 1" class="compare-wrap" v-click-outside="closeCompareMenu">
-                            <button class="version-compare-pack-btn" @click.stop="compareMenuOpen = !compareMenuOpen">
-                                {{ crossPackId ? crossPackName : t('app_label_select_pack') }}
-                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-                            </button>
-                            <div class="compare-menu" v-show="compareMenuOpen" @click.stop>
-                                <button v-for="p in crossPackOptions" :key="p.id" class="sort-menu-item" :class="{ active: crossPackId === p.id }" @click="pickComparePack(p.id)">
-                                    <span class="sort-menu-check">{{ crossPackId === p.id ? '\u2713' : '' }}</span>
-                                    <span>{{ p.name }}</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <template v-if="versionCompareResults.length">
-                        <div class="filter-input-group">
-                            <svg class="filter-input-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                            <input type="text" v-model="versionCompareFilter" :placeholder="t('app_label_filter_placeholder')" class="filter-input">
-                        </div>
-                        <span class="version-compare-count">{{ versionCompareTotal }} {{ t('app_label_changes') }}</span>
-                        <span class="version-compare-spacer"></span>
-                        <div class="utility-group">
-                            <button class="copy-link-btn" :class="{ copied: copyLinkFeedback }" @click="copyLink()" v-tooltip="copyLinkFeedback ? t('app_label_copied') : t('app_label_copy_link')">
-                                <svg v-if="copyLinkFeedback" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-                            </button>
-                            <button class="copy-link-btn" @click="exportVersionCompare()" v-tooltip="t('app_label_download')">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                            </button>
-                        </div>
-                    </template>
-                </div>
-
-                <p v-if="versionCompareLoading" class="loading">{{ t('app_label_loading') }}</p>
-                <p v-else-if="!crossPackId" class="cross-pack-no-changes">{{ t('app_label_select_pack_prompt') }}</p>
-                <p v-else-if="!versionCompareResults.length" class="cross-pack-no-changes">{{ t('app_label_no_changes') }}</p>
-
-                <template v-else>
-                    <div class="version-compare-list">
-                        <template v-for="group in filteredVersionCompareResults" :key="group.category">
-                            <div v-for="item in group.items" :key="item.id" class="version-compare-item" @click="navigateToItem(item.id)">
-                                <span class="version-compare-cat">{{ t(singularCategory(group.category)) || tCat(group.category) }}</span>
-                                <span class="version-compare-name">{{ item.name }}</span>
-                                <span class="version-compare-changes">
-                                    <span v-for="d in item.diffs.slice(0, 2)" :key="d.key" class="version-compare-stat">
-                                        <span class="version-compare-stat-label">{{ headerLabel(d.key) }}</span>
-                                        <span class="diff-old">{{ formatValue(d.key, d.oldVal) }}</span><span class="diff-arrow">▶</span><span class="diff-new" :class="d.type === 'higher' ? 'diff-up' : 'diff-down'">{{ formatValue(d.key, d.newVal) }}</span>
-                                    </span>
-                                    <span v-if="item.diffs.length > 2" class="version-compare-more">+{{ item.diffs.length - 2 }} more</span>
-                                </span>
-                            </div>
-                        </template>
-                    </div>
-                </template>
-            </div>
+            <VersionCompareView
+                :version-compare-active="versionCompareActive"
+                :active-pack="activePack"
+                :packs="packs"
+                :cross-pack-id="crossPackId"
+                :cross-pack-name="crossPackName"
+                :cross-pack-options="crossPackOptions"
+                :version-compare-results="versionCompareResults"
+                :filtered-version-compare-results="filteredVersionCompareResults"
+                :version-compare-total="versionCompareTotal"
+                :version-compare-loading="versionCompareLoading"
+                :version-compare-filter="versionCompareFilter"
+                :copy-link-feedback="copyLinkFeedback"
+                @update:version-compare-filter="versionCompareFilter = $event"
+                @pick-compare-pack="pickComparePack"
+                @copy-link="copyLink()"
+                @export-version-compare="exportVersionCompare()"
+                @navigate-to-item="navigateToItem"
+            />
 
             <!-- Build Planner view -->
             <BuildPlanner
@@ -576,6 +452,11 @@ import ItemGrid from "./components/ItemGrid.vue";
 import ItemDetailModal from "./components/ItemDetailModal.vue";
 import BuildPlanner from "./components/BuildPlanner.vue";
 import ComparePanel from "./components/ComparePanel.vue";
+import CraftingTreesView from "./components/CraftingTreesView.vue";
+import MaterialsView from "./components/MaterialsView.vue";
+import OutfitExchangeView from "./components/OutfitExchangeView.vue";
+import ToolkitRatesView from "./components/ToolkitRatesView.vue";
+import VersionCompareView from "./components/VersionCompareView.vue";
 import BuildSaveModal from "./components/modals/BuildSaveModal.vue";
 import SaveImportModal from "./components/modals/SaveImportModal.vue";
 import BuildPickerModal from "./components/modals/BuildPickerModal.vue";
@@ -589,15 +470,20 @@ export default {
     BuildPickerModal,
     BuildSaveModal,
     ComparePanel,
+    CraftingTreesView,
     FilterBar,
     FooterBar,
     HeaderBar,
     ItemGrid,
     ItemTable,
     ItemDetailModal,
+    MaterialsView,
+    OutfitExchangeView,
     SaveImportModal,
     ShortcutHelpModal,
     SidebarNav,
+    ToolkitRatesView,
+    VersionCompareView,
   },
   provide() {
     return {
@@ -620,6 +506,7 @@ export default {
       caliberName: this.caliberName,
       ammoTooltipPayload: this.ammoTooltipPayload,
       factionColor: this.factionColor,
+      exchangeItemId: this.exchangeItemId,
       factionIcon: this.factionIcon,
       isUnusedAmmo: this.isUnusedAmmo,
       openAmmoFromCaliber: this.openAmmoFromCaliber,
