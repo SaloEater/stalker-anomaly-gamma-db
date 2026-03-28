@@ -297,12 +297,10 @@ export const appDefinition = {
             packs: [],
             activePack: null,
             packLoading: false,
-            packOpen: false,
 
             // Localisation
             LOCALES,
             locale: "en",
-            localeOpen: false,
             translations: null,
             appTranslations: null,
             fileManifest: {},
@@ -316,7 +314,6 @@ export const appDefinition = {
             categoryFuse: {},
             globalQuery: "",
             lastGlobalQuery: "",
-            searchFocused: false,
             globalResults: [],
             filterQuery: "",
             filterInput: "",
@@ -368,8 +365,6 @@ export const appDefinition = {
             craftingTreeExpanded: new Set(),
             craftingTreeExpandAll: false,
 
-            // Settings menu
-            settingsOpen: false,
             sidebarOpen: false,
             sidebarCollapsed: false,
             collapsedGroups: {},
@@ -379,9 +374,6 @@ export const appDefinition = {
             // Filter & Sort
             activeFilters: {},
             includeAltAmmo: false,
-            filterPanelOpen: false,
-            downloadMenuOpen: false,
-            sortMenuOpen: false,
 
             // Modal state
             modalOpen: false,
@@ -406,12 +398,10 @@ export const appDefinition = {
             crossPackLoading: false,
             crossPackNotFound: false,
             crossPackCache: {},
-            compareMenuOpen: false,
 
             // Build Planner state
             buildPlayerName: "Stalker",
             buildPlayerFaction: "stalker",
-            buildFactionPickerOpen: false,
             buildPlannerActive: false,
             versionCompareActive: false,
             versionCompareLoading: false,
@@ -457,7 +447,6 @@ export const appDefinition = {
             buildSavedBuilds: [],
             buildSaveName: "",
             buildSaveModalOpen: false,
-            buildSavedDropdownOpen: false,
             copyBuildLinkFeedback: false,
             copyBuildCodeFeedback: false,
             buildImportCode: "",
@@ -470,7 +459,6 @@ export const appDefinition = {
             saveImportError: "",
             saveImportPreview: null,
             saveImportFileName: "",
-            saveImportDragOver: false,
             saveImportIncludeStash: true,
             saveImportIncludeAmmo: false,
             toastMessage: "",
@@ -2182,11 +2170,10 @@ export const appDefinition = {
 
         pickComparePack(id) {
             this.crossPackId = id;
-            this.compareMenuOpen = false;
         },
 
         closeCompareMenu() {
-            this.compareMenuOpen = false;
+            // compareMenuOpen is now local state in child components
         },
 
         exportVersionCompare() {
@@ -3905,10 +3892,6 @@ export const appDefinition = {
                 this.buildSaveModalOpen = false;
             } else if (this.buildPickerOpen) {
                 this.closeBuildPicker();
-            } else if (this.buildSavedDropdownOpen) {
-                this.buildSavedDropdownOpen = false;
-            } else if (this.compareMenuOpen) {
-                this.compareMenuOpen = false;
             } else if (this.$refs.filterBar && this.$refs.filterBar.hasOpenPanel()) {
                 this.$refs.filterBar.closeAllPanels();
             } else if (this.sidebarOpen) {
@@ -4647,19 +4630,16 @@ export const appDefinition = {
             this.saveImportError = "";
             this.saveImportPreview = null;
             this.saveImportFileName = "";
-            this.saveImportDragOver = false;
         },
 
         closeSaveImport() {
             this.saveImportModalOpen = false;
             this.saveImportPreview = null;
             this.saveImportError = "";
-            this.saveImportDragOver = false;
         },
 
         handleSaveImportDrop(event) {
             event.preventDefault();
-            this.saveImportDragOver = false;
             const files = event.dataTransfer?.files;
             if (files?.length) this.parseSaveFiles(files);
         },
