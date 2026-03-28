@@ -2561,7 +2561,7 @@ export const appDefinition = {
         },
 
         renderBuildWeaponRadar() {
-            const canvas = this.$refs.buildWeaponRadarCanvas;
+            const canvas = this.$refs.buildPlanner ? this.$refs.buildPlanner.getRadarCanvas() : this.$refs.buildWeaponRadarCanvas;
             if (!canvas) return;
             if (this._buildWeaponRadarChart) { this._buildWeaponRadarChart.destroy(); this._buildWeaponRadarChart = null; }
 
