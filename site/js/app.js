@@ -454,6 +454,7 @@ export const appDefinition = {
             copyBuildCodeFeedback: false,
             buildImportCode: "",
             buildImportError: "",
+            buildImportCodeModalOpen: false,
             buildSharing: false,
 
             // Save file import
@@ -3891,6 +3892,8 @@ export const appDefinition = {
                 this.dismissWhatsNew();
             } else if (this.shortcutHelpOpen) {
                 this.shortcutHelpOpen = false;
+            } else if (this.buildImportCodeModalOpen) {
+                this.buildImportCodeModalOpen = false;
             } else if (this.buildSaveModalOpen) {
                 this.buildSaveModalOpen = false;
             } else if (this.buildPickerOpen) {
@@ -4616,6 +4619,7 @@ export const appDefinition = {
                 }
                 this.buildImportError = "";
                 this.buildImportCode = "";
+                this.buildImportCodeModalOpen = false;
                 this.restoreBuildFromIds(data);
                 this.saveBuildToStorage();
             } catch {
@@ -4623,6 +4627,13 @@ export const appDefinition = {
             } finally {
                 this.buildSharing = false;
             }
+        },
+
+        // Extract character name from save filename (e.g. "tak - quicksave_2.scop" -> "tak")
+        // Returns empty string for autosaves and other files without the name prefix.
+        extractCharNameFromFilename(filename) {
+            const match = filename.match(/^(.+?)\s*-\s*(?:quicksave|autosave|save|manual)/i);
+            return match ? match[1].trim() : "";
         },
 
         // --- Save file import ---
@@ -4724,6 +4735,7 @@ export const appDefinition = {
                     totalItems: result.items.length,
                     stashCount: result.stashItems.length,
                     objectCount: result.objectCount,
+                    actorName: this.extractCharNameFromFilename(file.name),
                 };
 
                 const categorizeBuildItem = (sectionName) => {
@@ -4879,6 +4891,10 @@ export const appDefinition = {
             if (!p) return;
 
             this.clearBuild();
+
+            if (p.actorName) {
+                this.buildPlayerName = p.actorName;
+            }
 
             // Build data object for restoreBuildFromIds
             const data = {

@@ -220,8 +220,6 @@
                 :build-sharing="buildSharing"
                 :copy-build-link-feedback="copyBuildLinkFeedback"
                 :copy-build-code-feedback="copyBuildCodeFeedback"
-                :build-import-code="buildImportCode"
-                :build-import-error="buildImportError"
                 :build-outfit="buildOutfit"
                 :build-helmet="buildHelmet"
                 :build-backpack="buildBackpack"
@@ -263,7 +261,6 @@
                 @update:build-player-name="(v) => buildPlayerName = v"
                 @update:build-player-faction="(v) => buildPlayerFaction = v"
                 @update:build-save-modal-open="(v) => buildSaveModalOpen = v"
-                @update:build-import-code="(v) => buildImportCode = v"
                 @update:build-active-weapon-tab="(v) => buildActiveWeaponTab = v"
                 @update:build-loadout-collapsed="(v) => buildLoadoutCollapsed = v"
                 @update:build-hide-gear-stats="(v) => buildHideGearStats = v"
@@ -275,7 +272,7 @@
                 @clear-build="clearBuild()"
                 @copy-build-link="copyBuildLink()"
                 @copy-build-code="copyBuildCode()"
-                @import-build-from-code="importBuildFromCode()"
+                @open-import-code="buildImportCodeModalOpen = true"
                 @open-build-picker="(type, index) => openBuildPicker(type, index)"
                 @remove-build-slot="(type, index) => removeBuildSlot(type, index)"
                 @toggle-build-stat-expand="(field) => toggleBuildStatExpand(field)"
@@ -396,6 +393,15 @@
     @save="saveCurrentBuild()"
 />
 
+<BuildImportCodeModal
+    :open="buildImportCodeModalOpen"
+    :build-import-code="buildImportCode"
+    :build-import-error="buildImportError"
+    @close="buildImportCodeModalOpen = false"
+    @update:build-import-code="(v) => buildImportCode = v"
+    @import="importBuildFromCode()"
+/>
+
 <SaveImportModal
     :open="saveImportModalOpen"
     :save-import-parsing="saveImportParsing"
@@ -458,6 +464,7 @@ import MaterialsView from "./components/MaterialsView.vue";
 import OutfitExchangeView from "./components/OutfitExchangeView.vue";
 import ToolkitRatesView from "./components/ToolkitRatesView.vue";
 import VersionCompareView from "./components/VersionCompareView.vue";
+import BuildImportCodeModal from "./components/modals/BuildImportCodeModal.vue";
 import BuildSaveModal from "./components/modals/BuildSaveModal.vue";
 import SaveImportModal from "./components/modals/SaveImportModal.vue";
 import BuildPickerModal from "./components/modals/BuildPickerModal.vue";
@@ -468,6 +475,7 @@ export default {
   components: {
     ...appDefinition.components,
     BuildPlanner,
+    BuildImportCodeModal,
     BuildPickerModal,
     BuildSaveModal,
     ComparePanel,

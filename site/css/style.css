@@ -3833,84 +3833,7 @@ kbd {
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
-.build-header-actions {
-    display: flex;
-    gap: 0.15rem;
-    align-items: center;
-    margin-left: auto;
-}
-.build-header-icon {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.8rem;
-    height: 1.8rem;
-    background: none;
-    border: none;
-    border-radius: 4px;
-    color: var(--text-secondary);
-    cursor: pointer;
-    transition: color 0.15s, background 0.15s;
-}
-.build-header-icon > * {
-    pointer-events: none;
-}
-.build-header-icon:hover {
-    color: var(--text);
-    background: rgba(255, 255, 255, 0.06);
-}
-.build-header-icon.copied {
-    color: #4ac45a;
-}
-.build-header-badge {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    background: var(--accent);
-    color: #000;
-    font-size: 0.45rem;
-    font-weight: 700;
-    min-width: 0.85rem;
-    height: 0.85rem;
-    line-height: 0.85rem;
-    text-align: center;
-    border-radius: 50%;
-    padding: 0 0.15rem;
-}
-
-.build-import-inline {
-    display: flex;
-    align-items: center;
-    gap: 0.15rem;
-    margin-left: 0.3rem;
-    position: relative;
-}
-.build-import-input {
-    width: 140px;
-    padding: 0.2rem 0.4rem;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    color: var(--text);
-    font-size: 0.72rem;
-    font-family: inherit;
-}
-.build-import-input::placeholder {
-    color: rgba(255, 255, 255, 0.3);
-}
-.build-import-input:focus {
-    outline: none;
-    border-color: var(--accent);
-}
-.build-import-error {
-    color: #f06a5e;
-    font-size: 0.7rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    white-space: nowrap;
-}
+/* Build header toolbar styles are in BuildPlanner.vue <style> block */
 
 .build-planner {
     padding: 0 1.5rem 0.5rem 0;
@@ -4010,6 +3933,7 @@ kbd {
 /* Save modal */
 .build-save-modal {
     max-width: 340px;
+    height: auto;
 }
 .build-save-modal .build-save-form {
     display: flex;

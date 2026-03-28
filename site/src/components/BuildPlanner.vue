@@ -19,46 +19,99 @@
             </div>
         </div>
         <div class="build-header-actions">
-            <button class="build-header-icon save-import-btn" v-tooltip="t('app_save_import_title') || 'Import Save File'" @click="$emit('openSaveImport')">
-                <LucideFileUp :size="16" />
-            </button>
-            <div class="build-saved-dropdown" v-click-outside="() => savedDropdownOpen = false">
-                <button class="build-header-icon" v-tooltip="t('app_build_saved_builds')" @click="savedDropdownOpen = !savedDropdownOpen">
-                    <LucideBookmark :size="16" />
-                    <span v-if="buildSavedBuilds.length" class="build-header-badge">{{ buildSavedBuilds.length }}</span>
-                </button>
-                <div v-if="savedDropdownOpen" class="build-saved-menu">
-                    <div v-if="buildSavedBuilds.length > 0" class="build-saved-list">
-                        <div v-for="(build, idx) in buildSavedBuilds" :key="idx" class="build-saved-item">
-                            <span class="build-saved-name" @click="$emit('loadSavedBuild', build); savedDropdownOpen = false">{{ build.name }}</span>
-                            <button class="build-saved-delete" @click="$emit('deleteSavedBuild', idx)">&times;</button>
+            <!-- Saved builds -->
+            <div class="build-action-group">
+                <div class="build-saved-dropdown" v-click-outside="() => savedDropdownOpen = false">
+                    <button class="build-header-icon" v-tooltip="t('app_build_saved_builds')" @click="savedDropdownOpen = !savedDropdownOpen">
+                        <LucideBookmark :size="16" />
+                        <span class="build-header-icon-label">{{ t('app_build_saved_builds') || 'Saved Builds' }}</span>
+                        <span v-if="buildSavedBuilds.length" class="build-header-badge-inline">{{ buildSavedBuilds.length }}</span>
+                    </button>
+                    <div v-if="savedDropdownOpen" class="build-saved-menu">
+                        <div v-if="buildSavedBuilds.length > 0" class="build-saved-list">
+                            <div v-for="(build, idx) in buildSavedBuilds" :key="idx" class="build-saved-item">
+                                <span class="build-saved-name" @click="$emit('loadSavedBuild', build); savedDropdownOpen = false">{{ build.name }}</span>
+                                <button class="build-saved-delete" @click="$emit('deleteSavedBuild', idx)">&times;</button>
+                            </div>
                         </div>
+                        <div v-else class="build-saved-empty">{{ t('app_build_no_saved') }}</div>
                     </div>
-                    <div v-else class="build-saved-empty">{{ t('app_build_no_saved') }}</div>
                 </div>
             </div>
-            <button class="build-header-icon" v-tooltip="t('app_build_save')" @click="$emit('update:buildSaveModalOpen', true)">
-                <LucideSave :size="16" />
-            </button>
-            <button class="build-header-icon" v-tooltip="t('app_build_clear')" @click="$emit('clearBuild')">
-                <LucideTrash2 :size="16" />
-            </button>
-            <button class="build-header-icon" :class="{ copied: copyBuildLinkFeedback }" :disabled="buildSharing" v-tooltip="copyBuildLinkFeedback ? t('app_label_copied') : t('app_label_copy_link')" @click="$emit('copyBuildLink')">
-                <span v-if="buildSharing && !copyBuildLinkFeedback" class="loading-spinner loading-spinner-sm"></span>
-                <span v-else-if="copyBuildLinkFeedback"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                <span v-else><LucideLink :size="16" /></span>
-            </button>
-            <button class="build-header-icon" :class="{ copied: copyBuildCodeFeedback }" :disabled="buildSharing" v-tooltip="copyBuildCodeFeedback ? t('app_label_copied') : (t('app_build_copy_code') || 'Copy Code')" @click="$emit('copyBuildCode')">
-                <span v-if="buildSharing && !copyBuildCodeFeedback" class="loading-spinner loading-spinner-sm"></span>
-                <span v-else-if="copyBuildCodeFeedback"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                <span v-else><LucideHash :size="16" /></span>
-            </button>
-            <div class="build-import-inline">
-                <input class="build-import-input" :value="buildImportCode" @input="$emit('update:buildImportCode', $event.target.value)" :placeholder="t('app_build_import_placeholder') || 'Paste build code'" @keydown.enter="$emit('importBuildFromCode')" spellcheck="false">
-                <button class="build-header-icon" v-tooltip="t('app_build_import') || 'Import'" @click="$emit('importBuildFromCode')" :disabled="!buildImportCode.trim()">
-                    <LucideDownload :size="16" />
+
+            <span class="build-action-divider"></span>
+
+            <!-- Save -->
+            <div class="build-action-group">
+                <button class="build-header-icon" v-tooltip="t('app_build_save')" @click="$emit('update:buildSaveModalOpen', true)">
+                    <LucideSave :size="16" />
+                    <span class="build-header-icon-label">{{ t('app_build_save') }}</span>
                 </button>
-                <span v-if="buildImportError" class="build-import-error">{{ buildImportError }}</span>
+            </div>
+
+            <span class="build-action-divider build-action-divider-desktop"></span>
+
+            <!-- Desktop: inline actions -->
+            <div class="build-action-group build-actions-desktop">
+                <button class="build-header-icon" :class="{ copied: copyBuildLinkFeedback }" :disabled="buildSharing" v-tooltip="copyBuildLinkFeedback ? t('app_label_copied') : t('app_label_copy_link')" @click="$emit('copyBuildLink')">
+                    <span v-if="buildSharing && !copyBuildLinkFeedback" class="loading-spinner loading-spinner-sm"></span>
+                    <span v-else-if="copyBuildLinkFeedback"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    <span v-else><LucideLink :size="16" /></span>
+                </button>
+                <button class="build-header-icon" :class="{ copied: copyBuildCodeFeedback }" :disabled="buildSharing" v-tooltip="copyBuildCodeFeedback ? t('app_label_copied') : (t('app_build_copy_code') || 'Copy Code')" @click="$emit('copyBuildCode')">
+                    <span v-if="buildSharing && !copyBuildCodeFeedback" class="loading-spinner loading-spinner-sm"></span>
+                    <span v-else-if="copyBuildCodeFeedback"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    <span v-else><LucideHash :size="16" /></span>
+                </button>
+
+                <span class="build-action-divider"></span>
+
+                <button class="build-header-icon save-import-btn" v-tooltip="t('app_save_import_title') || 'Import Save File'" @click="$emit('openSaveImport')">
+                    <LucideFileUp :size="16" />
+                    <span class="build-header-icon-label">{{ t('app_save_import_title') || 'Import Save' }}</span>
+                </button>
+                <button class="build-header-icon" v-tooltip="t('app_build_import_code') || 'Import Code'" @click="$emit('openImportCode')">
+                    <LucideDownload :size="16" />
+                    <span class="build-header-icon-label">{{ t('app_build_import_code') || 'Import Code' }}</span>
+                </button>
+
+                <span class="build-action-divider"></span>
+
+                <button class="build-header-icon build-header-icon-danger" v-tooltip="t('app_build_clear')" @click="$emit('clearBuild')">
+                    <LucideTrash2 :size="16" />
+                    <span class="build-header-icon-label">{{ t('app_build_clear') }}</span>
+                </button>
+            </div>
+
+            <!-- Mobile: overflow menu -->
+            <div class="build-overflow-dropdown build-actions-mobile" v-click-outside="() => overflowOpen = false">
+                <button class="build-header-icon" @click="overflowOpen = !overflowOpen">
+                    <LucideEllipsisVertical :size="16" />
+                </button>
+                <div v-if="overflowOpen" class="build-overflow-menu">
+                    <button class="build-overflow-item" :class="{ copied: copyBuildLinkFeedback }" :disabled="buildSharing" @click="$emit('copyBuildLink')">
+                        <LucideLink :size="14" />
+                        <span>{{ copyBuildLinkFeedback ? t('app_label_copied') : t('app_label_copy_link') }}</span>
+                    </button>
+                    <button class="build-overflow-item" :class="{ copied: copyBuildCodeFeedback }" :disabled="buildSharing" @click="$emit('copyBuildCode')">
+                        <LucideHash :size="14" />
+                        <span>{{ copyBuildCodeFeedback ? t('app_label_copied') : (t('app_build_copy_code') || 'Copy Code') }}</span>
+                    </button>
+                    <div class="build-overflow-divider"></div>
+                    <button class="build-overflow-item save-import-btn" @click="$emit('openSaveImport'); overflowOpen = false">
+                        <LucideFileUp :size="14" />
+                        <span>{{ t('app_save_import_title') || 'Import Save File' }}</span>
+                    </button>
+                    <button class="build-overflow-item" @click="$emit('openImportCode'); overflowOpen = false">
+                        <LucideDownload :size="14" />
+                        <span>{{ t('app_build_import_code') || 'Import Code' }}</span>
+                    </button>
+                    <div class="build-overflow-divider"></div>
+                    <button class="build-overflow-item build-overflow-item-danger" @click="$emit('clearBuild'); overflowOpen = false">
+                        <LucideTrash2 :size="14" />
+                        <span>{{ t('app_build_clear') }}</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -521,8 +574,6 @@ export default {
         buildSharing: { type: Boolean, default: false },
         copyBuildLinkFeedback: { type: Boolean, default: false },
         copyBuildCodeFeedback: { type: Boolean, default: false },
-        buildImportCode: { type: String, default: '' },
-        buildImportError: { type: String, default: '' },
         buildOutfit: { type: Object, default: null },
         buildHelmet: { type: Object, default: null },
         buildBackpack: { type: Object, default: null },
@@ -566,7 +617,6 @@ export default {
         'update:buildPlayerName',
         'update:buildPlayerFaction',
         'update:buildSaveModalOpen',
-        'update:buildImportCode',
         'update:buildActiveWeaponTab',
         'update:buildLoadoutCollapsed',
         'update:buildHideGearStats',
@@ -578,7 +628,7 @@ export default {
         'clearBuild',
         'copyBuildLink',
         'copyBuildCode',
-        'importBuildFromCode',
+        'openImportCode',
         'openBuildPicker',
         'removeBuildSlot',
         'toggleBuildStatExpand',
@@ -620,6 +670,7 @@ export default {
         return {
             factionPickerOpen: false,
             savedDropdownOpen: false,
+            overflowOpen: false,
         };
     },
     methods: {
@@ -629,3 +680,164 @@ export default {
     },
 };
 </script>
+
+<style>
+/* ── Build header toolbar ── */
+.build-header-actions {
+    display: flex;
+    gap: 0.15rem;
+    align-items: center;
+    margin-left: auto;
+}
+.build-action-group {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+}
+.build-action-divider {
+    width: 1px;
+    height: 1.1rem;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 0.25rem;
+    flex-shrink: 0;
+}
+.build-header-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    min-width: 1.8rem;
+    height: 1.8rem;
+    padding: 0 0.25rem;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+}
+.build-header-icon > * {
+    pointer-events: none;
+}
+.build-header-icon:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.06);
+}
+.build-header-icon.copied {
+    color: #4ac45a;
+}
+.build-header-icon-label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    white-space: nowrap;
+    pointer-events: none;
+}
+.build-header-icon-danger {
+    color: var(--text-secondary);
+}
+.build-header-icon-danger:hover {
+    color: #f06a5e;
+    background: rgba(240, 106, 94, 0.1);
+}
+
+/* Inline badge (flows after label text) */
+.build-header-badge-inline {
+    background: var(--accent);
+    color: #000;
+    font-size: 0.5rem;
+    font-weight: 700;
+    min-width: 0.9rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0 0.2rem;
+    pointer-events: none;
+}
+
+/* ── Overflow menu (mobile) ── */
+.build-overflow-dropdown {
+    position: relative;
+}
+.build-overflow-menu {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    min-width: 11rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.25rem;
+    z-index: 120;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.build-overflow-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+    text-align: left;
+}
+.build-overflow-item:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.06);
+}
+.build-overflow-item.copied {
+    color: #4ac45a;
+}
+.build-overflow-item:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+.build-overflow-item-danger:hover {
+    color: #f06a5e;
+    background: rgba(240, 106, 94, 0.1);
+}
+.build-overflow-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 0.2rem 0.3rem;
+}
+
+/* ── Responsive: show/hide desktop vs mobile ── */
+.build-actions-mobile { display: none; }
+.build-actions-desktop { display: flex; align-items: center; gap: 0.15rem; }
+
+@media (max-width: 1200px) {
+    .build-header-icon-label { display: none; }
+}
+@media (max-width: 900px) {
+    .build-actions-desktop,
+    .build-action-divider-desktop { display: none; }
+    .build-actions-mobile { display: block; }
+}
+
+/* ── Import code modal banner ── */
+.build-import-code-banner {
+    min-height: 1.8rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #f06a5e;
+    transition: background 0.15s, border-color 0.15s;
+}
+.build-import-code-banner.visible {
+    background: rgba(240, 106, 94, 0.12);
+    border-color: rgba(240, 106, 94, 0.3);
+}
+.build-save-input-error {
+    border-color: rgba(240, 106, 94, 0.5) !important;
+}
+</style>

@@ -4,9 +4,11 @@
 <div class="modal-backdrop" v-if="open" @click.self="$emit('close')" style="z-index: 210;">
     <Transition name="modal" appear>
     <div class="modal build-save-modal" v-if="open">
-        <button class="modal-close" @click="$emit('close')">&times;</button>
+        <div class="save-import-header">
+            <h2 class="build-picker-title" style="margin:0">{{ t('app_build_save') }}</h2>
+            <button class="save-import-close" @click="$emit('close')">&times;</button>
+        </div>
         <div class="modal-body">
-            <h2 class="build-picker-title">{{ t('app_build_save') }}</h2>
             <div class="build-save-form">
                 <input type="text" :value="buildSaveName" @input="$emit('update:buildSaveName', $event.target.value)" :placeholder="t('app_build_name_placeholder')" class="build-save-input" ref="buildSaveInput" @keydown.enter="$emit('save')">
                 <button class="build-toolbar-btn" @click="$emit('save')" :disabled="!buildSaveName.trim()">{{ t('app_build_save') }}</button>
