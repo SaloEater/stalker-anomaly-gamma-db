@@ -19,7 +19,3 @@
 ## Interactive Maps
 - [ ] Interactive maps using Leaflet.js or similar
 - [ ] Map overlays for stashes, NPCs, etc.
-
-## Save Game Import
-- [ ] Import save game data into build planner
-- [ ] Import save game data into a statistics viewer

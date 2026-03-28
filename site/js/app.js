@@ -426,6 +426,16 @@ const app = createApp({
             buildImportCode: "",
             buildImportError: "",
             buildSharing: false,
+
+            // Save file import
+            saveImportModalOpen: false,
+            saveImportParsing: false,
+            saveImportError: "",
+            saveImportPreview: null,
+            saveImportFileName: "",
+            saveImportDragOver: false,
+            saveImportIncludeStash: true,
+            saveImportIncludeAmmo: false,
             toastMessage: "",
             toastType: "error",
 
@@ -4500,6 +4510,314 @@ const app = createApp({
             } finally {
                 this.buildSharing = false;
             }
+        },
+
+        // --- Save file import ---
+
+        openSaveImport() {
+            this.saveImportModalOpen = true;
+            this.saveImportParsing = false;
+            this.saveImportError = "";
+            this.saveImportPreview = null;
+            this.saveImportFileName = "";
+            this.saveImportDragOver = false;
+        },
+
+        closeSaveImport() {
+            this.saveImportModalOpen = false;
+            this.saveImportPreview = null;
+            this.saveImportError = "";
+            this.saveImportDragOver = false;
+        },
+
+        handleSaveImportDrop(event) {
+            event.preventDefault();
+            this.saveImportDragOver = false;
+            const files = event.dataTransfer?.files;
+            if (files?.length) this.parseSaveFiles(files);
+        },
+
+        handleSaveImportFile(event) {
+            const files = event.target?.files;
+            if (files?.length) this.parseSaveFiles(files);
+            event.target.value = "";
+        },
+
+        async parseSaveFiles(fileList) {
+            let scopFile = null, scocFile = null;
+            for (const f of fileList) {
+                const name = f.name.toLowerCase();
+                if (name.endsWith(".scop")) scopFile = f;
+                else if (name.endsWith(".scoc")) scocFile = f;
+            }
+            if (!scopFile) {
+                this.saveImportError = this.t("app_save_import_error_filetype") || "Please select a .scop save file";
+                return;
+            }
+            if (scopFile.size > 50 * 1024 * 1024) {
+                this.saveImportError = this.t("app_save_import_error_size") || "Save file too large (>50 MB)";
+                return;
+            }
+            await this.parseSaveFile(scopFile, scocFile);
+        },
+
+        async parseSaveFile(file, scocFile) {
+
+            this.saveImportParsing = true;
+            this.saveImportError = "";
+            this.saveImportPreview = null;
+            this.saveImportFileName = file.name;
+
+            try {
+                const buffer = await file.arrayBuffer();
+                const knownIds = new Set(this.index.map(e => e.id));
+                const result = ScopParser.parse(buffer, knownIds);
+
+                // Parse .scoc for equipped state if provided
+                let scocData = null;
+                if (scocFile) {
+                    try {
+                        const scocBuffer = await scocFile.arrayBuffer();
+                        scocData = ScocParser.parse(scocBuffer);
+                    } catch (e) { /* .scoc parsing is optional */ }
+                }
+
+                if (result.items.length === 0 && result.stashItems.length === 0) {
+                    this.saveImportError = this.t("app_save_import_error_empty") || "No recognized items found in actor inventory or stash";
+                    this.saveImportParsing = false;
+                    return;
+                }
+
+                // Build category lookup from index
+                const catMap = {};
+                for (const entry of this.index) catMap[entry.id] = entry.category;
+
+                // Belt item IDs from .scoc (if available)
+                const beltItemIds = scocData ? scocData.beltItemIds : null;
+
+                // Categorize items into loadout (equipped) vs inventory (carried)
+                const preview = {
+                    // Loadout: items we can confidently assign to build slots
+                    outfit: null,
+                    helmet: null,
+                    backpack: null,
+                    weapons: [],      // primary-type weapons (max 2)
+                    sidearms: [],     // pistols/melee (max 1)
+                    grenades: [],     // explosives (max 1)
+                    belts: [],        // belt attachments equipped (from .scoc)
+                    artifacts: [],    // artifacts equipped in belt (from .scoc)
+                    // Inventory: items carried but not necessarily equipped
+                    inventory: { weapons: [], sidearms: [], grenades: [], belts: [], artifacts: [], outfits: [], helmets: [] },
+                    ammo: [],
+                    skipped: [],      // food, medicine, etc. (not build-relevant)
+                    stash: { weapons: [], sidearms: [], grenades: [], helmets: [], outfits: [], belts: [], artifacts: [], ammo: [] },
+                    totalItems: result.items.length,
+                    stashCount: result.stashItems.length,
+                    objectCount: result.objectCount,
+                };
+
+                const categorizeBuildItem = (sectionName) => {
+                    const cat = catMap[sectionName];
+                    const slug = cat ? categorySlug(cat) : "";
+                    if (cat === "Outfits") return "outfits";
+                    if (cat === "Helmets") return "helmets";
+                    if (cat === "Belt Attachments") return "belts";
+                    if (cat === "Artefacts") return "artifacts";
+                    if (cat === "Ammo") return "ammo";
+                    if (cat === "Explosives") return "grenades";
+                    if (PRIMARY_WEAPON_SLUGS.includes(slug)) return "weapons";
+                    if (SIDEARM_SLUGS.includes(slug)) return "sidearms";
+                    return null;
+                };
+
+                // Helper to deduplicate: only add if not already present
+                const addUnique = (arr, id) => { if (!arr.includes(id)) arr.push(id); };
+
+                // Collect all raw ammo from inventory and stash, filter later
+                const rawAmmoInv = [];
+                const rawAmmoStash = [];
+
+                for (const item of result.items) {
+                    const cat = catMap[item.sectionName];
+                    const slug = cat ? categorySlug(cat) : "";
+                    if (cat === "Outfits") {
+                        if (!preview.outfit) preview.outfit = item.sectionName;
+                        else addUnique(preview.inventory.outfits, item.sectionName);
+                    } else if (cat === "Helmets") {
+                        if (!preview.helmet) preview.helmet = item.sectionName;
+                        else addUnique(preview.inventory.helmets, item.sectionName);
+                    } else if (cat === "Belt Attachments") {
+                        const fullItem = (this.categoryItems["belt-attachments"] || []).find(i => i.id === item.sectionName);
+                        if (fullItem && isBackpack(fullItem)) {
+                            if (!preview.backpack) preview.backpack = item.sectionName;
+                        } else {
+                            addUnique(preview.inventory.belts, item.sectionName);
+                        }
+                    } else if (cat === "Artefacts") {
+                        if (beltItemIds && beltItemIds.has(item.id)) {
+                            addUnique(preview.artifacts, item.sectionName);
+                        } else {
+                            addUnique(preview.inventory.artifacts, item.sectionName);
+                        }
+                    } else if (PRIMARY_WEAPON_SLUGS.includes(slug)) {
+                        if (preview.weapons.length < 2 && !preview.weapons.includes(item.sectionName)) {
+                            preview.weapons.push(item.sectionName);
+                        } else {
+                            addUnique(preview.inventory.weapons, item.sectionName);
+                        }
+                    } else if (SIDEARM_SLUGS.includes(slug)) {
+                        if (preview.sidearms.length < 1 && !preview.sidearms.includes(item.sectionName)) {
+                            preview.sidearms.push(item.sectionName);
+                        } else {
+                            addUnique(preview.inventory.sidearms, item.sectionName);
+                        }
+                    } else if (cat === "Explosives") {
+                        if (preview.grenades.length < 1 && !preview.grenades.includes(item.sectionName)) {
+                            preview.grenades.push(item.sectionName);
+                        } else {
+                            addUnique(preview.inventory.grenades, item.sectionName);
+                        }
+                    } else if (cat === "Ammo") {
+                        rawAmmoInv.push(item.sectionName);
+                    } else {
+                        preview.skipped.push(item.sectionName);
+                    }
+                }
+
+                // Categorize stash items (build-relevant only, deduplicated)
+                for (const item of result.stashItems) {
+                    const bucket = categorizeBuildItem(item.sectionName);
+                    if (bucket === "ammo") {
+                        rawAmmoStash.push(item.sectionName);
+                    } else if (bucket && preview.stash[bucket]) {
+                        addUnique(preview.stash[bucket], item.sectionName);
+                    }
+                }
+
+                // Build weapon->loaded ammo map and compatible ammo set
+                // First, build a map of sectionName -> ammoTypeIndex from parsed items
+                const wpnAmmoIdx = {};
+                for (const item of [...result.items, ...result.stashItems]) {
+                    if (item.ammoTypeIndex >= 0) wpnAmmoIdx[item.sectionName] = item.ammoTypeIndex;
+                    // Also map resolved names for addon-stripped weapons
+                    const ai = item.sectionName.indexOf("_wpn_addon_");
+                    if (ai > 0 && item.ammoTypeIndex >= 0) {
+                        const base = item.sectionName.substring(0, ai);
+                        wpnAmmoIdx[base] = item.ammoTypeIndex;
+                    }
+                }
+
+                const allWeaponIds = [...preview.weapons, ...preview.sidearms, ...preview.inventory.weapons, ...preview.inventory.sidearms, ...preview.stash.weapons, ...preview.stash.sidearms];
+                const compatibleAmmo = new Set();
+                const allWeaponSlugs = [...PRIMARY_WEAPON_SLUGS, ...SIDEARM_SLUGS];
+                preview.weaponAmmo = {}; // weaponSectionName -> loaded ammo ID
+                for (const wpnId of allWeaponIds) {
+                    for (const slug of allWeaponSlugs) {
+                        const wpn = (this.categoryItems[slug] || []).find(i => i.id === wpnId);
+                        if (wpn) {
+                            const types = (wpn.ui_ammo_types || "").split(";").filter(Boolean);
+                            const alt = (wpn.st_data_export_ammo_types_alt || "").split(";").filter(Boolean);
+                            const allTypes = [...types, ...alt];
+                            for (const t of allTypes) compatibleAmmo.add(t.replace(/-/g, "_"));
+                            // Resolve loaded ammo from ammoTypeIndex
+                            const idx = wpnAmmoIdx[wpnId];
+                            if (idx !== undefined && idx >= 0 && idx < allTypes.length) {
+                                preview.weaponAmmo[wpnId] = allTypes[idx].replace(/-/g, "_");
+                            }
+                            break;
+                        }
+                    }
+                }
+
+                // Filter ammo to only compatible types, deduplicated
+                for (const id of rawAmmoInv) {
+                    if (compatibleAmmo.has(id)) addUnique(preview.ammo, id);
+                }
+                for (const id of rawAmmoStash) {
+                    if (compatibleAmmo.has(id)) addUnique(preview.stash.ammo, id);
+                }
+
+                this.saveImportPreview = preview;
+            } catch (e) {
+                this.saveImportError = e.message || "Failed to parse save file";
+            } finally {
+                this.saveImportParsing = false;
+            }
+        },
+
+        saveImportItemName(sectionName) {
+            const entry = this.index.find(e => e.id === sectionName);
+            if (!entry) return sectionName;
+            return this.t(entry.name) || entry.displayName || sectionName;
+        },
+
+        saveImportResolveItem(sectionName) {
+            const entry = this.index.find(e => e.id === sectionName);
+            if (!entry) return null;
+            const slug = categorySlug(entry.category);
+            return (this.categoryItems[slug] || []).find(i => i.id === sectionName) || null;
+        },
+
+        saveImportHover(sectionName, event) {
+            const item = this.saveImportResolveItem(sectionName);
+            if (item) this.showBuildHover(item, event);
+        },
+
+        confirmSaveImport() {
+            const p = this.saveImportPreview;
+            if (!p) return;
+
+            this.clearBuild();
+
+            // Build data object for restoreBuildFromIds
+            const data = {
+                outfit: p.outfit || null,
+                helmet: p.helmet || null,
+                backpack: p.backpack || null,
+                belts: p.belts || [],
+                artifacts: p.artifacts || [],
+                weapon1: p.weapons[0] || null,
+                weapon2: p.weapons[1] || null,
+                sidearm: p.sidearms[0] || null,
+                grenade: p.grenades[0] || null,
+                ammo1: (p.weaponAmmo && p.weapons[0] && p.weaponAmmo[p.weapons[0]]) || null,
+                ammo2: (p.weaponAmmo && p.weapons[1] && p.weaponAmmo[p.weapons[1]]) || null,
+                ammoSidearm: (p.weaponAmmo && p.sidearms[0] && p.weaponAmmo[p.sidearms[0]]) || null,
+                inventory: [],
+            };
+
+            // Add carried inventory items (artifacts, belts, extra weapons, etc.)
+            const invSlotTypes = { weapons: "weapon", sidearms: "sidearm", grenades: "grenade", belts: "belt", artifacts: "artifact", outfits: "outfit", helmets: "helmet" };
+            for (const [bucket, slotType] of Object.entries(invSlotTypes)) {
+                for (const id of (p.inventory[bucket] || [])) {
+                    data.inventory.push({ id, slotType });
+                }
+            }
+            // Add ammo to inventory (already deduplicated and filtered to compatible)
+            if (this.saveImportIncludeAmmo) {
+                for (const id of p.ammo) {
+                    data.inventory.push({ id, slotType: "ammo" });
+                }
+            }
+            // Add stash items to inventory if enabled (already deduplicated)
+            if (this.saveImportIncludeStash) {
+                const seen = new Set([...p.weapons, ...p.sidearms, ...p.grenades, ...p.ammo, ...p.belts, ...p.artifacts, p.outfit, p.helmet, p.backpack, ...Object.values(p.inventory).flat()].filter(Boolean));
+                const stashSlotTypes = { weapons: "weapon", sidearms: "sidearm", grenades: "grenade", helmets: "helmet", outfits: "outfit", belts: "belt", artifacts: "artifact", ammo: "ammo" };
+                for (const [bucket, slotType] of Object.entries(stashSlotTypes)) {
+                    if (bucket === "ammo" && !this.saveImportIncludeAmmo) continue;
+                    for (const id of (p.stash[bucket] || [])) {
+                        if (!seen.has(id)) {
+                            seen.add(id);
+                            data.inventory.push({ id, slotType });
+                        }
+                    }
+                }
+            }
+
+            this.restoreBuildFromIds(data);
+            this.saveBuildToStorage();
+            this.pushUrlState();
+            this.closeSaveImport();
         },
 
         // Legacy URL param support for backwards compatibility with old shared links
