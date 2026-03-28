@@ -250,7 +250,16 @@
     "app_shortcuts_prev_item": "Previous item",
     "app_shortcuts_next_item": "Next item",
     "app_shortcuts_clear_filters": "Clear all filters",
-    "app_shortcuts_then": "then"
+    "app_shortcuts_then": "then",
+    "app_whats_new": "What's New",
+    "app_whats_new_dismiss": "Dismiss",
+    "app_whats_new_view_all": "See all changes",
+    "app_callout_done": "Got it",
+    "app_whats_new_save_import": "Import save files into build planner",
+    "app_callout_save_import_title": "Import Save File",
+    "app_callout_save_import_desc": "Load your S.T.A.L.K.E.R. save file to automatically populate your build planner with your current loadout.",
+    "app_callout_cross_pack_title": "Compare Across Packs",
+    "app_callout_cross_pack_desc": "See how this item's stats changed between different mod pack versions."
   },
   "ru": {
     "app_group_saved": "Сохранённые",
@@ -503,7 +512,16 @@
     "app_shortcuts_prev_item": "Предыдущий предмет",
     "app_shortcuts_next_item": "Следующий предмет",
     "app_shortcuts_clear_filters": "Сбросить все фильтры",
-    "app_shortcuts_then": "затем"
+    "app_shortcuts_then": "затем",
+    "app_whats_new": "Что нового",
+    "app_whats_new_dismiss": "Скрыть",
+    "app_whats_new_view_all": "Все изменения",
+    "app_callout_done": "Понятно",
+    "app_whats_new_save_import": "Импорт сохранений в планировщик билда",
+    "app_callout_save_import_title": "Импорт сохранения",
+    "app_callout_save_import_desc": "Загрузите файл сохранения S.T.A.L.K.E.R., чтобы автоматически заполнить планировщик билда вашим текущим снаряжением.",
+    "app_callout_cross_pack_title": "Сравнение между паками",
+    "app_callout_cross_pack_desc": "Посмотрите, как изменились характеристики этого предмета в разных версиях мод-пака."
   },
   "fr": {
     "app_group_saved": "Enregistré",
@@ -755,6 +773,15 @@
     "app_shortcuts_prev_item": "Objet précédent",
     "app_shortcuts_next_item": "Objet suivant",
     "app_shortcuts_clear_filters": "Effacer tous les filtres",
-    "app_shortcuts_then": "puis"
+    "app_shortcuts_then": "puis",
+    "app_whats_new": "Nouveautés",
+    "app_whats_new_dismiss": "Fermer",
+    "app_whats_new_view_all": "Voir tous les changements",
+    "app_callout_done": "Compris",
+    "app_whats_new_save_import": "Importer des sauvegardes dans le planificateur",
+    "app_callout_save_import_title": "Importer une sauvegarde",
+    "app_callout_save_import_desc": "Chargez votre fichier de sauvegarde S.T.A.L.K.E.R. pour remplir automatiquement le planificateur de build avec votre équipement actuel.",
+    "app_callout_cross_pack_title": "Comparer entre packs",
+    "app_callout_cross_pack_desc": "Voyez comment les statistiques de cet objet ont changé entre les différentes versions du mod pack."
   }
 }

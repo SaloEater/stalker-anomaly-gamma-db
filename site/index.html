@@ -43,6 +43,41 @@
 <transition name="toast-fade">
     <div v-if="toastMessage" class="toast" :class="'toast--' + toastType" @click="toastMessage = ''">{{ toastMessage }}</div>
 </transition>
+
+<!-- What's New banner -->
+<transition name="whats-new">
+    <div v-if="whatsNewVisible" class="whats-new-banner">
+        <div class="whats-new-header">
+            <span>{{ t('app_whats_new') }}</span>
+            <button class="whats-new-close" @click="dismissWhatsNew()">&times;</button>
+        </div>
+        <div class="whats-new-entries">
+            <div v-for="(entry, i) in whatsNewEntries" :key="i" class="whats-new-entry" :class="{ clickable: entry.action }" @click="whatsNewAction(entry)">
+                <span class="whats-new-emoji">{{ whatsNewEmoji(entry.type) }}</span>
+                <span class="whats-new-text">{{ entry.summaryKey ? t(entry.summaryKey) : (entry.summary || entry.text) }}</span>
+                <svg v-if="entry.action" class="whats-new-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+        </div>
+        <div class="whats-new-footer">
+            <a href="release-notes/" @click="dismissWhatsNew()">{{ t('app_whats_new_view_all') }}</a>
+            <button class="whats-new-dismiss" @click="dismissWhatsNew()">{{ t('app_whats_new_dismiss') }}</button>
+        </div>
+    </div>
+</transition>
+
+<!-- Feature callout spotlight -->
+<div v-if="calloutActive" class="callout-overlay" @click.self="dismissCallout()">
+    <div class="callout-spotlight" :style="calloutSpotlightStyle"></div>
+    <div class="callout-popover" ref="calloutPopover" :style="calloutPopoverStyle">
+        <div class="callout-arrow" ref="calloutArrow" :data-side="calloutArrowSide" :style="calloutArrowStyle"></div>
+        <div class="callout-popover-title">{{ calloutTitle }}</div>
+        <div class="callout-popover-desc">{{ calloutDesc }}</div>
+        <div class="callout-popover-actions">
+            <button class="callout-popover-next" @click="dismissCallout()">{{ t('app_callout_done') }}</button>
+        </div>
+    </div>
+</div>
+
 <header class="site-header" v-show="translations">
     <button class="hamburger-btn" @click="sidebarCollapsed ? toggleSidebarCollapse() : toggleSidebar()" :class="{ active: sidebarOpen, 'show-desktop': sidebarCollapsed }">
         <span></span><span></span><span></span>
@@ -609,6 +644,9 @@
                         </div>
                     </div>
                     <div class="build-header-actions">
+                        <button class="build-header-icon save-import-btn" v-tooltip="t('app_save_import_title') || 'Import Save File'" @click="openSaveImport()">
+                            <i data-lucide="file-up" width="16" height="16"></i>
+                        </button>
                         <div class="build-saved-dropdown" v-click-outside="() => buildSavedDropdownOpen = false">
                             <button class="build-header-icon" v-tooltip="t('app_build_saved_builds')" @click="buildSavedDropdownOpen = !buildSavedDropdownOpen">
                                 <i data-lucide="bookmark" width="16" height="16"></i>
@@ -647,9 +685,6 @@
                             </button>
                             <span v-if="buildImportError" class="build-import-error">{{ buildImportError }}</span>
                         </div>
-                        <button class="build-header-icon" v-tooltip="t('app_save_import_title') || 'Import Save File'" @click="openSaveImport()">
-                            <i data-lucide="file-up" width="16" height="16"></i>
-                        </button>
                     </div>
                 </div>
 
@@ -1348,7 +1383,7 @@
                         </button>
                     </div>
                     <div v-if="packs.length > 1" class="compare-wrap" v-click-outside="closeCompareMenu">
-                        <button class="copy-link-btn" :class="{ active: crossPackId }" @click.stop="compareMenuOpen = !compareMenuOpen" v-tooltip="t('app_label_compare_with')">
+                        <button class="copy-link-btn cross-pack-btn" :class="{ active: crossPackId }" @click.stop="compareMenuOpen = !compareMenuOpen" v-tooltip="t('app_label_compare_with')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg>
                         </button>
                         <div class="compare-menu" v-show="compareMenuOpen" @click.stop>
@@ -1872,5 +1907,6 @@
 <script src="js/scop-parser.js"></script>
 <script src="js/scoc-parser.js"></script>
 <script src="js/app.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1cf3ee5cf2ff433ba61e96174b20ae12", "spa": true}'></script>
 </body>
 </html>

@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2026-03-28
+
+### Added
+
+- What's New banner showing highlighted release notes entries on first visit after an update
+- Feature callouts that spotlight new UI elements when the user navigates to the relevant page
+- Ammo tooltips on weapon caliber badges — hover any ammo type on a gun to see an image, armor penetration, damage, accuracy, and cost per round (Evincars)
+- Clicking an ammo badge on a weapon now navigates directly to that ammo item (Evincars)
+
+### Changed
+
+- URLs are now path-based (`/db/gamma-0.9.4/rifles`) instead of query-based for cleaner shareable links and proper Cloudflare analytics tracking
+- Browser back/forward navigation now works correctly between categories and views
+- Save file import in the build planner — drag and drop .scop/.scoc save files to auto-populate your loadout, inventory, and stash contents with item hover previews
+
 ## 2026-03-26
 
 ### Added
