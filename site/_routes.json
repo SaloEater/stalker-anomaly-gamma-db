@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/data/*",
+    "/api/*",
+    "/img/*",
+    "/css/*",
+    "/js/*",
+    "/acknowledgements/*",
+    "/contact/*",
+    "/release-notes/*"
+  ]
+}

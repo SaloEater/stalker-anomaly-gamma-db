@@ -241,6 +241,32 @@ function categorySlug(category) {
     return category.toLowerCase().replace(/ /g, "-");
 }
 
+function buildPathUrl(state) {
+    if (state.buildPlanner) return "/build-planner";
+    if (state.versionCompare) return "/version-compare";
+    if (state.favorites && state.pack) return `/db/${state.pack}/favorites`;
+    if (state.recent && state.pack) return `/db/${state.pack}/recent`;
+    if (state.cat && state.pack) {
+        return `/db/${state.pack}/${categorySlug(state.cat)}`;
+    }
+    return "/";
+}
+
+function parsePathUrl(pathname) {
+    const result = { pack: null, cat: null, buildPlanner: false, favorites: false, recent: false, versionCompare: false };
+    const path = pathname.replace(/\/+$/, "") || "/";
+    if (path === "/build-planner") { result.buildPlanner = true; return result; }
+    if (path === "/version-compare") { result.versionCompare = true; return result; }
+    const m = path.match(/^\/db\/([^/]+)(?:\/([^/]+))?$/);
+    if (m) {
+        result.pack = m[1];
+        if (m[2] === "favorites") result.favorites = true;
+        else if (m[2] === "recent") result.recent = true;
+        else if (m[2]) result.cat = m[2];
+    }
+    return result;
+}
+
 function saveCategoryFilters(packId, slug, state) {
     try {
         localStorage.setItem(`catFilters:${packId}:${slug}`, JSON.stringify(state));
@@ -457,8 +483,8 @@ const app = createApp({
 
     computed: {
         dataBasePath() {
-            if (!this.activePack) return "data";
-            return `data/${this.activePack.id}`;
+            if (!this.activePack) return "/data";
+            return `/data/${this.activePack.id}`;
         },
 
         categoryCounts() {
@@ -1671,14 +1697,15 @@ const app = createApp({
                     .filter((g) => g.categories.length > 0);
                 this.rebuildGlobalFuse();
                 if (this.groupedCategories.length > 0) {
-                    const urlCat = new URLSearchParams(window.location.search).get("cat");
-                    if (urlCat === "build-planner") {
+                    const pathParsed = parsePathUrl(window.location.pathname);
+                    const urlCat = pathParsed.cat || new URLSearchParams(window.location.search).get("cat");
+                    if (urlCat === "build-planner" || pathParsed.buildPlanner) {
                         // Defer to mounted handler
-                    } else if (urlCat === "favorites") {
+                    } else if (urlCat === "favorites" || pathParsed.favorites) {
                         this.favoritesViewActive = true;
                         this.activeCategory = null;
                         this.sortCol = "pda_encyclopedia_name";
-                    } else if (urlCat === "recent") {
+                    } else if (urlCat === "recent" || pathParsed.recent) {
                         this.recentViewActive = true;
                         this.activeCategory = null;
                         this.sortCol = "pda_encyclopedia_name";
@@ -1744,7 +1771,7 @@ const app = createApp({
             localStorage.setItem("selectedPack", this.activePack.id);
 
             // Update URL (clears stale filter/sort params)
-            this.pushUrlState();
+            this.pushUrlState(true);
 
             // Update title
             document.title = `Stalker Anomaly Tools [${this.activePack.name}]`;
@@ -1828,7 +1855,8 @@ const app = createApp({
                     this.includeAltAmmo = saved.includeAltAmmo || false;
                 }
             }
-            this.pushUrlState();
+            if (!this._restoringUrl) this.pushUrlState(true);
+            else this.pushUrlState();
 
             if (cat === CAT.ALL_WEAPONS) {
                 const slug = "all-weapons";
@@ -2166,7 +2194,7 @@ const app = createApp({
         openVersionCompare() {
             this.resetViewState();
             this.versionCompareActive = true;
-            this.pushUrlState();
+            this.pushUrlState(true);
             if (this.crossPackId) this.loadVersionCompareData();
         },
 
@@ -2354,7 +2382,7 @@ const app = createApp({
         selectFavorites() {
             this.resetViewState();
             this.favoritesViewActive = true;
-            this.pushUrlState();
+            this.pushUrlState(true);
         },
 
         // Recent items
@@ -2387,7 +2415,7 @@ const app = createApp({
         selectRecent() {
             this.resetViewState();
             this.recentViewActive = true;
-            this.pushUrlState();
+            this.pushUrlState(true);
         },
 
         async openCompare() {
@@ -3707,37 +3735,34 @@ const app = createApp({
             return variants;
         },
 
-        pushUrlState() {
+        pushUrlState(push) {
             const url = new URL(window.location);
-            if (this.activePack) url.searchParams.set("pack", this.activePack.id);
+            // Clear legacy query params now handled by path
+            url.searchParams.delete("pack");
+            url.searchParams.delete("cat");
             // Clear legacy build params
             for (const k of ["outfit","helmet","backpack","belt","arts","pn","pf","bsb","w1","w2","a1","a2","wp","ws","wsi","wg","ap","as","asi"]) url.searchParams.delete(k);
-            if (this.buildPlannerActive) {
-                url.searchParams.set("cat", "build-planner");
-                url.searchParams.delete("favonly");
-            } else {
+
+            // Build pathname
+            const pathState = {
+                pack: this.activePack?.id,
+                cat: this.activeCategory,
+                buildPlanner: this.buildPlannerActive,
+                favorites: this.favoritesViewActive,
+                recent: this.recentViewActive,
+                versionCompare: this.versionCompareActive,
+            };
+            url.pathname = buildPathUrl(pathState);
+
+            if (!this.buildPlannerActive) {
                 // Clear share hash when leaving build planner
                 if (url.hash.startsWith("#" + BUILD_HASH_PREFIX) || url.hash.startsWith("#b/")) url.hash = "";
-                if (this.versionCompareActive) {
-                    url.searchParams.set("cat", "version-compare");
-                    url.searchParams.delete("favonly");
-                } else if (this.favoritesViewActive) {
-                    url.searchParams.set("cat", "favorites");
-                    url.searchParams.delete("favonly");
-                } else if (this.recentViewActive) {
-                    url.searchParams.set("cat", "recent");
-                    url.searchParams.delete("favonly");
-                } else if (this.activeCategory) {
-                    url.searchParams.set("cat", categorySlug(this.activeCategory));
-                    if (this.showFavoritesOnly) {
-                        url.searchParams.set("favonly", "1");
-                    } else {
-                        url.searchParams.delete("favonly");
-                    }
-                } else {
-                    url.searchParams.delete("cat");
-                    url.searchParams.delete("favonly");
-                }
+            }
+
+            if (this.activeCategory && this.showFavoritesOnly) {
+                url.searchParams.set("favonly", "1");
+            } else {
+                url.searchParams.delete("favonly");
             }
             if (this.sortCol && this.sortCol !== "pda_encyclopedia_name") {
                 url.searchParams.set("sort", this.sortCol);
@@ -3786,7 +3811,11 @@ const app = createApp({
             if (this.locale) {
                 url.searchParams.set("lang", this.locale);
             }
-            history.replaceState(null, "", url);
+            if (push) {
+                history.pushState(null, "", url);
+            } else {
+                history.replaceState(null, "", url);
+            }
 
             // Persist filter state for the active category
             if (this.activeCategory && this.activePack) {
@@ -3801,19 +3830,22 @@ const app = createApp({
             }
         },
 
-        restoreUrlState(search) {
+        restoreUrlState(search, pathname) {
             const params = new URLSearchParams(search || window.location.search);
-            if (params.get("cat") === "build-planner") {
+            const parsed = parsePathUrl(pathname || window.location.pathname);
+            // Also support legacy ?cat= query param for backward compat
+            const legacyCat = params.get("cat");
+            if (parsed.buildPlanner || legacyCat === "build-planner") {
                 // Will be handled after data loads
                 this._pendingBuildRestore = params;
-            } else if (params.get("cat") === "version-compare") {
+            } else if (parsed.versionCompare || legacyCat === "version-compare") {
                 this.versionCompareActive = true;
                 this.activeCategory = null;
                 if (this.crossPackId) this.loadVersionCompareData();
-            } else if (params.get("cat") === "favorites") {
+            } else if (parsed.favorites || legacyCat === "favorites") {
                 this.favoritesViewActive = true;
                 this.activeCategory = null;
-            } else if (params.get("cat") === "recent") {
+            } else if (parsed.recent || legacyCat === "recent") {
                 this.recentViewActive = true;
                 this.activeCategory = null;
             }
@@ -3977,7 +4009,8 @@ const app = createApp({
             this.loadSavedBuilds();
             this.buildInventorySort = localStorage.getItem("buildInventorySort") || "none";
             this.buildWeaponCompareSlot = localStorage.getItem("buildWeaponCompareSlot") || "primary";
-            this.pushUrlState();
+            if (!this._restoringUrl) this.pushUrlState(true);
+            else this.pushUrlState();
         },
 
         isAltAmmo(weapon, ammoItem) {
@@ -5661,21 +5694,38 @@ const app = createApp({
             }
         });
 
+        // 0. Backward-compat: redirect legacy query-param URLs to path-based URLs
+        // Pack-dependent paths (db categories, favorites, recent) are redirected later
+        // in mounted() after the pack is known. Only pack-independent paths redirect here.
+        {
+            const lp = new URLSearchParams(window.location.search);
+            const legacyCat = lp.get("cat");
+            if (legacyCat === "build-planner" || legacyCat === "version-compare") {
+                const newPath = legacyCat === "build-planner" ? "/build-planner" : "/version-compare";
+                lp.delete("cat");
+                lp.delete("pack");
+                const qs = lp.toString();
+                history.replaceState(null, "", newPath + (qs ? "?" + qs : "") + window.location.hash);
+            }
+        }
+
         // 1. Load app translations (pack-independent UI strings)
         try {
-            const appTrRes = await fetch("data/app_translations.json");
+            const appTrRes = await fetch("/data/app_translations.json");
             if (appTrRes.ok) this.appTranslations = await appTrRes.json();
         } catch { /* ignore */ }
 
         // 2. Load pack manifest
         try {
-            const packRes = await fetch("data/packs.json");
+            const packRes = await fetch("/data/packs.json");
             const manifest = await packRes.json();
             this.packs = manifest.packs;
+            this._defaultPackId = manifest.default;
 
-            // Determine initial pack: URL param > localStorage > manifest default
-            const urlParams = new URLSearchParams(window.location.search);
-            const urlPack = urlParams.get("pack");
+            // Determine initial pack: path > legacy query param > localStorage > manifest default
+            const parsedPath = parsePathUrl(window.location.pathname);
+            const legacyUrlPack = new URLSearchParams(window.location.search).get("pack");
+            const urlPack = parsedPath.pack || legacyUrlPack;
             const savedPack = localStorage.getItem("selectedPack");
             const targetId = urlPack || savedPack || manifest.default;
             this.activePack = this.packs.find((p) => p.id === targetId) || this.packs[0];
@@ -5687,6 +5737,26 @@ const app = createApp({
 
             // Update title
             document.title = `Stalker Anomaly Tools [${this.activePack.name}]`;
+
+            // Redirect remaining legacy query-param URLs now that pack is known
+            const lp2 = new URLSearchParams(window.location.search);
+            const legacyCat2 = lp2.get("cat");
+            const legacyPack2 = lp2.get("pack");
+            if (legacyCat2 || legacyPack2) {
+                const pack = this.activePack.id;
+                const isFav = legacyCat2 === "favorites";
+                const isRecent = legacyCat2 === "recent";
+                const newPath = buildPathUrl({
+                    pack,
+                    cat: (isFav || isRecent) ? null : legacyCat2,
+                    favorites: isFav,
+                    recent: isRecent,
+                });
+                lp2.delete("cat");
+                lp2.delete("pack");
+                const qs = lp2.toString();
+                history.replaceState(null, "", newPath + (qs ? "?" + qs : "") + window.location.hash);
+            }
         } catch (e) {
             console.error("Failed to load packs manifest:", e);
         }
@@ -5789,11 +5859,51 @@ const app = createApp({
             }
         });
 
+        // 7b. Handle popstate (back/forward) navigation
+        window.addEventListener("popstate", async () => {
+            const parsed = parsePathUrl(window.location.pathname);
+            this._restoringUrl = true;
+            // Handle pack switch if path includes a pack
+            if (parsed.pack && this.activePack?.id !== parsed.pack) {
+                const newPack = this.packs.find(p => p.id === parsed.pack);
+                if (newPack) {
+                    this.activePack = newPack;
+                    localStorage.setItem("selectedPack", newPack.id);
+                    document.title = `Stalker Anomaly Tools [${newPack.name}]`;
+                    await this.loadPackData();
+                }
+            }
+            if (parsed.buildPlanner) {
+                if (!this.buildPlannerActive) await this.openBuildPlanner();
+            } else if (parsed.favorites) {
+                this.resetViewState();
+                this.favoritesViewActive = true;
+            } else if (parsed.recent) {
+                this.resetViewState();
+                this.recentViewActive = true;
+            } else if (parsed.versionCompare) {
+                this.resetViewState();
+                this.versionCompareActive = true;
+                if (this.crossPackId) this.loadVersionCompareData();
+            } else if (parsed.cat) {
+                const match = this.categories.find(c => categorySlug(c) === parsed.cat) || [...VIRTUAL_CATEGORIES].find(c => categorySlug(c) === parsed.cat);
+                if (match) await this.selectCategory(match);
+            } else {
+                // Root path — select default category
+                if (this.groupedCategories.length > 0) {
+                    await this.selectCategory(this.groupedCategories[0].categories[0]);
+                }
+            }
+            // Restore filter state from query params
+            this.restoreUrlState(window.location.search, window.location.pathname);
+            this._restoringUrl = false;
+        });
+
         this.$nextTick(() => lucide.createIcons());
 
         // 8. Check for unseen release notes
         try {
-            const rnRes = await fetch("data/release-notes.json", { cache: "no-cache" });
+            const rnRes = await fetch("/data/release-notes.json", { cache: "no-cache" });
             const rnData = await rnRes.json();
             if (rnData.length) {
                 const hash = await this.releaseNotesHash(rnData);
