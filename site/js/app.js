@@ -248,6 +248,7 @@ function categorySlug(category) {
 
 function buildPathUrl(state) {
     if (state.buildPlanner && state.pack) return `/db/${state.pack}/build-planner`;
+    if (state.maps && state.pack) return `/db/${state.pack}/maps`;
     if (state.versionCompare && state.pack) return `/db/${state.pack}/version-compare`;
     if (state.favorites && state.pack) return `/db/${state.pack}/favorites`;
     if (state.recent && state.pack) return `/db/${state.pack}/recent`;
@@ -258,7 +259,7 @@ function buildPathUrl(state) {
 }
 
 function parsePathUrl(pathname) {
-    const result = { pack: null, cat: null, buildPlanner: false, favorites: false, recent: false, versionCompare: false };
+    const result = { pack: null, cat: null, buildPlanner: false, maps: false, favorites: false, recent: false, versionCompare: false };
     const path = pathname.replace(/\/+$/, "") || "/";
     // Legacy non-pack-scoped paths
     if (path === "/build-planner") { result.buildPlanner = true; return result; }
@@ -267,6 +268,7 @@ function parsePathUrl(pathname) {
     if (m) {
         result.pack = m[1];
         if (m[2] === "build-planner") result.buildPlanner = true;
+        else if (m[2] === "maps") result.maps = true;
         else if (m[2] === "version-compare") result.versionCompare = true;
         else if (m[2] === "favorites") result.favorites = true;
         else if (m[2] === "recent") result.recent = true;
@@ -328,7 +330,7 @@ export const appDefinition = {
             showContentSpinner: false,
             _spinnerTimer: null,
             _spinnerShownAt: null,
-            sortCol: null,
+            sortCol: "pda_encyclopedia_name",
             sortAsc: true,
             viewMode: "tiles",
 
@@ -411,6 +413,7 @@ export const appDefinition = {
             buildPlayerName: "Stalker",
             buildPlayerFaction: "stalker",
             buildPlannerActive: false,
+            mapsActive: false,
             versionCompareActive: false,
             versionCompareLoading: false,
             versionCompareResults: [],
@@ -1770,6 +1773,9 @@ export const appDefinition = {
                     const urlCat = pathParsed.cat || new URLSearchParams(window.location.search).get("cat");
                     if (urlCat === "build-planner" || pathParsed.buildPlanner) {
                         // Defer to mounted handler
+                    } else if (urlCat === "maps" || pathParsed.maps) {
+                        this.mapsActive = true;
+                        this.activeCategory = null;
                     } else if (urlCat === "version-compare" || pathParsed.versionCompare) {
                         // Defer to restoreUrlState
                     } else if (urlCat === "favorites" || pathParsed.favorites) {
@@ -1902,6 +1908,8 @@ export const appDefinition = {
             const previousCategory = this.activeCategory;
 
             this.buildPlannerActive = false;
+            this.mapsActive = false;
+            this.versionCompareActive = false;
             this.favoritesViewActive = false;
             this.recentViewActive = false;
             this.showFavoritesOnly = false;
@@ -2481,6 +2489,7 @@ export const appDefinition = {
 
         resetViewState() {
             this.buildPlannerActive = false;
+            this.mapsActive = false;
             this.versionCompareActive = false;
             this.favoritesViewActive = false;
             this.recentViewActive = false;
@@ -2496,6 +2505,17 @@ export const appDefinition = {
             this.versionCompareCategoryFilter = [];
             if (this.$refs.filterBar) this.$refs.filterBar.closeFilterPanel();
             this.sidebarOpen = false;
+        },
+
+        openItemDb() {
+            const cat = this.activeCategory || (this.groupedCategories.length && this.groupedCategories[0].categories[0]);
+            if (cat) this.selectCategory(cat);
+        },
+
+        openMaps() {
+            this.resetViewState();
+            this.mapsActive = true;
+            this.pushUrlState(true);
         },
 
         selectFavorites() {
@@ -3814,6 +3834,7 @@ export const appDefinition = {
                 pack: this.activePack?.id,
                 cat: this.activeCategory,
                 buildPlanner: this.buildPlannerActive,
+                maps: this.mapsActive,
                 favorites: this.favoritesViewActive,
                 recent: this.recentViewActive,
                 versionCompare: this.versionCompareActive,
@@ -3920,6 +3941,9 @@ export const appDefinition = {
             if (parsed.buildPlanner || legacyCat === "build-planner") {
                 // Will be handled after data loads
                 this._pendingBuildRestore = params;
+            } else if (parsed.maps || legacyCat === "maps") {
+                this.mapsActive = true;
+                this.activeCategory = null;
             } else if (parsed.versionCompare || legacyCat === "version-compare") {
                 this.versionCompareActive = true;
                 this.activeCategory = null;

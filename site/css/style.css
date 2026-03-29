@@ -190,7 +190,7 @@ a:hover {
 .site-header {
     background: #141414;
     border-bottom: 1px solid var(--border);
-    padding: 0.5rem 1.5rem 0.5rem 0.75rem;
+    padding: 0.3rem 1.5rem 0.3rem 0.75rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -204,7 +204,7 @@ a:hover {
     position: relative;
 }
 .site-logo {
-    height: 2.5rem;
+    height: 2.2rem;
     width: auto;
     flex-shrink: 0;
     opacity: 0.75;
@@ -255,6 +255,39 @@ a:hover {
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+}
+
+/* Nav bar (link bar below header) */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: #141414;
+    border-bottom: 1px solid var(--border);
+    padding: 0 0.75rem;
+    flex-shrink: 0;
+}
+.nav-bar-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+}
+.nav-bar-item:hover {
+    color: var(--text);
+}
+.nav-bar-item.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
 }
 
 /* Pack selector */
@@ -681,6 +714,20 @@ button.header-link {
 }
 .layout.sidebar-collapsed .content {
     padding-left: 0.75rem;
+}
+
+/* Hide sidebar for tool views (Build Planner, Version Compare) */
+.layout.sidebar-hidden {
+    grid-template-columns: 0px 1fr;
+}
+.layout.sidebar-hidden .sidebar {
+    border-right: none;
+    overflow: hidden;
+    visibility: hidden;
+}
+.layout.sidebar-hidden .content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 .hamburger-btn.show-desktop {
     display: flex;
@@ -4244,7 +4291,7 @@ kbd {
 /* Build header toolbar styles are in BuildPlanner.vue <style> block */
 
 .build-planner {
-    padding: 0 1.5rem 0.5rem 0;
+    padding: 0 0.75rem 0.5rem 0;
     overflow-y: auto;
     flex: 1;
     min-height: 0;

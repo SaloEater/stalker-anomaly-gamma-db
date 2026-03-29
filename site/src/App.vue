@@ -50,8 +50,14 @@
     :has-unseen-release-notes="hasUnseenReleaseNotes"
     :sidebar-collapsed="sidebarCollapsed"
     :sidebar-open="sidebarOpen"
+    :build-planner-active="buildPlannerActive"
+    :maps-active="mapsActive"
+    :item-db-active="!buildPlannerActive && !mapsActive"
     @toggle-sidebar-collapse="toggleSidebarCollapse()"
     @toggle-sidebar="toggleSidebar()"
+    @open-item-db="openItemDb()"
+    @open-maps="openMaps()"
+    @open-build-planner="openBuildPlanner()"
     @switch-pack="(p) => { activePack = p; switchPack() }"
     @change-locale="(id) => { locale = id; onLocaleChange() }"
     @open-shortcut-help="shortcutHelpOpen = true"
@@ -62,7 +68,7 @@
     @select-search-result="(id) => { lastGlobalQuery = globalQuery; globalQuery = ''; navigateToItem(id) }"
 />
 
-<div class="layout" :class="{ 'sidebar-collapsed': sidebarCollapsed }">
+<div class="layout" :class="{ 'sidebar-collapsed': sidebarCollapsed, 'sidebar-hidden': buildPlannerActive || mapsActive }">
     <SidebarNav
         :translations="translations"
         :sidebar-open="sidebarOpen"
@@ -77,7 +83,6 @@
         :favorites-view-active="favoritesViewActive"
         :recent-view-active="recentViewActive"
         @toggle-group="toggleGroup"
-        @open-build-planner="openBuildPlanner()"
         @open-version-compare="openVersionCompare()"
         @select-favorites="selectFavorites()"
         @select-recent="selectRecent()"
@@ -87,11 +92,12 @@
     <div class="sidebar-backdrop" v-show="sidebarOpen" @click="closeSidebar()"></div>
 
     <main class="content">
-        <div v-show="showContentSpinner" class="loading-screen">
+        <MapsView v-if="mapsActive" />
+        <div v-show="showContentSpinner && !mapsActive" class="loading-screen">
             <div class="loading-spinner"></div>
             <p class="loading-text">{{ t('app_label_loading') }}</p>
         </div>
-        <div v-show="!loading" class="content-inner">
+        <div v-show="!loading && !mapsActive" class="content-inner">
             <FilterBar
                 ref="filterBar"
                 :filter-input="filterInput"
@@ -482,6 +488,7 @@ import ItemGrid from "./components/ItemGrid.vue";
 import ItemDetailModal from "./components/ItemDetailModal.vue";
 import { defineAsyncComponent } from 'vue';
 const BuildPlanner = defineAsyncComponent(() => import('./components/BuildPlanner.vue'));
+const MapsView = defineAsyncComponent(() => import('./components/MapsView.vue'));
 import ComparePanel from "./components/ComparePanel.vue";
 import CraftingTreesTileView from "./components/crafting-trees-page/CraftingTreesTileView.vue";
 import MaterialsView from "./components/MaterialsView.vue";
@@ -511,6 +518,7 @@ export default {
     ItemGrid,
     ItemTable,
     ItemDetailModal,
+    MapsView,
     MaterialsView,
     OutfitExchangeView,
     QuickNavModal,

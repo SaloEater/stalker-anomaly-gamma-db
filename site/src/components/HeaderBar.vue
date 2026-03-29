@@ -11,7 +11,6 @@
                 <svg class="pack-chevron" :class="{ open: packOpen }" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div v-else class="header-pack-label">{{ activePack?.name || 'GAMMA' }}</div>
-            <h1>{{ t('app_label_database') }}</h1>
         </div>
         <div class="pack-menu" v-show="packOpen">
             <button v-for="p in sortedPacks" :key="p.id" class="pack-menu-item" :class="{ active: activePack?.id === p.id }" @click="$emit('switchPack', p); packOpen = false">
@@ -44,6 +43,20 @@
         <div class="header-drawer-top">
             <button class="header-drawer-close" @click.stop="overflowOpen = false">&times;</button>
         </div>
+        <div class="header-drawer-label">{{ t('app_group_tools') }}</div>
+        <button class="header-drawer-item" :class="{ active: itemDbActive }" @click="$emit('openItemDb'); overflowOpen = false">
+            <LucideDatabase :size="16" />
+            <span>{{ t('app_nav_item_db') }}</span>
+        </button>
+        <button class="header-drawer-item" :class="{ active: buildPlannerActive }" @click="$emit('openBuildPlanner'); overflowOpen = false">
+            <LucideHammer :size="16" />
+            <span>{{ t('app_cat_build_planner') }}</span>
+        </button>
+        <button class="header-drawer-item" :class="{ active: mapsActive }" @click="$emit('openMaps'); overflowOpen = false">
+            <LucideMap :size="16" />
+            <span>{{ t('app_nav_maps') }}</span>
+        </button>
+        <div class="header-drawer-divider"></div>
         <template v-if="packs.length > 1">
             <div class="header-drawer-label">{{ t('app_drawer_pack') || 'Pack' }}</div>
             <button class="header-drawer-item" v-for="p in sortedPacks" :key="p.id" :class="{ active: activePack?.id === p.id }" @click="$emit('switchPack', p); overflowOpen = false">
@@ -153,6 +166,20 @@
     </div>
     </Transition>
 </header>
+<nav class="nav-bar header-desktop-items" v-show="translations">
+    <button class="nav-bar-item" :class="{ active: itemDbActive }" @click="$emit('openItemDb')">
+        <LucideDatabase :size="14" />
+        {{ t('app_nav_item_db') }}
+    </button>
+    <button class="nav-bar-item" :class="{ active: buildPlannerActive }" @click="$emit('openBuildPlanner')">
+        <LucideHammer :size="14" />
+        {{ t('app_cat_build_planner') }}
+    </button>
+    <button class="nav-bar-item" :class="{ active: mapsActive }" @click="$emit('openMaps')">
+        <LucideMap :size="14" />
+        {{ t('app_nav_maps') }}
+    </button>
+</nav>
 </template>
 
 <script>
@@ -170,11 +197,15 @@ export default {
         hasUnseenReleaseNotes: { type: Boolean, default: false },
         sidebarCollapsed: { type: Boolean, default: false },
         sidebarOpen: { type: Boolean, default: false },
+        buildPlannerActive: { type: Boolean, default: false },
+        mapsActive: { type: Boolean, default: false },
+        itemDbActive: { type: Boolean, default: false },
     },
     emits: [
         'toggleSidebarCollapse', 'toggleSidebar', 'switchPack',
         'changeLocale', 'openShortcutHelp', 'clearGlobalQuery',
         'update:globalQuery', 'search', 'escapeSearch', 'selectSearchResult',
+        'openItemDb', 'openMaps', 'openBuildPlanner',
     ],
     inject: ['t', 'tName', 'tCat'],
     computed: {

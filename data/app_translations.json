@@ -1,6 +1,6 @@
 {
   "en": {
-    "app_group_saved": "Saved",
+    "app_group_saved": "Quick Access",
     "app_group_weapons": "Weapons",
     "app_group_ammo_explosives": "Ammo & Explosives",
     "app_group_equipment": "Equipment",
@@ -184,6 +184,10 @@
     "app_group_crafting": "Crafting",
     "app_type_backpack": "Backpack",
     "app_group_tools": "Tools",
+    "app_nav_item_db": "Item DB",
+    "app_nav_maps": "Maps",
+    "app_maps_coming_soon": "Interactive maps coming soon.",
+    "app_maps_wip_banner": "Interactive map is a work in progress. More features and markers coming soon.",
     "app_cat_build_planner": "Build Planner",
     "app_cat_version_compare": "Version Compare",
     "app_label_select_pack": "Select pack",
@@ -284,7 +288,7 @@
     "app_quick_nav_hint_close": "close"
   },
   "ru": {
-    "app_group_saved": "Сохранённые",
+    "app_group_saved": "Быстрый доступ",
     "app_group_weapons": "Оружие",
     "app_group_ammo_explosives": "Боеприпасы и взрывчатка",
     "app_group_equipment": "Снаряжение",
@@ -468,6 +472,10 @@
     "app_group_crafting": "Крафт",
     "app_type_backpack": "Рюкзак",
     "app_group_tools": "Инструменты",
+    "app_nav_item_db": "База предметов",
+    "app_nav_maps": "Карты",
+    "app_maps_coming_soon": "Интерактивные карты скоро.",
+    "app_maps_wip_banner": "Интерактивная карта в разработке. Новые функции и метки скоро появятся.",
     "app_cat_build_planner": "Сборка",
     "app_cat_version_compare": "Сравнение версий",
     "app_label_select_pack": "Выберите пак",
@@ -567,7 +575,7 @@
     "app_quick_nav_hint_close": "закрыть"
   },
   "fr": {
-    "app_group_saved": "Enregistré",
+    "app_group_saved": "Accès rapide",
     "app_group_weapons": "Armes",
     "app_group_ammo_explosives": "Munitions et explosifs",
     "app_group_equipment": "Équipement",
@@ -751,6 +759,9 @@
     "app_group_crafting": "Fabrication",
     "app_type_backpack": "Sac à dos",
     "app_group_tools": "Outils",
+    "app_nav_item_db": "Objets",
+    "app_nav_maps": "Cartes",
+    "app_maps_coming_soon": "Cartes interactives bientôt disponibles.",
     "app_cat_build_planner": "Planificateur de build",
     "app_cat_version_compare": "Comparaison de versions",
     "app_label_select_pack": "Sélectionner un pack",
