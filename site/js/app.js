@@ -1115,15 +1115,21 @@ export const appDefinition = {
                 const favSet = new Set(this.favoriteIds);
                 let items = this.index.filter(i => favSet.has(i.id));
                 if (!this.filterQuery.trim()) return items;
+                const q = this.filterQuery.trim();
+                const idHits = this.idMatchItems(items, q);
+                if (idHits) return idHits;
                 const fuse = new Fuse(items, { keys: ["localeName", "id"], threshold: 0.35 });
-                return fuse.search(this.filterQuery).map(r => r.item);
+                return fuse.search(q).map(r => r.item);
             }
             if (this.recentViewActive) {
                 const indexMap = new Map(this.index.map(i => [i.id, i]));
                 let items = this.recentIds.map(id => indexMap.get(id)).filter(Boolean);
                 if (!this.filterQuery.trim()) return items;
+                const q = this.filterQuery.trim();
+                const idHits = this.idMatchItems(items, q);
+                if (idHits) return idHits;
                 const fuse = new Fuse(items, { keys: ["localeName", "id"], threshold: 0.35 });
-                return fuse.search(this.filterQuery).map(r => r.item);
+                return fuse.search(q).map(r => r.item);
             }
             if (!this.activeCategory) return [];
             const slug = categorySlug(this.activeCategory);
@@ -1145,10 +1151,13 @@ export const appDefinition = {
                 items = items.filter(i => favSet.has(i.id));
             }
             if (!this.filterQuery.trim()) return items;
+            const q = this.filterQuery.trim();
+            const idHits = this.idMatchItems(items, q);
+            if (idHits) return idHits;
             const fuse = this.categoryFuse[slug];
             if (!fuse) return items;
             const filtered = new Set(items);
-            return fuse.search(this.filterQuery).map((r) => r.item).filter((i) => filtered.has(i));
+            return fuse.search(q).map((r) => r.item).filter((i) => filtered.has(i));
         },
 
         sortedItems() {
@@ -1900,15 +1909,44 @@ export const appDefinition = {
             }
         },
 
+        idMatchItems(items, q) {
+            const exact = items.find(i => i.id === q);
+            if (exact) return [exact];
+            const prefix = items.filter(i => i.id.startsWith(q));
+            if (prefix.length) return prefix;
+            return null;
+        },
+
+        globalSearchFilter(items) {
+            return items.filter(item => {
+                if (this.hideNoDrop && item.hasNpcWeaponDrop === false) return false;
+                if (this.hideUnusedAmmo && item.category === 'Ammo' && this.ammoWeaponsCache) {
+                    const weapons = this.ammoWeaponsCache[item.id];
+                    if (!weapons || weapons.length === 0) return false;
+                    if (this.hideNoDrop && !weapons.some(w => !w.noDrop)) return false;
+                }
+                return true;
+            });
+        },
+
         globalSearch() {
             if (!this.globalQuery.trim()) {
                 this.globalResults = [];
                 return;
             }
+            const q = this.globalQuery.trim();
+            const pool = this.globalSearchFilter(this.index);
+            const idHits = this.idMatchItems(pool, q);
+            if (idHits) {
+                this.globalResults = idHits;
+                return;
+            }
+            const poolSet = new Set(pool);
             this.globalResults = this.fuse
-                .search(this.globalQuery)
+                .search(q)
                 .slice(0, 50)
-                .map((r) => r.item);
+                .map((r) => r.item)
+                .filter(i => poolSet.has(i));
         },
 
         async selectCategory(cat) {
