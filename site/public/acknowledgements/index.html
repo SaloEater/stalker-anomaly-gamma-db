@@ -37,7 +37,7 @@
         .ack-intro {
             border-left: 3px solid var(--accent);
             padding: 0.8rem 1.2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
         }
         .ack-intro p {
             font-size: 0.8rem;
@@ -78,6 +78,57 @@
         .ack-section a:hover {
             text-decoration: underline;
         }
+        .ack-contributors {
+            text-align: center;
+            padding: 1rem 1.2rem 1.5rem;
+        }
+        .ack-contributors h2 {
+            color: var(--accent);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.8rem;
+        }
+        .ack-contributors img {
+            max-width: 100%;
+        }
+        .ack-contributors p {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            margin-top: 0.6rem;
+        }
+        .ack-contributors a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .ack-contributors a:hover {
+            text-decoration: underline;
+        }
+        .ack-divider {
+            color: var(--accent);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin: 1.5rem 0 0.8rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .ack-disclaimer {
+            padding: 0.2rem 1.2rem;
+        }
+        .ack-disclaimer p {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.4rem;
+            line-height: 1.6;
+        }
+        .ack-disclaimer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .ack-disclaimer a:hover {
+            text-decoration: underline;
+        }
         .ack-back {
             display: inline-block;
             margin-bottom: 1rem;
@@ -95,9 +146,23 @@
     <a href="../" class="ack-back">&larr; Back to database</a>
     <h1>Acknowledgements</h1>
 
+    <!-- Overview -->
+    <h2 class="ack-divider">Overview</h2>
     <div class="ack-intro">
         <p>S.T.A.L.K.E.R. Anomaly GAMMA is the product of many talented contributors and a passionate community. This site draws inspiration from the dedication of <a href="https://github.com/veerserif" target="_blank" rel="noopener">@veerserif</a> and <a href="https://github.com/SaloEater" target="_blank" rel="noopener">@SaloEater</a>, whose work extracting game data and building comprehensive spreadsheets laid the groundwork for making GAMMA's depth accessible to everyone. See their <a href="https://discord.com/channels/912320241713958912/976570969768476753/1109969814388215889" target="_blank" rel="noopener">original spreadsheets</a> on the GAMMA Discord.</p>
     </div>
+
+    <!-- Contributors -->
+    <h2 class="ack-divider">Contributors</h2>
+    <div class="ack-contributors">
+        <a href="https://github.com/simonwdev/stalker-anomaly-gamma-db/graphs/contributors" target="_blank" rel="noopener">
+            <img src="https://contrib.rocks/image?repo=simonwdev/stalker-anomaly-gamma-db" alt="Contributors" />
+        </a>
+        <p>Made with <a href="https://contrib.rocks" target="_blank" rel="noopener">contrib.rocks</a></p>
+    </div>
+
+    <!-- Acknowledgements -->
+    <h2 class="ack-divider">Acknowledgements</h2>
 
     <div class="ack-section">
         <h2>S.T.A.L.K.E.R. Series</h2>
@@ -134,11 +199,13 @@
         <p><a href="https://www.moddb.com/addons/high-resolution-maps" target="_blank" rel="noopener">High Resolution Maps on ModDB</a></p>
     </div>
 
-    <div class="ack-section">
-        <h2>Disclaimer</h2>
+    <!-- Disclaimer -->
+    <h2 class="ack-divider">Disclaimer</h2>
+    <div class="ack-disclaimer">
         <p>This tool is a community project and is not affiliated with, endorsed by, or connected to GSC Game World, the S.T.A.L.K.E.R. Anomaly team, or the G.A.M.M.A. team. All trademarks and registered trademarks are the property of their respective owners.</p>
         <p>If you are a rights holder and have concerns about any content used on this site, please <a href="../contact/">get in touch</a> and it will be promptly addressed.</p>
     </div>
+
 </div>
 </body>
 </html>
