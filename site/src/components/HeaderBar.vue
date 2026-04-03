@@ -52,6 +52,10 @@
             <LucideHammer :size="16" />
             <span>{{ t('app_cat_build_planner') }}</span>
         </button>
+        <button class="header-drawer-item" :class="{ active: damageSimActive }" @click="$emit('openDamageSim'); overflowOpen = false">
+            <LucideCrosshair :size="16" />
+            <span>{{ t('app_nav_damage_sim') }}</span>
+        </button>
         <button class="header-drawer-item maps-nav-btn" :class="{ active: mapsActive }" @click="$emit('openMaps'); overflowOpen = false">
             <LucideMap :size="16" />
             <span>{{ t('app_nav_maps') }}</span>
@@ -175,10 +179,31 @@
         <LucideHammer :size="14" />
         {{ t('app_cat_build_planner') }}
     </button>
+    <button class="nav-bar-item" :class="{ active: damageSimActive }" @click="$emit('openDamageSim')">
+        <LucideCrosshair :size="14" />
+        {{ t('app_nav_damage_sim') }}
+    </button>
     <button class="nav-bar-item maps-nav-btn" :class="{ active: mapsActive }" @click="$emit('openMaps')">
         <LucideMap :size="14" />
         {{ t('app_nav_maps') }}
     </button>
+    <div class="nav-bar-spacer"></div>
+    <div class="settings-wrap" v-click-outside="() => settingsOpen = false">
+        <button class="settings-btn" @click.stop="settingsOpen = !settingsOpen" v-tooltip="t('app_label_settings')">
+            <LucideSettings :size="16" />
+        </button>
+        <div class="settings-menu" v-show="settingsOpen">
+            <div class="settings-header">{{ t('app_label_display') }}</div>
+            <div class="settings-item" @click.stop="$emit('toggleHideNoDrop')">
+                <span class="toggle-switch" :class="{ on: hideNoDrop }"><span class="toggle-knob"></span></span>
+                <span>{{ t('app_label_hide_no_drop') }}</span>
+            </div>
+            <div class="settings-item" @click.stop="$emit('toggleHideUnusedAmmo')">
+                <span class="toggle-switch" :class="{ on: hideUnusedAmmo }"><span class="toggle-knob"></span></span>
+                <span>{{ t('app_label_hide_unused_ammo') }}</span>
+            </div>
+        </div>
+    </div>
 </nav>
 </template>
 
@@ -198,14 +223,18 @@ export default {
         sidebarCollapsed: { type: Boolean, default: false },
         sidebarOpen: { type: Boolean, default: false },
         buildPlannerActive: { type: Boolean, default: false },
+        damageSimActive: { type: Boolean, default: false },
         mapsActive: { type: Boolean, default: false },
         itemDbActive: { type: Boolean, default: false },
+        hideNoDrop: { type: Boolean, default: false },
+        hideUnusedAmmo: { type: Boolean, default: false },
     },
     emits: [
         'toggleSidebarCollapse', 'toggleSidebar', 'switchPack',
         'changeLocale', 'openShortcutHelp', 'clearGlobalQuery',
         'update:globalQuery', 'search', 'escapeSearch', 'selectSearchResult',
-        'openItemDb', 'openMaps', 'openBuildPlanner',
+        'openItemDb', 'openMaps', 'openBuildPlanner', 'openDamageSim',
+        'toggleHideNoDrop', 'toggleHideUnusedAmmo',
     ],
     inject: ['t', 'tName', 'tCat'],
     computed: {
@@ -220,6 +249,7 @@ export default {
             searchFocused: false,
             overflowOpen: false,
             mobileSearchOpen: false,
+            settingsOpen: false,
             iconMap,
         };
     },

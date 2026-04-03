@@ -40,6 +40,8 @@ const SKIP_FILES = new Set([
   "export_toolkit_map_rates.csv",
   "item_chance_in_stash.csv",
   "export_item_chance_in_stash.csv",
+  "export_mutant_profiles.csv",
+  "export_npc_armor_profiles.csv",
   "en_us.csv",
   "ru_ru.csv",
   "fr_fr.csv",
@@ -740,7 +742,7 @@ writeFileSync(categoriesOut, JSON.stringify(categoriesList, null, 2));
 console.log(`Wrote ${categoriesList.length} categories to ${categoriesOut}`);
 
 // Generate calibers.json from processed ammo data (enriched with stats)
-const AMMO_STAT_KEYS = ["ui_inv_damage", "ui_inv_accuracy", "ui_inv_wrange", "st_data_export_falloff", "ui_inv_bspeed", "st_data_export_projectiles", "st_upgr_cost", "st_data_export_weapon_degradation"];
+const AMMO_STAT_KEYS = ["ui_inv_damage", "ui_inv_accuracy", "ui_inv_wrange", "st_data_export_falloff", "ui_inv_bspeed", "st_data_export_projectiles", "st_upgr_cost", "st_data_export_weapon_degradation", "st_data_export_k_hit", "st_data_export_k_ap", "st_data_export_k_air_resistance"];
 
 const ammoData = categoryData.get("ammo");
 if (ammoData) {
@@ -878,6 +880,74 @@ if (ammoData) {
   console.log(`Wrote ${Object.keys(ammoWeapons).length} ammo-weapon mappings to ${ammoWeaponsOut}`);
 } else {
   console.log("No ammo data found, skipping calibers.json");
+}
+
+// Generate mutant-profiles.json from export_mutant_profiles.csv
+const MUTANT_PROFILES_FILE = join(CSV_DIR, "export_mutant_profiles.csv");
+try {
+  const mpText = readFileSync(MUTANT_PROFILES_FILE, "utf-8");
+  const mpLines = mpText.split(/\r?\n/).filter((l) => l.length > 0);
+  if (mpLines.length > 1) {
+    const mpHeaders = parseCsvLine(mpLines[0]).map((h) => h.trim());
+    const profiles = [];
+    for (let i = 1; i < mpLines.length; i++) {
+      const cols = parseCsvLine(mpLines[i]);
+      const id = cols[0]?.trim();
+      if (!id) continue;
+      const profile = { id };
+      for (let j = 1; j < mpHeaders.length; j++) {
+        const key = mpHeaders[j].replace(/^st_data_export_/, "");
+        const val = cols[j]?.trim();
+        if (val !== undefined && val !== "") profile[key] = parseFloat(val);
+      }
+      profiles.push(profile);
+    }
+    const mpOut = join(OUT_DIR, "mutant-profiles.json");
+    writeFileSync(mpOut, JSON.stringify(profiles, null, 2));
+    console.log(`Wrote ${profiles.length} mutant profiles to ${mpOut}`);
+  }
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+  console.log("No mutant profiles CSV found, skipping mutant-profiles.json");
+}
+
+// Generate npc-armor-profiles.json from export_npc_armor_profiles.csv
+const NPC_ARMOR_FILE = join(CSV_DIR, "export_npc_armor_profiles.csv");
+try {
+  const napText = readFileSync(NPC_ARMOR_FILE, "utf-8");
+  const napLines = napText.split(/\r?\n/).filter((l) => l.length > 0);
+  if (napLines.length > 1) {
+    const napHeaders = parseCsvLine(napLines[0]).map((h) => h.trim());
+    const profiles = [];
+    for (let i = 1; i < napLines.length; i++) {
+      const cols = parseCsvLine(napLines[i]);
+      const id = cols[0]?.trim();
+      if (!id) continue;
+      const profile = { id };
+      for (let j = 1; j < napHeaders.length; j++) {
+        const key = napHeaders[j].replace(/^st_data_export_/, "");
+        const raw = cols[j]?.trim();
+        if (raw === undefined || raw === "") continue;
+        const num = parseFloat(raw);
+        profile[key] = isNaN(num) ? raw : num;
+      }
+      profiles.push(profile);
+    }
+    const napOut = join(OUT_DIR, "npc-armor-profiles.json");
+    writeFileSync(napOut, JSON.stringify(profiles, null, 2));
+    console.log(`Wrote ${profiles.length} NPC armor profiles to ${napOut}`);
+  }
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+  console.log("No NPC armor profiles CSV found, skipping npc-armor-profiles.json");
+}
+
+// Copy gbo-constants.json if present in pack data
+const gboSrc = join(CSV_DIR, "gbo-constants.json");
+if (existsSync(gboSrc)) {
+  const gboOut = join(OUT_DIR, "gbo-constants.json");
+  cpSync(gboSrc, gboOut);
+  console.log(`Copied GBO constants to ${gboOut}`);
 }
 
 // Generate translations.json from translation CSVs + supplementary

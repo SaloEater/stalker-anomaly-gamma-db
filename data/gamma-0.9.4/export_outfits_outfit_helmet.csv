@@ -1,4 +1,4 @@
-~, Pda_encyclopedia_name, St_data_export_description, St_prop_weight, St_upgr_cost, Ui_mm_repair, Ui_inv_ap_res, Ui_inv_outfit_fire_wound_protection, Ui_inv_outfit_wound_protection, Ui_inv_outfit_burn_protection, Ui_inv_outfit_shock_protection, Ui_inv_outfit_chemical_burn_protection, Ui_inv_outfit_radiation_protection, Ui_inv_outfit_telepatic_protection, Ui_inv_outfit_strike_protection, Ui_inv_outfit_explosion_protection
+~,pda_encyclopedia_name,st_data_export_description,st_prop_weight,st_upgr_cost,ui_mm_repair,ui_inv_ap_res,ui_inv_outfit_fire_wound_protection,ui_inv_outfit_wound_protection,ui_inv_outfit_burn_protection,ui_inv_outfit_shock_protection,ui_inv_outfit_chemical_burn_protection,ui_inv_outfit_radiation_protection,ui_inv_outfit_telepatic_protection,ui_inv_outfit_strike_protection,ui_inv_outfit_explosion_protection
 helm_ach7ex,helm_ach7ex,helm_ach7ex_descr,3.89,17500,M,30,17%,4%,2%,2%,5%,20%,12%,0%,12%
 helm_cloth_mask,st_helm_cloth_mask,st_helm_cloth_mask_descr,0.22,450,F,0,0%,0%,1%,1%,4%,2%,0%,0%,0%
 helm_m50,helm_m50,helm_m50_descr,2.18,20700,H,15,3%,3%,1%,1%,20%,49%,12%,0%,7%

@@ -251,6 +251,7 @@ function categorySlug(category) {
 
 function buildPathUrl(state) {
     if (state.buildPlanner && state.pack) return `/db/${state.pack}/build-planner`;
+    if (state.damageSim && state.pack) return `/db/${state.pack}/damage-sim`;
     if (state.maps && state.pack) return `/db/${state.pack}/maps`;
     if (state.versionCompare && state.pack) return `/db/${state.pack}/version-compare`;
     if (state.favorites && state.pack) return `/db/${state.pack}/favorites`;
@@ -262,7 +263,7 @@ function buildPathUrl(state) {
 }
 
 function parsePathUrl(pathname) {
-    const result = { pack: null, cat: null, buildPlanner: false, maps: false, favorites: false, recent: false, versionCompare: false };
+    const result = { pack: null, cat: null, buildPlanner: false, damageSim: false, maps: false, favorites: false, recent: false, versionCompare: false };
     const path = pathname.replace(/\/+$/, "") || "/";
     // Legacy non-pack-scoped paths
     if (path === "/build-planner") { result.buildPlanner = true; return result; }
@@ -271,6 +272,7 @@ function parsePathUrl(pathname) {
     if (m) {
         result.pack = m[1];
         if (m[2] === "build-planner") result.buildPlanner = true;
+        else if (m[2] === "damage-sim") result.damageSim = true;
         else if (m[2] === "maps") result.maps = true;
         else if (m[2] === "version-compare") result.versionCompare = true;
         else if (m[2] === "favorites") result.favorites = true;
@@ -371,6 +373,9 @@ export const appDefinition = {
             recipesCache: null,
             disassembleCache: null,
             ammoWeaponsCache: null,
+            mutantProfilesCache: null,
+            npcArmorProfilesCache: null,
+            gboConstantsCache: null,
 
             // Crafting trees
             craftingTrees: [],
@@ -417,6 +422,7 @@ export const appDefinition = {
             buildPlayerFaction: "stalker",
             buildPlannerActive: false,
             mapsActive: false,
+            damageSimActive: false,
             versionCompareActive: false,
             versionCompareLoading: false,
             versionCompareResults: [],
@@ -1693,6 +1699,18 @@ export const appDefinition = {
             return this.fetchJsonCached("ammoWeaponsCache", "ammo-weapons.json");
         },
 
+        fetchMutantProfiles() {
+            return this.fetchJsonCached("mutantProfilesCache", "mutant-profiles.json");
+        },
+
+        fetchNpcArmorProfiles() {
+            return this.fetchJsonCached("npcArmorProfilesCache", "npc-armor-profiles.json");
+        },
+
+        fetchGboConstants() {
+            return this.fetchJsonCached("gboConstantsCache", "gbo-constants.json");
+        },
+
         findItemByName(name) {
             return this.index.find(i => i.name === name || i.displayName === name || i.pda_encyclopedia_name === name);
         },
@@ -1801,6 +1819,8 @@ export const appDefinition = {
                     const urlCat = pathParsed.cat || new URLSearchParams(window.location.search).get("cat");
                     if (urlCat === "build-planner" || pathParsed.buildPlanner) {
                         // Defer to mounted handler
+                    } else if (urlCat === "damage-sim" || pathParsed.damageSim) {
+                        await this.openDamageSim();
                     } else if (urlCat === "maps" || pathParsed.maps) {
                         this.mapsActive = true;
                         this.activeCategory = null;
@@ -1966,6 +1986,7 @@ export const appDefinition = {
 
             this.buildPlannerActive = false;
             this.mapsActive = false;
+            this.damageSimActive = false;
             this.versionCompareActive = false;
             this.favoritesViewActive = false;
             this.recentViewActive = false;
@@ -2563,6 +2584,7 @@ export const appDefinition = {
         resetViewState() {
             this.buildPlannerActive = false;
             this.mapsActive = false;
+            this.damageSimActive = false;
             this.versionCompareActive = false;
             this.favoritesViewActive = false;
             this.recentViewActive = false;
@@ -3968,6 +3990,7 @@ export const appDefinition = {
                 pack: this.activePack?.id,
                 cat: this.activeCategory,
                 buildPlanner: this.buildPlannerActive,
+                damageSim: this.damageSimActive,
                 maps: this.mapsActive,
                 favorites: this.favoritesViewActive,
                 recent: this.recentViewActive,
@@ -4075,6 +4098,8 @@ export const appDefinition = {
             if (parsed.buildPlanner || legacyCat === "build-planner") {
                 // Will be handled after data loads
                 this._pendingBuildRestore = params;
+            } else if (parsed.damageSim) {
+                this.openDamageSim();
             } else if (parsed.maps || legacyCat === "maps") {
                 this.mapsActive = true;
                 this.activeCategory = null;
@@ -4258,6 +4283,43 @@ export const appDefinition = {
             if (!this._restoringUrl) this.pushUrlState(true);
             else this.pushUrlState();
             this.$nextTick(() => this.checkCallouts());
+        },
+
+        async openDamageSim() {
+            this.resetViewState();
+            this.damageSimActive = true;
+
+            const cats = [...WEAPON_CATEGORY_SLUGS, "ammo"];
+            await Promise.all([
+                ...cats.map(async (slug) => {
+                    if (this.categoryItems[slug]) return;
+                    try {
+                        const res = await fetch(this.dataUrl(`${slug}.json`));
+                        const data = await res.json();
+                        for (const item of data.items) {
+                            item.localeName = this.tName(item);
+                        }
+                        this.categoryItems[slug] = data.items;
+                        this.categoryHeaders[slug] = data.headers;
+                        this.categoryFuse[slug] = new Fuse(data.items, {
+                            keys: ["displayName", "pda_encyclopedia_name", "localeName", "id"],
+                            threshold: 0.35,
+                        });
+                    } catch (e) {
+                        console.error(`Failed to load ${slug}:`, e);
+                        this.categoryItems[slug] = [];
+                        this.categoryHeaders[slug] = [];
+                    }
+                }),
+                this.fetchMutantProfiles(),
+                this.fetchNpcArmorProfiles(),
+                this.fetchGboConstants(),
+                this.fetchCalibers(),
+                this.fetchAmmoWeapons(),
+            ]);
+
+            if (!this._restoringUrl) this.pushUrlState(true);
+            else this.pushUrlState();
         },
 
         isAltAmmo(weapon, ammoItem) {
@@ -5588,7 +5650,7 @@ export const appDefinition = {
         },
 
         _updateBuildHoverFloat() {
-            const popover = document.querySelector('.build-hover-popover');
+            const popover = document.querySelector('.build-hover-popover') || document.querySelector('.item-hover-popover');
             if (!popover || !this._buildHoverMouse) return;
             const { x, y } = this._buildHoverMouse;
             const virtualEl = {
@@ -6255,6 +6317,8 @@ export const appDefinition = {
             }
             if (parsed.buildPlanner) {
                 if (!this.buildPlannerActive) await this.openBuildPlanner();
+            } else if (parsed.damageSim) {
+                if (!this.damageSimActive) await this.openDamageSim();
             } else if (parsed.favorites) {
                 this.resetViewState();
                 this.favoritesViewActive = true;

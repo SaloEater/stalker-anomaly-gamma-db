@@ -51,13 +51,19 @@
     :sidebar-collapsed="sidebarCollapsed"
     :sidebar-open="sidebarOpen"
     :build-planner-active="buildPlannerActive"
+    :damage-sim-active="damageSimActive"
     :maps-active="mapsActive"
-    :item-db-active="!buildPlannerActive && !mapsActive"
+    :item-db-active="!buildPlannerActive && !mapsActive && !damageSimActive"
+    :hide-no-drop="hideNoDrop"
+    :hide-unused-ammo="hideUnusedAmmo"
     @toggle-sidebar-collapse="toggleSidebarCollapse()"
     @toggle-sidebar="toggleSidebar()"
     @open-item-db="openItemDb()"
     @open-maps="openMaps()"
     @open-build-planner="openBuildPlanner()"
+    @open-damage-sim="openDamageSim()"
+    @toggle-hide-no-drop="toggleHideNoDrop()"
+    @toggle-hide-unused-ammo="toggleHideUnusedAmmo()"
     @switch-pack="(p) => { activePack = p; switchPack() }"
     @change-locale="(id) => { locale = id; onLocaleChange() }"
     @open-shortcut-help="shortcutHelpOpen = true"
@@ -68,7 +74,7 @@
     @select-search-result="(id) => { lastGlobalQuery = globalQuery; globalQuery = ''; navigateToItem(id) }"
 />
 
-<div class="layout" :class="{ 'sidebar-collapsed': sidebarCollapsed, 'sidebar-hidden': buildPlannerActive || mapsActive }">
+<div class="layout" :class="{ 'sidebar-collapsed': sidebarCollapsed, 'sidebar-hidden': buildPlannerActive || mapsActive || damageSimActive }">
     <SidebarNav
         :translations="translations"
         :sidebar-open="sidebarOpen"
@@ -93,11 +99,26 @@
 
     <main class="content" :class="{ 'content-maps': mapsActive }">
         <MapsView v-if="mapsActive" :pack-id="activePack?.id" />
+        <DamageSimulator
+            v-if="damageSimActive"
+            :weapon-categories="categoryItems"
+            :ammo-items="categoryItems['ammo'] || []"
+            :mutant-profiles="mutantProfilesCache || []"
+            :npc-armor-profiles="npcArmorProfilesCache || []"
+            :gbo-constants="gboConstantsCache || {}"
+            :calibers-data="calibersCache || {}"
+            :hide-no-drop="hideNoDrop"
+            :hide-unused-ammo="hideUnusedAmmo"
+            :ammo-weapons-cache="ammoWeaponsCache || {}"
+            @show-build-hover="(item, event) => showBuildHover(item, event)"
+            @move-build-hover="(event) => moveBuildHover(event)"
+            @hide-build-hover="hideBuildHover()"
+        />
         <div v-show="showContentSpinner && !mapsActive" class="loading-screen">
             <div class="loading-spinner"></div>
             <p class="loading-text">{{ t('app_label_loading') }}</p>
         </div>
-        <div v-show="!loading && !mapsActive" class="content-inner">
+        <div v-show="!loading && !mapsActive && !damageSimActive" class="content-inner">
             <FilterBar
                 ref="filterBar"
                 :filter-input="filterInput"
@@ -344,6 +365,9 @@
     </main>
 </div>
 
+<!-- Item hover popover (used by damage sim, rendered outside content-inner) -->
+<ItemHoverPopover :item="buildHoverItem" :pos="buildHoverPos" />
+
 <!-- Compare bar + modal -->
 <ComparePanel
     ref="comparePanel"
@@ -488,6 +512,8 @@ import ItemGrid from "./components/ItemGrid.vue";
 import ItemDetailModal from "./components/ItemDetailModal.vue";
 import { defineAsyncComponent } from 'vue';
 const BuildPlanner = defineAsyncComponent(() => import('./components/BuildPlanner.vue'));
+const DamageSimulator = defineAsyncComponent(() => import('./components/DamageSimulator.vue'));
+import ItemHoverPopover from "./components/ItemHoverPopover.vue";
 const MapsView = defineAsyncComponent(() => import('./components/MapsView.vue'));
 import ComparePanel from "./components/ComparePanel.vue";
 import CraftingTreesTileView from "./components/crafting-trees-page/CraftingTreesTileView.vue";
@@ -507,6 +533,8 @@ export default {
   components: {
     ...appDefinition.components,
     BuildPlanner,
+    DamageSimulator,
+    ItemHoverPopover,
     BuildImportCodeModal,
     BuildPickerModal,
     BuildSaveModal,

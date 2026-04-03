@@ -205,22 +205,6 @@
                             <button class="download-menu-item" @click="onDownload('json')">{{ t('app_label_download_json') }}</button>
                         </div>
                     </div>
-                    <div class="settings-wrap" v-show="!isToolkitRates" v-click-outside="closeSettings">
-                        <button class="settings-btn" @click.stop="settingsOpen = !settingsOpen" v-tooltip="t('app_label_settings')">
-                            <LucideSettings :size="16" />
-                        </button>
-                        <div class="settings-menu" v-show="settingsOpen">
-                            <div class="settings-header">{{ t('app_label_display') }}</div>
-                            <div class="settings-item" @click.stop="$emit('toggleHideNoDrop')">
-                                <span class="toggle-switch" :class="{ on: hideNoDrop }"><span class="toggle-knob"></span></span>
-                                <span>{{ t('app_label_hide_no_drop') }}</span>
-                            </div>
-                            <div class="settings-item" @click.stop="$emit('toggleHideUnusedAmmo')">
-                                <span class="toggle-switch" :class="{ on: hideUnusedAmmo }"><span class="toggle-knob"></span></span>
-                                <span>{{ t('app_label_hide_unused_ammo') }}</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="active-filters" v-if="activeFilterChips.length > 0">

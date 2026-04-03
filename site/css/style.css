@@ -289,6 +289,16 @@ a:hover {
     color: var(--accent);
     border-bottom-color: var(--accent);
 }
+.nav-bar-spacer {
+    flex: 1;
+}
+.nav-bar .settings-wrap {
+    position: relative;
+}
+.nav-bar .settings-menu {
+    right: 0;
+    left: auto;
+}
 
 /* Pack selector */
 .pack-chevron {

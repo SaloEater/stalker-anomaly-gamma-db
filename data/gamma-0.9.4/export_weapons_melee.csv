@@ -1,4 +1,4 @@
-~, Pda_encyclopedia_name, St_data_export_description, St_prop_weight, St_upgr_cost, St_data_export_light_attack_power, St_data_export_heavy_attack_power, BR, Ui_inv_wrange, St_data_export_cuts_thick_skin, St_data_export_pelts_quality_min, St_data_export_pelts_quality_max
+~,pda_encyclopedia_name,st_data_export_description,st_prop_weight,st_upgr_cost,st_data_export_light_attack_power,st_data_export_heavy_attack_power,BR,ui_inv_wrange,st_data_export_cuts_thick_skin,st_data_export_pelts_quality_min,st_data_export_pelts_quality_max
 wpn_axe3,st_sledge_hammer,st_sledge_hammer_descr,8.00,18500,120,170,45,9,N,,
 wpn_knife8,st_kukri,st_kukri_descr,0.70,30585,65,117,35,5.5,Y,75%,98%
 wpn_knife7,st_tactical_knife,st_tactical_knife_descr,0.70,35585,65,117,35,5.5,Y,75%,98%
