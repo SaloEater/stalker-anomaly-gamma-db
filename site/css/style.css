@@ -5753,9 +5753,19 @@ kbd {
     letter-spacing: 0.03em;
     font-weight: 600;
 }
+.build-picker-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+}
 .build-picker-search {
     position: relative;
-    margin-bottom: 0.6rem;
+}
+.build-picker-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
 }
 .build-picker-search .filter-input-icon {
     position: absolute;

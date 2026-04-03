@@ -7,9 +7,14 @@
         <button class="modal-close" @click="$emit('close')">&times;</button>
         <div class="modal-body">
             <h2 v-if="title" class="build-picker-title">{{ title }}</h2>
-            <div class="build-picker-search">
-                <svg class="filter-input-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                <input type="text" :value="internalQuery" @input="onQueryInput(($event.target as HTMLInputElement).value)" :placeholder="placeholder" class="build-picker-input" ref="searchInput">
+            <div class="build-picker-controls">
+                <div class="build-picker-search">
+                    <svg class="filter-input-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" :value="internalQuery" @input="onQueryInput(($event.target as HTMLInputElement).value)" :placeholder="placeholder" class="build-picker-input" ref="searchInput">
+                </div>
+                <div v-if="$slots.toolbar" class="build-picker-toolbar">
+                    <slot name="toolbar"></slot>
+                </div>
             </div>
             <div class="build-picker-list">
                 <div v-for="item in displayItems" :key="itemKey(item)" class="build-picker-item" @click="$emit('select', item)">

@@ -685,6 +685,136 @@ try {
   console.log("No toolkit map rates CSV found, skipping toolkit-rates.json");
 }
 
+// Generate starting-loadouts.json and item-loadouts.json from new_game_loadouts.ltx
+const LOADOUT_FILE = join(CSV_DIR, "new_game_loadouts.ltx");
+try {
+  const ltxText = readFileSync(LOADOUT_FILE, "utf-8");
+
+  // Parse LTX into sections: Map<name, { parent, entries: Map<key, value> }>
+  const sections = new Map();
+  let currentSection = null;
+  for (const rawLine of ltxText.split(/\r?\n/)) {
+    const line = rawLine.replace(/;.*$/, "").trim();
+    if (!line) continue;
+
+    const sectionMatch = line.match(/^\[([^\]]+)\](?::(.+))?/);
+    if (sectionMatch) {
+      const name = sectionMatch[1];
+      const parent = sectionMatch[2] || null;
+      currentSection = { parent, entries: new Map() };
+      sections.set(name, currentSection);
+      continue;
+    }
+
+    if (currentSection) {
+      const eqIdx = line.indexOf("=");
+      if (eqIdx >= 0) {
+        const key = line.slice(0, eqIdx).trim();
+        const value = line.slice(eqIdx + 1).trim();
+        if (key) currentSection.entries.set(key, value);
+      }
+    }
+  }
+
+  // Extract points budget
+  const pointsSec = sections.get("points");
+  const points = [
+    parseInt(pointsSec?.entries.get("total_points_eco_1")) || 0,
+    parseInt(pointsSec?.entries.get("total_points_eco_2")) || 0,
+    parseInt(pointsSec?.entries.get("total_points_eco_3")) || 0,
+  ];
+
+  // Extract ammo config
+  const ammoPerWeapon = {};
+  const ammoTypeSec = sections.get("ammo_type_per_wpn");
+  if (ammoTypeSec) {
+    for (const [k, v] of ammoTypeSec.entries) ammoPerWeapon[k] = v;
+  }
+  const ammoCount = {};
+  const ammoCountSec = sections.get("ammo_count");
+  if (ammoCountSec) {
+    for (const [k, v] of ammoCountSec.entries) ammoCount[k] = parseInt(v) || 0;
+  }
+
+  // Parse item entries from a section
+  function parseLoadoutItems(sec) {
+    const items = [];
+    if (!sec) return items;
+    for (const [id, raw] of sec.entries) {
+      const parts = raw.split(",").map(s => s.trim());
+      items.push({
+        id,
+        selectable: parts[0] === "true",
+        quantity: parseInt(parts[1]) || 1,
+        cost: parseInt(parts[2]) || 0,
+        difficultyLock: parts[3] ? parseInt(parts[3]) : null,
+      });
+    }
+    return items;
+  }
+
+  // Resolve inheritance: collect items from parent chain + own entries
+  function resolveItems(sectionName) {
+    const sec = sections.get(sectionName);
+    if (!sec) return [];
+    const parentItems = sec.parent
+      ? sec.parent.split(",").flatMap(p => resolveItems(p.trim()))
+      : [];
+    const ownItems = parseLoadoutItems(sec);
+    // Own items override parent items with same id
+    const merged = new Map();
+    for (const item of parentItems) merged.set(item.id, item);
+    for (const item of ownItems) merged.set(item.id, item);
+    return [...merged.values()];
+  }
+
+  // Build shared items (from the shared section only, excluding custom)
+  const sharedItems = parseLoadoutItems(sections.get("shared"));
+
+  // Build faction loadouts
+  const FACTION_SECTIONS = [
+    "stalker_loadout", "bandit_loadout", "ecolog_loadout", "dolg_loadout",
+    "freedom_loadout", "killer_loadout", "army_loadout", "monolith_loadout",
+    "csky_loadout", "renegade_loadout", "greh_loadout", "isg_loadout", "zombied_loadout",
+  ];
+  const sharedIdSet = new Set(sharedItems.map(i => i.id));
+
+  const factions = [];
+  for (const secName of FACTION_SECTIONS) {
+    if (!sections.has(secName)) continue;
+    const factionId = secName.replace("_loadout", "");
+    const moneySec = sections.get(`${factionId}_money`);
+    const money = parseInt(moneySec?.entries.get("money")) || 0;
+    const items = resolveItems(secName);
+    factions.push({ id: factionId, money, items });
+  }
+
+  const loadoutsData = { points, factions, shared: sharedItems, ammoPerWeapon, ammoCount };
+  const loadoutsOut = join(OUT_DIR, "starting-loadouts.json");
+  writeFileSync(loadoutsOut, JSON.stringify(loadoutsData, null, 2));
+  console.log(`Wrote ${factions.length} faction loadouts to ${loadoutsOut}`);
+
+  // Build reverse-index: item ID -> factions that offer it
+  const itemLoadouts = {};
+  for (const item of sharedItems) {
+    if (!itemLoadouts[item.id]) itemLoadouts[item.id] = [];
+    itemLoadouts[item.id].push({ faction: "shared", cost: item.cost, selectable: item.selectable });
+  }
+  for (const faction of factions) {
+    for (const item of faction.items) {
+      if (sharedIdSet.has(item.id)) continue; // already covered by shared
+      if (!itemLoadouts[item.id]) itemLoadouts[item.id] = [];
+      itemLoadouts[item.id].push({ faction: faction.id, cost: item.cost, selectable: item.selectable });
+    }
+  }
+  const itemLoadoutsOut = join(OUT_DIR, "item-loadouts.json");
+  writeFileSync(itemLoadoutsOut, JSON.stringify(itemLoadouts, null, 2));
+  console.log(`Wrote ${Object.keys(itemLoadouts).length} item-loadout mappings to ${itemLoadoutsOut}`);
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+  console.log("No starting loadouts LTX found, skipping starting-loadouts.json");
+}
+
 // Inject AP value into ammo items before writing category files
 const ammoDataPre = categoryData.get("ammo");
 if (ammoDataPre) {
@@ -736,6 +866,10 @@ for (const [slug, data] of categoryData) {
 // Add Outfit Exchange to categories if the JSON was generated
 if (existsSync(join(OUT_DIR, "outfit-exchange.json"))) {
   categoriesList.push("Outfit Exchange");
+}
+// Add Starting Loadouts to categories if the JSON was generated
+if (existsSync(join(OUT_DIR, "starting-loadouts.json"))) {
+  categoriesList.push("Starting Loadouts");
 }
 const categoriesOut = join(OUT_DIR, "categories.json");
 writeFileSync(categoriesOut, JSON.stringify(categoriesList, null, 2));

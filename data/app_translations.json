@@ -377,7 +377,10 @@
     "app_sim_copy_loadout": "Copy to other slot",
     "app_sim_radar_each_other": "Each Other",
     "app_sim_radar_same_class": "Same Class",
-    "app_sim_radar_all_weapons": "All Weapons"
+    "app_sim_radar_all_weapons": "All Weapons",
+    "app_sim_add_loadout": "Add loadout",
+    "app_sim_remove_loadout": "Remove",
+    "app_sim_starting_loadouts": "Starting loadouts"
   },
   "ru": {
     "app_group_saved": "Быстрый доступ",
@@ -756,7 +759,10 @@
     "app_sim_copy_loadout": "Копировать в другой слот",
     "app_sim_radar_each_other": "Друг к другу",
     "app_sim_radar_same_class": "Тот же класс",
-    "app_sim_radar_all_weapons": "Все оружие"
+    "app_sim_radar_all_weapons": "Все оружие",
+    "app_sim_add_loadout": "Добавить набор",
+    "app_sim_remove_loadout": "Удалить",
+    "app_sim_starting_loadouts": "Стартовое снаряжение"
   },
   "fr": {
     "app_group_saved": "Accès rapide",
