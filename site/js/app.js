@@ -376,6 +376,7 @@ export const appDefinition = {
             mutantProfilesCache: null,
             npcArmorProfilesCache: null,
             gboConstantsCache: null,
+            ballisticRangesCache: null,
 
             // Crafting trees
             craftingTrees: [],
@@ -3982,8 +3983,10 @@ export const appDefinition = {
             // Clear legacy query params now handled by path
             url.searchParams.delete("pack");
             url.searchParams.delete("cat");
-            // Clear legacy build params
-            for (const k of ["outfit","helmet","backpack","belt","arts","pn","pf","bsb","w1","w2","a1","a2","wp","ws","wsi","wg","ap","as","asi"]) url.searchParams.delete(k);
+            // Clear legacy build params (only on build planner route)
+            if (this.buildPlannerActive || !this.damageSimActive) {
+                for (const k of ["outfit","helmet","backpack","belt","arts","pn","pf","bsb","w1","w2","a1","a2","wp","ws","wsi","wg","ap","as","asi"]) url.searchParams.delete(k);
+            }
 
             // Build pathname
             const pathState = {
@@ -4316,6 +4319,7 @@ export const appDefinition = {
                 this.fetchGboConstants(),
                 this.fetchCalibers(),
                 this.fetchAmmoWeapons(),
+                this.fetchJsonCached("ballisticRangesCache", "ballistic-ranges.json"),
             ]);
 
             if (!this._restoringUrl) this.pushUrlState(true);

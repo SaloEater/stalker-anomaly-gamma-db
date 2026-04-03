@@ -107,6 +107,7 @@
             :npc-armor-profiles="npcArmorProfilesCache || []"
             :gbo-constants="gboConstantsCache || {}"
             :calibers-data="calibersCache || {}"
+            :ballistic-ranges="ballisticRangesCache || {}"
             :hide-no-drop="hideNoDrop"
             :hide-unused-ammo="hideUnusedAmmo"
             :ammo-weapons-cache="ammoWeaponsCache || {}"

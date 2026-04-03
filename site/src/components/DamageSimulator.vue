@@ -47,6 +47,10 @@
               </div>
             </div>
           </div>
+          <button v-if="lo.weapon" class="damage-sim-copy-btn" @click="copyLoadout(idx)" v-tooltip="t('app_sim_copy_loadout')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+            <span>{{ t('app_sim_copy_loadout') }}</span>
+          </button>
         </div>
       </div>
 
@@ -141,13 +145,6 @@
                   <span class="damage-sim-compact-label"></span>
                   <span><span class="damage-sim-crit-badge">{{ t('app_sim_result_crit') }} x{{ res.mutant.critMult }}</span></span>
                 </div>
-                <div class="damage-sim-compact-divider"></div>
-                <div class="damage-sim-stat-row"><span>{{ t('app_sim_raw_damage') }}</span><span>{{ fmt(res.mutant.rawDmg) }} <span :class="breakdownArrowClass(idx, mutantBreakdownVal(0, 'rawDmg'), mutantBreakdownVal(1, 'rawDmg'))">{{ breakdownArrow(idx, mutantBreakdownVal(0, 'rawDmg'), mutantBreakdownVal(1, 'rawDmg')) }}</span></span></div>
-                <div class="damage-sim-stat-row"><span>{{ t('app_sim_air_res') }}</span><span>&divide; {{ fmt(res.mutant.airDiv) }} <span :class="breakdownArrowClass(idx, mutantBreakdownVal(0, 'airDiv'), mutantBreakdownVal(1, 'airDiv'), false)">{{ breakdownArrow(idx, mutantBreakdownVal(0, 'airDiv'), mutantBreakdownVal(1, 'airDiv'), false) }}</span></span></div>
-                <div class="damage-sim-stat-row"><span>{{ t('app_sim_ammo_mult') }}</span><span>&times; {{ res.mutant.ammoMult }} <span :class="breakdownArrowClass(idx, mutantBreakdownVal(0, 'ammoMult'), mutantBreakdownVal(1, 'ammoMult'))">{{ breakdownArrow(idx, mutantBreakdownVal(0, 'ammoMult'), mutantBreakdownVal(1, 'ammoMult')) }}</span></span></div>
-                <div class="damage-sim-stat-row"><span>{{ t('app_sim_spec_mult') }}</span><span>&times; {{ res.mutant.specMult }}</span></div>
-                <div class="damage-sim-stat-row"><span>{{ t('app_sim_bone_mult') }}</span><span>&times; {{ res.mutant.boneMult }}</span></div>
-                <div class="damage-sim-stat-row"><span>{{ t('app_sim_barrel') }}</span><span>&times; {{ fmt(res.mutant.barrel) }}</span></div>
               </div>
             </div>
             <div v-else-if="hasComparison" class="damage-sim-results-cell-empty"></div>
@@ -156,7 +153,7 @@
 
         <!-- Stalker results: one card per loadout -->
         <template v-if="targetType === 'stalker'">
-          <template v-for="(res, idx) in results" :key="'stk'+idx">
+          <template v-for="(res, idx) in results" :key="'stk-compact'+idx">
             <div v-if="res?.stalker" class="damage-sim-stats-box">
               <div class="damage-sim-compact-stats">
                 <div class="damage-sim-compact-row">
@@ -188,9 +185,35 @@
             </div>
             <div v-else-if="hasComparison" class="damage-sim-results-cell-empty"></div>
           </template>
+        </template>
 
-          <!-- Breakdown -->
-          <div class="damage-sim-results-row-label">{{ t('app_sim_breakdown') }}</div>
+        <!-- Detail toggle (shared between mutant and stalker) -->
+        <div class="damage-sim-detail-toggle">
+          <div class="damage-sim-toggle-group damage-sim-toggle-sm">
+            <button :class="{ active: detailView === 'chart' }" @click="detailView = 'chart'">{{ t('app_sim_radar_chart') }}</button>
+            <button :class="{ active: detailView === 'breakdown' }" @click="detailView = 'breakdown'">{{ t('app_sim_breakdown') }}</button>
+          </div>
+        </div>
+
+        <!-- Mutant breakdown -->
+        <template v-if="detailView === 'breakdown' && targetType === 'mutant'">
+          <template v-for="(res, idx) in results" :key="'mbrk'+idx">
+            <div v-if="res?.mutant" class="damage-sim-stats-box">
+              <div class="damage-sim-stat-rows">
+                <div class="damage-sim-stat-row"><span>{{ t('app_sim_raw_damage') }}</span><span>{{ fmt(res.mutant.rawDmg) }} <span :class="breakdownArrowClass(idx, mutantBreakdownVal(0, 'rawDmg'), mutantBreakdownVal(1, 'rawDmg'))">{{ breakdownArrow(idx, mutantBreakdownVal(0, 'rawDmg'), mutantBreakdownVal(1, 'rawDmg')) }}</span></span></div>
+                <div class="damage-sim-stat-row"><span>{{ t('app_sim_air_res') }}</span><span>&divide; {{ fmt(res.mutant.airDiv) }} <span :class="breakdownArrowClass(idx, mutantBreakdownVal(0, 'airDiv'), mutantBreakdownVal(1, 'airDiv'), false)">{{ breakdownArrow(idx, mutantBreakdownVal(0, 'airDiv'), mutantBreakdownVal(1, 'airDiv'), false) }}</span></span></div>
+                <div class="damage-sim-stat-row"><span>{{ t('app_sim_ammo_mult') }}</span><span>&times; {{ res.mutant.ammoMult }} <span :class="breakdownArrowClass(idx, mutantBreakdownVal(0, 'ammoMult'), mutantBreakdownVal(1, 'ammoMult'))">{{ breakdownArrow(idx, mutantBreakdownVal(0, 'ammoMult'), mutantBreakdownVal(1, 'ammoMult')) }}</span></span></div>
+                <div class="damage-sim-stat-row"><span>{{ t('app_sim_spec_mult') }}</span><span>&times; {{ res.mutant.specMult }}</span></div>
+                <div class="damage-sim-stat-row"><span>{{ t('app_sim_bone_mult') }}</span><span>&times; {{ res.mutant.boneMult }}</span></div>
+                <div class="damage-sim-stat-row"><span>{{ t('app_sim_barrel') }}</span><span>&times; {{ fmt(res.mutant.barrel) }}</span></div>
+              </div>
+            </div>
+            <div v-else-if="hasComparison" class="damage-sim-results-cell-empty"></div>
+          </template>
+        </template>
+
+        <!-- Stalker breakdown -->
+        <template v-if="detailView === 'breakdown' && targetType === 'stalker'">
             <template v-for="(res, idx) in results" :key="'brk'+idx">
               <div v-if="res?.stalker?.breakdown" class="damage-sim-stats-box">
                 <div class="damage-sim-stats-body">
@@ -235,9 +258,20 @@
               <div v-else-if="hasComparison" class="damage-sim-results-cell-empty"></div>
             </template>
         </template>
+
       </div>
 
-      <div v-else class="damage-sim-empty-state">
+      <!-- Radar chart (outside the grid) -->
+      <div v-if="(results[0] || results[1]) && detailView === 'chart'" class="damage-sim-radar-wrap">
+        <canvas ref="radarCanvas"></canvas>
+        <div class="damage-sim-radar-mode">
+          <button :class="{ active: radarMode === 'relative' }" @click="radarMode = 'relative'">{{ t('app_sim_radar_each_other') }}</button>
+          <button :class="{ active: radarMode === 'category' }" @click="radarMode = 'category'">{{ t('app_sim_radar_same_class') }}</button>
+          <button :class="{ active: radarMode === 'global' }" @click="radarMode = 'global'">{{ t('app_sim_radar_all_weapons') }}</button>
+        </div>
+      </div>
+
+      <div v-if="!results[0] && !results[1]" class="damage-sim-empty-state">
         <LucideCrosshair :size="32" />
         <p>{{ t('app_sim_select_all') }}</p>
       </div>
@@ -341,6 +375,7 @@ export default defineComponent({
     npcArmorProfiles: { type: Array as PropType<NpcArmorProfile[]>, default: () => [] },
     gboConstants: { type: Object as PropType<GboConstants>, default: () => ({}) },
     calibersData: { type: Object, default: () => ({}) },
+    ballisticRanges: { type: Object as PropType<{ maxDamage?: number, maxAp?: number, maxDps?: number }>, default: () => ({}) },
     hideNoDrop: { type: Boolean, default: true },
     hideUnusedAmmo: { type: Boolean, default: true },
     ammoWeaponsCache: { type: Object as PropType<Record<string, any[]>>, default: () => ({}) },
@@ -366,6 +401,8 @@ export default defineComponent({
       mutantPickerOpen: false,
       npcPickerOpen: false,
       _shareFeedback: false as boolean,
+      detailView: 'chart' as 'breakdown' | 'chart',
+      radarMode: 'relative' as 'relative' | 'category' | 'global',
     };
   },
   computed: {
@@ -436,6 +473,177 @@ export default defineComponent({
 
     hasComparison(): boolean {
       return this.results[0] != null && this.results[1] != null;
+    },
+
+    defaultDetailView(): 'chart' | 'breakdown' {
+      return this.hasComparison ? 'chart' : 'breakdown';
+    },
+
+    // Weapon categories that each loadout weapon belongs to
+    loadoutWeaponSlugs(): (string | null)[] {
+      const slugs = ['pistols', 'smgs', 'shotguns', 'rifles', 'snipers'];
+      return this.loadouts.map(lo => {
+        if (!lo.weapon) return null;
+        for (const slug of slugs) {
+          const items = this.weaponCategories[slug];
+          if (Array.isArray(items) && items.some(w => w.id === lo.weapon!.id)) return slug;
+        }
+        return null;
+      });
+    },
+
+    // Weapons in same categories as selected loadouts
+    categoryWeapons(): GameItem[] {
+      const activeSlugs = new Set(this.loadoutWeaponSlugs.filter(Boolean) as string[]);
+      if (activeSlugs.size === 0) return this.allWeapons;
+      const weapons: GameItem[] = [];
+      for (const slug of activeSlugs) {
+        const items = this.weaponCategories[slug];
+        if (!Array.isArray(items)) continue;
+        for (const w of items) {
+          if (this.hideNoDrop && w.hasNpcWeaponDrop === false) continue;
+          if (w.ui_ammo_types) weapons.push(w);
+        }
+      }
+      return weapons;
+    },
+
+    // Weapon stat ranges for radar normalization
+    weaponStatRanges(): { accuracy: [number, number], recoil: [number, number], magSize: [number, number] } {
+      const pool = this.radarMode === 'category' ? this.categoryWeapons : this.allWeapons;
+      let minAcc = 100, maxAcc = 0;
+      let minRec = 999, maxRec = 0;
+      let minMag = 999, maxMag = 0;
+
+      for (const w of pool) {
+        const acc = parseFloat((w.ui_inv_accuracy as string || '0').replace('%', '')) || 0;
+        const rec = parseFloat(w.ui_inv_recoil as string || '0') || 0;
+        const mag = parseFloat(w.ui_ammo_count as string || '0') || 0;
+        if (acc > 0) { minAcc = Math.min(minAcc, acc); maxAcc = Math.max(maxAcc, acc); }
+        if (rec > 0) { minRec = Math.min(minRec, rec); maxRec = Math.max(maxRec, rec); }
+        if (mag > 0) { minMag = Math.min(minMag, mag); maxMag = Math.max(maxMag, mag); }
+      }
+      if (minAcc > maxAcc) { minAcc = 0; maxAcc = 100; }
+      if (minRec > maxRec) { minRec = 0; maxRec = 100; }
+      if (minMag > maxMag) { minMag = 0; maxMag = 100; }
+
+      return {
+        accuracy: [minAcc, maxAcc],
+        recoil: [minRec, maxRec],
+        magSize: [minMag, maxMag],
+      };
+    },
+
+    radarData(): { labels: string[], datasets: any[], rawValues: number[][] } | null {
+      const activeResults = this.results.filter(r => r != null);
+      if (activeResults.length === 0) return null;
+
+      const labels = [
+        (this as any).t('app_sim_result_damage'),
+        (this as any).t('app_sim_result_ap'),
+        'DPS',
+        (this as any).t('app_sim_radar_accuracy'),
+        (this as any).t('app_sim_radar_recoil'),
+        (this as any).t('app_sim_radar_range'),
+        (this as any).t('app_sim_radar_mag_size'),
+      ];
+
+      // Global ranges for normalization
+      // Weapon stats: from database min/max
+      const ranges = this.weaponStatRanges;
+      const br = this.ballisticRanges;
+      const globalRanges = {
+        damage: [0, br.maxDamage || 1],
+        ap: [0, br.maxAp || 0.3],
+        dps: [0, br.maxDps || 5],
+        accuracy: ranges.accuracy,
+        recoil: ranges.recoil,
+        range: [0, 100],
+        magSize: ranges.magSize,
+      };
+
+      const colors = ['#5b8abd', '#c89050'];
+      const rawValues: number[][] = [];
+      const datasets: any[] = [];
+
+      for (let i = 0; i < 2; i++) {
+        const res = this.results[i];
+        const lo = this.loadouts[i];
+        if (!res || !lo.weapon) continue;
+
+        const damage = this.targetType === 'mutant' ? (res.mutant?.damage || 0) : (res.stalker?.armor?.damage || 0);
+        const ammo = this.selectedAmmoFor(i);
+        const kAp = ammo ? parseFloat(ammo.st_data_export_k_ap || '0') : 0;
+        const ap = res.stalker?.ap || kAp * 10;
+        const fireRate = parseFloat(lo.weapon.ui_inv_rate_of_fire as string || '0') || 0;
+        const dps = damage * fireRate / 60;
+        const accuracy = parseFloat((lo.weapon.ui_inv_accuracy as string || '0').replace('%', '')) || 0;
+        const recoil = parseFloat(lo.weapon.ui_inv_recoil as string || '0') || 0;
+        const kAirRes = ammo ? parseFloat(ammo.st_data_export_k_air_resistance || '0') : 0;
+        const rangeEff = 1 / this.airResDivisorAt(this.distance, kAirRes) * 100;
+        const magSize = parseFloat(lo.weapon.ui_ammo_count as string || '0') || 0;
+
+        rawValues.push([damage, ap, dps, accuracy, recoil, rangeEff, magSize]);
+      }
+
+      if (rawValues.length === 0) return null;
+
+      const normalize = (val: number, min: number, max: number): number => {
+        if (max <= min) return 50;
+        return Math.min(100, Math.max(0, ((val - min) / (max - min)) * 100));
+      };
+
+      // Build effective ranges based on mode
+      const effectiveRanges = { ...globalRanges };
+      if (this.radarMode === 'relative' && rawValues.length > 1) {
+        const axisCount = 7;
+        const keys: (keyof typeof effectiveRanges)[] = ['damage', 'ap', 'dps', 'accuracy', 'recoil', 'range', 'magSize'];
+        for (let j = 0; j < axisCount; j++) {
+          let min = Infinity, max = -Infinity;
+          for (const vals of rawValues) {
+            min = Math.min(min, vals[j]);
+            max = Math.max(max, vals[j]);
+          }
+          if (min === max) {
+            // Same value — keep global range so both show at 50%
+            continue;
+          }
+          // Use 0 as floor so the lower value shows proportionally small
+          effectiveRanges[keys[j]] = [0, max];
+        }
+      }
+
+      let datasetIdx = 0;
+      for (let i = 0; i < 2; i++) {
+        const res = this.results[i];
+        const lo = this.loadouts[i];
+        if (!res || !lo.weapon) continue;
+
+        const vals = rawValues[datasetIdx];
+        const normalized = [
+          normalize(vals[0], effectiveRanges.damage[0], effectiveRanges.damage[1]),
+          normalize(vals[1], effectiveRanges.ap[0], effectiveRanges.ap[1]),
+          normalize(vals[2], effectiveRanges.dps[0], effectiveRanges.dps[1]),
+          normalize(vals[3], effectiveRanges.accuracy[0], effectiveRanges.accuracy[1]),
+          normalize(effectiveRanges.recoil[1] - vals[4], 0, effectiveRanges.recoil[1] - effectiveRanges.recoil[0]), // inverted
+          normalize(vals[5], effectiveRanges.range[0], effectiveRanges.range[1]),
+          normalize(vals[6], effectiveRanges.magSize[0], effectiveRanges.magSize[1]),
+        ];
+
+        datasets.push({
+          label: this.loadoutLabel(i),
+          data: normalized,
+          borderColor: colors[i],
+          backgroundColor: colors[i] + '26',
+          pointBackgroundColor: colors[i],
+          pointRadius: 3,
+          borderWidth: 2,
+          fill: true,
+        });
+        datasetIdx++;
+      }
+
+      return { labels, datasets, rawValues };
     },
   },
   methods: {
@@ -575,6 +783,63 @@ export default defineComponent({
       return this.results[idx]?.stalker?.breakdown?.[key];
     },
 
+    airResDivisorAt(distance: number, kAirRes: number): number {
+      return 1 + distance / 200 * (kAirRes * 0.5 / (1 - kAirRes + 0.1));
+    },
+
+    updateRadarChart(): void {
+      const canvas = this.$refs.radarCanvas as HTMLCanvasElement | undefined;
+      if (!canvas) return;
+      const data = this.radarData;
+
+      if ((this as any)._radarChart) {
+        (this as any)._radarChart.destroy();
+        (this as any)._radarChart = null;
+      }
+
+      if (!data || data.datasets.length === 0) return;
+
+      const rawValues = data.rawValues;
+      const labels = data.labels;
+
+      (this as any)._radarChart = new (globalThis as any).Chart(canvas, {
+        type: 'radar',
+        data: { labels: data.labels, datasets: data.datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          scales: {
+            r: {
+              min: 0, max: 100,
+              ticks: { display: false, stepSize: 20 },
+              grid: { color: '#2a2a2a' },
+              angleLines: { color: '#2a2a2a' },
+              pointLabels: { color: '#d4d4d4', font: { size: 11 } },
+            }
+          },
+          plugins: {
+            legend: { display: data.datasets.length > 1, position: 'top' as const, labels: { color: '#d4d4d4', font: { size: 10 }, usePointStyle: true, pointStyle: 'circle', padding: 12 } },
+            tooltip: {
+              backgroundColor: '#1a1a1a',
+              titleColor: '#d4d4d4',
+              bodyColor: '#d4d4d4',
+              borderColor: '#2a2a2a',
+              borderWidth: 1,
+              callbacks: {
+                label(ctx: any) {
+                  const val = rawValues[ctx.datasetIndex]?.[ctx.dataIndex];
+                  const axis = labels[ctx.dataIndex];
+                  const fmtVal = val != null ? (val < 1 ? val.toFixed(4) : val.toFixed(1)) : '--';
+                  const suffix = axis === labels[5] ? '%' : ''; // range efficiency
+                  return `${ctx.dataset.label}: ${fmtVal}${suffix}`;
+                }
+              }
+            }
+          }
+        }
+      });
+    },
+
     resetAll(): void {
       this.loadouts[0] = { weapon: null, ammoId: '', silenced: false };
       this.loadouts[1] = { weapon: null, ammoId: '', silenced: false };
@@ -599,48 +864,47 @@ export default defineComponent({
       const url = new URL(window.location.href);
       const p = url.searchParams;
       // Clear old sim params
-      for (const k of ['w0','a0','s0','w1','a1','s1','tt','tid','hz','f','d','bc','df']) p.delete(k);
+      for (const k of ['bw0','ba0','bs0','bw1','ba1','bs1','btt','bmid','bnid','bhz','bfc','bdi','bbc','bdf']) p.delete(k);
       // Set current state
-      if (this.loadouts[0].weapon) p.set('w0', this.loadouts[0].weapon.id);
-      if (this.loadouts[0].ammoId) p.set('a0', this.loadouts[0].ammoId);
-      if (this.loadouts[0].silenced) p.set('s0', '1');
-      if (this.loadouts[1].weapon) p.set('w1', this.loadouts[1].weapon.id);
-      if (this.loadouts[1].ammoId) p.set('a1', this.loadouts[1].ammoId);
-      if (this.loadouts[1].silenced) p.set('s1', '1');
-      p.set('tt', this.targetType === 'mutant' ? 'm' : 's');
-      const tid = this.targetType === 'mutant' ? this.selectedMutantId : this.selectedNpcProfileId;
-      if (tid) p.set('tid', tid);
-      if (this.hitzone !== 'torso') p.set('hz', this.hitzone);
-      if (this.faction !== 'default') p.set('f', this.faction);
-      if (this.distance !== 25) p.set('d', String(this.distance));
-      if (this.barrelCondition !== 100) p.set('bc', String(this.barrelCondition));
-      if (this.difficulty !== 3) p.set('df', String(this.difficulty));
+      if (this.loadouts[0].weapon) p.set('bw0', this.loadouts[0].weapon.id);
+      if (this.loadouts[0].ammoId) p.set('ba0', this.loadouts[0].ammoId);
+      if (this.loadouts[0].silenced) p.set('bs0', '1');
+      if (this.loadouts[1].weapon) p.set('bw1', this.loadouts[1].weapon.id);
+      if (this.loadouts[1].ammoId) p.set('ba1', this.loadouts[1].ammoId);
+      if (this.loadouts[1].silenced) p.set('bs1', '1');
+      p.set('btt', this.targetType === 'mutant' ? 'm' : 's');
+      if (this.selectedMutantId) p.set('bmid', this.selectedMutantId);
+      if (this.selectedNpcProfileId) p.set('bnid', this.selectedNpcProfileId);
+      if (this.hitzone !== 'torso') p.set('bhz', this.hitzone);
+      if (this.faction !== 'default') p.set('bfc', this.faction);
+      if (this.distance !== 25) p.set('bdi', String(this.distance));
+      if (this.barrelCondition !== 100) p.set('bbc', String(this.barrelCondition));
+      if (this.difficulty !== 3) p.set('bdf', String(this.difficulty));
       window.history.replaceState(null, '', url.toString());
     },
 
     restoreFromUrl(): boolean {
       const p = new URLSearchParams(window.location.search);
-      if (!p.has('w0') && !p.has('tt')) return false;
+      if (!p.has('bw0')) return false;
       // Restore non-weapon state
-      const tt = p.get('tt');
+      const tt = p.get('btt');
       if (tt === 'm') this.targetType = 'mutant';
       else if (tt === 's') this.targetType = 'stalker';
-      const tid = p.get('tid');
-      if (tid) {
-        if (this.targetType === 'mutant') this.selectedMutantId = tid;
-        else this.selectedNpcProfileId = tid;
-      }
-      if (p.has('hz')) this.hitzone = p.get('hz')!;
-      if (p.has('f')) this.faction = p.get('f')!;
-      if (p.has('d')) this.distance = parseInt(p.get('d')!) || 25;
-      if (p.has('bc')) this.barrelCondition = parseInt(p.get('bc')!) || 100;
-      if (p.has('df')) this.difficulty = parseInt(p.get('df')!) || 3;
+      if (p.has('bmid')) this.selectedMutantId = p.get('bmid')!;
+      if (p.has('bnid')) this.selectedNpcProfileId = p.get('bnid')!;
+      if (p.has('bhz')) this.hitzone = p.get('bhz')!;
+      if (p.has('bfc')) this.faction = p.get('bfc')!;
+      if (p.has('bdi')) this.distance = parseInt(p.get('bdi')!) || 25;
+      if (p.has('bbc')) this.barrelCondition = parseInt(p.get('bbc')!) || 100;
+      if (p.has('bdf')) this.difficulty = parseInt(p.get('bdf')!) || 3;
       // Stash weapon/ammo IDs for deferred restore
       this._savedLoadouts = [
-        { weaponId: p.get('w0') || '', ammoId: p.get('a0') || '', silenced: p.get('s0') === '1' },
-        { weaponId: p.get('w1') || '', ammoId: p.get('a1') || '', silenced: p.get('s1') === '1' },
+        { weaponId: p.get('bw0') || '', ammoId: p.get('ba0') || '', silenced: p.get('bs0') === '1' },
+        { weaponId: p.get('bw1') || '', ammoId: p.get('ba1') || '', silenced: p.get('bs1') === '1' },
       ];
       this.restoreWeaponsFromStorage();
+      // Save to localStorage so it persists
+      this.saveToStorage();
       return true;
     },
 
@@ -706,14 +970,30 @@ export default defineComponent({
       if (boar) this.selectedMutantId = boar.id;
     },
 
+    findWeaponById(id: string): GameItem | null {
+      const slugs = ['pistols', 'smgs', 'shotguns', 'rifles', 'snipers'];
+      for (const slug of slugs) {
+        const items = this.weaponCategories[slug];
+        if (!Array.isArray(items)) continue;
+        const found = items.find(w => w.id === id);
+        if (found) return found;
+      }
+      return null;
+    },
+
     restoreWeaponsFromStorage(): void {
       const saved = (this as any)._savedLoadouts;
-      if (!saved || this.allWeapons.length === 0) return;
+      if (!saved) return;
+      // Need at least some weapon data loaded
+      const hasData = ['pistols', 'smgs', 'shotguns', 'rifles', 'snipers'].some(
+        s => Array.isArray(this.weaponCategories[s]) && this.weaponCategories[s].length > 0
+      );
+      if (!hasData) return;
       for (let i = 0; i < 2; i++) {
         const lo = saved[i];
         if (!lo) continue;
         if (lo.weaponId) {
-          const weapon = this.allWeapons.find(w => w.id === lo.weaponId);
+          const weapon = this.findWeaponById(lo.weaponId);
           if (weapon) this.loadouts[i].weapon = weapon;
         }
         if (lo.ammoId) this.loadouts[i].ammoId = lo.ammoId;
@@ -773,6 +1053,15 @@ export default defineComponent({
         this.saveToStorage();
       }
     },
+    copyLoadout(fromSlot: number): void {
+      const toSlot = fromSlot === 0 ? 1 : 0;
+      const from = this.loadouts[fromSlot];
+      this.loadouts[toSlot].weapon = from.weapon;
+      this.loadouts[toSlot].ammoId = from.ammoId;
+      this.loadouts[toSlot].silenced = from.silenced;
+      this.saveToStorage();
+    },
+
     clearAmmo(slot: number): void {
       this.loadouts[slot].ammoId = '';
       this.saveToStorage();
@@ -813,10 +1102,30 @@ export default defineComponent({
   mounted() {
     this.restoreFromStorage();
   },
+  beforeUnmount() {
+    if ((this as any)._radarChart) {
+      (this as any)._radarChart.destroy();
+      (this as any)._radarChart = null;
+    }
+  },
   watch: {
     allWeapons(weapons: GameItem[]): void {
       if (weapons.length > 0 && !this._restored) {
         this.restoreWeaponsFromStorage();
+      }
+    },
+    radarData: {
+      deep: true,
+      handler(): void {
+        clearTimeout((this as any)._radarDebounce);
+        (this as any)._radarDebounce = setTimeout(() => {
+          this.$nextTick(() => this.updateRadarChart());
+        }, 80);
+      },
+    },
+    detailView(val: string): void {
+      if (val === 'chart') {
+        this.$nextTick(() => this.updateRadarChart());
       }
     },
   },
@@ -1127,6 +1436,26 @@ export default defineComponent({
 }
 
 
+/* Copy loadout button */
+.damage-sim-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.55rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  padding: 0.15rem 0;
+  transition: color 0.15s;
+}
+.damage-sim-copy-btn:hover {
+  color: var(--accent);
+}
+
 /* Divider */
 .damage-sim-divider {
   height: 1px;
@@ -1250,6 +1579,61 @@ export default defineComponent({
 }
 .damage-sim-breakdown-section:first-child {
   margin-top: 0;
+}
+
+/* Detail toggle */
+.damage-sim-detail-toggle {
+  grid-column: 1 / -1;
+  margin-top: 0.25rem;
+}
+.damage-sim-toggle-sm button {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.55rem;
+}
+
+/* Radar chart */
+.damage-sim-radar-wrap {
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5rem auto 0;
+}
+.damage-sim-radar-mode {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-top: 0.25rem;
+}
+.damage-sim-radar-mode button {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.damage-sim-radar-mode button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+.damage-sim-radar-mode button:not(:first-child) {
+  border-left: none;
+}
+.damage-sim-radar-mode button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+.damage-sim-radar-mode button.active {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: rgba(200, 168, 78, 0.08);
+  z-index: 1;
+  position: relative;
+  border-left: 1px solid var(--accent-dim);
+}
+.damage-sim-radar-mode button:hover {
+  color: var(--text);
 }
 
 /* Compact stats (single card per loadout) */

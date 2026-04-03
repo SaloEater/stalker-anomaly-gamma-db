@@ -368,7 +368,16 @@
     "app_sim_share": "Share",
     "app_sim_copy_link": "Copy link to clipboard",
     "app_sim_link_copied": "Copied!",
-    "app_sim_reset": "Reset"
+    "app_sim_reset": "Reset",
+    "app_sim_radar_accuracy": "Accuracy",
+    "app_sim_radar_recoil": "Control",
+    "app_sim_radar_range": "Range",
+    "app_sim_radar_mag_size": "Mag Size",
+    "app_sim_radar_chart": "Chart",
+    "app_sim_copy_loadout": "Copy to other slot",
+    "app_sim_radar_each_other": "Each Other",
+    "app_sim_radar_same_class": "Same Class",
+    "app_sim_radar_all_weapons": "All Weapons"
   },
   "ru": {
     "app_group_saved": "Быстрый доступ",
@@ -738,7 +747,16 @@
     "app_sim_share": "Поделиться",
     "app_sim_copy_link": "Скопировать ссылку",
     "app_sim_link_copied": "Скопировано!",
-    "app_sim_reset": "Сброс"
+    "app_sim_reset": "Сброс",
+    "app_sim_radar_accuracy": "Точность",
+    "app_sim_radar_recoil": "Контроль",
+    "app_sim_radar_range": "Дальность",
+    "app_sim_radar_mag_size": "Магазин",
+    "app_sim_radar_chart": "График",
+    "app_sim_copy_loadout": "Копировать в другой слот",
+    "app_sim_radar_each_other": "Друг к другу",
+    "app_sim_radar_same_class": "Тот же класс",
+    "app_sim_radar_all_weapons": "Все оружие"
   },
   "fr": {
     "app_group_saved": "Accès rapide",

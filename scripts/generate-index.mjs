@@ -878,6 +878,53 @@ if (ammoData) {
   const ammoWeaponsOut = join(OUT_DIR, "ammo-weapons.json");
   writeFileSync(ammoWeaponsOut, JSON.stringify(ammoWeapons, null, 2));
   console.log(`Wrote ${Object.keys(ammoWeapons).length} ammo-weapon mappings to ${ammoWeaponsOut}`);
+  // Generate ballistic-ranges.json — theoretical max values for radar chart normalization
+  // For each weapon, find max k_hit and k_ap across its compatible ammo, compute max raw damage and AP
+  let maxDamage = 0; // max hit_power * k_hit
+  let maxAp = 0;     // max k_ap * 10
+  let maxDps = 0;    // max hit_power * k_hit * fire_rate / 60
+
+  for (const slug of WEAPON_SLUGS) {
+    const catData = categoryData.get(slug);
+    if (!catData) continue;
+    for (const wpn of catData.items) {
+      const hitPower = parseFloat(wpn["st_data_export_hit_power"]) || 0;
+      const fireRate = parseFloat(wpn["ui_inv_rate_of_fire"]) || 0;
+      if (!hitPower) continue;
+
+      // Find compatible ammo via caliber keys
+      const ammoTypes = (wpn["ui_ammo_types"] || "").split(";").map(s => s.trim()).filter(Boolean);
+      const altAmmoTypes = (wpn["st_data_export_ammo_types_alt"] || "").split(";").map(s => s.trim()).filter(Boolean);
+      const allAmmoKeys = [...ammoTypes, ...altAmmoTypes];
+
+      for (const ammoItem of ammoData.items) {
+        const ammoName = ammoItem.pda_encyclopedia_name || ammoItem.displayName || "";
+        const isCompat = allAmmoKeys.some(t => ammoName === t || ammoName.startsWith(t));
+        if (!isCompat) continue;
+
+        const kHit = parseFloat(ammoItem["st_data_export_k_hit"]) || 0;
+        const kAp = parseFloat(ammoItem["st_data_export_k_ap"]) || 0;
+
+        const rawDmg = hitPower * kHit;
+        const rawAp = kAp * 10;
+        const rawDps = rawDmg * fireRate / 60;
+
+        if (rawDmg > maxDamage) maxDamage = rawDmg;
+        if (rawAp > maxAp) maxAp = rawAp;
+        if (rawDps > maxDps) maxDps = rawDps;
+      }
+    }
+  }
+
+  const ballisticRanges = {
+    maxDamage: Math.round(maxDamage * 1000) / 1000,
+    maxAp: Math.round(maxAp * 1000) / 1000,
+    maxDps: Math.round(maxDps * 100) / 100,
+  };
+  const brOut = join(OUT_DIR, "ballistic-ranges.json");
+  writeFileSync(brOut, JSON.stringify(ballisticRanges, null, 2));
+  console.log(`Wrote ballistic ranges (maxDmg=${ballisticRanges.maxDamage}, maxAp=${ballisticRanges.maxAp}, maxDps=${ballisticRanges.maxDps}) to ${brOut}`);
+
 } else {
   console.log("No ammo data found, skipping calibers.json");
 }
