@@ -4894,14 +4894,22 @@ export const appDefinition = {
         // ── What's New & Feature Callouts ──
 
         initWhatsNew(rnData, hash) {
-            const seen = localStorage.getItem("whatsNewHash");
-            if (seen === hash) return;
+            const lastSeenDate = localStorage.getItem("whatsNewLastDate") || "";
+            // Legacy: if old hash-based key exists but no date key, treat as having seen everything
+            const legacySeen = localStorage.getItem("whatsNewHash");
+            if (legacySeen && !lastSeenDate) {
+                const latestDate = rnData.length ? rnData[0].date : "";
+                if (latestDate) localStorage.setItem("whatsNewLastDate", latestDate);
+                localStorage.removeItem("whatsNewHash");
+                return;
+            }
 
-            // Count all unseen entries, collect highlighted and callouts
+            // Only show entries from releases newer than lastSeenDate
             let totalCount = 0;
             const highlighted = [];
             const callouts = [];
             for (const release of rnData) {
+                if (release.date <= lastSeenDate) continue;
                 totalCount += release.entries.length;
                 for (const entry of release.entries) {
                     if (entry.highlight) highlighted.push(entry);
@@ -4910,7 +4918,7 @@ export const appDefinition = {
             }
             if (!highlighted.length && !callouts.length) return;
 
-            this._whatsNewHash = hash;
+            this._whatsNewLatestDate = rnData.length ? rnData[0].date : "";
             this.whatsNewTotalCount = totalCount;
             this.whatsNewEntries = highlighted;
             if (highlighted.length) this.whatsNewVisible = true;
@@ -4942,13 +4950,15 @@ export const appDefinition = {
                 this.openMaps();
             } else if (entry.action === "ballistics") {
                 this.openDamageSim();
+            } else if (entry.action === "attachments") {
+                this.selectCategory(CAT.SCOPES);
             }
         },
 
         dismissWhatsNew() {
             this.whatsNewVisible = false;
             try {
-                if (this._whatsNewHash) localStorage.setItem("whatsNewHash", this._whatsNewHash);
+                if (this._whatsNewLatestDate) localStorage.setItem("whatsNewLastDate", this._whatsNewLatestDate);
             } catch (e) { /* quota */ }
         },
 

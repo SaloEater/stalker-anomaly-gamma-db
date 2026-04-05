@@ -396,7 +396,10 @@
     "app_sim_add_loadout": "Add loadout",
     "app_sim_remove_loadout": "Remove",
     "app_sim_starting_loadouts": "Starting loadouts",
-    "app_whats_new_ballistics": "Ballistics calculator - compare up to 5 weapons side by side.",
+    "app_whats_new_attachments": "Weapon attachments - scopes, silencers, underbarrel!",
+    "app_whats_new_ballistics": "Ballistics damage calculator!",
+    "app_callout_attachments_title": "Weapon Attachments",
+    "app_callout_attachments_desc": "Browse scopes, silencers, underbarrel launchers, and tactical kits. See which weapons they fit and compare stats.",
     "app_callout_ballistics_title": "Ballistics Calculator",
     "app_callout_ballistics_desc": "Compare weapons, ammo, and armor penetration with a full damage breakdown. Select up to 5 loadouts and see how they stack up."
   },
@@ -796,7 +799,10 @@
     "app_sim_add_loadout": "Добавить набор",
     "app_sim_remove_loadout": "Удалить",
     "app_sim_starting_loadouts": "Стартовое снаряжение",
-    "app_whats_new_ballistics": "Баллистический калькулятор - сравните до 5 видов оружия.",
+    "app_whats_new_attachments": "Обвесы - прицелы, глушители, подствольники!",
+    "app_whats_new_ballistics": "Баллистический калькулятор урона!",
+    "app_callout_attachments_title": "Обвесы оружия",
+    "app_callout_attachments_desc": "Прицелы, глушители, подствольники и тактические наборы. Смотрите совместимое оружие и сравнивайте характеристики.",
     "app_callout_ballistics_title": "Баллистический калькулятор",
     "app_callout_ballistics_desc": "Сравнивайте оружие, патроны и бронебойность с полной разбивкой урона. Выберите до 5 наборов и оцените их."
   },
