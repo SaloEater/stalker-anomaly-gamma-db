@@ -4,7 +4,7 @@
         <div class="tile-card-header">
             <span class="fav-icon" :class="{ favorited: isFavorited(item.id) }" @click.stop="$emit('toggleFavorite', item.id)">{{ isFavorited(item.id) ? '\u2605' : '\u2606' }}</span>
             <span class="pin-icon" :class="{ pinned: isPinned(item.id), 'pin-disabled': !isPinned(item.id) && pinnedIds.length >= 5 }" @click.stop="$emit('togglePin', item.id)">&#x1F4CC;</span>
-            <a href="#" @click.prevent.stop="$emit('navigateToItem', item.id)" class="tile-card-name">{{ tItemName(item) }}</a>
+            <a :href="itemHref(item.id)" @click.prevent.stop="$emit('navigateToItem', item.id)" class="tile-card-name">{{ tItemName(item) }}</a>
             <span v-if="item.hasNpcWeaponDrop === false" class="badge-no-drop" v-tooltip="t('app_tooltip_not_dropped')">{{ t('app_badge_no_drop') }}</span>
             <span v-if="isUnusedAmmo(item)" class="badge-unused" v-tooltip="t('app_tooltip_unused_ammo')">{{ t('app_badge_unused') }}</span>
             <span v-if="item.Type" class="badge-flag badge-type">{{ t(singularType(item.Type)) }}</span>
@@ -18,6 +18,16 @@
             <span v-if="item['st_data_export_cuts_thick_skin'] === 'Y'" class="badge-flag badge-thick-skin">{{ t('app_badge_thick_skin') }}</span>
             <span v-if="compact && item.category" class="badge-flag badge-category">{{ t(singularCategory(item.category)) }}</span>
         </div>
+        <!-- Icon row: shown for addon categories (scopes/silencers/launchers) -->
+        <div v-if="showItemIcon" class="tile-card-icon-row">
+            <img
+                class="addon-img-tile-icon"
+                :src="'img/icons/' + item.id + '.png'"
+                :alt="tItemName(item)"
+                loading="lazy"
+                @error="$event.target.parentElement.style.display='none'"
+            />
+        </div>
         <div class="tile-card-stats" v-show="tileFields.length > 0">
             <div v-for="field in tileFields" :key="field" class="tile-stat-row">
                 <span class="stat-label" v-tooltip="field === '_malfunction_chance' ? t('app_tooltip_malfunction') : ''">{{ headerLabel(field) }}<svg v-if="field === '_malfunction_chance'" class="info-hint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
@@ -26,12 +36,15 @@
                 </template>
                 <template v-else-if="field === 'ui_ammo_types' || field === 'st_data_export_ammo_types_alt'">
                     <span v-if="item[field]" class="tile-ammo-list">
-                        <span v-for="a in item[field].split(';')" :key="a" :class="field === 'st_data_export_ammo_types_alt' ? 'badge-ammo badge-ammo-alt clickable' : 'badge-ammo clickable'" v-tooltip="ammoTooltipPayload(a.trim())" @click.stop="openAmmoFromCaliber(a.trim())">{{ caliberName(a.trim()) }}</span>
+                        <span v-for="a in item[field].split(';')" :key="a" :class="field === 'st_data_export_ammo_types_alt' ? 'badge-ammo badge-ammo-alt clickable' : 'badge-ammo clickable'" @mouseenter="showItemHoverFromCaliber(a.trim(), $event)" @mouseleave="hideItemHover()" @click.stop="openAmmoFromCaliber(a.trim())">{{ caliberName(a.trim()) }}</span>
                     </span>
                     <span v-else class="stat-value">--</span>
                 </template>
                 <template v-else-if="field === 'ui_st_community'">
                     <span v-if="item[field]" class="badge-flag" :style="factionColor(item[field]) ? { color: factionColor(item[field]), background: 'rgba(' + parseInt(factionColor(item[field]).slice(1,3),16) + ',' + parseInt(factionColor(item[field]).slice(3,5),16) + ',' + parseInt(factionColor(item[field]).slice(5,7),16) + ',0.18)' } : null">{{ t(item[field]).toUpperCase() }}</span>
+                </template>
+                <template v-else-if="field === '_compatible_weapons'">
+                    <span class="badge-flag badge-compat compat-weapons-badge" @mouseenter="showWeaponListPopover(item, $event)" @mouseleave="hideWeaponListPopover()"><LucideSearch :size="10" /> {{ formatValue(field, cellValue(item, field)) }}</span>
                 </template>
                 <template v-else>
                     <span class="stat-value" :class="statClass(field, cellValue(item, field))" :style="statStyle(field, cellValue(item, field))">{{ formatValue(field, cellValue(item, field)) }}</span>
@@ -64,14 +77,17 @@ export default {
         favoriteIds: { type: Array, default: () => [] },
         pinnedIds: { type: Array, default: () => [] },
         compact: { type: Boolean, default: false },
+        showItemIcon: { type: Boolean, default: false },
     },
     emits: ['navigateToItem', 'toggleFavorite', 'togglePin'],
     inject: [
         't', 'tItemName', 'headerLabel', 'cellValue', 'formatValue',
         'statClass', 'statStyle', 'displayLabel', 'displayStyle',
         'singularType', 'singularCategory', 'healDots',
-        'caliberName', 'ammoTooltipPayload', 'factionColor',
+        'caliberName', 'itemHref', 'showItemHoverFromCaliber', 'hideItemHover', 'factionColor',
         'isUnusedAmmo', 'openAmmoFromCaliber',
+        'showWeaponListPopover',
+        'hideWeaponListPopover',
     ],
     methods: {
         isFavorited(id) { return this.favoriteIds.includes(id); },

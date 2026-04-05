@@ -56,6 +56,7 @@
     :item-db-active="!buildPlannerActive && !mapsActive && !damageSimActive"
     :hide-no-drop="hideNoDrop"
     :hide-unused-ammo="hideUnusedAmmo"
+    :show-tile-icons="showTileIcons"
     @toggle-sidebar-collapse="toggleSidebarCollapse()"
     @toggle-sidebar="toggleSidebar()"
     @open-item-db="openItemDb()"
@@ -64,6 +65,7 @@
     @open-damage-sim="openDamageSim()"
     @toggle-hide-no-drop="toggleHideNoDrop()"
     @toggle-hide-unused-ammo="toggleHideUnusedAmmo()"
+    @toggle-show-tile-icons="toggleShowTileIcons()"
     @switch-pack="(p) => { activePack = p; switchPack() }"
     @change-locale="(id) => { locale = id; onLocaleChange() }"
     @open-shortcut-help="shortcutHelpOpen = true"
@@ -150,6 +152,7 @@
                 :filtered-exchanges="filteredExchanges"
                 :hide-no-drop="hideNoDrop"
                 :hide-unused-ammo="hideUnusedAmmo"
+                :show-tile-icons="showTileIcons"
                 :toolkit-rates="toolkitRates"
                 :toolkit-sort-col="toolkitSortCol"
                 :toolkit-sort-asc="toolkitSortAsc"
@@ -175,6 +178,7 @@
                 @download-data="(format) => downloadData(format)"
                 @toggle-hide-no-drop="toggleHideNoDrop()"
                 @toggle-hide-unused-ammo="toggleHideUnusedAmmo()"
+                @toggle-show-tile-icons="toggleShowTileIcons()"
             />
             <div v-if="favoritesViewActive && favoriteIds.length === 0" class="favorites-empty">
                 <p>{{ t('app_label_no_favorites_1') }} <span class="fav-icon-inline">&#9734;</span> {{ t('app_label_no_favorites_2') }}</p>
@@ -289,9 +293,6 @@
                 :build-inventory-sort="buildInventorySort"
                 :build-inventory-sort-label="buildInventorySortLabel"
                 :build-drag-state="buildDragState"
-                :build-hover-item="buildHoverItem"
-                :build-hover-compare-item="buildHoverCompareItem"
-                :build-hover-pos="buildHoverPos"
                 :favorite-ids="favoriteIds"
                 :faction-list="factionList"
                 :weapon-compare-slot-count="weaponCompareSlotCount"
@@ -358,6 +359,7 @@
                 :favorite-ids="favoriteIds"
                 :pinned-ids="pinnedIds"
                 :compact="favoritesViewActive || recentViewActive"
+                :show-item-icon="showTileIcons"
                 @navigate-to-item="navigateToItem"
                 @toggle-favorite="toggleFavorite"
                 @toggle-pin="togglePin"
@@ -366,8 +368,32 @@
     </main>
 </div>
 
-<!-- Item hover popover (used by damage sim, rendered outside content-inner) -->
-<ItemHoverPopover :item="buildHoverItem" :pos="buildHoverPos" />
+<!-- Global item hover popover (single instance for all non-comparison hovers) -->
+<ItemHoverPopover
+    class="item-hover-popover-global"
+    :item="!hoverCompareItem ? hoverItem : null"
+    :pos="hoverPos"
+/>
+
+<!-- Item comparison popover (build planner equipped vs inventory) -->
+<ItemComparePopover
+    :item="hoverItem"
+    :compare-item="hoverCompareItem"
+    :pos="hoverPos"
+/>
+
+<!-- Compatible weapons click popover (addon categories) -->
+<Transition name="fade">
+<div v-if="weaponListPopoverItem" class="weapon-list-popover" :style="{ position: 'fixed', top: (weaponListPopoverPos ? weaponListPopoverPos.top + 'px' : '-9999px'), left: (weaponListPopoverPos ? weaponListPopoverPos.left + 'px' : '-9999px'), zIndex: 250 }" @mouseenter="keepWeaponListPopover()" @mouseleave="hideWeaponListPopover()">
+    <div class="weapon-list-popover-title">{{ t('app_label_compatible_weapons') }} <span class="weapon-list-popover-count">({{ weaponListPopoverWeapons.length }})</span></div>
+    <div class="weapon-list-popover-items">
+        <a v-for="w in weaponListPopoverWeapons" :key="w.id" href="#" class="weapon-list-popover-item" @click.prevent="navigateToItem(w.id); closeWeaponListPopover();">
+            <span class="weapon-list-popover-name">{{ tName(w) }}</span>
+            <span class="badge-flag badge-type">{{ t(singularCategory(w.category)) || tCat(w.category) }}</span>
+        </a>
+    </div>
+</div>
+</Transition>
 
 <!-- Compare bar + modal -->
 <ComparePanel
@@ -406,6 +432,8 @@
     :modal-disassemble-materials="modalDisassembleMaterials"
     :modal-used-by-weapons="modalUsedByWeapons"
     :parsed-description="parsedDescription"
+    :modal-weapon-addons="modalWeaponAddons"
+    :modal-addon-compatible-weapons="modalAddonCompatibleWeapons"
     :favorite-ids="favoriteIds"
     :pinned-ids="pinnedIds"
     :packs="packs"
@@ -515,6 +543,7 @@ import { defineAsyncComponent } from 'vue';
 const BuildPlanner = defineAsyncComponent(() => import('./components/BuildPlanner.vue'));
 const DamageSimulator = defineAsyncComponent(() => import('./components/DamageSimulator.vue'));
 import ItemHoverPopover from "./components/ItemHoverPopover.vue";
+import ItemComparePopover from "./components/ItemComparePopover.vue";
 const MapsView = defineAsyncComponent(() => import('./components/MapsView.vue'));
 import ComparePanel from "./components/ComparePanel.vue";
 import CraftingTreesTileView from "./components/crafting-trees-page/CraftingTreesTileView.vue";
@@ -536,6 +565,7 @@ export default {
     BuildPlanner,
     DamageSimulator,
     ItemHoverPopover,
+    ItemComparePopover,
     BuildImportCodeModal,
     BuildPickerModal,
     BuildSaveModal,
@@ -607,6 +637,17 @@ export default {
       isAltAmmo: this.isAltAmmo,
       getItemSlotType: this.getItemSlotType,
       saveImportItemName: this.saveImportItemName,
+      addonCompatibleWeaponsTooltip: this.addonCompatibleWeaponsTooltip,
+      showWeaponListPopover: this.showWeaponListPopover,
+      hideWeaponListPopover: this.hideWeaponListPopover,
+      keepWeaponListPopover: this.keepWeaponListPopover,
+      navHref: this.navHref,
+      itemHref: this.itemHref,
+      categoryHref: this.categoryHref,
+      showItemHover: this.showItemHover,
+      moveItemHover: this.moveItemHover,
+      showItemHoverFromCaliber: this.showItemHoverFromCaliber,
+      hideItemHover: this.hideItemHover,
     };
   },
 };

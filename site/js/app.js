@@ -1,307 +1,24 @@
 import '../src/globals.js';
-
-const EFFECT_FIELDS = new Set([
-    "st_prop_restore_health", "st_prop_restore_bleeding", "st_data_export_restore_radiation", "ui_inv_outfit_power_restore",
-    "st_data_export_eat_health_change", "st_itm_desc_eat_sleepiness", "st_itm_desc_eat_thirst", "st_data_export_eat_alcohol", "ui_inv_satiety",
-    "ui_inv_outfit_fire_wound_protection", "ui_inv_outfit_wound_protection", "ui_inv_outfit_burn_protection", "ui_inv_outfit_shock_protection", "ui_inv_outfit_chemical_burn_protection",
-    "ui_inv_outfit_radiation_protection", "ui_inv_outfit_telepatic_protection", "ui_inv_outfit_strike_protection", "ui_inv_outfit_explosion_protection",
-    "ui_inv_outfit_durability_physical", "ui_inv_outfit_durability_anomaly",
-]);
-
-
-function malfunctionChance(reliabilityPct) {
-    const condShotDec = 0.01 - (reliabilityPct / 10000);
-    return (2 * condShotDec * 2000) / 10;
-}
-
-function isNonZero(val) {
-    if (val == null || val === "" || val === 0 || val === "0" || val === "0%") return false;
-    if (typeof val === "string") {
-        const n = parseFloat(val);
-        if (!isNaN(n) && n === 0) return false;
-    }
-    return true;
-}
-
-const FILTER_DEFS = [
-    { key: "ui_mm_repair", type: "discrete", label: "app_filter_repair_type", values: ["A", "B", "C", "D", "E", "F", "H", "L", "M"] },
-    { key: "ui_ammo_types", type: "discrete", label: "app_filter_ammo_type", dynamic: true },
-    { key: "st_data_export_single_handed", type: "discrete", label: "app_filter_hands", values: ["Y", "N"], displayMap: { Y: "1H", N: "2H" } },
-    { key: "ui_st_community", type: "discrete", label: "app_filter_faction", dynamic: true },
-    { key: "pda_encyclopedia_tier", type: "discrete", label: "app_filter_tier", dynamic: true },
-    { key: "st_data_export_can_be_crafted", type: "flag", label: "app_filter_craftable" },
-    { key: "st_data_export_used_in_crafting", type: "flag", label: "app_filter_craft_material" },
-    { key: "st_data_export_has_perk", type: "flag", label: "app_filter_has_perk" },
-    { key: "st_data_export_is_junk", type: "flag", label: "app_filter_is_junk" },
-    { key: "st_data_export_cuts_thick_skin", type: "flag", label: "app_filter_cuts_thick_skin" },
-    { key: "ui_mcm_menu_exo", type: "flag", label: "app_filter_powered_exo" },
-    { key: "st_data_export_can_be_cooked", type: "flag", label: "app_filter_cookable" },
-    { key: "st_data_export_used_in_cooking", type: "flag", label: "app_filter_ingredient" },
-    { key: "Type", type: "discrete", label: "app_filter_weapon_type", dynamic: true },
-    { key: "_effects", type: "has-effect", label: "app_filter_provides_effect", fields: EFFECT_FIELDS },
-];
-
-const NAME_TAG_COLS = new Set(["st_data_export_has_perk", "st_data_export_is_junk", "st_data_export_can_be_crafted", "ui_mcm_menu_exo", "st_data_export_can_be_cooked", "st_data_export_used_in_cooking", "st_data_export_used_in_crafting", "st_data_export_cuts_thick_skin"]);
-const BADGE_COLS = new Set(["Type", "ui_mm_repair", "ui_ammo_types", "st_data_export_ammo_types_alt", "st_data_export_single_handed", ...NAME_TAG_COLS]);
-const MODAL_BADGE_KEYS = new Set(["st_data_export_has_perk", "st_data_export_is_junk", "st_data_export_can_be_crafted", "ui_mcm_menu_exo", "st_data_export_can_be_cooked", "st_data_export_used_in_cooking", "st_data_export_used_in_crafting", "st_data_export_cuts_thick_skin", "ui_ammo_types", "st_data_export_ammo_types_alt", "ui_st_community"]);
-const SKIP_KEYS = new Set(["id", "pda_encyclopedia_name", "hasNpcWeaponDrop", "hasStashDrop", "hasDisassemble", "st_data_export_description"]);
-const MAX_PINS = 5;
-const BUILD_HASH_PREFIX = "build/";
-
-const LOWER_IS_BETTER = new Set(["st_data_export_weapon_degradation"]);
-const HIGHER_IS_WORSE = new Set(["st_prop_weight", "st_upgr_cost", "_cost_per_round", "_malfunction_chance"]);
-const NO_HIGHLIGHT = new Set(["ui_ammo_types", "st_data_export_ammo_types_alt", "ui_mm_repair"]);
-const BIPOLAR = new Set([
-    "ui_inv_outfit_fire_wound_protection", "ui_inv_outfit_wound_protection", "ui_inv_outfit_burn_protection", "ui_inv_outfit_shock_protection",
-    "ui_inv_outfit_chemical_burn_protection", "ui_inv_outfit_radiation_protection", "ui_inv_outfit_telepatic_protection", "ui_inv_outfit_strike_protection",
-    "ui_inv_outfit_explosion_protection", "st_prop_restore_health", "st_prop_restore_bleeding",
-    "ui_inv_outfit_power_restore", "st_data_export_eat_health_change", "st_data_export_jump_height",
-    "st_itm_desc_eat_sleepiness", "st_itm_desc_eat_thirst", "st_data_export_eat_alcohol", "ui_inv_satiety",
-    "ui_inv_outfit_durability_physical", "ui_inv_outfit_durability_anomaly"
-]);
-const POSITIVE_IS_GOOD = new Set([
-    "ui_inv_accuracy", "ui_inv_handling", "ui_inv_reli",
-]);
-
-const HEAL_GROUPS = [
-    { label: "app_heal_post", fields: ["st_data_export_post_heal_head", "st_data_export_post_heal_torso", "st_data_export_post_heal_arm", "st_data_export_post_heal_leg"], abbr: ["H", "T", "A", "L"] },
-    { label: "app_heal_first_aid", fields: ["st_data_export_first_aid_head", "st_data_export_first_aid_torso", "st_data_export_first_aid_arm", "st_data_export_first_aid_leg"], abbr: ["H", "T", "A", "L"] },
-];
-const HEAL_FIELDS = new Set(HEAL_GROUPS.flatMap(g => g.fields));
-const RANGE_EXCLUDE = new Set([
-    ...SKIP_KEYS, ...NAME_TAG_COLS, ...HEAL_FIELDS, ...BADGE_COLS,
-    "name", "displayName", "ui_st_community",
-]);
-const TILE_HIDE = new Set(["st_upgr_cost", "pda_encyclopedia_name", "name", "pda_encyclopedia_tier", "ui_st_rank", "Type", "st_data_export_has_perk", "st_data_export_is_junk", "st_data_export_is_backpack", "st_data_export_can_be_crafted", "ui_mcm_menu_exo", "st_data_export_can_be_cooked", "st_data_export_used_in_cooking", "st_data_export_used_in_crafting", "st_data_export_cuts_thick_skin", "st_data_export_restore_health_max", "st_data_export_restore_bleeding_max", "st_data_export_restore_radiation_max", "st_data_export_power_restore_max", "st_data_export_description", ...HEAL_FIELDS]);
-
-const UNITS = {
-    "st_prop_weight": "unit_kg",
-    "st_upgr_cost": "₽",
-    "ui_inv_wrange": "unit_m",
-    "ui_inv_bspeed": "unit_m_per_s",
-    "ui_inv_rate_of_fire": "unit_rpm",
-    "ui_inv_radiation": "unit_msv_per_s",
-    "st_data_export_restore_radiation": "unit_msv_per_s",
-    "st_data_export_restore_radiation_max": "unit_msv",
-    "st_data_export_limb_duration": "unit_s",
-};
-
-
-// Build Planner constants
-const PROTECTION_FIELDS = [
-    "ui_inv_outfit_fire_wound_protection", "ui_inv_outfit_wound_protection", "ui_inv_outfit_burn_protection",
-    "ui_inv_outfit_shock_protection", "ui_inv_outfit_chemical_burn_protection", "ui_inv_outfit_radiation_protection",
-    "ui_inv_outfit_telepatic_protection", "ui_inv_outfit_strike_protection", "ui_inv_outfit_explosion_protection",
-    "ui_inv_outfit_durability_physical", "ui_inv_outfit_durability_anomaly",
-];
-const RESTORATION_FIELDS = [
-    "st_prop_restore_health", "st_prop_restore_bleeding", "st_data_export_restore_radiation", "ui_inv_outfit_power_restore",
-];
-const BASE_RESIST_CAP = 65;
-const CAP_FIELD_MAP = {
-    "ui_inv_outfit_fire_wound_protection": "gamma_fire_wound_cap",
-    "ui_inv_outfit_wound_protection": "gamma_wound_cap",
-    "ui_inv_outfit_burn_protection": "gamma_burn_cap",
-    "ui_inv_outfit_shock_protection": "gamma_shock_cap",
-    "ui_inv_outfit_chemical_burn_protection": "gamma_chemical_burn_cap",
-    "ui_inv_outfit_telepatic_protection": "gamma_telepatic_cap",
-    "ui_inv_outfit_strike_protection": "gamma_strike_cap",
-    "ui_inv_outfit_explosion_protection": "gamma_explosion_cap",
-};
-const CAT = {
-    FAVORITES: "Favorites", ALL_WEAPONS: "All Weapons",
-    PISTOLS: "Pistols", SMGS: "SMGs", SHOTGUNS: "Shotguns",
-    RIFLES: "Rifles", SNIPERS: "Snipers", LAUNCHERS: "Launchers", MELEE: "Melee",
-    AMMO: "Ammo", EXPLOSIVES: "Explosives",
-    OUTFITS: "Outfits", HELMETS: "Helmets", BELT_ATTACHMENTS: "Belt Attachments",
-    OUTFIT_EXCHANGE: "Outfit Exchange", ARTEFACTS: "Artefacts",
-    FOOD: "Food", MEDICINE: "Medicine",
-    CRAFTING_TREES: "Crafting Trees", MATERIALS: "Materials",
-    MUTANT_PARTS: "Mutant Parts", RECIPES: "Recipes",
-    TOOLKIT_RATES: "Toolkit Rates",
-};
-
-const BUILD_SLOT_CATEGORIES = { outfit: CAT.OUTFITS, helmet: CAT.HELMETS, belt: CAT.BELT_ATTACHMENTS, artifact: CAT.ARTEFACTS, backpack: CAT.BELT_ATTACHMENTS };
-function isBackpack(item) { return item?.st_data_export_is_backpack === "Y"; }
-const MAX_SAVED_BUILDS = 10;
-
-// Weapon/Ammo build planner constants
-const WEAPON_STAT_FIELDS = [
-    "ui_inv_accuracy", "ui_inv_handling", "ui_inv_damage",
-    "ui_inv_rate_of_fire", "ui_ammo_count", "ui_inv_wrange",
-    "ui_inv_bspeed", "ui_inv_reli", "ui_inv_recoil",
-];
-const AMMO_MULTIPLIER_FIELDS = new Set(["ui_inv_damage", "ui_inv_accuracy", "ui_inv_wrange", "ui_inv_bspeed"]);
-const AMMO_ONLY_FIELDS = ["st_data_export_ap", "st_data_export_projectiles", "st_data_export_falloff", "st_data_export_impulse", "st_data_export_weapon_degradation"];
-const GRENADE_STAT_FIELDS = ["st_data_export_blast_power", "st_detonation_radius", "st_data_export_fragments", "st_data_fragment_damage", "st_detonation_time"];
-const PRIMARY_WEAPON_SLUGS = ["rifles", "shotguns", "smgs", "snipers", "launchers"];
-const SIDEARM_SLUGS = ["pistols", "melee"];
-const GRENADE_SLUG = "explosives";
-const SLOT_COLORS = { outfit: "#5b8abd", helmet: "#5ba8a0", backpack: "#6bab5b", belt: "#c89050", artifact: "#9b6fb0", weapon: "#b85c5c", sidearm: "#b85c5c", grenade: "#7a6e50", ammo: "#8b8b5e" };
-
-const LOCALES = [{id:"en",label:"English"},{id:"ru",label:"Русский"},{id:"fr",label:"Français"}];
-const CHART_COLORS = ["#c8a84e", "#5b8abd", "#b85c5c", "#5ba8a0", "#9b6fb0"];
-
-const SINGULAR_TYPE = { [CAT.PISTOLS]: "app_type_pistol", [CAT.SMGS]: "app_type_smg", [CAT.SHOTGUNS]: "app_type_shotgun", [CAT.RIFLES]: "app_type_rifle", [CAT.SNIPERS]: "app_type_sniper", [CAT.LAUNCHERS]: "app_type_launcher", [CAT.MELEE]: "app_cat_melee" };
-const SINGULAR_CATEGORY = { ...SINGULAR_TYPE, [CAT.OUTFITS]: "app_type_outfit", [CAT.HELMETS]: "app_type_helmet", [CAT.BELT_ATTACHMENTS]: "app_type_belt_attachment", [CAT.EXPLOSIVES]: "app_type_explosive", [CAT.ARTEFACTS]: "app_type_artefact", [CAT.MATERIALS]: "app_type_material", [CAT.MUTANT_PARTS]: "app_type_mutant_part" };
-
-const CATEGORY_KEYS = {
-    [CAT.FAVORITES]: "app_cat_favorites", [CAT.ALL_WEAPONS]: "app_cat_all_weapons",
-    [CAT.PISTOLS]: "app_cat_pistols", [CAT.SMGS]: "app_cat_smgs", [CAT.SHOTGUNS]: "app_cat_shotguns",
-    [CAT.RIFLES]: "app_cat_rifles", [CAT.SNIPERS]: "app_cat_snipers", [CAT.LAUNCHERS]: "app_cat_launchers",
-    [CAT.MELEE]: "app_cat_melee", [CAT.AMMO]: "app_cat_ammo", [CAT.EXPLOSIVES]: "app_cat_explosives",
-    [CAT.OUTFITS]: "app_cat_outfits", [CAT.HELMETS]: "app_cat_helmets",
-    [CAT.BELT_ATTACHMENTS]: "app_cat_belt_attachments", [CAT.OUTFIT_EXCHANGE]: "app_cat_outfit_exchange",
-    [CAT.FOOD]: "app_cat_food", [CAT.MEDICINE]: "app_cat_medicine", [CAT.ARTEFACTS]: "app_cat_artefacts",
-    [CAT.CRAFTING_TREES]: "app_cat_crafting_trees", [CAT.MATERIALS]: "app_cat_materials",
-    [CAT.MUTANT_PARTS]: "app_cat_mutant_parts", [CAT.RECIPES]: "app_cat_recipes",
-    [CAT.TOOLKIT_RATES]: "app_cat_toolkit_rates",
-};
-const WEAPON_CATEGORIES = [CAT.PISTOLS, CAT.SMGS, CAT.SHOTGUNS, CAT.RIFLES, CAT.SNIPERS, CAT.LAUNCHERS, CAT.MELEE];
-const WEAPON_CATEGORY_SLUGS = WEAPON_CATEGORIES.map(c => categorySlug(c));
-const VIRTUAL_CATEGORIES = new Set([CAT.ALL_WEAPONS, CAT.CRAFTING_TREES, CAT.TOOLKIT_RATES]);
-
-const CATEGORY_GROUPS = [
-    { name: "app_group_weapons", categories: [CAT.ALL_WEAPONS, ...WEAPON_CATEGORIES] },
-    { name: "app_group_ammo_explosives", categories: [CAT.AMMO, CAT.EXPLOSIVES] },
-    { name: "app_group_equipment", categories: [CAT.OUTFITS, CAT.HELMETS, CAT.BELT_ATTACHMENTS, CAT.ARTEFACTS, CAT.OUTFIT_EXCHANGE] },
-    { name: "app_group_consumables", categories: [CAT.FOOD, CAT.MEDICINE] },
-    { name: "app_group_crafting", categories: [CAT.CRAFTING_TREES, CAT.MATERIALS, CAT.MUTANT_PARTS, CAT.TOOLKIT_RATES] },
-];
-
-const KEYS = {
-    SEARCH: '/',
-    ESCAPE: 'Escape',
-    TOGGLE_VIEW: 'v',
-    TOGGLE_SIDEBAR: 's',
-    COMPARE: 'c',
-    HELP: '?',
-    FILTERS: 'F',
-    PREV_CATEGORY: '[',
-    NEXT_CATEGORY: ']',
-    FAVORITE: 'f',
-    PIN: 'p',
-    PREV_ITEM: 'ArrowLeft',
-    NEXT_ITEM: 'ArrowRight',
-    CLEAR_FILTERS: 'x',
-    CHORD_GO: 'g',
-    CHORD_BUILD: 'b',
-    QUICK_NAV: 'k',
-};
-const CHORD_TIMEOUT = 500;
-
-function buildStatRows(item, headers) {
-    if (!item || !headers.length) return [];
-    const rows = [];
-    for (const h of headers) {
-        if (SKIP_KEYS.has(h)) continue;
-        rows.push({ key: h, value: item[h], isSection: false });
-    }
-    return rows;
-}
-
-const FACTION_ICONS = {
-    "bandit": "faction_bandits.png",
-    "csky": "faction_clearsky.png",
-    "dolg": "faction_duty.png",
-    "duty": "faction_duty.png",
-    "ecolog": "faction_ecologists.png",
-    "stalker": "faction_loners.png",
-    "freedom": "faction_freedom.png",
-    "killer": "faction_mercenary.png",
-    "merc": "faction_mercenary.png",
-    "army": "faction_military.png",
-    "monolith": "faction_monolith.png",
-    "renegade": "faction_renegades.png",
-    "greh": "faction_sin.png",
-    "isg": "faction_inisig.png",
-    "zombied": "faction_zombie.svg",
-};
-
-const FACTION_COLORS = {
-    "bandit": "#b5a068",
-    "csky": "#5ba4cf",
-    "dolg": "#c47060",
-    "ecolog": "#7fbf5f",
-    "stalker": "#d4a843",
-    "freedom": "#5fbf5f",
-    "killer": "#4a90d9",
-    "army": "#6b8e5a",
-    "monolith": "#a080c0",
-    "renegade": "#c87840",
-    "greh": "#8b4a8b",
-    "isg": "#7a8b6a",
-    "st_data_export_unknown": "#b0b0b0",
-};
-
-const FACTION_LIST = ["stalker", "dolg", "freedom", "csky", "ecolog", "army", "killer", "bandit", "monolith", "renegade", "greh", "isg"];
-
-function buildDropFactions(drops) {
-    if (!drops) return [];
-    return Object.entries(drops).map(([name, ranks]) => ({
-        name,
-        ranks,
-        icon: FACTION_ICONS[name] || FACTION_ICONS[name.toLowerCase()] || null,
-    })).sort((a, b) => a.name.localeCompare(b.name));
-}
-
-function categorySlug(category) {
-    return category.toLowerCase().replace(/ /g, "-");
-}
-
-function buildPathUrl(state) {
-    if (state.buildPlanner && state.pack) return `/db/${state.pack}/build-planner`;
-    if (state.damageSim && state.pack) return `/db/${state.pack}/ballistics`;
-    if (state.maps && state.pack) return `/db/${state.pack}/maps`;
-    if (state.versionCompare && state.pack) return `/db/${state.pack}/version-compare`;
-    if (state.favorites && state.pack) return `/db/${state.pack}/favorites`;
-    if (state.recent && state.pack) return `/db/${state.pack}/recent`;
-    if (state.cat && state.pack) {
-        return `/db/${state.pack}/${categorySlug(state.cat)}`;
-    }
-    return "/";
-}
-
-function parsePathUrl(pathname) {
-    const result = { pack: null, cat: null, buildPlanner: false, damageSim: false, maps: false, favorites: false, recent: false, versionCompare: false };
-    const path = pathname.replace(/\/+$/, "") || "/";
-    // Legacy non-pack-scoped paths
-    if (path === "/build-planner") { result.buildPlanner = true; return result; }
-    if (path === "/version-compare") { result.versionCompare = true; return result; }
-    const m = path.match(/^\/db\/([^/]+)(?:\/([^/]+))?$/);
-    if (m) {
-        result.pack = m[1];
-        if (m[2] === "build-planner") result.buildPlanner = true;
-        else if (m[2] === "ballistics") result.damageSim = true;
-        else if (m[2] === "maps") result.maps = true;
-        else if (m[2] === "version-compare") result.versionCompare = true;
-        else if (m[2] === "favorites") result.favorites = true;
-        else if (m[2] === "recent") result.recent = true;
-        else if (m[2]) result.cat = m[2];
-    }
-    return result;
-}
-
-function saveCategoryFilters(packId, slug, state) {
-    try {
-        localStorage.setItem(`catFilters:${packId}:${slug}`, JSON.stringify(state));
-    } catch (e) { /* quota or private mode */ }
-}
-
-function loadCategoryFilters(packId, slug) {
-    try {
-        const raw = localStorage.getItem(`catFilters:${packId}:${slug}`);
-        return raw ? JSON.parse(raw) : null;
-    } catch (e) { return null; }
-}
-
-function debounce(fn, ms) {
-    let timer;
-    return function (...args) {
-        clearTimeout(timer);
-        timer = setTimeout(() => fn.apply(this, args), ms);
-    };
-}
+import {
+    EFFECT_FIELDS, FILTER_DEFS, NAME_TAG_COLS, BADGE_COLS, MODAL_BADGE_KEYS,
+    SKIP_KEYS, MAX_PINS, BUILD_HASH_PREFIX,
+    LOWER_IS_BETTER, HIGHER_IS_WORSE, NO_HIGHLIGHT, BIPOLAR, POSITIVE_IS_GOOD,
+    HEAL_GROUPS, HEAL_FIELDS, RANGE_EXCLUDE, TILE_HIDE, UNITS,
+    PROTECTION_FIELDS, RESTORATION_FIELDS, BASE_RESIST_CAP, CAP_FIELD_MAP,
+    CAT, BUILD_SLOT_CATEGORIES, isBackpack, MAX_SAVED_BUILDS,
+    WEAPON_STAT_FIELDS, AMMO_MULTIPLIER_FIELDS, AMMO_ONLY_FIELDS, GRENADE_STAT_FIELDS,
+    PRIMARY_WEAPON_SLUGS, SIDEARM_SLUGS, GRENADE_SLUG, SLOT_COLORS,
+    LOCALES, CHART_COLORS,
+    SINGULAR_TYPE, SINGULAR_CATEGORY, CATEGORY_KEYS,
+    WEAPON_CATEGORIES, WEAPON_CATEGORY_SLUGS, VIRTUAL_CATEGORIES, CATEGORY_GROUPS,
+    KEYS, CHORD_TIMEOUT,
+    FACTION_ICONS, FACTION_COLORS, FACTION_LIST,
+} from './constants.js';
+import {
+    malfunctionChance, isNonZero, buildStatRows, buildDropFactions,
+    categorySlug, buildPathUrl, parsePathUrl,
+    saveCategoryFilters, loadCategoryFilters, debounce,
+} from './utils.js';
 
 export const appDefinition = {
     data() {
@@ -373,6 +90,7 @@ export const appDefinition = {
             recipesCache: null,
             disassembleCache: null,
             ammoWeaponsCache: null,
+            weaponAddonsCache: null,
             mutantProfilesCache: null,
             npcArmorProfilesCache: null,
             gboConstantsCache: null,
@@ -388,6 +106,7 @@ export const appDefinition = {
             collapsedGroups: {},
             hideNoDrop: true,
             hideUnusedAmmo: true,
+            showTileIcons: true,
 
             // Filter & Sort
             activeFilters: {},
@@ -489,11 +208,14 @@ export const appDefinition = {
             toastMessage: "",
             toastType: "error",
 
-            // Item hover popover
-            buildHoverItem: null,
-            buildHoverCompareItem: null,
-            buildHoverPos: null,
-            buildHoverTimeout: null,
+            // Compatible weapons popover (addon categories)
+            weaponListPopoverItem: null,
+            weaponListPopoverPos: null,
+
+            // Unified item hover popover
+            hoverItem: null,
+            hoverPos: null,
+            hoverCompareItem: null,
 
             buildWeaponCompareSlot: "primary",  // "primary" | "secondary" | "sidearm"
 
@@ -579,6 +301,11 @@ export const appDefinition = {
             if (categories.every(c => WEAPON_CATEGORIES.includes(c))) return WEAPON_STAT_FIELDS;
             if (categories.every(c => c === CAT.OUTFITS || c === CAT.HELMETS)) return PROTECTION_FIELDS;
             if (categories.every(c => c === CAT.AMMO)) return [...AMMO_MULTIPLIER_FIELDS, ...AMMO_ONLY_FIELDS];
+            if (categories.every(c => c === CAT.SCOPES || c === CAT.SILENCERS || c === CAT.GRENADE_LAUNCHERS || c === CAT.TACTICAL_KITS)) {
+                return ["st_prop_weight", "st_upgr_cost", "st_data_export_zoom_factor"].filter(f =>
+                    this.compareData.some(e => e.item[f] != null && e.item[f] !== "")
+                );
+            }
             // Mixed: find common numeric fields
             return this.compareHeaders.filter(h => {
                 if (SKIP_KEYS.has(h) || BADGE_COLS.has(h) || NO_HIGHLIGHT.has(h)) return false;
@@ -592,11 +319,15 @@ export const appDefinition = {
         tileFields() {
             if (!this.activeCategory) return [];
             const isAmmo = this.activeCategory === CAT.AMMO;
-            return this.displayHeaders.filter(h => {
+            const ammoKeys = new Set(["ui_ammo_types", "st_data_export_ammo_types_alt"]);
+            const fields = this.displayHeaders.filter(h => {
                 if (h.startsWith("Total ")) return false;
                 if (h === "st_upgr_cost") return isAmmo;
                 return !TILE_HIDE.has(h);
             });
+            const regular = fields.filter(h => !ammoKeys.has(h));
+            const ammo = fields.filter(h => ammoKeys.has(h));
+            return [...regular, ...ammo];
         },
 
         tileHealGroups() {
@@ -623,6 +354,42 @@ export const appDefinition = {
         parsedDescription() {
             if (!this.modalItem?.st_data_export_description) return null;
             return this.parseDescription(this.modalItem);
+        },
+
+        modalWeaponAddons() {
+            if (!this.modalItem || !this.weaponAddonsCache) return { scopes: [], silencers: [], launchers: [], kits: [] };
+            const addons = this.weaponAddonsCache[this.modalItem.id];
+            if (!addons) return { scopes: [], silencers: [], launchers: [], kits: [] };
+            const resolve = (cat) => Object.fromEntries((this.categoryItems[categorySlug(cat)] || []).map(i => [i.id, i]));
+            const scopeMap = resolve(CAT.SCOPES);
+            const silencerMap = resolve(CAT.SILENCERS);
+            const launcherMap = resolve(CAT.GRENADE_LAUNCHERS);
+            const kitMap = resolve(CAT.TACTICAL_KITS);
+            return {
+                scopes: (addons.scopes || []).map(id => scopeMap[id]).filter(Boolean),
+                silencers: (addons.silencers || []).map(id => silencerMap[id]).filter(Boolean),
+                launchers: (addons.launchers || []).map(id => launcherMap[id]).filter(Boolean),
+                kits: (addons.kits || []).map(id => kitMap[id]).filter(Boolean),
+            };
+        },
+
+        modalAddonCompatibleWeapons() {
+            if (!this.modalItem) return [];
+            // Deduplicate weapon IDs before resolving
+            const weaponIds = [...new Set((this.addonCompatibleWeaponsMap || {})[this.modalItem.id] || [])];
+            if (!weaponIds.length) return [];
+            const indexMap = new Map((this.index || []).map(i => [i.id, i]));
+            return weaponIds
+                .map(id => {
+                    const indexItem = indexMap.get(id);
+                    if (!indexItem) return null;
+                    // Use full item from categoryItems if already loaded (populated by openItem for addon modals)
+                    const slug = categorySlug(indexItem.category);
+                    const full = this.categoryItems[slug]?.find(i => i.id === id);
+                    return full || indexItem;
+                })
+                .filter(Boolean)
+                .sort((a, b) => (this.tName(a) || '').localeCompare(this.tName(b) || ''));
         },
 
         modalStatRows() {
@@ -827,6 +594,36 @@ export const appDefinition = {
             return this.activeCategory === CAT.ALL_WEAPONS;
         },
 
+        isAddonCategory() {
+            return this.activeCategory === CAT.SCOPES
+                || this.activeCategory === CAT.SILENCERS
+                || this.activeCategory === CAT.GRENADE_LAUNCHERS
+                || this.activeCategory === CAT.TACTICAL_KITS;
+        },
+
+        addonCompatibleWeaponsMap() {
+            if (!this.weaponAddonsCache) return {};
+            const map = {};
+            for (const [weaponId, addons] of Object.entries(this.weaponAddonsCache)) {
+                for (const list of [addons.scopes, addons.silencers, addons.launchers, addons.kits]) {
+                    for (const id of list || []) {
+                        (map[id] = map[id] || []).push(weaponId);
+                    }
+                }
+            }
+            return map;
+        },
+
+        weaponListPopoverWeapons() {
+            if (!this.weaponListPopoverItem) return [];
+            const weaponIds = [...new Set((this.addonCompatibleWeaponsMap || {})[this.weaponListPopoverItem.id] || [])];
+            if (!weaponIds.length) return [];
+            const indexMap = new Map((this.index || []).map(i => [i.id, i]));
+            let weapons = weaponIds.map(wid => indexMap.get(wid)).filter(Boolean);
+            if (this.hideNoDrop) weapons = weapons.filter(w => w.hasNpcWeaponDrop !== false);
+            return weapons.sort((a, b) => (this.tName(a) || '').localeCompare(this.tName(b) || ''));
+        },
+
         modalDisassembleMaterials() {
             return this.modalDisassemble;
         },
@@ -960,6 +757,11 @@ export const appDefinition = {
             const reliIdx = filtered.indexOf("ui_inv_reli");
             if (reliIdx >= 0) {
                 filtered.splice(reliIdx + 1, 0, "_malfunction_chance");
+            }
+
+            // Inject compatible weapons count for addon categories
+            if (this.isAddonCategory) {
+                filtered.push("_compatible_weapons");
             }
 
             return filtered;
@@ -1143,6 +945,16 @@ export const appDefinition = {
             let items = this.categoryItems[slug] || [];
             if (this.hideNoDrop) {
                 items = items.filter((i) => i.hasNpcWeaponDrop !== false);
+                if (this.isAddonCategory) {
+                    const indexMap = new Map((this.index || []).map(i => [i.id, i]));
+                    items = items.filter(i => {
+                        const weaponIds = (this.addonCompatibleWeaponsMap || {})[i.id] || [];
+                        return weaponIds.some(wid => {
+                            const w = indexMap.get(wid);
+                            return w && w.hasNpcWeaponDrop !== false;
+                        });
+                    });
+                }
             }
             if (this.hideUnusedAmmo && slug === 'ammo' && this.ammoWeaponsCache) {
                 items = items.filter(i => {
@@ -1658,18 +1470,44 @@ export const appDefinition = {
 
         isVirtualCategoryAvailable(cat) {
             if (cat === CAT.TOOLKIT_RATES) return !!this.fileManifest["toolkit-rates.json"];
+            if (cat === CAT.SCOPES) return !!this.fileManifest["scopes.json"];
+            if (cat === CAT.SILENCERS) return !!this.fileManifest["silencers.json"];
+            if (cat === CAT.GRENADE_LAUNCHERS) return !!this.fileManifest["grenade-launchers.json"];
+            if (cat === CAT.TACTICAL_KITS) return !!this.fileManifest["tactical-kits.json"];
             return true;
         },
 
         async fetchJsonCached(cacheKey, filename) {
             if (this[cacheKey] !== null) return this[cacheKey];
+            if (!this.fileManifest[filename]) { this[cacheKey] = {}; return this[cacheKey]; }
             try {
                 const res = await fetch(this.dataUrl(filename));
-                this[cacheKey] = res.ok ? await res.json() : {};
-            } catch {
+                if (!res.ok) {
+                    console.warn(`Failed to fetch ${filename}: HTTP ${res.status}`);
+                    this[cacheKey] = {};
+                } else {
+                    this[cacheKey] = await res.json();
+                }
+            } catch (e) {
+                console.warn(`Failed to fetch ${filename}:`, e);
                 this[cacheKey] = {};
             }
             return this[cacheKey];
+        },
+
+        async ensureCategoryLoaded(slug) {
+            if (this.categoryItems[slug]) return;
+            const filename = `${slug}.json`;
+            if (!this.fileManifest[filename]) return;
+            try {
+                const res = await fetch(this.dataUrl(filename));
+                if (!res.ok) { console.warn(`Failed to load category ${slug}: HTTP ${res.status}`); return; }
+                const data = await res.json();
+                if (data.items) this.categoryItems[slug] = data.items;
+                if (data.headers) this.categoryHeaders[slug] = data.headers;
+            } catch (e) {
+                console.warn(`Failed to load category ${slug}:`, e);
+            }
         },
 
         fetchCalibers() {
@@ -1698,6 +1536,10 @@ export const appDefinition = {
 
         fetchAmmoWeapons() {
             return this.fetchJsonCached("ammoWeaponsCache", "ammo-weapons.json");
+        },
+
+        fetchWeaponAddons() {
+            return this.fetchJsonCached("weaponAddonsCache", "weapon-addons.json");
         },
 
         fetchMutantProfiles() {
@@ -1844,6 +1686,14 @@ export const appDefinition = {
                 console.error("Failed to load index:", e);
             }
             this.calibers = await this.fetchCalibers();
+            await Promise.all([
+                this.ensureCategoryLoaded(categorySlug(CAT.AMMO)),
+                this.ensureCategoryLoaded(categorySlug(CAT.SCOPES)),
+                this.ensureCategoryLoaded(categorySlug(CAT.SILENCERS)),
+                this.ensureCategoryLoaded(categorySlug(CAT.GRENADE_LAUNCHERS)),
+                this.ensureCategoryLoaded(categorySlug(CAT.TACTICAL_KITS)),
+                this.fetchWeaponAddons(),
+            ]);
             this.rebuildGlobalFuse();
             this.loading = false;
             const preloader = document.getElementById('app-preloader');
@@ -1873,6 +1723,7 @@ export const appDefinition = {
             this.recipesCache = null;
             this.disassembleCache = null;
             this.ammoWeaponsCache = null;
+            this.weaponAddonsCache = null;
             this.outfitExchange = null;
             this.displayLabels = {};
             this.translations = null;
@@ -1984,6 +1835,7 @@ export const appDefinition = {
             }
 
             const previousCategory = this.activeCategory;
+            this.closeWeaponListPopover();
 
             this.buildPlannerActive = false;
             this.mapsActive = false;
@@ -2219,6 +2071,8 @@ export const appDefinition = {
             this.copyModalLinkFeedback = false;
             this.crossPackItem = null;
             this.crossPackNotFound = false;
+            this.hideItemHover();
+            this.closeWeaponListPopover();
             document.body.style.overflow = "hidden";
 
             try {
@@ -2232,16 +2086,12 @@ export const appDefinition = {
                 this.modalCategory = entry.category;
                 const slug = categorySlug(entry.category);
 
-                if (!this.categoryItems[slug]) {
-                    const res = await fetch(this.dataUrl(`${slug}.json`));
-                    const data = await res.json();
-                    this.categoryItems[slug] = data.items;
-                    this.categoryHeaders[slug] = data.headers;
-                }
+                await this.ensureCategoryLoaded(slug);
 
                 this.modalHeaders = this.categoryHeaders[slug];
                 this.modalItem = this.categoryItems[slug].find((i) => i.id === id);
 
+                const isWeapon = WEAPON_CATEGORIES.includes(entry.category);
                 const [drops, itemDrops, stashChance, recipeData, disassemble, ammoWeapons] = await Promise.all([
                     this.fetchDrops(),
                     this.fetchItemDrops(),
@@ -2249,6 +2099,12 @@ export const appDefinition = {
                     this.fetchRecipes(),
                     this.fetchDisassemble(),
                     this.fetchAmmoWeapons(),
+                    isWeapon ? this.ensureCategoryLoaded(categorySlug(CAT.AMMO)) : Promise.resolve(),
+                    isWeapon ? this.ensureCategoryLoaded(categorySlug(CAT.SCOPES)) : Promise.resolve(),
+                    isWeapon ? this.fetchWeaponAddons() : Promise.resolve(),
+                    isWeapon ? this.ensureCategoryLoaded(categorySlug(CAT.SILENCERS)) : Promise.resolve(),
+                    isWeapon ? this.ensureCategoryLoaded(categorySlug(CAT.GRENADE_LAUNCHERS)) : Promise.resolve(),
+                    isWeapon ? this.ensureCategoryLoaded(categorySlug(CAT.TACTICAL_KITS)) : Promise.resolve(),
                 ]);
                 this.modalDrops = drops[id] || null;
                 this.modalItemDrops = itemDrops[id] || null;
@@ -2256,6 +2112,31 @@ export const appDefinition = {
                 this.modalRecipeData = recipeData;
                 this.modalDisassemble = disassemble[id] || null;
                 this.modalAmmoWeapons = ammoWeapons[id] || null;
+
+                // For addon items (scopes/silencers/grenade launchers), pre-fetch compatible
+                // weapon category data so the modal can show rich stat tooltips on each weapon.
+                if ([CAT.SCOPES, CAT.SILENCERS, CAT.GRENADE_LAUNCHERS, CAT.TACTICAL_KITS].includes(entry.category)) {
+                    await this.fetchWeaponAddons();
+                    const weaponIds = this.addonCompatibleWeaponsMap[id] || [];
+                    if (weaponIds.length) {
+                        const idxMap = new Map(this.index.map(i => [i.id, i]));
+                        const slugsToLoad = [...new Set(
+                            weaponIds.map(wid => {
+                                const we = idxMap.get(wid);
+                                return we ? categorySlug(we.category) : null;
+                            }).filter(Boolean)
+                        )].filter(s => !this.categoryItems[s]);
+                        await Promise.all(slugsToLoad.map(async s => {
+                            try {
+                                const res = await fetch(this.dataUrl(`${s}.json`));
+                                if (!res.ok) throw new Error(`HTTP ${res.status} for ${s}.json`);
+                                const data = await res.json();
+                                this.categoryItems[s] = data.items;
+                                this.categoryHeaders[s] = data.headers;
+                            } catch (e) { console.warn(`Failed to load category data for "${s}":`, e); }
+                        }));
+                    }
+                }
             } catch (e) {
                 console.error("Failed to load item:", e);
             }
@@ -2688,6 +2569,66 @@ export const appDefinition = {
             const self = this;
             const categories = this.compareData.map(e => e.category);
             const isMutantParts = categories.every(c => c === CAT.MUTANT_PARTS);
+            const isAddonCat = categories.every(c => c === CAT.SCOPES || c === CAT.SILENCERS || c === CAT.GRENADE_LAUNCHERS || c === CAT.TACTICAL_KITS);
+
+            // Addon categories (Scopes/Silencers/Grenade Launchers): use a horizontal bar chart with real values
+            if (isAddonCat) {
+                const labels = fields.map(f => this.headerLabel(f));
+                const datasets = this.compareData.map((entry, i) => {
+                    const color = CHART_COLORS[i % CHART_COLORS.length];
+                    return {
+                        label: this.tName(entry.item),
+                        data: fields.map(f => {
+                            const n = parseFloat(String(entry.item[f] ?? "").replace("%", ""));
+                            return isNaN(n) ? 0 : n;
+                        }),
+                        backgroundColor: hexToRgba(color, 0.75),
+                        borderColor: color,
+                        borderWidth: 1,
+                    };
+                });
+                this._compareChart = new Chart(canvas, {
+                    type: "bar",
+                    data: { labels, datasets },
+                    options: {
+                        indexAxis: "y",
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        aspectRatio: 1.6,
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                ticks: { color: "#b0b0b0", font: { size: 11 } },
+                                grid: { color: "#2a2a2a" },
+                            },
+                            y: {
+                                ticks: { color: "#d4d4d4", font: { size: 12 } },
+                                grid: { color: "#2a2a2a" },
+                            },
+                        },
+                        plugins: {
+                            legend: { labels: { color: "#d4d4d4", font: { size: 12 }, usePointStyle: true, pointStyle: "circle" } },
+                            tooltip: {
+                                backgroundColor: "#1a1a1a",
+                                titleColor: "#d4d4d4",
+                                bodyColor: "#d4d4d4",
+                                borderColor: "#2a2a2a",
+                                borderWidth: 1,
+                                callbacks: {
+                                    label(ctx) {
+                                        const field = fields[ctx.dataIndex];
+                                        const entry = self.compareData[ctx.datasetIndex];
+                                        const rawVal = entry.item[field];
+                                        const name = self.tName(entry.item);
+                                        return `${name}: ${self.formatValue(field, rawVal ?? "--")}`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+                return;
+            }
 
             // Mutant parts: use a grouped bar chart (actual price values) instead of radar
             if (isMutantParts) {
@@ -3424,6 +3365,11 @@ export const appDefinition = {
             localStorage.setItem("hideUnusedAmmo", JSON.stringify(this.hideUnusedAmmo));
         },
 
+        toggleShowTileIcons() {
+            this.showTileIcons = !this.showTileIcons;
+            localStorage.setItem("showTileIcons", JSON.stringify(this.showTileIcons));
+        },
+
         isUnusedAmmo(item, category) {
             if ((category || this.activeCategory) !== 'Ammo') return false;
             if (!this.ammoWeaponsCache) return false;
@@ -3468,6 +3414,7 @@ export const appDefinition = {
             if (h === "_heal") return this.t("app_heal_heals");
             if (h === "_malfunction_chance") return this.t("_malfunction_chance");
             if (h === "_cost_per_round") return this.t("_cost_per_round");
+            if (h === "_compatible_weapons") return this.t("app_label_compatible_weapons");
             if (h === "st_upgr_cost" && this.activeCategory === CAT.AMMO) return this.t("_cost_per_pack");
             if (h === "ui_inv_damage" && this.activeCategory === CAT.AMMO) return this.t("st_data_export_damage_mult");
             const translated = this.t(h);
@@ -3525,6 +3472,9 @@ export const appDefinition = {
             }
             if (headers.includes("st_upgr_cost") && category === CAT.AMMO && !allHeaders.includes("_cost_per_round")) {
                 allHeaders.push("_cost_per_round");
+            }
+            if ([CAT.SCOPES, CAT.SILENCERS, CAT.GRENADE_LAUNCHERS, CAT.TACTICAL_KITS].includes(category) && !allHeaders.includes("_compatible_weapons")) {
+                allHeaders.push("_compatible_weapons");
             }
             const ranges = {};
             for (const h of allHeaders) {
@@ -3725,6 +3675,17 @@ export const appDefinition = {
                 if (isNaN(cost) || isNaN(box) || box === 0) return undefined;
                 return cost / box;
             }
+            if (field === "_compatible_weapons") {
+                let weapons = (this.addonCompatibleWeaponsMap || {})[item.id] || [];
+                if (this.hideNoDrop && weapons.length) {
+                    const indexMap = new Map((this.index || []).map(i => [i.id, i]));
+                    weapons = weapons.filter(wid => {
+                        const w = indexMap.get(wid);
+                        return w && w.hasNpcWeaponDrop !== false;
+                    });
+                }
+                return weapons.length;
+            }
             return item[field];
         },
 
@@ -3732,6 +3693,7 @@ export const appDefinition = {
             if (val === undefined || val === null || val === "" || val === "--") return "--";
             if (h === "_malfunction_chance") return val.toFixed(2) + "%";
             if (h === "_cost_per_round") return parseFloat(val).toFixed(1) + " ₽";
+            if (h === "_compatible_weapons") return String(val);
             if (h === "ui_ammo_types" || h === "st_data_export_ammo_types_alt") return this.caliberName(val);
             if (h === "ui_st_community") return this.t(val);
 
@@ -3809,7 +3771,17 @@ export const appDefinition = {
         },
 
         shortAmmoName(name) {
-            return name.replace(/\s*rounds$/i, "").replace(/^Патроны\s*/i, "").replace(/\s*мм\b/i, "").replace(/\s*mm\b/i, "").replace(/\bPst\b/, "PST");
+            return name
+                .replace(/\s*(rounds?|shells|slugs|cartridge)$/i, "")
+                .replace(/\bBuckshot\b/i, "Buck")
+                .replace(/\bHome-made\b/i, "HM")
+                .replace(/\bHydra-shock HP\b/i, "Hydra-shock")
+                .replace(/[""]/g, "")
+                .replace(/^Патроны\s*/i, "")
+                .replace(/\s*мм\b/i, "")
+                .replace(/\s*mm\b/i, "")
+                .replace(/\bPst\b/, "PST")
+                .trim();
         },
 
         escapeHtml(text) {
@@ -3943,6 +3915,156 @@ export const appDefinition = {
                     "</div>",
                 ].join(""),
             };
+        },
+
+        addonCompatibleWeaponsTooltip(item) {
+            if (!item) return '';
+            const esc = this.escapeHtml;
+            // Deduplicate weapon IDs (same weapon can appear multiple times in addon map)
+            const weaponIds = [...new Set((this.addonCompatibleWeaponsMap || {})[item.id] || [])];
+            const title = esc(this.t('app_label_compatible_weapons'));
+            if (!weaponIds.length) {
+                return {
+                    className: 'tooltip-addon-weapons-card',
+                    html: `<div class="addon-compat-tooltip"><div class="addon-compat-title">${title}</div><div class="addon-compat-none">${esc(this.t('app_label_no_compatible_weapons'))}</div></div>`,
+                };
+            }
+            const MAX_SHOWN = 20;
+            const indexMap = new Map(this.index.map(i => [i.id, i]));
+            // Translate, deduplicate names, then sort
+            const allNames = [...new Set(
+                weaponIds.map(wid => {
+                    const weapon = indexMap.get(wid) || { id: wid, pda_encyclopedia_name: wid };
+                    return esc(this.tName(weapon).replace(/\s*\[default\]$/i, '').trim());
+                })
+            )].sort((a, b) => a.localeCompare(b));
+            const shown = allNames.slice(0, MAX_SHOWN);
+            const extra = allNames.length - shown.length;
+            const countLabel = `<span class="addon-compat-count">(${allNames.length})</span>`;
+            const items = shown.map(n => `<div class="addon-compat-weapon">${n}</div>`).join('');
+            const moreInDetail = this.t('app_label_more_in_detail');
+            const moreLabel = extra > 0
+                ? `<div class="addon-compat-more">+${extra} ${esc(moreInDetail === 'app_label_more_in_detail' ? 'more · open detail for full list' : moreInDetail)}</div>`
+                : '';
+            return {
+                className: 'tooltip-addon-weapons-card',
+                html: `<div class="addon-compat-tooltip"><div class="addon-compat-title">${title} ${countLabel}</div><div class="addon-compat-list">${items}</div>${moreLabel}</div>`,
+            };
+        },
+
+        showWeaponListPopover(item, event) {
+            clearTimeout(this._weaponListHideTimeout);
+            clearTimeout(this._weaponListShowTimeout);
+            const anchor = event.currentTarget;
+            if (this.weaponListPopoverItem?.id === item.id) return;
+            this._weaponListShowTimeout = setTimeout(() => {
+                this.weaponListPopoverItem = item;
+                this.$nextTick(() => {
+                    const el = document.querySelector('.weapon-list-popover');
+                    if (!el || !anchor) return;
+                    FloatingUIDOM.computePosition(anchor, el, {
+                        placement: 'bottom-start',
+                        strategy: 'fixed',
+                        middleware: [
+                            FloatingUIDOM.offset(4),
+                            FloatingUIDOM.flip({ fallbackPlacements: ['top-start', 'bottom-end', 'top-end'] }),
+                            FloatingUIDOM.shift({ padding: 8 }),
+                        ],
+                    }).then(({ x, y }) => {
+                        this.weaponListPopoverPos = { top: y, left: x };
+                    });
+                });
+            }, 300);
+        },
+
+        hideWeaponListPopover() {
+            clearTimeout(this._weaponListShowTimeout);
+            this._weaponListHideTimeout = setTimeout(() => {
+                this.weaponListPopoverItem = null;
+                this.weaponListPopoverPos = null;
+            }, 150);
+        },
+
+        keepWeaponListPopover() {
+            clearTimeout(this._weaponListHideTimeout);
+        },
+
+        closeWeaponListPopover() {
+            clearTimeout(this._weaponListShowTimeout);
+            clearTimeout(this._weaponListHideTimeout);
+            this.weaponListPopoverItem = null;
+            this.weaponListPopoverPos = null;
+        },
+
+        showItemHoverFromCaliber(caliberId, event) {
+            const cal = (caliberId || "").trim();
+            if (!cal) return;
+            const entry = this.calibers[cal];
+            if (!entry || !entry.variants?.length) return;
+            const variant = entry.variants[0];
+            if (!variant) return;
+            const full = this.ammoItemById(variant.id);
+            this.showItemHover(full || variant, event);
+        },
+
+        showItemHover(item, event, compareItem) {
+            clearTimeout(this._hoverShowTimeout);
+            const anchor = event.currentTarget;
+            const mouse = { x: event.clientX, y: event.clientY };
+            this._hoverMouse = mouse;
+            this._hoverShowTimeout = setTimeout(() => {
+                this.hoverItem = item;
+                this.hoverCompareItem = compareItem || null;
+                this.$nextTick(() => this._positionHoverPopover(anchor));
+            }, 250);
+        },
+
+        moveItemHover(event) {
+            this._hoverMouse = { x: event.clientX, y: event.clientY };
+            if (this.hoverItem) this._positionHoverPopover();
+        },
+
+        hideItemHover() {
+            clearTimeout(this._hoverShowTimeout);
+            this._hoverMouse = null;
+            this.hoverItem = null;
+            this.hoverPos = null;
+            this.hoverCompareItem = null;
+        },
+
+        _positionHoverPopover(anchor) {
+            const el = document.querySelector('.item-hover-popover-global') || document.querySelector('.item-compare-popover');
+            const mouse = this._hoverMouse;
+            if (!el || !mouse) return;
+            const ref = anchor || { getBoundingClientRect: () => ({ x: mouse.x, y: mouse.y, top: mouse.y, left: mouse.x, bottom: mouse.y, right: mouse.x, width: 0, height: 0 }) };
+            FloatingUIDOM.computePosition(ref, el, {
+                placement: 'right-start',
+                strategy: 'fixed',
+                middleware: [
+                    FloatingUIDOM.offset(16),
+                    FloatingUIDOM.flip({ fallbackPlacements: ['left-start', 'right-end', 'left-end'] }),
+                    FloatingUIDOM.shift({ padding: 8 }),
+                ],
+            }).then(({ x, y }) => {
+                this.hoverPos = { top: y, left: x };
+            });
+        },
+
+        navHref(page) {
+            const pack = this.activePack?.id;
+            if (!pack) return '/';
+            if (!page || page === 'db') return `/db/${pack}`;
+            return `/db/${pack}/${page}`;
+        },
+
+        itemHref(itemId) {
+            const pack = this.activePack?.id;
+            if (!pack) return '#';
+            return `/db/${pack}#${itemId}`;
+        },
+
+        categoryHref(category) {
+            return this.navHref(categorySlug(category));
         },
 
         caliberName(val) {
@@ -5574,15 +5696,26 @@ export const appDefinition = {
             }
             const slugMap = { outfit: "outfits", helmet: "helmets", backpack: "belt-attachments", belt: "belt-attachments", artifact: "artefacts" };
             const slug = slugMap[slotType];
-            if (!slug) return [];
-            const headers = this.categoryHeaders[slug] || [];
-            return headers.filter(h => !TILE_HIDE.has(h) && !h.startsWith("Total ") && h !== "id");
+            if (slug) {
+                const headers = this.categoryHeaders[slug] || [];
+                return headers.filter(h => !TILE_HIDE.has(h) && !h.startsWith("Total ") && h !== "id");
+            }
+            // Fallback: resolve category from index and use its headers
+            const indexEntry = (this.index || []).find(i => i.id === item.id);
+            if (indexEntry?.category) {
+                const fallbackSlug = categorySlug(indexEntry.category);
+                const headers = this.categoryHeaders[fallbackSlug] || [];
+                if (headers.length) {
+                    return headers.filter(h => !TILE_HIDE.has(h) && !h.startsWith("Total ") && h !== "id");
+                }
+            }
+            return [];
         },
 
         buildHoverCompareFields() {
-            if (!this.buildHoverItem || !this.buildHoverCompareItem) return [];
-            const hoverFields = this.getItemFields(this.buildHoverItem);
-            const equippedFields = this.getItemFields(this.buildHoverCompareItem);
+            if (!this.hoverItem || !this.hoverCompareItem) return [];
+            const hoverFields = this.getItemFields(this.hoverItem);
+            const equippedFields = this.getItemFields(this.hoverCompareItem);
             const seen = new Set(hoverFields);
             const extra = equippedFields.filter(f => !seen.has(f));
             return hoverFields.concat(extra);
@@ -5605,10 +5738,6 @@ export const appDefinition = {
         },
 
         showBuildHover(item, event) {
-            clearTimeout(this.buildHoverTimeout);
-            this._buildHoverItem = item;
-            this._buildHoverMouse = { x: event.clientX, y: event.clientY };
-
             // Resolve comparison item — only for inventory/picker items, not equipped slots
             let compareItem = null;
             let slotType = null;
@@ -5640,49 +5769,15 @@ export const appDefinition = {
                 compareItem = map[this.buildWeaponCompareSlot] || this.buildAmmoPrimary || this.buildAmmoSecondary || this.buildAmmoSidearm;
             }
             if (compareItem && compareItem.id === item.id) compareItem = null;
-            this._buildHoverCompareItem = compareItem;
-
-            this.buildHoverTimeout = setTimeout(() => {
-                this.buildHoverItem = this._buildHoverItem;
-                this.buildHoverCompareItem = this._buildHoverCompareItem;
-                this.$nextTick(() => this._updateBuildHoverFloat());
-            }, 300);
+            this.showItemHover(item, event, compareItem);
         },
 
         moveBuildHover(event) {
-            this._buildHoverMouse = { x: event.clientX, y: event.clientY };
-            if (!this.buildHoverItem) return;
-            this._updateBuildHoverFloat();
-        },
-
-        _updateBuildHoverFloat() {
-            const popover = document.querySelector('.build-hover-popover') || document.querySelector('.item-hover-popover');
-            if (!popover || !this._buildHoverMouse) return;
-            const { x, y } = this._buildHoverMouse;
-            const virtualEl = {
-                getBoundingClientRect: () => ({ x, y, top: y, left: x, bottom: y, right: x, width: 0, height: 0 }),
-            };
-            FloatingUIDOM.computePosition(virtualEl, popover, {
-                placement: 'right-start',
-                strategy: 'fixed',
-                middleware: [
-                    FloatingUIDOM.offset(16),
-                    FloatingUIDOM.flip({ fallbackPlacements: ['left-start', 'right-end', 'left-end'] }),
-                    FloatingUIDOM.shift({ padding: 8 }),
-                ],
-            }).then(({ x: px, y: py }) => {
-                this.buildHoverPos = { top: py, left: px };
-            });
+            this.moveItemHover(event);
         },
 
         hideBuildHover() {
-            clearTimeout(this.buildHoverTimeout);
-            this._buildHoverItem = null;
-            this._buildHoverCompareItem = null;
-            this._buildHoverMouse = null;
-            this.buildHoverItem = null;
-            this.buildHoverCompareItem = null;
-            this.buildHoverPos = null;
+            this.hideItemHover();
         },
 
         equipFromInventory(idx) {
@@ -6262,6 +6357,11 @@ export const appDefinition = {
         try {
             const savedHideAmmo = localStorage.getItem("hideUnusedAmmo");
             if (savedHideAmmo !== null) this.hideUnusedAmmo = JSON.parse(savedHideAmmo);
+        } catch (e) { /* ignore */ }
+
+        try {
+            const savedIcons = localStorage.getItem("showTileIcons");
+            if (savedIcons !== null) this.showTileIcons = JSON.parse(savedIcons);
         } catch (e) { /* ignore */ }
 
         // 6b. Restore URL state (sort, filters, view, etc.)

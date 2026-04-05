@@ -42,6 +42,8 @@ const SKIP_FILES = new Set([
   "export_item_chance_in_stash.csv",
   "export_mutant_profiles.csv",
   "export_npc_armor_profiles.csv",
+  "export_addon_weapon_map.csv",
+  "export_weapon_addon_map.csv",
   "en_us.csv",
   "ru_ru.csv",
   "fr_fr.csv",
@@ -66,6 +68,9 @@ const FILE_CONFIG = [
   { match: /^export_eatable/, category: "Food", group: "Consumables" },
   { match: /^export_medicine/, category: "Medicine", group: "Consumables" },
   { match: /^export_mutant_parts_prices/, category: "Mutant Parts", group: "Items" },
+  { match: /^export_scopes/, category: "Scopes", group: "Equipment" },
+  { match: /^export_silencers/, category: "Silencers", group: "Equipment" },
+  { match: /^export_grenade_launchers/, category: "Grenade Launchers", group: "Equipment" },
 ];
 
 // Ordered group list for sidebar display
@@ -274,6 +279,45 @@ for (const file of files) {
   }
 
   console.log(`${file}: ${items.length} items (${config.category})`);
+}
+
+// ── Split tactical/conversion kits out of the Scopes category ────────────────
+// The game exporter lumps all weapon addons (optics + body kits) into the scopes
+// CSV. These IDs are weapon conversion / body-kit items, not optical sights.
+const TACTICAL_KIT_IDS = new Set([
+  "226sig_kit", "23_up", "5c_tik", "apsabigo", "archangel",
+  "gurza_up", "infiltrator_tactical_kit", "kab_up", "kashtan_rmr",
+  "kit_aus_tri", "kit_fal_leup", "kit_sa5x_spec", "kp_sr2", "lapua700",
+  "lazup_pl15", "magpul_pro", "march_f_shorty_alt", "mark8_rmr",
+  "mauser_kit", "mod9", "mod_x_gen3", "mono_kit", "none",
+  "ots2_upgr_kit", "pl15_scolaz", "pritseldob", "shakal", "side",
+  "spec_alt", "spectre_tactical_kit", "sr1upgr1", "sr2_upkit",
+  "sup", "swamp", "triji", "u2p2g0r", "upg220", "vorkuta",
+]);
+
+const scopeData = categoryData.get("scopes");
+if (scopeData) {
+  const kits = [];
+  const realScopes = [];
+  for (const item of scopeData.items) {
+    if (TACTICAL_KIT_IDS.has(item.id)) kits.push(item);
+    else realScopes.push(item);
+  }
+  if (kits.length) {
+    scopeData.items = realScopes;
+    const kitSlug = "tactical-kits";
+    categoryData.set(kitSlug, {
+      category: "Tactical Kits",
+      headers: [...scopeData.headers],
+      items: kits,
+    });
+    // Update index entries for moved items
+    for (const item of kits) {
+      const entry = index.find(e => e.id === item.id);
+      if (entry) entry.category = "Tactical Kits";
+    }
+    console.log(`Split ${kits.length} tactical kits from Scopes into Tactical Kits`);
+  }
 }
 
 // Find longest common prefix of an array of strings
@@ -1129,6 +1173,61 @@ if (existsSync(gboSrc)) {
   const gboOut = join(OUT_DIR, "gbo-constants.json");
   cpSync(gboSrc, gboOut);
   console.log(`Copied GBO constants to ${gboOut}`);
+}
+
+// Generate addon-weapons.json from export_addon_weapon_map.csv (addon ID → weapon IDs)
+const ADDON_WEAPON_MAP_FILE = join(CSV_DIR, "export_addon_weapon_map.csv");
+try {
+  const text = readFileSync(ADDON_WEAPON_MAP_FILE, "utf-8");
+  const addonWeapons = {};
+  for (const line of text.split(/\r?\n/)) {
+    const parts = line.split(",").map((v) => v.trim()).filter(Boolean);
+    if (parts.length < 2) continue;
+    addonWeapons[parts[0]] = parts.slice(1);
+  }
+  const awOut = join(OUT_DIR, "addon-weapons.json");
+  writeFileSync(awOut, JSON.stringify(addonWeapons, null, 2));
+  console.log(`Wrote ${Object.keys(addonWeapons).length} addon-weapon mappings to ${awOut}`);
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+  console.log("No addon weapon map CSV found, skipping addon-weapons.json");
+}
+
+// Generate weapon-addons.json from export_weapon_addon_map.csv (weapon ID → addons by type)
+const WEAPON_ADDON_MAP_FILE = join(CSV_DIR, "export_weapon_addon_map.csv");
+try {
+  // Build ID sets from the processed item categories for classification
+  const scopeIds = new Set((categoryData.get("scopes")?.items || []).map(i => i.id));
+  const silencerIds = new Set((categoryData.get("silencers")?.items || []).map(i => i.id));
+  const launcherIds = new Set((categoryData.get("grenade-launchers")?.items || []).map(i => i.id));
+  const kitIds = new Set((categoryData.get("tactical-kits")?.items || []).map(i => i.id));
+  if (!scopeIds.size) console.warn("WARNING: No scope items found in categoryData — weapon-addons.json will have no scope classifications");
+  if (!silencerIds.size) console.warn("WARNING: No silencer items found in categoryData — weapon-addons.json will have no silencer classifications");
+  if (!launcherIds.size) console.warn("WARNING: No launcher items found in categoryData — weapon-addons.json will have no launcher classifications");
+
+  const text = readFileSync(WEAPON_ADDON_MAP_FILE, "utf-8");
+  const weaponAddons = {};
+  for (const line of text.split(/\r?\n/)) {
+    const parts = line.split(",").map((v) => v.trim()).filter(Boolean);
+    if (parts.length < 2) continue;
+    const weaponId = parts[0];
+    const addons = { scopes: [], silencers: [], launchers: [], kits: [] };
+    for (const addonId of parts.slice(1)) {
+      if (scopeIds.has(addonId)) addons.scopes.push(addonId);
+      else if (silencerIds.has(addonId)) addons.silencers.push(addonId);
+      else if (launcherIds.has(addonId)) addons.launchers.push(addonId);
+      else if (kitIds.has(addonId)) addons.kits.push(addonId);
+    }
+    if (addons.scopes.length || addons.silencers.length || addons.launchers.length || addons.kits.length) {
+      weaponAddons[weaponId] = addons;
+    }
+  }
+  const waOut = join(OUT_DIR, "weapon-addons.json");
+  writeFileSync(waOut, JSON.stringify(weaponAddons, null, 2));
+  console.log(`Wrote ${Object.keys(weaponAddons).length} weapon-addon mappings to ${waOut}`);
+} catch (e) {
+  if (e.code !== "ENOENT") throw e;
+  console.log("No weapon addon map CSV found, skipping weapon-addons.json");
 }
 
 // Generate translations.json from translation CSVs + supplementary

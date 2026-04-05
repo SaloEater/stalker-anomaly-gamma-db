@@ -490,79 +490,6 @@
     </div>
 
     <!-- Item hover popover -->
-    <div v-if="buildHoverItem" class="build-hover-popover" :style="buildHoverPos ? { top: buildHoverPos.top + 'px', left: buildHoverPos.left + 'px' } : { visibility: 'hidden' }">
-        <!-- Single-item popover (no comparison) -->
-        <div v-if="!buildHoverCompareItem" class="tile-card build-hover-tile">
-            <div class="tile-card-header">
-                <span class="tile-card-name">{{ tItemName(buildHoverItem) }}</span>
-                <span v-if="buildHoverItem['st_data_export_has_perk'] === 'Y'" class="badge-flag badge-perk">{{ t('app_badge_perk') }}</span>
-                <span v-if="buildHoverItem['ui_mcm_menu_exo'] === 'Y'" class="badge-flag badge-powered">{{ t('app_badge_powered') }}</span>
-            </div>
-            <div class="tile-card-stats">
-                <div v-for="field in getItemFields(buildHoverItem)" :key="field" class="tile-stat-row">
-                    <span class="stat-label">{{ headerLabel(field) }}</span>
-                    <template v-if="field === 'ui_mm_repair'">
-                        <span class="badge" :style="displayStyle(field, buildHoverItem[field])">{{ displayLabel(field, buildHoverItem[field]) }}</span>
-                    </template>
-                    <template v-else-if="field === 'ui_ammo_types' || field === 'st_data_export_ammo_types_alt'">
-                        <span v-if="buildHoverItem[field]" class="tile-ammo-list">
-                            <span v-for="a in buildHoverItem[field].split(';')" :key="a" :class="field === 'st_data_export_ammo_types_alt' ? 'badge-ammo badge-ammo-alt clickable' : 'badge-ammo clickable'" v-tooltip="ammoTooltipPayload(a.trim())" @click.stop="openAmmoFromCaliber(a.trim())">{{ caliberName(a.trim()) }}</span>
-                        </span>
-                        <span v-else class="stat-value">--</span>
-                    </template>
-                    <template v-else>
-                        <span class="stat-value" :class="statClass(field, cellValue(buildHoverItem, field))" :style="statStyle(field, cellValue(buildHoverItem, field))">{{ formatValue(field, cellValue(buildHoverItem, field)) }}</span>
-                    </template>
-                </div>
-            </div>
-            <div class="build-hover-desc">
-                <img class="build-hover-icon" :src="'img/icons/' + buildHoverItem.id + '.png'" @error="$event.target.style.display='none'">
-                <p v-if="parseDescription(buildHoverItem)" class="modal-description">{{ parseDescription(buildHoverItem).text }}</p>
-                <div v-if="parseDescription(buildHoverItem) && parseDescription(buildHoverItem).sections.length" class="modal-desc-meta">
-                    <template v-for="section in parseDescription(buildHoverItem).sections">
-                        <span v-if="section.header === 'WARNING'" v-for="item in section.items" class="desc-chip desc-chip-warning">{{ item }}</span>
-                        <span v-else v-for="item in section.items" class="desc-chip">{{ item }}</span>
-                    </template>
-                </div>
-            </div>
-        </div>
-        <!-- Comparison popover -->
-        <div v-else class="tile-card build-hover-tile build-hover-tile--compare">
-            <div class="build-compare-header">
-                {{ tItemName(buildHoverCompareItem) }} <span class="build-compare-vs">vs</span> {{ tItemName(buildHoverItem) }}
-            </div>
-            <div class="build-compare-grid">
-                <span class="build-compare-sublabel"></span>
-                <span class="build-compare-sublabel">{{ t('app_build_equipped') }}</span>
-                <span class="build-compare-sublabel">{{ t('app_build_inventory') }}</span>
-                <span class="build-compare-sublabel"></span>
-                <template v-for="field in buildHoverCompareFields()" :key="field">
-                    <span class="stat-label">{{ headerLabel(field) }}</span>
-                    <span class="stat-value build-compare-val">{{ formatValue(field, cellValue(buildHoverCompareItem, field)) }}</span>
-                    <span class="stat-value build-compare-val">{{ formatValue(field, cellValue(buildHoverItem, field)) }}</span>
-                    <span class="build-compare-diff"
-                          :class="buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value === null ? 'diff-dash'
-                                 : buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value === 0 ? 'diff-zero'
-                                 : buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).positive ? 'diff-positive'
-                                 : 'diff-negative'">
-                        {{ buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value === null ? '—'
-                           : buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value === 0 ? '='
-                           : (buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value > 0 ? '+' : '') + formatValue(field, buildHoverDiff(field, buildHoverItem, buildHoverCompareItem).value) }}
-                    </span>
-                </template>
-            </div>
-            <div class="build-hover-desc">
-                <img class="build-hover-icon" :src="'img/icons/' + buildHoverItem.id + '.png'" @error="$event.target.style.display='none'">
-                <p v-if="parseDescription(buildHoverItem)" class="modal-description">{{ parseDescription(buildHoverItem).text }}</p>
-                <div v-if="parseDescription(buildHoverItem) && parseDescription(buildHoverItem).sections.length" class="modal-desc-meta">
-                    <template v-for="section in parseDescription(buildHoverItem).sections">
-                        <span v-if="section.header === 'WARNING'" v-for="item in section.items" class="desc-chip desc-chip-warning">{{ item }}</span>
-                        <span v-else v-for="item in section.items" class="desc-chip">{{ item }}</span>
-                    </template>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 </template>
 
@@ -608,9 +535,6 @@ export default {
         buildInventorySort: { type: String, default: 'none' },
         buildInventorySortLabel: { type: String, default: '' },
         buildDragState: { type: Object, default: null },
-        buildHoverItem: { type: Object, default: null },
-        buildHoverCompareItem: { type: Object, default: null },
-        buildHoverPos: { type: Object, default: null },
         favoriteIds: { type: Array, default: () => [] },
         factionList: { type: Array, default: () => [] },
         weaponCompareSlotCount: { type: Number, default: 0 },
@@ -714,7 +638,7 @@ export default {
 .build-action-divider {
     width: 1px;
     height: 1.1rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-overlay-white-10);
     margin: 0 0.25rem;
     flex-shrink: 0;
 }
@@ -739,10 +663,10 @@ export default {
 }
 .build-header-icon:hover {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--color-overlay-white-6);
 }
 .build-header-icon.copied {
-    color: #4ac45a;
+    color: var(--color-green);
 }
 .build-header-icon-label {
     font-size: 0.68rem;
@@ -754,14 +678,14 @@ export default {
     color: var(--text-secondary);
 }
 .build-header-icon-danger:hover {
-    color: #f06a5e;
-    background: rgba(240, 106, 94, 0.1);
+    color: var(--color-red-vibrant);
+    background: var(--color-red-vibrant-tint-10);
 }
 
 /* Inline badge (flows after label text) */
 .build-header-badge-inline {
     background: var(--accent);
-    color: #000;
+    color: var(--color-black);
     font-size: 0.5rem;
     font-weight: 700;
     min-width: 0.9rem;
@@ -784,7 +708,7 @@ export default {
     border-radius: 4px;
     padding: 0.25rem;
     z-index: 120;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 12px var(--color-overlay-black-40);
 }
 .build-overflow-item {
     display: flex;
@@ -803,22 +727,22 @@ export default {
 }
 .build-overflow-item:hover {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--color-overlay-white-6);
 }
 .build-overflow-item.copied {
-    color: #4ac45a;
+    color: var(--color-green);
 }
 .build-overflow-item:disabled {
     opacity: 0.4;
     cursor: default;
 }
 .build-overflow-item-danger:hover {
-    color: #f06a5e;
-    background: rgba(240, 106, 94, 0.1);
+    color: var(--color-red-vibrant);
+    background: var(--color-red-vibrant-tint-10);
 }
 .build-overflow-divider {
     height: 1px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-overlay-white-8);
     margin: 0.2rem 0.3rem;
 }
 
@@ -844,14 +768,14 @@ export default {
     margin-bottom: 0.5rem;
     background: transparent;
     border: 1px solid transparent;
-    color: #f06a5e;
+    color: var(--color-red-vibrant);
     transition: background 0.15s, border-color 0.15s;
 }
 .build-import-code-banner.visible {
-    background: rgba(240, 106, 94, 0.12);
-    border-color: rgba(240, 106, 94, 0.3);
+    background: var(--color-red-vibrant-tint-12);
+    border-color: var(--color-red-vibrant-tint-30);
 }
 .build-save-input-error {
-    border-color: rgba(240, 106, 94, 0.5) !important;
+    border-color: var(--color-red-vibrant-tint-50) !important;
 }
 </style>

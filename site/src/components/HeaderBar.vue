@@ -44,22 +44,22 @@
             <button class="header-drawer-close" @click.stop="overflowOpen = false">&times;</button>
         </div>
         <div class="header-drawer-label">{{ t('app_group_tools') }}</div>
-        <button class="header-drawer-item" :class="{ active: itemDbActive }" @click="$emit('openItemDb'); overflowOpen = false">
+        <a class="header-drawer-item" :class="{ active: itemDbActive }" :href="navHref('db')" @click.prevent="$emit('openItemDb'); overflowOpen = false">
             <LucideDatabase :size="16" />
             <span>{{ t('app_nav_item_db') }}</span>
-        </button>
-        <button class="header-drawer-item" :class="{ active: buildPlannerActive }" @click="$emit('openBuildPlanner'); overflowOpen = false">
+        </a>
+        <a class="header-drawer-item" :class="{ active: buildPlannerActive }" :href="navHref('build-planner')" @click.prevent="$emit('openBuildPlanner'); overflowOpen = false">
             <LucideHammer :size="16" />
             <span>{{ t('app_cat_build_planner') }}</span>
-        </button>
-        <button class="header-drawer-item" :class="{ active: damageSimActive }" @click="$emit('openDamageSim'); overflowOpen = false">
+        </a>
+        <a class="header-drawer-item" :class="{ active: damageSimActive }" :href="navHref('ballistics')" @click.prevent="$emit('openDamageSim'); overflowOpen = false">
             <LucideCrosshair :size="16" />
             <span>{{ t('app_nav_damage_sim') }}</span>
-        </button>
-        <button class="header-drawer-item maps-nav-btn" :class="{ active: mapsActive }" @click="$emit('openMaps'); overflowOpen = false">
+        </a>
+        <a class="header-drawer-item maps-nav-btn" :class="{ active: mapsActive }" :href="navHref('maps')" @click.prevent="$emit('openMaps'); overflowOpen = false">
             <LucideMap :size="16" />
             <span>{{ t('app_nav_maps') }}</span>
-        </button>
+        </a>
         <div class="header-drawer-divider"></div>
         <template v-if="packs.length > 1">
             <div class="header-drawer-label">{{ t('app_drawer_pack') || 'Pack' }}</div>
@@ -171,22 +171,22 @@
     </Transition>
 </header>
 <nav class="nav-bar header-desktop-items" v-show="translations">
-    <button class="nav-bar-item" :class="{ active: itemDbActive }" @click="$emit('openItemDb')">
+    <a class="nav-bar-item" :class="{ active: itemDbActive }" :href="navHref('db')" @click.prevent="$emit('openItemDb')">
         <LucideDatabase :size="14" />
         {{ t('app_nav_item_db') }}
-    </button>
-    <button class="nav-bar-item" :class="{ active: buildPlannerActive }" @click="$emit('openBuildPlanner')">
+    </a>
+    <a class="nav-bar-item" :class="{ active: buildPlannerActive }" :href="navHref('build-planner')" @click.prevent="$emit('openBuildPlanner')">
         <LucideHammer :size="14" />
         {{ t('app_cat_build_planner') }}
-    </button>
-    <button class="nav-bar-item ballistics-nav-btn" :class="{ active: damageSimActive }" @click="$emit('openDamageSim')">
+    </a>
+    <a class="nav-bar-item ballistics-nav-btn" :class="{ active: damageSimActive }" :href="navHref('ballistics')" @click.prevent="$emit('openDamageSim')">
         <LucideCrosshair :size="14" />
         {{ t('app_nav_damage_sim') }}
-    </button>
-    <button class="nav-bar-item maps-nav-btn" :class="{ active: mapsActive }" @click="$emit('openMaps')">
+    </a>
+    <a class="nav-bar-item maps-nav-btn" :class="{ active: mapsActive }" :href="navHref('maps')" @click.prevent="$emit('openMaps')">
         <LucideMap :size="14" />
         {{ t('app_nav_maps') }}
-    </button>
+    </a>
     <div class="nav-bar-spacer"></div>
     <div class="settings-wrap" v-click-outside="() => settingsOpen = false">
         <button class="settings-btn" @click.stop="settingsOpen = !settingsOpen" v-tooltip="t('app_label_settings')">
@@ -201,6 +201,10 @@
             <div class="settings-item" @click.stop="$emit('toggleHideUnusedAmmo')">
                 <span class="toggle-switch" :class="{ on: hideUnusedAmmo }"><span class="toggle-knob"></span></span>
                 <span>{{ t('app_label_hide_unused_ammo') }}</span>
+            </div>
+            <div class="settings-item" @click.stop="$emit('toggleShowTileIcons')">
+                <span class="toggle-switch" :class="{ on: showTileIcons }"><span class="toggle-knob"></span></span>
+                <span>{{ t('app_label_show_tile_icons') }}</span>
             </div>
         </div>
     </div>
@@ -228,15 +232,16 @@ export default {
         itemDbActive: { type: Boolean, default: false },
         hideNoDrop: { type: Boolean, default: false },
         hideUnusedAmmo: { type: Boolean, default: false },
+        showTileIcons: { type: Boolean, default: true },
     },
     emits: [
         'toggleSidebarCollapse', 'toggleSidebar', 'switchPack',
         'changeLocale', 'openShortcutHelp', 'clearGlobalQuery',
         'update:globalQuery', 'search', 'escapeSearch', 'selectSearchResult',
         'openItemDb', 'openMaps', 'openBuildPlanner', 'openDamageSim',
-        'toggleHideNoDrop', 'toggleHideUnusedAmmo',
+        'toggleHideNoDrop', 'toggleHideUnusedAmmo', 'toggleShowTileIcons',
     ],
-    inject: ['t', 'tName', 'tCat'],
+    inject: ['t', 'tName', 'tCat', 'navHref'],
     computed: {
         sortedPacks() {
             return [...this.packs].sort((a, b) => a.name.localeCompare(b.name));
@@ -285,7 +290,7 @@ export default {
 .header-drawer-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--color-overlay-black-50);
     z-index: 160;
 }
 .header-drawer {
@@ -318,7 +323,7 @@ export default {
 }
 .header-drawer-close:hover {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-overlay-white-8);
 }
 .header-drawer-label {
     padding: 0.5rem 1rem 0.2rem;
@@ -347,14 +352,14 @@ export default {
 }
 .header-drawer-item:hover {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--color-overlay-white-6);
 }
 .header-drawer-item.active {
     color: var(--accent);
 }
 .header-drawer-divider {
     height: 1px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-overlay-white-8);
     margin: 0.3rem 0.75rem;
 }
 .drawer-right-enter-active,
@@ -370,7 +375,7 @@ export default {
 .mobile-search-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--color-overlay-black-70);
     z-index: 200;
     display: flex;
     align-items: flex-start;
@@ -403,7 +408,7 @@ export default {
     align-items: center;
     justify-content: center;
     width: 2.4rem;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-overlay-white-8);
     border: 1px solid var(--border);
     border-radius: 4px;
     color: var(--text-secondary);
@@ -412,6 +417,6 @@ export default {
 }
 .mobile-search-close:hover {
     color: var(--text);
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--color-overlay-white-12);
 }
 </style>
