@@ -1756,9 +1756,6 @@ export const appDefinition = {
             // Update URL (clears stale filter/sort params)
             this.pushUrlState(true);
 
-            // Update title
-            document.title = `Stalker Anomaly Tools [${this.activePack.name}]`;
-
             // Migrate pins to scoped key
             this.loadScopedPins();
             this.loadFavorites();
@@ -6285,9 +6282,6 @@ export const appDefinition = {
             // Persist selection
             localStorage.setItem("selectedPack", this.activePack.id);
 
-            // Update title
-            document.title = `Stalker Anomaly Tools [${this.activePack.name}]`;
-
             // Redirect remaining legacy query-param URLs now that pack is known
             const lp2 = new URLSearchParams(window.location.search);
             const legacyCat2 = lp2.get("cat");
@@ -6424,7 +6418,6 @@ export const appDefinition = {
                 if (newPack) {
                     this.activePack = newPack;
                     localStorage.setItem("selectedPack", newPack.id);
-                    document.title = `Stalker Anomaly Tools [${newPack.name}]`;
                     await this.loadPackData();
                 }
             }
