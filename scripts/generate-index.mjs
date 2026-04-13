@@ -91,6 +91,22 @@ function getConfig(filename) {
   return FILE_CONFIG.find((c) => c.match.test(filename));
 }
 
+// The game engine writes Windows-1251 text with two kinds of non-ASCII artifacts:
+//   1. Color markup:  %c[d_cyan], %c[0,255,255,255], etc.
+//   2. U+FFFD replacement characters (appear as Cyrillic пїЅ when decoded
+//      from Windows-1251) — used for bullets, dashes, quotes, and apostrophes.
+// This function strips both, preserving a hyphen when a dash appears between
+// digits (e.g. "3–10x" → "3-10x" instead of "310x").
+const WIN1251_REPLACEMENT = "\u043F\u0457\u0405"; // пїЅ — U+FFFD decoded as Windows-1251
+function cleanTranslationLine(line) {
+  return line
+    .replace(/%c\[[^\]]*\]/gi, "")                          // strip color codes
+    .replace(new RegExp(`(\\d)${WIN1251_REPLACEMENT}(\\d)`, "g"), "$1-$2") // digit-dash-digit
+    .replace(new RegExp(WIN1251_REPLACEMENT, "g"), "")       // strip remaining replacement chars
+    .replace(/(\d)\uFFFD(\d)/g, "$1-$2")                    // same for raw U+FFFD (UTF-8 sources)
+    .replace(/\uFFFD/g, "");                                 // strip remaining U+FFFD
+}
+
 // Legacy CSV line parser that handles quoted fields with semicolon-separated sub-values
 function parseCsvLineLegacy(line) {
   const fields = [];
@@ -193,8 +209,7 @@ function loadTranslations(packDir) {
     const text = new TextDecoder(encoding).decode(buf);
     const lines = text.split(/\r?\n/).filter((l) => l.length > 0);
     for (let i = 1; i < lines.length; i++) {
-      // Strip color codes, replacement characters, and misencoded BOM (пїЅ) before CSV parsing
-      const cleanLine = lines[i].replace(/%c\[[^\]]*\]/gi, "").replace(/\uFFFD/g, "").replace(/\u043F\u0457\u0405/g, "");
+      const cleanLine = cleanTranslationLine(lines[i]);
       const cols = parseCsvLine(cleanLine);
       const key = cols[0]?.trim().toLowerCase();
       // Rejoin all columns after the key — commas in values are not column separators
