@@ -7,7 +7,7 @@
     <div class="sidebar-group">
         <div class="sidebar-group-label" @click="$emit('toggleGroup', 'craft-recipes')">
             <svg class="sidebar-chevron" :class="{ collapsed: collapsedGroups['craft-recipes'] }" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            {{ t('app_cat_crafting') }}
+            {{ t('app_sidebar_recipes') }}
         </div>
         <div class="sidebar-group-items" v-show="!collapsedGroups['craft-recipes']">
             <a

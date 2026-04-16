@@ -101,7 +101,7 @@ export const appDefinition = {
             // Crafting
             craftRecipes: null,
             craftingCategory: "all",
-            craftingGraphView: (() => { try { return localStorage.getItem("craftingTreesView") === "tree"; } catch { return false; } })(),
+            craftingGraphView: (() => { try { const v = localStorage.getItem("craftingTreesView"); return v === null ? true : v === "tree"; } catch { return true; } })(),
             craftingTrees: [],
             craftingTreeExpanded: new Set(),
             craftingTreeExpandAll: false,
