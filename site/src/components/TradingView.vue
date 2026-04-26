@@ -506,7 +506,7 @@ export default {
     min-height: 0;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 0.75rem 0.5rem 0;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -628,6 +628,7 @@ export default {
 .trading-item-card--linked {
     cursor: pointer;
 }
+.trading-item-card:hover { text-decoration: none; }
 .trading-item-card--linked:hover {
     border-color: var(--accent);
     background: var(--color-overlay-white-6);

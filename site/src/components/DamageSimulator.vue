@@ -1226,7 +1226,7 @@ export default defineComponent({
 
 <style scoped>
 .damage-sim {
-  padding: 0 1rem 2rem;
+  padding: 0 0.75rem 0.5rem 0;
   overflow-y: auto;
   flex: 1;
   min-height: 0;
