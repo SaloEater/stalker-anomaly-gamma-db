@@ -150,6 +150,7 @@ export const appDefinition = {
             buildPlayerFaction: "stalker",
             buildPlannerActive: false,
             mapsActive: false,
+            tradingActive: false,
             damageSimActive: false,
             versionCompareActive: false,
             startingLoadoutsActive: false,
@@ -1995,6 +1996,7 @@ export const appDefinition = {
 
             this.buildPlannerActive = false;
             this.mapsActive = false;
+            this.tradingActive = false;
             this.damageSimActive = false;
             this.versionCompareActive = false;
             this.startingLoadoutsActive = false;
@@ -2656,6 +2658,7 @@ export const appDefinition = {
         resetViewState() {
             this.buildPlannerActive = false;
             this.mapsActive = false;
+            this.tradingActive = false;
             this.damageSimActive = false;
             this.versionCompareActive = false;
             this.startingLoadoutsActive = false;
@@ -2683,6 +2686,12 @@ export const appDefinition = {
         openMaps() {
             this.resetViewState();
             this.mapsActive = true;
+            this.pushUrlState(true);
+        },
+
+        openTrading() {
+            this.resetViewState();
+            this.tradingActive = true;
             this.pushUrlState(true);
         },
 
@@ -4371,6 +4380,7 @@ export const appDefinition = {
                 buildPlanner: this.buildPlannerActive,
                 damageSim: this.damageSimActive,
                 maps: this.mapsActive,
+                trading: this.tradingActive,
                 favorites: this.favoritesViewActive,
                 recent: this.recentViewActive,
                 versionCompare: this.versionCompareActive,
@@ -4482,6 +4492,9 @@ export const appDefinition = {
                 this.openDamageSim();
             } else if (parsed.maps || legacyCat === "maps") {
                 this.mapsActive = true;
+                this.activeCategory = null;
+            } else if (parsed.trading || legacyCat === "trading") {
+                this.tradingActive = true;
                 this.activeCategory = null;
             } else if (parsed.versionCompare || legacyCat === "version-compare") {
                 this.versionCompareActive = true;
@@ -6430,6 +6443,29 @@ export const appDefinition = {
                 return;
             }
 
+            // Alt+ArrowLeft / Alt+ArrowRight: cycle through nav-bar tabs
+            if (e.altKey && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+                e.preventDefault();
+                const NAV_TABS = ['db', 'crafting', 'build-planner', 'ballistics', 'maps', 'trading'];
+                let current;
+                if (this.tradingActive)       current = 'trading';
+                else if (this.mapsActive)      current = 'maps';
+                else if (this.damageSimActive) current = 'ballistics';
+                else if (this.buildPlannerActive) current = 'build-planner';
+                else if (this.isCrafting)      current = 'crafting';
+                else                           current = 'db';
+                const idx = NAV_TABS.indexOf(current);
+                const next = NAV_TABS[(idx + (e.key === 'ArrowRight' ? 1 : -1) + NAV_TABS.length) % NAV_TABS.length];
+                if (next === 'db')            this.openItemDb();
+                else if (next === 'crafting') this.openCrafting();
+                else if (next === 'build-planner') this.openBuildPlanner();
+                else if (next === 'ballistics')    this.openDamageSim();
+                else if (next === 'maps')          this.openMaps();
+                else if (next === 'trading')       this.openTrading();
+                return;
+            }
+
+
             // Escape: always active
             if (e.key === KEYS.ESCAPE) {
                 if (inInput && e.target.closest('.global-search')) return; // handled by Vue
@@ -6683,6 +6719,8 @@ export const appDefinition = {
                 if (!this.buildPlannerActive) await this.openBuildPlanner();
             } else if (parsed.damageSim) {
                 if (!this.damageSimActive) await this.openDamageSim();
+            } else if (parsed.trading) {
+                if (!this.tradingActive) this.openTrading();
             } else if (parsed.favorites) {
                 this.resetViewState();
                 this.favoritesViewActive = true;
