@@ -307,12 +307,12 @@ export default {
         buyPrice(id) {
             const base = this.basePrice(id);
             if (base == null) return null;
-            return Math.round(base * this.discountMap.buy * (this.buyConditionMap[id] ?? 1));
+            return Math.round(base * this.discountMap.sell * (this.buyConditionMap[id] ?? 1));
         },
         sellPrice(id) {
             const base = this.basePrice(id);
             if (base == null) return null;
-            return Math.round(base * this.discountMap.sell * (this.sellConditionMap[id] ?? 1));
+            return Math.round(base * this.discountMap.buy * (this.sellConditionMap[id] ?? 1));
         },
         formatPrice(val) {
             if (val == null) return null;
