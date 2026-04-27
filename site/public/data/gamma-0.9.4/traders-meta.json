@@ -56,13 +56,13 @@
   {
     "id": "generic_mechanic",
     "labelKey": "app_generic_mechanic",
-    "label": "bar_visitors_stalker_mechanic_name",
+    "label": "st_data_export_trader_mechanic",
     "color": "#78716c"
   },
   {
     "id": "generic_medic",
     "labelKey": "app_generic_medic",
-    "label": "bar_dolg_medic_name",
+    "label": "st_data_export_trader_medic",
     "color": "#e11d48"
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": "isg",
     "labelKey": "app_isg",
-    "label": "jup_depo_isg_tech_name",
+    "label": "ds_domik_isg_leader_name",
     "color": "#10b981"
   },
   {
